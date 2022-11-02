@@ -18,9 +18,9 @@ export default defineConfig((configEnv) => ({
 	build: {
 		lib: {
 			entry: resolve('src', 'components/index.ts'),
-			name: 'ReactViteLibrary',
+			name: 'Unicorn-Icons',
 			formats: ['es', 'umd'],
-			fileName: (format) => `react-vite-library.${format}.js`,
+			fileName: (format) => `index.${format}.js`,
 		},
 		rollupOptions: {
 			external: [...Object.keys(packageJson.peerDependencies)],
