@@ -1,7 +1,7 @@
 import ArrowBackIcon from './ArrowBackIcon'
 import ArrowDownIcon from './ArrowDownIcon'
 import ArrowForwardIcon from './ArrowForwardIcon'
-import ArrrowUpIcon from './ArrrowUpIcon'
+import ArrowUpIcon from './ArrowUpIcon'
 import CheckCircleIcon from './CheckCircleIcon'
 import CheckIcon from './CheckIcon'
 import ClearIcon from './ClearIcon'
@@ -19,7 +19,7 @@ export {
 	ArrowBackIcon,
 	ArrowDownIcon,
 	ArrowForwardIcon,
-	ArrrowUpIcon,
+	ArrowUpIcon,
 	CheckCircleIcon,
 	CheckIcon,
 	ClearIcon,

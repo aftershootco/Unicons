@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArrrowUpIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+const ArrowUpIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -16,4 +16,4 @@ const ArrrowUpIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 	)
 }
 
-export default React.memo(ArrrowUpIcon)
+export default React.memo(ArrowUpIcon)
