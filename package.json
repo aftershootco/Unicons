@@ -1,8 +1,8 @@
 {
 	"name": "@aftershootco/unicorn-icons",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "",
-	"author": "",
+	"author": "AfterShoot",
 	"license": "ISC",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
