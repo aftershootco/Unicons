@@ -1,13 +1,14 @@
 {
 	"name": "@aftershootco/unicorn-icons",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "",
 	"author": "AfterShoot",
 	"license": "ISC",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"scripts": {
-		"build": "rollup -c"
+		"build": "rollup -c",
+		"prepare": "husky install"
 	},
 	"repository": {
 		"url": "https://github.com/aftershootco/Unicorn-Icons.git",
