@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.imgur.com/buSetTc.png" alt="Unicorn Design System">
+     <img src="https://i.imgur.com/4xxkITI.png" alt="Unicorn Icons">
     <h1>Unicorn Icons</h1>
     <strong>Unicorn Icons is Aftershoot's inbuilt library for using different icons with custom configurations in their Desktop app.</strong>
 </div>
