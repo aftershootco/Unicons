@@ -1,15 +1,24 @@
 const fs = require("fs");
+const cheerio = require("cheerio");
 const prettier = require("prettier");
+const lineReader = require("readline");
+
+const fileNameChanger = (filename) => {
+  return (
+    filename.split(".")[0].charAt(0).toUpperCase() +
+    filename.split(".")[0].slice(1)
+  );
+};
 
 const getAndModifySVG = (url) => {
   const svgFileData = fs.readFileSync(url);
   const htmlString = svgFileData.toString();
-  const re = /\<.*\>([\s\S]*)\<\/.*\>/;
-  return re.exec(htmlString)[1].trim();
+  const $ = cheerio.load(htmlString, { xmlMode: true });
+  return $("svg").html()
 };
 
 const createFile = (data, filename) => {
-  const componentName = filename.split(".")[0];
+  const componentName = fileNameChanger(filename);
   const tsxData = `
 import React from 'react'
 
@@ -30,10 +39,11 @@ const ${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 
 export default React.memo(${componentName})`;
 
-  fs.writeFileSync(
-    `../Icons/${filename.split(".")[0]}.tsx`,
-    prettier.format(tsxData)
-  );
+  fs.writeFileSync(`../Icons/${componentName}.tsx`, prettier.format(tsxData));
+};
+
+const createImports = (imports) => {
+  fs.writeFileSync("../Icons/index.ts", prettier.format(imports));
 };
 
 const convertIcontoReact = () => {
@@ -42,6 +52,15 @@ const convertIcontoReact = () => {
     const children = getAndModifySVG(`../Svg/${files}`);
     createFile(children, files);
   });
+  const importStatement = files
+    .map(
+      (name) =>
+        `export { default as ${fileNameChanger(
+          name
+        )} } from './${fileNameChanger(name)}'\n`
+    )
+    .join("");
+  createImports(importStatement);
 };
 
 convertIcontoReact();
