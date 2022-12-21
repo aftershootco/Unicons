@@ -1,7 +1,6 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
 const prettier = require("prettier");
-const lineReader = require("readline");
 
 const fileNameChanger = (filename) => {
   return (
@@ -14,7 +13,7 @@ const getAndModifySVG = (url) => {
   const svgFileData = fs.readFileSync(url);
   const htmlString = svgFileData.toString();
   const $ = cheerio.load(htmlString, { xmlMode: true });
-  return $("svg").html()
+  return $("svg").html();
 };
 
 const createFile = (data, filename) => {
@@ -39,11 +38,17 @@ const ${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 
 export default React.memo(${componentName})`;
 
-  fs.writeFileSync(`../Icons/${componentName}.tsx`, prettier.format(tsxData));
+  fs.writeFileSync(
+    `../Icons/${componentName}.tsx`,
+    prettier.format(tsxData, { semi: false, parser: "babel" })
+  );
 };
 
 const createImports = (imports) => {
-  fs.writeFileSync("../Icons/index.ts", prettier.format(imports));
+  fs.writeFileSync(
+    "../Icons/index.ts",
+    prettier.format(imports, { semi: false, parser: "babel" })
+  );
 };
 
 const convertIcontoReact = () => {
