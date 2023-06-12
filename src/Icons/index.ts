@@ -1,6 +1,7 @@
 import ArrowBackIcon from './Reskin/ArrowBackIcon'
 import ArrowDownIcon from './Reskin/ArrowDownIcon'
 import ArrowForwardIcon from './Reskin/ArrowForwardIcon'
+import AfterShootLogo from './Reskin/AfterShootLogo'
 import ArrowIcon from './Reskin/ArrowIcon'
 import ArrowUpIcon from './Reskin/ArrowUpIcon'
 import CheckCircleIcon from './Reskin/CheckCircleIcon'
@@ -79,7 +80,6 @@ import StarRateIcon from './Reskin/StarRateIcon'
 import AddFolderIcon from './Reskin/AddFolderIcon'
 import AftershootEditsIcon from './Reskin/AftershootEditsIcon'
 import AlertIcon2 from './Reskin/AlertIcon2'
-import AlertIcon4 from './Reskin/AlertIcon4'
 import AppleIcon from './Reskin/AppleIcon'
 import ArrowDownIcon2 from './Reskin/ArrowDownIcon2'
 import ArrowLeftIcon from './Reskin/ArrowLeftIcon'
@@ -89,7 +89,6 @@ import ArrowUpIcon2 from './Reskin/ArrowUpIcon2'
 import BlueIconTickIcon from './Reskin/BlueIconTickIcon'
 import CancelIcon from './Reskin/CancelIcon'
 import CheckIcon2 from './Reskin/CheckIcon2'
-import CheckIcon3 from './Reskin/CheckIcon3'
 import CheckIcon4 from './Reskin/CheckIcon4'
 import CircleCheckIcon from './Reskin/CircleCheckIcon'
 import ClockIcon4 from './Reskin/ClockIcon4'
@@ -149,7 +148,7 @@ import KeyIcon from './Reskin/KeyIcon'
 import ListNotSelectedIcon3 from './Reskin/ListNotSelectedIcon3'
 import ListSelectedIcon3 from './Reskin/ListSelectedIcon3'
 import LockIcon2 from './Reskin/LockIcon2'
-import LoginOptionIcon from './Reskin/LoadingOptionsIcon'
+import LoadingOptionsIcon from './Reskin/LoadingOptionsIcon'
 import LogoBlankIcon from './Reskin/LogoBlankIcon'
 import LoopIcon3 from './Reskin/LoopIcon3'
 import LoupeActiveIcon from './Reskin/LoupeActiveIcon'
@@ -281,6 +280,7 @@ export {
 	InActiveHelp,
 	InActiveColorIcon,
 	InActiveShortCutIcon,
+	AfterShootLogo,
 	InActiveStarIcon,
 	InActiveSprayCanIcon,
 	InActiveSortIcon,
@@ -301,7 +301,6 @@ export {
 	AddFolderIcon,
 	AftershootEditsIcon,
 	AlertIcon2,
-	AlertIcon4,
 	AppleIcon,
 	ArrowDownIcon2,
 	ArrowLeftIcon,
@@ -311,7 +310,6 @@ export {
 	BlueIconTickIcon,
 	CancelIcon,
 	CheckIcon2,
-	CheckIcon3,
 	CheckIcon4,
 	CircleCheckIcon,
 	ClockIcon4,
@@ -371,7 +369,7 @@ export {
 	ListNotSelectedIcon3,
 	ListSelectedIcon3,
 	LockIcon2,
-	LoginOptionIcon,
+	LoadingOptionsIcon,
 	LogoBlankIcon,
 	LoopIcon3,
 	LoupeActiveIcon,
