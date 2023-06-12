@@ -30,7 +30,7 @@ yarn
 3. Now build it.
 
 ```sh
-yarn build
+t 
 ```
 
 ## Contributors
