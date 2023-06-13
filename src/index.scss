@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--val: 0.25rem;
+		--font-size: 2px;
+		--font-size-lg: 16px;
+		--font-size-xl: 18px;
+		--font-size-2xl: 20px;
+		--font-size-3xl: 26px;
+		--font-size-4xl: 28px;
+		--font-size-5xl: 42px;
+	}
+	@media screen and (max-width: 1440px), screen and (max-height: 940px) {
+		:root {
+			--val: 0.2rem;
+			--font-size-lg: 14px;
+			--font-size-xl: 16px;
+			--font-size-2xl: 18px;
+			--font-size-3xl: 24px;
+			--font-size-4xl: 26px;
+			--font-size-5xl: 40px;
+		}
+	}
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
