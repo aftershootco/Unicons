@@ -1,5 +1,5 @@
 import ArrowDownIcon from '../components/ArrowDownIcon'
-import ArrowIcon from '../components/ArrowIcon'
+import ArrowIcon from '../components/ArrowFillIcon'
 import ArrowUpIcon from '../components/ArrowUpIcon'
 
 import AlertIcon from '../Reskin/AlertIcon'
