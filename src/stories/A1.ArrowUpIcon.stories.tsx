@@ -18,4 +18,16 @@ const meta: Meta<typeof ArrowUpIcon> = {
 export default meta
 type Story = StoryObj<typeof ArrowUpIcon>
 
-export const Primary: Story = {}
+export const Default: Story = {}
+
+export const Red: Story = {
+	args: {
+		color: 'red',
+	},
+}
+
+export const Large: Story = {
+	args: {
+		size: 30,
+	},
+}

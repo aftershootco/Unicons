@@ -1,6 +1,4 @@
-import ArrowBackIcon from '../components/ArrowBackIcon'
 import ArrowDownIcon from '../components/ArrowDownIcon'
-import ArrowForwardIcon from '../components/ArrowForwardIcon'
 import ArrowIcon from '../components/ArrowIcon'
 import ArrowUpIcon from '../components/ArrowUpIcon'
 
@@ -10,10 +8,10 @@ import BorderColorIcon from '../Reskin/BorderColorIcon'
 
 import CartIcon from '../Reskin/CartIcon'
 import CopyIcon from '../Reskin/CopyIcon'
+import CheckIcon from '../components/CheckIcon'
+import ClockIcon from '../components/ClockIcon'
 import CheckCircleIcon from './CheckCircleIcon'
-import CheckIcon from './CheckIcon'
 import ClearIcon from './ClearIcon'
-import ClockIcon from './ClockIcon'
 import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 
@@ -99,9 +97,7 @@ import ZoomIcon from '../Reskin/ZoomIcon'
 
 export {
 	AlertIcon,
-	ArrowBackIcon,
 	ArrowDownIcon,
-	ArrowForwardIcon,
 	ArrowIcon,
 	ArrowUpIcon,
 	BorderColorIcon,
