@@ -9,9 +9,8 @@ import BorderColorIcon from '../Reskin/BorderColorIcon'
 import CartIcon from '../Reskin/CartIcon'
 import CopyIcon from '../Reskin/CopyIcon'
 import CheckIcon from '../components/CheckIcon'
+import ClearIcon from '../components/ClearIcon'
 import ClockIcon from '../components/ClockIcon'
-import CheckCircleIcon from './CheckCircleIcon'
-import ClearIcon from './ClearIcon'
 import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 
@@ -102,7 +101,6 @@ export {
 	ArrowUpIcon,
 	BorderColorIcon,
 	CartIcon,
-	CheckCircleIcon,
 	CheckIcon,
 	ClearIcon,
 	ClockIcon,
