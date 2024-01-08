@@ -24,8 +24,8 @@ export const StarRateIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary]} variant={variant} />
+		return <BaseIcon variants={{ primary }} variant={variant} />
 	}
 )
 
-export default StarRateIcon
+export default React.memo(StarRateIcon)

@@ -33,7 +33,7 @@ export const ChevronUpIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary, secondary]} variant={variant} />
+		return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 	}
 )
 

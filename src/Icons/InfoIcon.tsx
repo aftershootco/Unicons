@@ -24,7 +24,7 @@ export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 
 		</svg>
 	)
 
-	return <BaseIcon variants={[primary]} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
-export default InfoIcon
+export default React.memo(InfoIcon)

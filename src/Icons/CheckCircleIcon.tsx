@@ -13,7 +13,7 @@ export const CheckCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary]} variant={variant} />
+		return <BaseIcon variants={{ primary }} variant={variant} />
 	}
 )
 

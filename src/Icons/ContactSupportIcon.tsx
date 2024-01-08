@@ -13,8 +13,8 @@ export const ContactSupportIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary]} variant={variant} />
+		return <BaseIcon variants={{ primary }} variant={variant} />
 	}
 )
 
-export default ContactSupportIcon
+export default React.memo(ContactSupportIcon)

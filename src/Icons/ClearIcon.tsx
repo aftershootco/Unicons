@@ -12,7 +12,7 @@ export const ClearIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant =
 		</svg>
 	)
 
-	return <BaseIcon variants={[primary]} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ClearIcon)

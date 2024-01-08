@@ -23,7 +23,7 @@ export const CheckIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant =
 		</svg>
 	)
 
-	return <BaseIcon variants={[primary, secondary]} variant={variant} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CheckIcon)

@@ -19,8 +19,8 @@ export const QuestionMarkIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary]} variant={variant} />
+		return <BaseIcon variants={{ primary }} variant={variant} />
 	}
 )
 
-export default QuestionMarkIcon
+export default React.memo(QuestionMarkIcon)

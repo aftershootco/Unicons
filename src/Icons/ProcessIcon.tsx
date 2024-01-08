@@ -15,8 +15,8 @@ export const ProcessIcon = React.forwardRef<SVGSVGElement, IconProps>(
 			</svg>
 		)
 
-		return <BaseIcon variants={[primary]} variant={variant} />
+		return <BaseIcon variants={{ primary }} variant={variant} />
 	}
 )
 
-export default ProcessIcon
+export default React.memo(ProcessIcon)
