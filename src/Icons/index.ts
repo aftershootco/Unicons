@@ -11,7 +11,7 @@ import CopyIcon from '../Reskin/CopyIcon'
 import CheckIcon from '../components/CheckIcon'
 import ClearIcon from '../components/ClearIcon'
 import ClockIcon from '../components/ClockIcon'
-import ContactSupportIcon from './ContactSupportIcon'
+import ContactSupportIcon from '../components/ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 
 import DeleteIcon from '../Reskin/DeleteIcon'
