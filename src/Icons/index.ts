@@ -14,11 +14,11 @@ import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 import CopyIcon from './CopyIcon'
 
-import DiamondIcon from '../Reskin/DiamonIcon'
 import DropDownIcon from '../Reskin/DropDownIcon'
 import DeleteIcon from './DeleteIcon'
 import DescAlphaIcon from './DescAlphaIcon'
 import DescNumIcon from './DescNumIcon'
+import DiamondIcon from './DiamonIcon'
 
 import EditIcon from '../Reskin/EditIcon'
 import EditPhotoIcon from '../Reskin/EditPhotoIcon'

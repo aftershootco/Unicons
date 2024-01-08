@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import COMP from '../Icons/COMP'
+import { DiamondIcon } from '../Icons'
 
-const meta: Meta<typeof COMP> = {
-	component: COMP,
-	title: 'Icons/COMP',
+const meta: Meta<typeof DiamondIcon> = {
+	component: DiamondIcon,
+	title: 'Icons/DiamondIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -15,7 +15,7 @@ const meta: Meta<typeof COMP> = {
 }
 
 export default meta
-type Story = StoryObj<typeof COMP>
+type Story = StoryObj<typeof DiamondIcon>
 
 export const Default: Story = {}
 
