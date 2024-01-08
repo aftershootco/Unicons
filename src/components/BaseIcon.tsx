@@ -8,7 +8,7 @@ type BaseIconProps = {
 const BaseIcon = (props: BaseIconProps) => {
 	const { variants, variant } = props
 
-	return variants[variant]
+	return variants[variant] ?? null
 }
 
 export default BaseIcon

@@ -2,9 +2,9 @@ import ArrowDownIcon from './ArrowDownIcon'
 import ArrowIcon from './ArrowFillIcon'
 import ArrowUpIcon from './ArrowUpIcon'
 
-import AlertIcon from '../Reskin/AlertIcon'
+import AlertIcon from '../xx/AlertIconDD'
 
-import BorderColorIcon from '../Reskin/BorderColorIcon'
+import BorderColorIcon from './BorderColorIcon'
 
 import CartIcon from '../Reskin/CartIcon'
 import CopyIcon from '../Reskin/CopyIcon'
