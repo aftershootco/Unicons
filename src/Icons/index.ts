@@ -52,7 +52,7 @@ import IncAlphaSelectedIcon from '../Reskin/IncAlphaSelectedIcon'
 import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
 import IncNumSelectedIcon from '../Reskin/IncNumSelectedIcon'
 import InfoIconTransparent from '../Reskin/InfoIconTransparent'
-import InfoIcon from './InfoIcon'
+import InfoIcon from '../components/InfoIcon'
 
 import KeyBoardArrowDownIcon from './KeyBoardArrowDownIcon'
 import KeyBoardArrowLeftIcon from './KeyBoardArrowLeftIcon'
