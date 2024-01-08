@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import ContactSupportIcon from '../components/ContactSupportIcon'
+import ContactSupportIcon from '../Icons/ContactSupportIcon'
 
 const meta: Meta<typeof ContactSupportIcon> = {
 	component: ContactSupportIcon,

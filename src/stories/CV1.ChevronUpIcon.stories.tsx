@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import ChevronUpIcon from '../components/ChevronUpIcon'
+import ChevronUpIcon from '../Icons/ChevronUpIcon'
 
 const meta: Meta<typeof ChevronUpIcon> = {
 	component: ChevronUpIcon,

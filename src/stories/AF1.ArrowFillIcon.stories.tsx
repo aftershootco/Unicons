@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import ArrowFillIcon from '../components/ArrowFillIcon'
+import ArrowFillIcon from '../Icons/ArrowFillIcon'
 
 const meta: Meta<typeof ArrowFillIcon> = {
 	component: ArrowFillIcon,

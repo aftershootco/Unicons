@@ -1,8 +1,11 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
+import BaseIcon from '../components/BaseIcon'
 
-export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 24, ...props }, forwardedRef) => {
-	return (
+export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
+	// variants
+
+	const primary = (
 		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
 			<g clip-path='url(#clip0_12231_35410)'>
 				<path
@@ -20,6 +23,8 @@ export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#
 			</defs>
 		</svg>
 	)
+
+	return <BaseIcon variants={[primary]} variant={variant} />
 })
 
 export default InfoIcon

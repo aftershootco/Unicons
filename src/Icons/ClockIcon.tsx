@@ -1,9 +1,12 @@
 import React from 'react'
 
 import { IconProps } from '../../types/Icons/types'
+import BaseIcon from '../components/BaseIcon'
 
-export const ClockIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 20, ...props }, forwardedRef) => {
-	return (
+export const ClockIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 20, ...props }, forwardedRef) => {
+	// variants
+
+	const primary = (
 		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
 			<g clip-path='url(#clip0_517_1773)'>
 				<path
@@ -23,6 +26,8 @@ export const ClockIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '
 			</defs>
 		</svg>
 	)
+
+	return <BaseIcon variants={[primary]} variant={variant} />
 })
 
-export default ClockIcon
+export default React.memo(ClockIcon)

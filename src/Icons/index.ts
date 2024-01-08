@@ -1,6 +1,6 @@
-import ArrowDownIcon from '../components/ArrowDownIcon'
-import ArrowIcon from '../components/ArrowFillIcon'
-import ArrowUpIcon from '../components/ArrowUpIcon'
+import ArrowDownIcon from './ArrowDownIcon'
+import ArrowIcon from './ArrowFillIcon'
+import ArrowUpIcon from './ArrowUpIcon'
 
 import AlertIcon from '../Reskin/AlertIcon'
 
@@ -8,11 +8,11 @@ import BorderColorIcon from '../Reskin/BorderColorIcon'
 
 import CartIcon from '../Reskin/CartIcon'
 import CopyIcon from '../Reskin/CopyIcon'
-import CheckIcon from '../components/CheckIcon'
-import ClearIcon from '../components/ClearIcon'
-import ClockIcon from '../components/ClockIcon'
-import ContactSupportIcon from '../components/ContactSupportIcon'
-import ContentCopyIcon from '../components/ContentCopyIcon'
+import CheckIcon from './CheckIcon'
+import ClearIcon from './ClearIcon'
+import ClockIcon from './ClockIcon'
+import ContactSupportIcon from './ContactSupportIcon'
+import ContentCopyIcon from './ContentCopyIcon'
 
 import DeleteIcon from '../Reskin/DeleteIcon'
 import DescAlphaNotSelectedIcon from '../Reskin/DescAlphaNotSelectedIcon'
@@ -29,7 +29,6 @@ import ExportedIcon from '../Reskin/ExportedIcon'
 import EyeCheckIcon from '../Reskin/EyeCheckIcon'
 import EyeIcon from '../Reskin/EyeIcon'
 import EyeOffIcon from '../Reskin/EyeOffIcon'
-import ExpandMoreIcon from '../components/ExpandMoreIcon'
 
 import FolderIcon from '../Reskin/FolderIcon'
 import FriendsIcon from '../Reskin/FriendsIcon'
@@ -52,7 +51,7 @@ import IncAlphaSelectedIcon from '../Reskin/IncAlphaSelectedIcon'
 import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
 import IncNumSelectedIcon from '../Reskin/IncNumSelectedIcon'
 import InfoIconTransparent from '../Reskin/InfoIconTransparent'
-import InfoIcon from '../components/InfoIcon'
+import InfoIcon from './InfoIcon'
 
 import LeftArrow from '../Reskin/LeftArrow'
 import LeftArrowLong from '../Reskin/LeftArrowLong'
@@ -64,11 +63,11 @@ import LoopIcon from '../Reskin/LoopIcon'
 import MaximizeIcon from '../Reskin/MaximizeIcon'
 import MouseLeftSelected from '../Reskin/MouseLeftSelected'
 import MouseRightSelected from '../Reskin/MouseRightSelected'
-import MenuIcon from '../components/MenuIcon'
+import MenuIcon from './MenuIcon'
 
 import NetworkErrorIcon from '../Reskin/NetworkErrorIcon'
 
-import ProcessIcon from '../components/ProcessIcon'
+import ProcessIcon from './ProcessIcon'
 
 import ReloadIcon from '../Reskin/ReloadIcon'
 import RightArrowLong from '../Reskin/RightArrowLong'
@@ -78,7 +77,7 @@ import SortDuplicatesIcon from '../Reskin/SortDuplicatesIcon'
 import SourceNotFoundIcon from '../Reskin/SourceNotFound'
 import SprayClickIcon from '../Reskin/SprayClickIcon'
 import StorageIcon from '../Reskin/StorageIcon'
-import StarRateIcon from '../components/StarRateIcon'
+import StarRateIcon from './StarRateIcon'
 
 import UploadFolder from '../Reskin/UploadFolder'
 
@@ -110,7 +109,6 @@ export {
 	EditIcon,
 	EditPhotoIcon,
 	ExitAppIcon,
-	ExpandMoreIcon,
 	ExportedIcon,
 	EyeCheckIcon,
 	EyeIcon,

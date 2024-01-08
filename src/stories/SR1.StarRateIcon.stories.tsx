@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import StarRateIcon from '../components/StarRateIcon'
+import StarRateIcon from '../Icons/StarRateIcon'
 
 const meta: Meta<typeof StarRateIcon> = {
 	component: StarRateIcon,
