@@ -30,4 +30,4 @@ export const DiamondIcon = React.forwardRef<SVGSVGElement, IconProps>(
 	}
 )
 
-export default DiamondIcon
+export default React.memo(DiamondIcon)

@@ -14,19 +14,18 @@ import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 import CopyIcon from './CopyIcon'
 
-import DropDownIcon from '../Reskin/DropDownIcon'
 import DeleteIcon from './DeleteIcon'
 import DescAlphaIcon from './DescAlphaIcon'
 import DescNumIcon from './DescNumIcon'
 import DiamondIcon from './DiamonIcon'
 
-import EditIcon from '../Reskin/EditIcon'
-import EditPhotoIcon from '../Reskin/EditPhotoIcon'
 import ExitAppIcon from '../Reskin/ExitAppIcon'
 import ExportedIcon from '../Reskin/ExportedIcon'
 import EyeCheckIcon from '../Reskin/EyeCheckIcon'
 import EyeIcon from '../Reskin/EyeIcon'
 import EyeOffIcon from '../Reskin/EyeOffIcon'
+import EditIcon from './EditIcon'
+import EditPhotoIcon from './EditPhotoIcon'
 
 import FolderIcon from '../Reskin/FolderIcon'
 import FriendsIcon from '../Reskin/FriendsIcon'
@@ -101,7 +100,6 @@ export {
 	DescAlphaIcon,
 	DescNumIcon,
 	DiamondIcon,
-	DropDownIcon,
 	EditIcon,
 	EditPhotoIcon,
 	ExitAppIcon,
