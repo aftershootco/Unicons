@@ -29,4 +29,4 @@ export const ExportedIcon = React.forwardRef<SVGSVGElement, IconProps>(
 	}
 )
 
-export default ExportedIcon
+export default React.memo(ExportedIcon)

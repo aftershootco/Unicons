@@ -31,4 +31,4 @@ export const ExitAppIcon = React.forwardRef<SVGSVGElement, Props>(
 	}
 )
 
-export default ExitAppIcon
+export default React.memo(ExitAppIcon)
