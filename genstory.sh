@@ -11,3 +11,6 @@ VARIABLE="$1"
 
 # Replace "ArrowFillIcon" with the variable in the code and save it to a new file
 sed "s/COMP/$VARIABLE/g" template.stories.tsx > ./src/stories/"$VARIABLE".stories.tsx
+
+# Give write permissions to the user for the new file
+chmod u+w ./src/stories/"$VARIABLE".stories.tsx

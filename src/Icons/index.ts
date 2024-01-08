@@ -14,13 +14,11 @@ import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 import CopyIcon from './CopyIcon'
 
-import DescAlphaNotSelectedIcon from '../Reskin/DescAlphaNotSelectedIcon'
-import DescAlphaSelectedIcon from '../Reskin/DescAlphaSelectedIcon'
-import DescNumNotSelectedIcon from '../Reskin/DescNumNotSelectedIcon'
-import DescNumSelectedIcon from '../Reskin/DescNumSelectedIcon'
 import DiamondIcon from '../Reskin/DiamonIcon'
 import DropDownIcon from '../Reskin/DropDownIcon'
 import DeleteIcon from './DeleteIcon'
+import DescAlphaIcon from './DescAlphaIcon'
+import DescNumIcon from './DescNumIcon'
 
 import EditIcon from '../Reskin/EditIcon'
 import EditPhotoIcon from '../Reskin/EditPhotoIcon'
@@ -41,11 +39,11 @@ import InActiveHelp from '../Reskin/InAcitveHelp'
 import InActiveColorIcon from '../Reskin/InActiveColorIcon'
 import InActiveFilter from '../Reskin/InActiveFilter'
 import InActiveGridIcon from '../Reskin/InActiveGridIcon'
+import InactiveLoupeIcon from '../Reskin/InactiveLoupeIcon'
 import InActiveShortCutIcon from '../Reskin/InActiveShortCutIcon'
 import InActiveSortIcon from '../Reskin/InActiveSortIcon'
 import InActiveSprayCanIcon from '../Reskin/InActiveSprayCanIcon'
 import InActiveStarIcon from '../Reskin/InActiveStarIcon'
-import InactiveLoupeIcon from '../Reskin/InactiveLoupeIcon'
 import IncAlphaNotSelectedIcon from '../Reskin/IncAlphaNotSelectedIcon'
 import IncAlphaSelectedIcon from '../Reskin/IncAlphaSelectedIcon'
 import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
@@ -100,10 +98,8 @@ export {
 	ContentCopyIcon,
 	CopyIcon,
 	DeleteIcon,
-	DescAlphaNotSelectedIcon,
-	DescAlphaSelectedIcon,
-	DescNumNotSelectedIcon,
-	DescNumSelectedIcon,
+	DescAlphaIcon,
+	DescNumIcon,
 	DiamondIcon,
 	DropDownIcon,
 	EditIcon,
