@@ -2,7 +2,7 @@ import * as React from 'react'
 import { IconProps } from '../../types/Icons/types'
 
 export const ChevronDownIcon = React.forwardRef<SVGSVGElement, IconProps>(
-	({ variant = 'default', color = '#fff', size = 24, ...props }, forwardedRef) => {
+	({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
 		// variants
 		const v1 = React.useMemo(() => {
 			return (
@@ -29,7 +29,6 @@ export const ChevronDownIcon = React.forwardRef<SVGSVGElement, IconProps>(
 
 		// variants mapping
 		const variants = {
-			default: v1,
 			primary: v1,
 			secondary: v2,
 		}

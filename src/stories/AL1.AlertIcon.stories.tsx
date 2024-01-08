@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import AlertTriangleIcon from '../components/AlertTriangleIcon'
+import AlertIcon from '../components/AlertIcon'
 
-const meta: Meta<typeof AlertTriangleIcon> = {
-	component: AlertTriangleIcon,
-	title: 'Icons/AlertTriangleIcon',
+const meta: Meta<typeof AlertIcon> = {
+	component: AlertIcon,
+	title: 'Icons/AlertIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof AlertTriangleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof AlertTriangleIcon>
+type Story = StoryObj<typeof AlertIcon>
 
 export const Default: Story = {}
 

@@ -1,7 +1,9 @@
 import * as React from 'react'
 
+export type IconVariant = 'primary' | 'secondary' | 'tertiary'
+
 export interface IconProps extends React.SVGAttributes<SVGElement> {
-	variant?: 'default' | 'primary' | 'secondary'
+	variant?: IconVariant
 	color?: string
 	size?: number
 	children?: never
