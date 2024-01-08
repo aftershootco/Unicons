@@ -69,11 +69,11 @@ import LoopIcon from '../Reskin/LoopIcon'
 import MaximizeIcon from '../Reskin/MaximizeIcon'
 import MouseLeftSelected from '../Reskin/MouseLeftSelected'
 import MouseRightSelected from '../Reskin/MouseRightSelected'
-import MenuIcon from './MenuIcon'
+import MenuIcon from '../components/MenuIcon'
 
 import NetworkErrorIcon from '../Reskin/NetworkErrorIcon'
 
-import ProcessIcon from './ProcessIcon'
+import ProcessIcon from '../components/ProcessIcon'
 
 import ReloadIcon from '../Reskin/ReloadIcon'
 import RightArrowLong from '../Reskin/RightArrowLong'
