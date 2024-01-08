@@ -54,7 +54,6 @@ import IncNumSelectedIcon from '../Reskin/IncNumSelectedIcon'
 import InfoIconTransparent from '../Reskin/InfoIconTransparent'
 import InfoIcon from '../components/InfoIcon'
 
-import KeyBoardArrowDownIcon from './KeyBoardArrowDownIcon'
 import KeyBoardArrowLeftIcon from './KeyBoardArrowLeftIcon'
 import KeyBoardArrowRightIcon from './KeyBoardArrowRightIcon'
 import KeyBoardArrowUpIcon from './KeyBoardArrowUpIcon'
@@ -140,7 +139,6 @@ export {
 	IncNumSelectedIcon,
 	InfoIcon,
 	InfoIconTransparent,
-	KeyBoardArrowDownIcon,
 	KeyBoardArrowLeftIcon,
 	KeyBoardArrowRightIcon,
 	KeyBoardArrowUpIcon,
