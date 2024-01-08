@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import EyeCheckIcon from '../Icons/EyeCheckIcon'
+import EyeIcon from '../Icons/special/EyeIcon'
 
-const meta: Meta<typeof EyeCheckIcon> = {
-	component: EyeCheckIcon,
-	title: 'Icons/EyeCheckIcon',
+const meta: Meta<typeof EyeIcon> = {
+	component: EyeIcon,
+	title: 'Special/EyeIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -15,7 +15,7 @@ const meta: Meta<typeof EyeCheckIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof EyeCheckIcon>
+type Story = StoryObj<typeof EyeIcon>
 
 export const Default: Story = {}
 

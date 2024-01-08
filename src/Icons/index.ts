@@ -19,13 +19,12 @@ import DescAlphaIcon from './DescAlphaIcon'
 import DescNumIcon from './DescNumIcon'
 import DiamondIcon from './DiamonIcon'
 
-import EyeIcon from '../Reskin/EyeIcon'
 import EyeOffIcon from '../Reskin/EyeOffIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
 import ExitAppIcon from './ExitAppIcon'
 import ExportedIcon from './ExportedIcon'
-import EyeCheckIcon from './EyeCheckIcon'
+import EyeIcon from './special/EyeIcon'
 
 import FolderIcon from '../Reskin/FolderIcon'
 import FriendsIcon from '../Reskin/FriendsIcon'
@@ -104,7 +103,6 @@ export {
 	EditPhotoIcon,
 	ExitAppIcon,
 	ExportedIcon,
-	EyeCheckIcon,
 	EyeIcon,
 	EyeOffIcon,
 	FolderIcon,
