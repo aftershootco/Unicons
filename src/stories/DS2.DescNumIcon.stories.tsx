@@ -19,9 +19,15 @@ type Story = StoryObj<typeof DescNumIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
+export const Yellow: Story = {
 	args: {
-		color: 'red',
+		color: 'yellow',
+	},
+}
+
+export const GreenBg: Story = {
+	args: {
+		bgColor: 'green',
 	},
 }
 

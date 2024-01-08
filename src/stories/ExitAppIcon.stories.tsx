@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import DescAlphaIcon from '../Icons/DescAlphaIcon'
+import { ExitAppIcon } from '../Icons'
 
-const meta: Meta<typeof DescAlphaIcon> = {
-	component: DescAlphaIcon,
-	title: 'Icons/DescAlphaIcon',
+const meta: Meta<typeof ExitAppIcon> = {
+	component: ExitAppIcon,
+	title: 'Icons/ExitAppIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -15,7 +15,7 @@ const meta: Meta<typeof DescAlphaIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DescAlphaIcon>
+type Story = StoryObj<typeof ExitAppIcon>
 
 export const Default: Story = {}
 
@@ -25,9 +25,9 @@ export const Yellow: Story = {
 	},
 }
 
-export const GreenBg: Story = {
+export const WhiteBg: Story = {
 	args: {
-		bgColor: 'green',
+		bgColor: 'white',
 	},
 }
 
