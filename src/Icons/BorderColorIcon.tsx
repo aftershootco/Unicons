@@ -4,6 +4,8 @@ import BaseIcon from '../components/BaseIcon'
 
 export const BorderColorIcon = React.forwardRef<SVGSVGElement, IconProps>(
 	({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
+		// VARIANTS
+
 		const primary = (
 			<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
 				<path

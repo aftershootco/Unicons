@@ -6,8 +6,8 @@ import AlertIcon from '../xx/AlertIconDD'
 
 import BorderColorIcon from './BorderColorIcon'
 
-import CartIcon from '../Reskin/CartIcon'
 import CopyIcon from '../Reskin/CopyIcon'
+import CartIcon from './CartIcon'
 import CheckIcon from './CheckIcon'
 import ClearIcon from './ClearIcon'
 import ClockIcon from './ClockIcon'
