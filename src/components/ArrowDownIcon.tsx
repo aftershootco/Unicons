@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { IconProps } from '../../types/Icons/types'
 
-export const ArrowDownIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 18, ...props }, forwardedRef) => {
+export const ArrowDownIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 24, ...props }, forwardedRef) => {
 	return (
 		<svg xmlns='http://www.w3.org/2000/svg' width={size} height={size} viewBox='0 0 24 24' fill={color} {...props} ref={forwardedRef}>
 			<path d='M0 0h24v24H0V0z' fill='none' />

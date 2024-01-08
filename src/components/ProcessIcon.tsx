@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
 
-export const ProcessIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 11, ...props }, forwardedRef) => {
+export const ProcessIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 24, ...props }, forwardedRef) => {
 	return (
 		<svg viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg' width={size} height={size} {...props} ref={forwardedRef}>
 			<path

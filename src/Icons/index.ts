@@ -83,9 +83,7 @@ import SortDuplicatesIcon from '../Reskin/SortDuplicatesIcon'
 import SourceNotFoundIcon from '../Reskin/SourceNotFound'
 import SprayClickIcon from '../Reskin/SprayClickIcon'
 import StorageIcon from '../Reskin/StorageIcon'
-import StarRateIcon from './StarRateIcon'
-
-import TickIcon from './TickIcon'
+import StarRateIcon from '../components/StarRateIcon'
 
 import UploadFolder from '../Reskin/UploadFolder'
 
@@ -166,7 +164,6 @@ export {
 	SprayClickIcon,
 	StarRateIcon,
 	StorageIcon,
-	TickIcon,
 	UploadFolder,
 	WarningIcon,
 	WarningImgMovedIcon,

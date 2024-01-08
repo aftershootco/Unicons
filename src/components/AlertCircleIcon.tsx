@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
 
-export const AlertCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 18, ...props }, forwardedRef) => {
+export const AlertCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 24, ...props }, forwardedRef) => {
 	return (
 		<svg width={size + 1} height={size} viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
 			<g id='alert-circle' clip-path='url(#clip0_104_75)'>

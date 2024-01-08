@@ -1,15 +1,17 @@
 import React from 'react'
+import { IconProps } from '../../types/Icons/types'
 
-const StarRateIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
+export const StarRateIcon = React.forwardRef<SVGSVGElement, IconProps>(({ color = '#fff', size = 24, ...props }, forwardedRef) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			enable-background='new 0 0 24 24'
-			height='24px'
+			width={size}
+			height={size}
 			viewBox='0 0 24 24'
-			width='24px'
-			fill='#FFFFFF'
+			fill={color}
 			{...props}
+			ref={forwardedRef}
 		>
 			<g>
 				<rect fill='none' height='24' width='24' />
@@ -17,6 +19,6 @@ const StarRateIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 			</g>
 		</svg>
 	)
-}
+})
 
-export default React.memo(StarRateIcon)
+export default StarRateIcon
