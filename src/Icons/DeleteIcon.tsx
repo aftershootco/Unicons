@@ -1,7 +1,11 @@
 import React from 'react'
+import { IconProps } from '../../types/Icons/types'
+import BaseIcon from '../components/BaseIcon'
 
-const DeleteIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
-	return (
+export const DeleteIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
+	// VARIANTS
+
+	const primary = (
 		<svg width='97' height='96' viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
 			<rect x='0.5' width='96' height='96' rx='48' fill='#D83D3D' fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13360_17518)'>
@@ -30,6 +34,8 @@ const DeleteIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
 			</defs>
 		</svg>
 	)
-}
+
+	return <BaseIcon variants={{ primary }} variant={variant} />
+})
 
 export default React.memo(DeleteIcon)

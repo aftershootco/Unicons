@@ -6,21 +6,21 @@ import AlertIcon from '../xx/AlertIconDD'
 
 import BorderColorIcon from './BorderColorIcon'
 
-import CopyIcon from '../Reskin/CopyIcon'
 import CartIcon from './CartIcon'
 import CheckIcon from './CheckIcon'
 import ClearIcon from './ClearIcon'
 import ClockIcon from './ClockIcon'
 import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
+import CopyIcon from './CopyIcon'
 
-import DeleteIcon from '../Reskin/DeleteIcon'
 import DescAlphaNotSelectedIcon from '../Reskin/DescAlphaNotSelectedIcon'
 import DescAlphaSelectedIcon from '../Reskin/DescAlphaSelectedIcon'
 import DescNumNotSelectedIcon from '../Reskin/DescNumNotSelectedIcon'
 import DescNumSelectedIcon from '../Reskin/DescNumSelectedIcon'
 import DiamondIcon from '../Reskin/DiamonIcon'
 import DropDownIcon from '../Reskin/DropDownIcon'
+import DeleteIcon from './DeleteIcon'
 
 import EditIcon from '../Reskin/EditIcon'
 import EditPhotoIcon from '../Reskin/EditPhotoIcon'
