@@ -14,3 +14,6 @@ sed "s/COMP/$VARIABLE/g" template.stories.tsx > ./src/stories/"$VARIABLE".storie
 
 # Give write permissions to the user for the new file
 chmod u+w ./src/stories/"$VARIABLE".stories.tsx
+
+
+# run this - sudo ./genstory.sh -NameOfTheComponent-
