@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import ImageNotFound from '../Icons/ImageNotFound'
+import LoupeIcon from '../Icons/LoupeIcon'
 
-const meta: Meta<typeof ImageNotFound> = {
-	component: ImageNotFound,
-	title: 'With Background/ImageNotFound',
+const meta: Meta<typeof LoupeIcon> = {
+	component: LoupeIcon,
+	title: 'active inactive/LoupeIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -15,7 +15,7 @@ const meta: Meta<typeof ImageNotFound> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ImageNotFound>
+type Story = StoryObj<typeof LoupeIcon>
 
 export const Default: Story = {}
 
@@ -25,9 +25,9 @@ export const Red: Story = {
 	},
 }
 
-export const redBg: Story = {
+export const inActive: Story = {
 	args: {
-		bgColor: 'red',
+		inActive: true,
 	},
 }
 

@@ -4,7 +4,7 @@ import COMP from '../Icons/COMP'
 
 const meta: Meta<typeof COMP> = {
 	component: COMP,
-	title: 'Icons/COMP',
+	title: 'active inactive/COMP',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -22,6 +22,12 @@ export const Default: Story = {}
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

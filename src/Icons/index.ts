@@ -30,9 +30,6 @@ import FriendsIcon from './FriendsIcon'
 
 import GridIcon from './GridIcon'
 
-import InActiveFilter from '../Reskin/InActiveFilter'
-import InActiveGridIcon from '../Reskin/InActiveGridIcon'
-import InactiveLoupeIcon from '../Reskin/InactiveLoupeIcon'
 import InActiveShortCutIcon from '../Reskin/InActiveShortCutIcon'
 import InActiveSortIcon from '../Reskin/InActiveSortIcon'
 import InActiveSprayCanIcon from '../Reskin/InActiveSprayCanIcon'
@@ -43,8 +40,10 @@ import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
 import IncNumSelectedIcon from '../Reskin/IncNumSelectedIcon'
 import InfoIconTransparent from '../Reskin/InfoIconTransparent'
 import InActiveColorIcon from './ColorIcon'
+import InActiveFilter from './FilterIcon'
 import ImageNotFound from './ImageNotFound'
 import InfoIcon from './InfoIcon'
+import LoupeIcon from './LoupeIcon'
 
 import LeftArrow from '../Reskin/LeftArrow'
 import LeftArrowLong from '../Reskin/LeftArrowLong'
@@ -107,12 +106,11 @@ export {
 	ImageNotFound,
 	InActiveColorIcon,
 	InActiveFilter,
-	InActiveGridIcon,
 	InActiveShortCutIcon,
 	InActiveSortIcon,
 	InActiveSprayCanIcon,
 	InActiveStarIcon,
-	InactiveLoupeIcon,
+	LoupeIcon,
 	IncAlphaNotSelectedIcon,
 	IncAlphaSelectedIcon,
 	IncNumNotSelectedIcon,

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import ImageNotFound from '../Icons/ImageNotFound'
+import FilterIcon from '../Icons/FilterIcon'
 
-const meta: Meta<typeof ImageNotFound> = {
-	component: ImageNotFound,
-	title: 'With Background/ImageNotFound',
+const meta: Meta<typeof FilterIcon> = {
+	component: FilterIcon,
+	title: 'Icons/FilterIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -15,19 +15,13 @@ const meta: Meta<typeof ImageNotFound> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ImageNotFound>
+type Story = StoryObj<typeof FilterIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
-	},
-}
-
-export const redBg: Story = {
-	args: {
-		bgColor: 'red',
 	},
 }
 
