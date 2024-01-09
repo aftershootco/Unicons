@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import EditIcon from '../Icons/EditIcon'
+
+import { EditIcon } from '../Icons'
 
 const meta: Meta<typeof EditIcon> = {
 	component: EditIcon,

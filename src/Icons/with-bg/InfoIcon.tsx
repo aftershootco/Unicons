@@ -1,11 +1,15 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
+type Props = IconProps & {
+	bgColor?: string
+}
+
+export const InfoIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
-	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 	// variants
 
 	const primary = (
@@ -13,7 +17,7 @@ export const InfoIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwa
 			<g clip-path='url(#clip0_12231_35410)'>
 				<path
 					d='M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z'
-					fill='#E2E2E2'
+					fill={bgColor}
 					fill-opacity='0.1'
 				/>
 				<path d='M10 6.66602H10.0083' stroke={color} stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' />

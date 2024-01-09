@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import CopyIcon from '../Icons/CopyIcon'
+
+import { CopyIcon } from '../Icons'
 
 const meta: Meta<typeof CopyIcon> = {
 	component: CopyIcon,

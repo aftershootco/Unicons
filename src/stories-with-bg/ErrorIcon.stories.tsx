@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import InfoIcon from '../Icons/InfoIcon'
+import { ErrorIcon } from '../Icons'
 
-const meta: Meta<typeof InfoIcon> = {
-	component: InfoIcon,
-	title: 'Icons/InfoIcon',
+const meta: Meta<typeof ErrorIcon> = {
+	component: ErrorIcon,
+	title: 'With Background/ErrorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,20 @@ const meta: Meta<typeof InfoIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof InfoIcon>
+type Story = StoryObj<typeof ErrorIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const yellowBg: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
 	},
 }
 

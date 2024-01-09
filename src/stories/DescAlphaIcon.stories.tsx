@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import DescAlphaIcon from '../Icons/DescAlphaIcon'
+
+import { DescAlphaIcon } from '../Icons'
 
 const meta: Meta<typeof DescAlphaIcon> = {
 	component: DescAlphaIcon,

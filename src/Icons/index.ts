@@ -1,12 +1,18 @@
 import AlertIcon from '../xx/AlertIconDD'
+import AfterShootLogo from './AfterShootLogo'
 import ArrowDownIcon from './ArrowDownIcon'
-import ArrowIcon from './ArrowFillIcon'
+import ArrowFillIcon from './ArrowFillIcon'
 import ArrowLeftIcon from './ArrowLeftIcon'
 import ArrowRightcon from './ArrowRightcon'
 import ArrowUpIcon from './ArrowUpIcon'
 import BorderColorIcon from './BorderColorIcon'
 import CartIcon from './CartIcon'
+import CheckCircleIcon from './CheckCircleIcon'
 import CheckIcon from './CheckIcon'
+import ChevronDownIcon from './ChevronDownIcon'
+import ChevronLeftIcon from './ChevronLeftIcon'
+import ChevronRightIcon from './ChevronRightIcon'
+import ChevronUpIcon from './ChevronUpIcon'
 import ClearIcon from './ClearIcon'
 import ClockIcon from './ClockIcon'
 import ContactSupportIcon from './ContactSupportIcon'
@@ -18,8 +24,7 @@ import DescNumIcon from './DescNumIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
-import ExitAppIcon from './ExitAppIcon'
-import ExportedIcon from './ExportedIcon'
+import ExportIcon from './ExportIcon'
 import InActiveFilter from './FilterIcon'
 import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
@@ -32,7 +37,6 @@ import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
 import StarIcon from './inactive/StarIcon'
-import InfoIcon from './InfoIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoopIcon from './LoopIcon'
@@ -47,6 +51,9 @@ import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
+import ErrorIcon from './with-bg/ErrorIcon'
+import ExitAppIcon from './with-bg/ExitAppIcon'
+import InfoIcon from './with-bg/InfoIcon'
 import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
 import SourceNotFoundIcon from './with-bg/SourceNotFound'
 import WarningIcon from './with-bg/WarningIcon'
@@ -54,10 +61,14 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	AlertIcon,
+	ErrorIcon,
+	CheckCircleIcon,
+	ChevronUpIcon,
 	ArrowDownIcon,
-	ArrowIcon,
+	ArrowFillIcon,
 	ArrowUpIcon,
 	BorderColorIcon,
+	AfterShootLogo,
 	CartIcon,
 	CheckIcon,
 	ClearIcon,
@@ -65,6 +76,9 @@ export {
 	ContactSupportIcon,
 	ContentCopyIcon,
 	CopyIcon,
+	ChevronDownIcon,
+	ChevronRightIcon,
+	ChevronLeftIcon,
 	DeleteIcon,
 	DescAlphaIcon,
 	DescNumIcon,
@@ -72,7 +86,7 @@ export {
 	EditIcon,
 	EditPhotoIcon,
 	ExitAppIcon,
-	ExportedIcon,
+	ExportIcon,
 	EyeIcon,
 	FolderIcon,
 	FriendsIcon,

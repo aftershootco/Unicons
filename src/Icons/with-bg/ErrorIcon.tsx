@@ -1,13 +1,20 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-export const ErrorIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
-	// VARIANTS
+type Props = IconProps & {
+	bgColor?: string
+}
 
+export const ErrorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+	//props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+
+	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
-			<rect x='0.352539' y='0.702148' width='28' height='28' rx='14' fill='#D83D3D' />
+			<rect x='0.352539' y='0.702148' width='28' height='28' rx='14' fill={bgColor} />
 			<g clip-path='url(#clip0_13276_22829)'>
 				<path d='M14.3525 17.2021V17.2105M14.3525 12.2021V13.8688V12.2021Z' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
 				<path

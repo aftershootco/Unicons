@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import DeleteIcon from '../Icons/DeleteIcon'
+
+import { DeleteIcon } from '../Icons'
 
 const meta: Meta<typeof DeleteIcon> = {
 	component: DeleteIcon,
