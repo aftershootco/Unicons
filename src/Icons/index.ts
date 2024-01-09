@@ -1,4 +1,3 @@
-import WarningImgMovedIcon from '../Reskin/WarningImgMovedIcon'
 import ZoomIcon from '../Reskin/ZoomIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import ArrowDownIcon from './ArrowDownIcon'
@@ -106,6 +105,5 @@ export {
 	StorageIcon,
 	UploadFolder,
 	WarningIcon,
-	WarningImgMovedIcon,
 	ZoomIcon,
 }
