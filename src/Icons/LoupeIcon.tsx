@@ -9,14 +9,13 @@ type Props = IconProps & {
 
 export const LoupeIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
-
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
 			<g clip-path='url(#clip0_12903_26932)'>
 				<path d='M6.66602 6.66666H13.3327V13.3333H6.66602V6.66666Z' fill={modifiedColor} />
 				<path

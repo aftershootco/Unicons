@@ -4,7 +4,7 @@ import FilterIcon from '../Icons/FilterIcon'
 
 const meta: Meta<typeof FilterIcon> = {
 	component: FilterIcon,
-	title: 'Icons/FilterIcon',
+	title: 'active inactive/FilterIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -22,6 +22,12 @@ export const Default: Story = {}
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 
