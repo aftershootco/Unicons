@@ -25,11 +25,10 @@ import ExitAppIcon from './ExitAppIcon'
 import ExportedIcon from './ExportedIcon'
 import EyeIcon from './special/EyeIcon'
 
-import FriendsIcon from '../Reskin/FriendsIcon'
 import FolderIcon from './FolderIcon'
+import FriendsIcon from './FriendsIcon'
 
-import GridNotSelectedIcon from '../Reskin/GridNotSelectedIcon'
-import GridSelectedIcon from '../Reskin/GridSelectedIcon'
+import GridIcon from './GridIcon'
 
 import ImageNotFound from '../Reskin/ImageNotFound'
 import InActiveHelp from '../Reskin/InAcitveHelp'
@@ -105,8 +104,7 @@ export {
 	EyeIcon,
 	FolderIcon,
 	FriendsIcon,
-	GridNotSelectedIcon,
-	GridSelectedIcon,
+	GridIcon,
 	ImageNotFound,
 	InActiveColorIcon,
 	InActiveFilter,
