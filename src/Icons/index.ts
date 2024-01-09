@@ -1,4 +1,3 @@
-import ZoomIcon from '../Reskin/ZoomIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import ArrowDownIcon from './ArrowDownIcon'
 import ArrowIcon from './ArrowFillIcon'
@@ -51,6 +50,7 @@ import UploadFolder from './UploadFolder'
 import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
 import SourceNotFoundIcon from './with-bg/SourceNotFound'
 import WarningIcon from './with-bg/WarningIcon'
+import ZoomIcon from './ZoomIcon'
 
 export {
 	AlertIcon,
