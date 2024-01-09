@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import StarRateIcon from '../Icons/StarRateIcon'
+import { StarIcon } from '../Icons'
 
-const meta: Meta<typeof StarRateIcon> = {
-	component: StarRateIcon,
-	title: 'Icons/StarRateIcon',
+const meta: Meta<typeof StarIcon> = {
+	component: StarIcon,
+	title: 'active inactive/StarIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof StarRateIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof StarRateIcon>
+type Story = StoryObj<typeof StarIcon>
 
 export const Default: Story = {}
 
 export const Yellow: Story = {
 	args: {
 		color: 'yellow',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

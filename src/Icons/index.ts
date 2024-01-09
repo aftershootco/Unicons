@@ -1,4 +1,3 @@
-import InActiveStarIcon from '../Reskin/InActiveStarIcon'
 import IncAlphaNotSelectedIcon from '../Reskin/IncAlphaNotSelectedIcon'
 import IncAlphaSelectedIcon from '../Reskin/IncAlphaSelectedIcon'
 import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
@@ -54,12 +53,12 @@ import ColorIcon from './inactive/ColorIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
+import SprayCanIcon from './inactive/SprayCanIcon'
+import StarIcon from './inactive/StarIcon'
 import InfoIcon from './InfoIcon'
 import MenuIcon from './MenuIcon'
 import ProcessIcon from './ProcessIcon'
 import EyeIcon from './special/EyeIcon'
-import SprayCanIcon from './SprayCanIcon'
-import StarRateIcon from './StarRateIcon'
 
 export {
 	AlertIcon,
@@ -92,7 +91,6 @@ export {
 	ShortCutIcon,
 	SortIcon,
 	SprayCanIcon,
-	InActiveStarIcon,
 	LoupeIcon,
 	IncAlphaNotSelectedIcon,
 	IncAlphaSelectedIcon,
@@ -118,7 +116,7 @@ export {
 	SortDuplicatesIcon,
 	SourceNotFoundIcon,
 	SprayClickIcon,
-	StarRateIcon,
+	StarIcon,
 	StorageIcon,
 	UploadFolder,
 	WarningIcon,
