@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import AlertIcon from '../Icons/AlertIcon'
+import AlertIcon from '../Icons/special/AlertIcon'
 
 const meta: Meta<typeof AlertIcon> = {
 	component: AlertIcon,
-	title: 'Icons/AlertIcon',
+	title: 'Special/AlertIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
