@@ -19,15 +19,14 @@ import DescAlphaIcon from './DescAlphaIcon'
 import DescNumIcon from './DescNumIcon'
 import DiamondIcon from './DiamonIcon'
 
-import EyeOffIcon from '../Reskin/EyeOffIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
 import ExitAppIcon from './ExitAppIcon'
 import ExportedIcon from './ExportedIcon'
 import EyeIcon from './special/EyeIcon'
 
-import FolderIcon from '../Reskin/FolderIcon'
 import FriendsIcon from '../Reskin/FriendsIcon'
+import FolderIcon from './FolderIcon'
 
 import GridNotSelectedIcon from '../Reskin/GridNotSelectedIcon'
 import GridSelectedIcon from '../Reskin/GridSelectedIcon'
@@ -104,7 +103,6 @@ export {
 	ExitAppIcon,
 	ExportedIcon,
 	EyeIcon,
-	EyeOffIcon,
 	FolderIcon,
 	FriendsIcon,
 	GridNotSelectedIcon,
