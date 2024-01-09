@@ -9,11 +9,9 @@ type Props = IconProps & {
 
 export const ImageNotFound = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
-
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
-
 	const primary = (
 		<svg
 			width={size}

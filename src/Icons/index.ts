@@ -1,8 +1,3 @@
-import IncAlphaNotSelectedIcon from '../Reskin/IncAlphaNotSelectedIcon'
-import IncAlphaSelectedIcon from '../Reskin/IncAlphaSelectedIcon'
-import IncNumNotSelectedIcon from '../Reskin/IncNumNotSelectedIcon'
-import IncNumSelectedIcon from '../Reskin/IncNumSelectedIcon'
-import InfoIconTransparent from '../Reskin/InfoIconTransparent'
 import LeftArrow from '../Reskin/LeftArrow'
 import LeftArrowLong from '../Reskin/LeftArrowLong'
 import ListNotSelectedIcon from '../Reskin/ListNotSelectedIcon'
@@ -92,12 +87,7 @@ export {
 	SortIcon,
 	SprayCanIcon,
 	LoupeIcon,
-	IncAlphaNotSelectedIcon,
-	IncAlphaSelectedIcon,
-	IncNumNotSelectedIcon,
-	IncNumSelectedIcon,
 	InfoIcon,
-	InfoIconTransparent,
 	LeftArrow,
 	LeftArrowLong,
 	ListNotSelectedIcon,
