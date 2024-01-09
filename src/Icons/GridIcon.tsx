@@ -23,7 +23,7 @@ export const GridIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
 			<rect width='22' height='22' rx='2' fill={bgColor} fill-opacity='0.1' />
 			<g clip-path='url(#clip0_12220_36385)'>
 				<path

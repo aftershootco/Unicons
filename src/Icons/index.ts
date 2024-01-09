@@ -1,8 +1,3 @@
-import LoopIcon from '../Reskin/LoopIcon'
-import MaximizeIcon from '../Reskin/MaximizeIcon'
-import MouseLeftSelected from '../Reskin/MouseLeftSelected'
-import MouseRightSelected from '../Reskin/MouseRightSelected'
-import NetworkErrorIcon from '../Reskin/NetworkErrorIcon'
 import ReloadIcon from '../Reskin/ReloadIcon'
 import ShareIcon from '../Reskin/ShareIcon'
 import SortDuplicatesIcon from '../Reskin/SortDuplicatesIcon'
@@ -50,9 +45,14 @@ import StarIcon from './inactive/StarIcon'
 import InfoIcon from './InfoIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
+import LoopIcon from './LoopIcon'
+import MaximizeIcon from './MaximizeIcon'
 import MenuIcon from './MenuIcon'
+import MouseLeftSelected from './MouseLeftSelected'
+import MouseRightSelected from './MouseRightSelected'
 import ProcessIcon from './ProcessIcon'
 import EyeIcon from './special/EyeIcon'
+import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
 
 export {
 	AlertIcon,
