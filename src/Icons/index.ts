@@ -1,11 +1,3 @@
-import ReloadIcon from '../Reskin/ReloadIcon'
-import ShareIcon from '../Reskin/ShareIcon'
-import SortDuplicatesIcon from '../Reskin/SortDuplicatesIcon'
-import SourceNotFoundIcon from '../Reskin/SourceNotFound'
-import SprayClickIcon from '../Reskin/SprayClickIcon'
-import StorageIcon from '../Reskin/StorageIcon'
-import UploadFolder from '../Reskin/UploadFolder'
-import WarningIcon from '../Reskin/WarningIcon'
 import WarningImgMovedIcon from '../Reskin/WarningImgMovedIcon'
 import ZoomIcon from '../Reskin/ZoomIcon'
 import AlertIcon from '../xx/AlertIconDD'
@@ -51,8 +43,15 @@ import MenuIcon from './MenuIcon'
 import MouseLeftSelected from './MouseLeftSelected'
 import MouseRightSelected from './MouseRightSelected'
 import ProcessIcon from './ProcessIcon'
+import ReloadIcon from './ReloadIcon'
+import ShareIcon from './ShareIcon'
+import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
+import StorageIcon from './StorageIcon'
+import UploadFolder from './UploadFolder'
 import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
+import SourceNotFoundIcon from './with-bg/SourceNotFound'
+import WarningIcon from './with-bg/WarningIcon'
 
 export {
 	AlertIcon,
@@ -103,7 +102,6 @@ export {
 	ShareIcon,
 	SortDuplicatesIcon,
 	SourceNotFoundIcon,
-	SprayClickIcon,
 	StarIcon,
 	StorageIcon,
 	UploadFolder,
