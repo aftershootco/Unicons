@@ -1,5 +1,3 @@
-import LeftArrow from '../Reskin/LeftArrow'
-import LeftArrowLong from '../Reskin/LeftArrowLong'
 import ListNotSelectedIcon from '../Reskin/ListNotSelectedIcon'
 import ListSelectedIcon from '../Reskin/ListSelectedIcon'
 import LockIcon from '../Reskin/LockIcon'
@@ -9,7 +7,6 @@ import MouseLeftSelected from '../Reskin/MouseLeftSelected'
 import MouseRightSelected from '../Reskin/MouseRightSelected'
 import NetworkErrorIcon from '../Reskin/NetworkErrorIcon'
 import ReloadIcon from '../Reskin/ReloadIcon'
-import RightArrowLong from '../Reskin/RightArrowLong'
 import ShareIcon from '../Reskin/ShareIcon'
 import SortDuplicatesIcon from '../Reskin/SortDuplicatesIcon'
 import SourceNotFoundIcon from '../Reskin/SourceNotFound'
@@ -22,6 +19,8 @@ import ZoomIcon from '../Reskin/ZoomIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import ArrowDownIcon from './ArrowDownIcon'
 import ArrowIcon from './ArrowFillIcon'
+import ArrowLeftIcon from './ArrowLeftIcon'
+import ArrowRightcon from './ArrowRightcon'
 import ArrowUpIcon from './ArrowUpIcon'
 import BorderColorIcon from './BorderColorIcon'
 import CartIcon from './CartIcon'
@@ -88,8 +87,7 @@ export {
 	SprayCanIcon,
 	LoupeIcon,
 	InfoIcon,
-	LeftArrow,
-	LeftArrowLong,
+	ArrowLeftIcon,
 	ListNotSelectedIcon,
 	ListSelectedIcon,
 	LockIcon,
@@ -101,7 +99,7 @@ export {
 	NetworkErrorIcon,
 	ProcessIcon,
 	ReloadIcon,
-	RightArrowLong,
+	ArrowRightcon,
 	ShareIcon,
 	SortDuplicatesIcon,
 	SourceNotFoundIcon,
