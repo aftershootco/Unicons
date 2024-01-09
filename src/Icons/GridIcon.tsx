@@ -1,13 +1,14 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
+import DEFAULT_ICON from '../constant'
 
 type Props = IconProps & {
 	bgColor?: string
 }
 
 export const GridIcon = React.forwardRef<SVGSVGElement, Props>(
-	({ variant = 'primary', color = '#fff', bgColor = '#E2E2E2', size = 24, ...props }, forwardedRef) => {
+	({ variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...props }, forwardedRef) => {
 		// variants
 
 		const primary = (
