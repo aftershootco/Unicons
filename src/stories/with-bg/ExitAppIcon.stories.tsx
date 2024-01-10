@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { COMP } from '../test'
+import { ExitAppIcon } from '../../Icons'
 
-const meta: Meta<typeof COMP> = {
-	component: COMP,
-	title: 'Icons/COMP',
+const meta: Meta<typeof ExitAppIcon> = {
+	component: ExitAppIcon,
+	title: 'With Background/ExitAppIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,20 @@ const meta: Meta<typeof COMP> = {
 }
 
 export default meta
-type Story = StoryObj<typeof COMP>
+type Story = StoryObj<typeof ExitAppIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
+export const red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const yellowBg: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
 	},
 }
 

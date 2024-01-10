@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { COMP } from '../test'
+import { Stack2Icon } from '../test'
 
-const meta: Meta<typeof COMP> = {
-	component: COMP,
-	title: 'Icons/COMP',
+const meta: Meta<typeof Stack2Icon> = {
+	component: Stack2Icon,
+	title: 'Test/Stack2Icon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof COMP> = {
 }
 
 export default meta
-type Story = StoryObj<typeof COMP>
+type Story = StoryObj<typeof Stack2Icon>
 
 export const Default: Story = {}
 

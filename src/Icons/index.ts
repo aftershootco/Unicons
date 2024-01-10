@@ -47,6 +47,7 @@ import MouseRightSelected from './MouseRightSelected'
 import ProcessIcon from './ProcessIcon'
 import ReloadIcon from './ReloadIcon'
 import ShareIcon from './ShareIcon'
+import AppleIcon from './social/AppleIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
 import StorageIcon from './StorageIcon'
@@ -60,6 +61,7 @@ import WarningIcon from './with-bg/WarningIcon'
 import ZoomIcon from './ZoomIcon'
 
 export {
+	AppleIcon,
 	AlertIcon,
 	ErrorIcon,
 	CheckCircleIcon,

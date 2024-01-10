@@ -23,7 +23,22 @@ export const ArrowLeftIcon = React.forwardRef<SVGSVGElement, IconProps>((props, 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	const secondary = (
+		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+			<g clip-path='url(#clip0_1016_1930)'>
+				<path d='M19 12L5 12' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
+				<path d='M11 6L5 12' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
+				<path d='M11 18L5 12' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
+			</g>
+			<defs>
+				<clipPath id='clip0_1016_1930'>
+					<rect width='24' height='24' fill='white' transform='translate(24 24) rotate(-180)' />
+				</clipPath>
+			</defs>
+		</svg>
+	)
+
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(ArrowLeftIcon)
