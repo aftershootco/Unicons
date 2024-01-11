@@ -4,7 +4,7 @@ import LoupeIcon from '../../Icons/inactive/LoupeIcon'
 
 const meta: Meta<typeof LoupeIcon> = {
 	component: LoupeIcon,
-	title: 'active inactive/LoupeIcon',
+	title: 'inactive/LoupeIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

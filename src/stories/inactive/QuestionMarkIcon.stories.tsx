@@ -5,7 +5,7 @@ import QuestionMarkIcon from '../../Icons/inactive/QuestionMarkIcon'
 
 const meta: Meta<typeof QuestionMarkIcon> = {
 	component: QuestionMarkIcon,
-	title: 'active inactive/QuestionMarkIcon',
+	title: 'inactive/QuestionMarkIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

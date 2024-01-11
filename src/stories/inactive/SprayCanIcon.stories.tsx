@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SprayCanIcon } from '../Icons'
+import { SprayCanIcon } from '../../Icons'
 
 const meta: Meta<typeof SprayCanIcon> = {
 	component: SprayCanIcon,
-	title: 'active inactive/SprayCanIcon',
+	title: 'inactive/SprayCanIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

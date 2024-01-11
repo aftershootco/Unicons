@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FacebookColorIcon } from '../test'
+import { HappyfaceIcon } from '../../test'
 
-const meta: Meta<typeof FacebookColorIcon> = {
-	component: FacebookColorIcon,
-	title: 'Test/FacebookColorIcon',
+const meta: Meta<typeof HappyfaceIcon> = {
+	component: HappyfaceIcon,
+	title: 'inactive/HappyfaceIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof FacebookColorIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof FacebookColorIcon>
+type Story = StoryObj<typeof HappyfaceIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

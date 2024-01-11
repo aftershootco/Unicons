@@ -5,7 +5,7 @@ import { ShortCutIcon } from '../../Icons'
 
 const meta: Meta<typeof ShortCutIcon> = {
 	component: ShortCutIcon,
-	title: 'active inactive/ShortCutIcon',
+	title: 'inactive/ShortCutIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

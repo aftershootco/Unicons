@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { GoogleIcon } from '../test'
+import { GridDotsIcon } from '../Icons'
 
-const meta: Meta<typeof GoogleIcon> = {
-	component: GoogleIcon,
-	title: 'Test/GoogleIcon',
+const meta: Meta<typeof GridDotsIcon> = {
+	component: GridDotsIcon,
+	title: 'icons/GridDotsIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof GoogleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof GoogleIcon>
+type Story = StoryObj<typeof GridDotsIcon>
 
 export const Default: Story = {}
 

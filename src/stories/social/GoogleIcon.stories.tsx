@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SortIcon } from '../Icons'
+import { GoogleIcon } from '../../Icons'
 
-const meta: Meta<typeof SortIcon> = {
-	component: SortIcon,
-	title: 'active inactive/SortIcon',
+const meta: Meta<typeof GoogleIcon> = {
+	component: GoogleIcon,
+	title: 'social/GoogleIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,19 +16,13 @@ const meta: Meta<typeof SortIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SortIcon>
+type Story = StoryObj<typeof GoogleIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
-	},
-}
-
-export const inActive: Story = {
-	args: {
-		inActive: true,
 	},
 }
 

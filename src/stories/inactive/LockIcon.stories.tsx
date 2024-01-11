@@ -5,7 +5,7 @@ import { LockIcon } from '../../Icons'
 
 const meta: Meta<typeof LockIcon> = {
 	component: LockIcon,
-	title: 'active inactive/LockIcon',
+	title: 'inactive/LockIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

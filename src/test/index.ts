@@ -1,11 +1,4 @@
-import CurvearrowIcon from './CurvearrowIcon'
-import ErrorIcon from './ErrorIcon'
-import FacebookColorIcon from './FacebookColorIcon'
-import FailIcon from './FailIcon'
-import FolderXIcon from './FolderXIcon'
-import GoogleIcon from './GoogleIcon'
-import GridDotsIcon from './GridDotsIcon'
-import HappyfaceIcon from './HappyfaceIcon'
+import HappyfaceIcon from '../Icons/inactive/HappyfaceIcon'
 import HomeIcon from './HomeIcon'
 import InfoiconIcon from './InfoiconIcon'
 import InfoRoundedIcon from './InfoRoundedIcon'
@@ -42,13 +35,6 @@ import WhitecrownIcon from './WhitecrownIcon'
 import WorldIcon from './WorldIcon'
 
 export {
-	CurvearrowIcon,
-	ErrorIcon,
-	FacebookColorIcon,
-	FailIcon,
-	FolderXIcon,
-	GoogleIcon,
-	GridDotsIcon,
 	HappyfaceIcon,
 	HomeIcon,
 	InfoRoundedIcon,

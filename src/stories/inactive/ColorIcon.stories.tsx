@@ -5,7 +5,7 @@ import { ColorIcon } from '../../Icons'
 
 const meta: Meta<typeof ColorIcon> = {
 	component: ColorIcon,
-	title: 'active inactive/ColorIcon',
+	title: 'inactive/ColorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

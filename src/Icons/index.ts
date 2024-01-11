@@ -24,6 +24,7 @@ import CopyIcon from './CopyIcon'
 import CouponIcon from './CouponIcon'
 import CreateprofileIcon from './CreateprofileIcon'
 import CrownIcon from './CrownIcon'
+import CurveArrowIcon from './CurveArrowIcon'
 import DeleteIcon from './DeleteIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
@@ -31,6 +32,7 @@ import EditPhotoIcon from './EditPhotoIcon'
 import ExportIcon from './ExportIcon'
 import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
+import { GridDotsIcon } from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import ColorIcon from './inactive/ColorIcon'
 import InActiveFilter from './inactive/FilterIcon'
@@ -51,6 +53,8 @@ import ProcessIcon from './ProcessIcon'
 import ReloadIcon from './ReloadIcon'
 import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
+import FacebookIcon from './social/FacebookIcon'
+import { GoogleIcon } from './social/GoogleIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
 import StorageIcon from './StorageIcon'
@@ -68,7 +72,11 @@ import WarningIcon from './with-bg/WarningIcon'
 import ZoomIcon from './ZoomIcon'
 
 export {
+	FacebookIcon,
+	GridDotsIcon,
+	GoogleIcon,
 	CancelIcon,
+	CurveArrowIcon,
 	CrownIcon,
 	CreateprofileIcon,
 	CouponIcon,
