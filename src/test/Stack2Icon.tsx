@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Stack2 = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const Stack2Icon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -38,4 +38,4 @@ export const Stack2 = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Stack2)
+export default React.memo(Stack2Icon)

@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const NoneSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const NoneSelectedIconIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const NoneSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props,
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(NoneSelectedIcon)
+export default React.memo(NoneSelectedIconIcon)

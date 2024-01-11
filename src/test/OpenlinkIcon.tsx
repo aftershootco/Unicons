@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Openlink = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const OpenlinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -39,4 +39,4 @@ export const Openlink = React.forwardRef<HTMLSpanElement, Props>((props, forward
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Openlink)
+export default React.memo(OpenlinkIcon)

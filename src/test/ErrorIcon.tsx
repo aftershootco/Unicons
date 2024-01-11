@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Error = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const ErrorIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const Error = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Error)
+export default React.memo(ErrorIcon)

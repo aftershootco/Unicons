@@ -1,7 +1,3 @@
-import CreateprofileIcon from './CreateprofileIcon'
-import CrownbigIcon from './CrownbigIcon'
-import CrownIcon from './CrownIcon'
-import CrowonIcon from './CrowonIcon'
 import CurvearrowIcon from './CurvearrowIcon'
 import ErrorIcon from './ErrorIcon'
 import FacebookColorIcon from './FacebookColorIcon'
@@ -46,10 +42,6 @@ import WhitecrownIcon from './WhitecrownIcon'
 import WorldIcon from './WorldIcon'
 
 export {
-	CreateprofileIcon,
-	CrownIcon,
-	CrownbigIcon,
-	CrowonIcon,
 	CurvearrowIcon,
 	ErrorIcon,
 	FacebookColorIcon,

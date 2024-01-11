@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Rotate90 = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const Rotate90Icon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const Rotate90 = React.forwardRef<HTMLSpanElement, Props>((props, forward
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Rotate90)
+export default React.memo(Rotate90Icon)

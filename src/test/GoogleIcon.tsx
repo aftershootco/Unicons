@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Google = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const GoogleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const Google = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Google)
+export default React.memo(GoogleIcon)

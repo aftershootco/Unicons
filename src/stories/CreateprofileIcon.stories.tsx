@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CrownbigIcon } from '../test'
+import { CreateprofileIcon } from '../Icons'
 
-const meta: Meta<typeof CrownbigIcon> = {
-	component: CrownbigIcon,
-	title: 'Test/CrownbigIcon',
+const meta: Meta<typeof CreateprofileIcon> = {
+	component: CreateprofileIcon,
+	title: 'Icons/CreateprofileIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CrownbigIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CrownbigIcon>
+type Story = StoryObj<typeof CreateprofileIcon>
 
 export const Default: Story = {}
 

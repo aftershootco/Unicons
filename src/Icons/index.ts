@@ -22,6 +22,8 @@ import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 import CopyIcon from './CopyIcon'
 import CouponIcon from './CouponIcon'
+import CreateprofileIcon from './CreateprofileIcon'
+import CrownIcon from './CrownIcon'
 import DeleteIcon from './DeleteIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
@@ -67,6 +69,8 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	CancelIcon,
+	CrownIcon,
+	CreateprofileIcon,
 	CouponIcon,
 	ColorPaletteIcon,
 	CelebrateIcon,

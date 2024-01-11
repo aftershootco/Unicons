@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Lock = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const Lock = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Lock)
+export default React.memo(LockIcon)

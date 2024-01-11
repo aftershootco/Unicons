@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Curvearrow = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CurvearrowIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -30,4 +30,4 @@ export const Curvearrow = React.forwardRef<HTMLSpanElement, Props>((props, forwa
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Curvearrow)
+export default React.memo(CurvearrowIcon)

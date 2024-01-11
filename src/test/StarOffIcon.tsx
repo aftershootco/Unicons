@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const StarOff = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const StarOffIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -38,4 +38,4 @@ export const StarOff = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(StarOff)
+export default React.memo(StarOffIcon)

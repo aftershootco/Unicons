@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const InfoRounded = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const InfoRoundedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -27,4 +27,4 @@ export const InfoRounded = React.forwardRef<HTMLSpanElement, Props>((props, forw
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(InfoRounded)
+export default React.memo(InfoRoundedIcon)

@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const FolderX = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FolderXIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -31,4 +31,4 @@ export const FolderX = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(FolderX)
+export default React.memo(FolderXIcon)

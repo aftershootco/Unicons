@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Planendingalert = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const PlanendingalertIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -38,4 +38,4 @@ export const Planendingalert = React.forwardRef<HTMLSpanElement, Props>((props, 
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Planendingalert)
+export default React.memo(PlanendingalertIcon)

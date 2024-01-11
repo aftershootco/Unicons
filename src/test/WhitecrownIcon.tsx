@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Whitecrown = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const WhitecrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -39,4 +39,4 @@ export const Whitecrown = React.forwardRef<HTMLSpanElement, Props>((props, forwa
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Whitecrown)
+export default React.memo(WhitecrownIcon)

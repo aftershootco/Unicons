@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Thunder = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const ThunderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -37,4 +37,4 @@ export const Thunder = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
   return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
-export default React.memo(Thunder)
+export default React.memo(ThunderIcon)

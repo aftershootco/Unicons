@@ -13,6 +13,7 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     FILE_NAME="${FILE_NAME%.*}"
     # CAP_FILE_NAME="$(tr '[:lower:]' '[:upper:]' <<< ${FILE_NAME:0:1})${FILE_NAME:1}"
     # Replace hyphens with camel case in the file name
+ 
     CAP_FILE_NAME=$(echo "$FILE_NAME" |  awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2));}1' FS='[_-]' OFS='')
 
 
@@ -21,9 +22,12 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     C="Icon.tsx"
     TS_FILE_PATH+="$C"
     # echo $TS_FILE_PATH
-# Specify the file path
+  # Specify the file path
     touch $TS_FILE_PATH
     FILE_PATH=$TS_FILE_PATH
+
+    I="Icon"
+    CAP_FILE_NAME+="$I"
 
     # Use echo with a here document to insert the content
     echo "import React from 'react'" > "$FILE_PATH"
