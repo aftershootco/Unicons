@@ -1,6 +1,3 @@
-import BluecircletickIcon from './BluecircletickIcon'
-import CancelIcon from './CancelIcon'
-import CelebrateIcon from './CelebrateIcon'
 import ColorPaletteIcon from './ColorPaletteIcon'
 import CouponIcon from './CouponIcon'
 import CreateprofileIcon from './CreateprofileIcon'
@@ -51,9 +48,6 @@ import WhitecrownIcon from './WhitecrownIcon'
 import WorldIcon from './WorldIcon'
 
 export {
-	BluecircletickIcon,
-	CancelIcon,
-	CelebrateIcon,
 	ColorPaletteIcon,
 	CouponIcon,
 	CreateprofileIcon,

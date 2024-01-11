@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CancelIcon } from '../test'
+import { CancelIcon } from '../Icons'
 
 const meta: Meta<typeof CancelIcon> = {
 	component: CancelIcon,
-	title: 'Test/CancelIcon',
+	title: 'Icons/CancelIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

@@ -6,7 +6,9 @@ import ArrowLeftIcon from './ArrowLeftIcon'
 import ArrowRightcon from './ArrowRightcon'
 import ArrowUpIcon from './ArrowUpIcon'
 import BorderColorIcon from './BorderColorIcon'
+import CancelIcon from './CancelIcon'
 import CartIcon from './CartIcon'
+import CelebrateIcon from './CelebrateIcon'
 import CheckCircleIcon from './CheckCircleIcon'
 import CheckIcon from './CheckIcon'
 import ChevronDownIcon from './ChevronDownIcon'
@@ -52,6 +54,7 @@ import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
+import CircleTickIcon from './with-bg/CircleTickIcon'
 import ErrorIcon from './with-bg/ErrorIcon'
 import ExitAppIcon from './with-bg/ExitAppIcon'
 import InfoIcon from './with-bg/InfoIcon'
@@ -61,7 +64,10 @@ import WarningIcon from './with-bg/WarningIcon'
 import ZoomIcon from './ZoomIcon'
 
 export {
+	CancelIcon,
+	CelebrateIcon,
 	AppleIcon,
+	CircleTickIcon,
 	AlertIcon,
 	ErrorIcon,
 	CheckCircleIcon,
