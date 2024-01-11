@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { PrebuiltIcon } from '../test'
+import { SadfaceIcon } from '../../Icons'
 
-const meta: Meta<typeof PrebuiltIcon> = {
-	component: PrebuiltIcon,
-	title: 'Test/PrebuiltIcon',
+const meta: Meta<typeof SadfaceIcon> = {
+	component: SadfaceIcon,
+	title: 'icons/SadfaceIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof PrebuiltIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof PrebuiltIcon>
+type Story = StoryObj<typeof SadfaceIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

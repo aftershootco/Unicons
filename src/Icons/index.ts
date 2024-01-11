@@ -38,9 +38,11 @@ import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import ColorIcon from './inactive/ColorIcon'
 import InActiveFilter from './inactive/FilterIcon'
+import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
+import SadfaceIcon from './inactive/SadfaceIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
@@ -58,13 +60,17 @@ import NoneIcon from './NoneIcon'
 import NoneSelectedIcon from './NoneSelectedIcon'
 import OpenlinkIcon from './OpenlinkIcon'
 import ProcessIcon from './ProcessIcon'
+import RecullIcon from './RecullIcon'
 import ReloadIcon from './ReloadIcon'
+import Rotate90Icon from './Rotate90Icon'
+import ScissorsIcon from './ScissorsIcon'
 import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
 import { GoogleIcon } from './social/GoogleIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
+import Stack2Icon from './Stack2Icon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 import CircleTickIcon from './with-bg/CircleTickIcon'
@@ -75,12 +81,20 @@ import ExitAppIcon from './with-bg/ExitAppIcon'
 import ImageNotFound from './with-bg/ImageNotFound'
 import InfoIcon from './with-bg/InfoIcon'
 import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
+import PlayIcon from './with-bg/PlayIcon'
 import SourceNotFoundIcon from './with-bg/SourceNotFound'
 import WarningIcon from './with-bg/WarningIcon'
 import ZoomIcon from './ZoomIcon'
 
 export {
+	Stack2Icon,
+	GlobeIcon,
+	ScissorsIcon,
+	Rotate90Icon,
+	SadfaceIcon,
+	RecullIcon,
 	FacebookIcon,
+	PlayIcon,
 	OpenlinkIcon,
 	NoneSelectedIcon,
 	NoneIcon,

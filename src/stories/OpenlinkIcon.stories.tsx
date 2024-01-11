@@ -5,7 +5,7 @@ import { OpenlinkIcon } from '../Icons'
 
 const meta: Meta<typeof OpenlinkIcon> = {
 	component: OpenlinkIcon,
-	title: 'Test/OpenlinkIcon',
+	title: 'icons/OpenlinkIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

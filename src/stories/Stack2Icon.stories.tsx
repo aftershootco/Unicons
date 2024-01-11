@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { Stack2Icon } from '../test'
+import { Stack2Icon } from '../Icons'
 
 const meta: Meta<typeof Stack2Icon> = {
 	component: Stack2Icon,
-	title: 'Test/Stack2Icon',
+	title: 'icons/Stack2Icon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
