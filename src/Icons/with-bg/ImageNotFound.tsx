@@ -1,27 +1,19 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type Props = IconProps & {
 	bgColor?: string
 }
 
-export const ImageNotFound = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const ImageNotFound = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg
-			width={size}
-			height={(96 / 97) * size}
-			viewBox='0 0 97 96'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			{...restProps}
-			ref={forwardedRef}
-		>
+		<svg width={size} height={(96 / 97) * size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13360_25254)'>
 				<path d='M24.5 24L72.5 72' stroke={color} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
@@ -56,7 +48,7 @@ export const ImageNotFound = React.forwardRef<SVGSVGElement, Props>((props, forw
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ImageNotFound)

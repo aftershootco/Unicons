@@ -1,17 +1,17 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type Props = IconProps & { bgColor?: string }
 
-export const DescNumIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const DescNumIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect width='24' height='24' rx='4' fill={bgColor} />
 			<g clip-path='url(#clip0_11845_14530)'>
 				<path d='M5.33398 14.5L7.83398 17L10.334 14.5' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
@@ -43,7 +43,7 @@ export const DescNumIcon = React.forwardRef<SVGSVGElement, Props>((props, forwar
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(DescNumIcon)

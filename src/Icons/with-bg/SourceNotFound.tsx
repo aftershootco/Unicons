@@ -7,13 +7,13 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const SourceNotFoundIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const SourceNotFoundIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g filter='url(#filter0_b_14013_43614)'>
 				<rect width='20' height='20' rx='6' fill={bgColor} fill-opacity='0.3' />
 				<g clip-path='url(#clip0_14013_43614)'>
@@ -49,7 +49,7 @@ export const SourceNotFoundIcon = React.forwardRef<SVGSVGElement, Props>((props,
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(SourceNotFoundIcon)

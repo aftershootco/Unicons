@@ -1,17 +1,17 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type Props = IconProps & { bgColor?: string }
 
-export const DescAlphaIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect width='24' height='24' rx='4' fill={bgColor} />
 			<g clip-path='url(#clip0_11845_14540)'>
 				<path
@@ -32,7 +32,7 @@ export const DescAlphaIcon = React.forwardRef<SVGSVGElement, Props>((props, forw
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(DescAlphaIcon)

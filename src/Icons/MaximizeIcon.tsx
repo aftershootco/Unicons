@@ -3,13 +3,13 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-export const MaximizeIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
+export const MaximizeIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12221_38684)'>
 				<path
 					d='M5 8V6.5C5 6.10218 5.15804 5.72064 5.43934 5.43934C5.72064 5.15804 6.10218 5 6.5 5H8'
@@ -44,7 +44,7 @@ export const MaximizeIcon = React.forwardRef<SVGSVGElement, IconProps>((props, f
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(MaximizeIcon)

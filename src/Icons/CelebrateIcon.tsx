@@ -3,23 +3,9 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-type Props = IconProps & {
-	bgColor?: string
-	inActive?: boolean
-}
-
-export const Celebrate = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Celebrate = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	//props
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		...restProps
-	} = props
-
-	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
@@ -45,7 +31,7 @@ export const Celebrate = React.forwardRef<SVGSVGElement, Props>((props, forwarde
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(Celebrate)

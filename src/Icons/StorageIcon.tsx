@@ -3,13 +3,13 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-export const StorageIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
+export const StorageIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_14619_11844)'>
 				<path
 					d='M34.6214 23.9413C45.1681 23.456 53.3334 20.0853 53.3334 16C53.3334 11.5813 43.7814 8 32.0001 8C27.5707 8 23.4561 8.50667 20.0454 9.37333M12.6241 12.648C11.3681 13.6667 10.6667 14.8027 10.6667 16C10.6667 19.2533 15.8507 22.056 23.2907 23.3067'
@@ -42,7 +42,7 @@ export const StorageIcon = React.forwardRef<SVGSVGElement, IconProps>((props, fo
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(StorageIcon)

@@ -1,12 +1,15 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
+import DEFAULT_ICON from '../constant'
 
-export const CopyIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
+export const CopyIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+	// props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+
 	// VARIANTS
-
 	const primary = (
-		<svg width={(15 / 6) * size} height={size} viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={(15 / 6) * size} height={size} viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<path
 				d='M12.5001 4.66602H5.83341C4.91294 4.66602 4.16675 5.41221 4.16675 6.33268V12.9993C4.16675 13.9198 4.91294 14.666 5.83341 14.666H12.5001C13.4206 14.666 14.1667 13.9198 14.1667 12.9993V6.33268C14.1667 5.41221 13.4206 4.66602 12.5001 4.66602Z'
 				stroke={color}
@@ -22,7 +25,7 @@ export const CopyIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default CopyIcon

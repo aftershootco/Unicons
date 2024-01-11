@@ -7,13 +7,13 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const ErrorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const ErrorIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.352539' y='0.702148' width='28' height='28' rx='14' fill={bgColor} />
 			<g clip-path='url(#clip0_13276_22829)'>
 				<path d='M14.3525 17.2021V17.2105M14.3525 12.2021V13.8688V12.2021Z' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
@@ -32,7 +32,7 @@ export const ErrorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarde
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ErrorIcon)

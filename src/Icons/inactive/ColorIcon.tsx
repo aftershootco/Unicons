@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-export const ColorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const ColorIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,12 +15,12 @@ export const ColorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<circle cx='6' cy='6' r='6' fill={modifiedColor} />
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ColorIcon)

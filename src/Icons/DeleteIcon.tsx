@@ -1,12 +1,15 @@
 import React from 'react'
 import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
+import DEFAULT_ICON from '../constant'
 
-export const DeleteIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant = 'primary', color = '#fff', size = 24, ...props }, forwardedRef) => {
+export const DeleteIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+	// props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+
 	// VARIANTS
-
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.5' width='96' height='96' rx='48' fill={color} fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13360_17518)'>
 				<path d='M27.1667 34.6665H69.8334' stroke={color} stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
@@ -35,7 +38,7 @@ export const DeleteIcon = React.forwardRef<SVGSVGElement, IconProps>(({ variant 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(DeleteIcon)

@@ -3,13 +3,13 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-export const ListSelectedIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
+export const ListSelectedIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='#E2E2E2' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 22 22' fill='#E2E2E2' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12220_36387)'>
 				<path
 					d='M15.5 5H6.5C5.67157 5 5 5.67157 5 6.5V8C5 8.82843 5.67157 9.5 6.5 9.5H15.5C16.3284 9.5 17 8.82843 17 8V6.5C17 5.67157 16.3284 5 15.5 5Z'
@@ -33,7 +33,7 @@ export const ListSelectedIcon = React.forwardRef<SVGSVGElement, IconProps>((prop
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ListSelectedIcon)

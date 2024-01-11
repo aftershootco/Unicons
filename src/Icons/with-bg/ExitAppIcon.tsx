@@ -7,13 +7,13 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const ExitAppIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const ExitAppIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg' {...props} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13272_22757)'>
 				<path
@@ -29,7 +29,7 @@ export const ExitAppIcon = React.forwardRef<SVGSVGElement, Props>((props, forwar
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ExitAppIcon)

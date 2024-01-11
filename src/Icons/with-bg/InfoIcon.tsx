@@ -7,13 +7,13 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const InfoIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const InfoIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 	// variants
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12231_35410)'>
 				<path
 					d='M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z'
@@ -32,7 +32,7 @@ export const InfoIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_11906_20062)'>
 				<path
 					d='M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z'
@@ -52,7 +52,7 @@ export const InfoIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(InfoIcon)

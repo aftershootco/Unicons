@@ -7,20 +7,12 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const NetworkErrorIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const NetworkErrorIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 	// variants
 	const primary = (
-		<svg
-			width={size}
-			height={(96 / 97) * size}
-			viewBox='0 0 97 96'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			{...restProps}
-			ref={forwardedRef}
-		>
+		<svg width={size} height={(96 / 97) * size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13784_24779)'>
 				<path d='M48.5 64H48.5267' stroke={color} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
@@ -55,7 +47,7 @@ export const NetworkErrorIcon = React.forwardRef<SVGSVGElement, Props>((props, f
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(NetworkErrorIcon)

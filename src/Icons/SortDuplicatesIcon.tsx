@@ -3,13 +3,13 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-export const SortDuplicatesIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
+export const SortDuplicatesIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12220_36391)'>
 				<path
 					d='M16.25 5H5.75C5.33579 5 5 5.33579 5 5.75V8.75C5 9.16421 5.33579 9.5 5.75 9.5H16.25C16.6642 9.5 17 9.16421 17 8.75V5.75C17 5.33579 16.6642 5 16.25 5Z'
@@ -39,7 +39,7 @@ export const SortDuplicatesIcon = React.forwardRef<SVGSVGElement, IconProps>((pr
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(SortDuplicatesIcon)

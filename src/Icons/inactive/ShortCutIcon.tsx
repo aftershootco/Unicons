@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-export const ShortCutIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const ShortCutIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,7 +15,7 @@ export const ShortCutIcon = React.forwardRef<SVGSVGElement, Props>((props, forwa
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12903_26956)'>
 				<path
 					d='M6.66732 15.8333C8.50827 15.8333 10.0007 14.3409 10.0007 12.5C10.0007 10.659 8.50827 9.16666 6.66732 9.16666C4.82637 9.16666 3.33398 10.659 3.33398 12.5C3.33398 14.3409 4.82637 15.8333 6.66732 15.8333Z'
@@ -36,7 +36,7 @@ export const ShortCutIcon = React.forwardRef<SVGSVGElement, Props>((props, forwa
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(ShortCutIcon)

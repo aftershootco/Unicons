@@ -31,3 +31,9 @@ export const Large: Story = {
 		size: 30,
 	},
 }
+
+export const inActive: Story = {
+	args: {
+		onClick: () => console.log('yo'),
+	},
+}

@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-export const LockIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,7 +15,7 @@ export const LockIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_14097_44372)'>
 				<path
 					d='M14.166 9.16602H5.83268C4.91221 9.16602 4.16602 9.91221 4.16602 10.8327V15.8327C4.16602 16.7532 4.91221 17.4993 5.83268 17.4993H14.166C15.0865 17.4993 15.8327 16.7532 15.8327 15.8327V10.8327C15.8327 9.91221 15.0865 9.16602 14.166 9.16602Z'
@@ -44,7 +44,7 @@ export const LockIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(LockIcon)

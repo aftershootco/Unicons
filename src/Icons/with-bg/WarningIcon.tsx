@@ -7,13 +7,13 @@ type Props = IconProps & {
 	bgColor?: string
 }
 
-export const WarningIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const WarningIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...restProps} ref={forwardedRef}>
+		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g filter='url(#filter0_b_14184_47800)'>
 				<rect width='20' height='20' rx='6' fill={bgColor} />
 				<g clip-path='url(#clip0_14184_47800)'>
@@ -69,7 +69,7 @@ export const WarningIcon = React.forwardRef<SVGSVGElement, Props>((props, forwar
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(WarningIcon)
