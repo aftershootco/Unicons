@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { NoneSelectedIconIcon } from '../test'
+import { NoneIcon } from '../Icons'
 
-const meta: Meta<typeof NoneSelectedIconIcon> = {
-	component: NoneSelectedIconIcon,
-	title: 'Test/NoneSelectedIconIcon',
+const meta: Meta<typeof NoneIcon> = {
+	component: NoneIcon,
+	title: 'icons/NoneIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof NoneSelectedIconIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof NoneSelectedIconIcon>
+type Story = StoryObj<typeof NoneIcon>
 
 export const Default: Story = {}
 

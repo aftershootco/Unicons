@@ -1,17 +1,3 @@
-import HappyfaceIcon from '../Icons/inactive/HappyfaceIcon'
-import HomeIcon from './HomeIcon'
-import InfoiconIcon from './InfoiconIcon'
-import InfoRoundedIcon from './InfoRoundedIcon'
-import LoaderIcon from './LoaderIcon'
-import LockFillIcon from './LockFillIcon'
-import LockIcon from './LockIcon'
-import LockiconIcon from './LockiconIcon'
-import LogoBlankIcon from './LogoBlankIcon'
-import LogoIcon from './LogoIcon'
-import MoveiconIcon from './MoveiconIcon'
-import NoneIconIcon from './NoneIconIcon'
-import NoneSelectedIconIcon from './NoneSelectedIconIcon'
-import OpenlinkIcon from './OpenlinkIcon'
 import PlanendingalertIcon from './PlanendingalertIcon'
 import PlayIcon from './PlayIcon'
 import PrebuiltIcon from './PrebuiltIcon'
@@ -35,20 +21,6 @@ import WhitecrownIcon from './WhitecrownIcon'
 import WorldIcon from './WorldIcon'
 
 export {
-	HappyfaceIcon,
-	HomeIcon,
-	InfoRoundedIcon,
-	InfoiconIcon,
-	LoaderIcon,
-	LockFillIcon,
-	LockIcon,
-	LockiconIcon,
-	LogoBlankIcon,
-	LogoIcon,
-	MoveiconIcon,
-	NoneIconIcon,
-	NoneSelectedIconIcon,
-	OpenlinkIcon,
 	PlanendingalertIcon,
 	PlayIcon,
 	PrebuiltIcon,

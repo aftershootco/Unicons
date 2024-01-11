@@ -32,27 +32,42 @@ export const InfoIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<g clip-path='url(#clip0_11906_20062)'>
+		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<g clip-path='url(#clip0_4819_58299)'>
 				<path
-					d='M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z'
+					d='M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z'
 					stroke={color}
-					stroke-width='2'
-					stroke-linecap='square'
+					stroke-width='1.33333'
+					stroke-linecap='round'
 					stroke-linejoin='round'
 				/>
-				<path d='M11 7.33398H11.0092' stroke={color} stroke-width='2' stroke-linecap='square' stroke-linejoin='round' />
-				<path d='M10.084 11H11.0007V14.6667H11.9173' stroke={color} stroke-width='2' stroke-linecap='square' stroke-linejoin='round' />
+				<path d='M8 5.33203H8.00667' stroke={color} stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round' />
+				<path d='M7.33325 8H7.99992V10.6667H8.66659' stroke={color} stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round' />
 			</g>
 			<defs>
-				<clipPath id='clip0_11906_20062'>
-					<rect width='22' height='22' fill='white' />
+				<clipPath id='clip0_4819_58299'>
+					<rect width='16' height='16' fill='white' />
 				</clipPath>
 			</defs>
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	const tertiary = (
+		<svg width={size} height={size} viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<rect x='.5' y='.5' width='16' height='16' rx='8' stroke={color} />
+			<path
+				d='M8.457 5a.457.457 0 1 1 0 .914.457.457 0 0 1 0-.914Z'
+				fill={color}
+				stroke={color}
+				stroke-width='.5'
+				stroke-linecap='round'
+				stroke-linejoin='round'
+			/>
+			<path d='M8.46 11.4V7.743' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
+		</svg>
+	)
+
+	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(InfoIcon)

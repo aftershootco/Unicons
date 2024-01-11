@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { HappyfaceIcon } from '../../test'
+import { HappyfaceIcon } from '../../Icons'
 
 const meta: Meta<typeof HappyfaceIcon> = {
 	component: HappyfaceIcon,

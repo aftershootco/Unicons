@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LoaderIcon } from '../test'
+import { AftershootLogoWhite } from '../Icons'
 
-const meta: Meta<typeof LoaderIcon> = {
-	component: LoaderIcon,
-	title: 'Test/LoaderIcon',
+const meta: Meta<typeof AftershootLogoWhite> = {
+	component: AftershootLogoWhite,
+	title: 'icons/AftershootLogoWhite',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof LoaderIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof LoaderIcon>
+type Story = StoryObj<typeof AftershootLogoWhite>
 
 export const Default: Story = {}
 

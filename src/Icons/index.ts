@@ -1,5 +1,6 @@
 import AlertIcon from '../xx/AlertIconDD'
 import AfterShootLogo from './AfterShootLogo'
+import AftershootLogoWhite from './AftershootLogoWhite'
 import ArrowDownIcon from './ArrowDownIcon'
 import ArrowFillIcon from './ArrowFillIcon'
 import ArrowLeftIcon from './ArrowLeftIcon'
@@ -34,8 +35,10 @@ import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
 import { GridDotsIcon } from './GridDotsIcon'
 import GridIcon from './GridIcon'
+import HomeIcon from './HomeIcon'
 import ColorIcon from './inactive/ColorIcon'
 import InActiveFilter from './inactive/FilterIcon'
+import HappyfaceIcon from './inactive/HappyfaceIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
@@ -44,11 +47,16 @@ import SprayCanIcon from './inactive/SprayCanIcon'
 import StarIcon from './inactive/StarIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
+import LoaderIcon from './LoaderIcon'
 import LoopIcon from './LoopIcon'
 import MaximizeIcon from './MaximizeIcon'
 import MenuIcon from './MenuIcon'
 import MouseLeftSelected from './MouseLeftSelected'
 import MouseRightSelected from './MouseRightSelected'
+import MoveIcon from './MoveIcon'
+import NoneIcon from './NoneIcon'
+import NoneSelectedIcon from './NoneSelectedIcon'
+import OpenlinkIcon from './OpenlinkIcon'
 import ProcessIcon from './ProcessIcon'
 import ReloadIcon from './ReloadIcon'
 import ShareIcon from './ShareIcon'
@@ -73,6 +81,14 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	FacebookIcon,
+	OpenlinkIcon,
+	NoneSelectedIcon,
+	NoneIcon,
+	MoveIcon,
+	AftershootLogoWhite,
+	LoaderIcon,
+	HomeIcon,
+	HappyfaceIcon,
 	GridDotsIcon,
 	GoogleIcon,
 	CancelIcon,
