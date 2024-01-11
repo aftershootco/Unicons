@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Success = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Success = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -29,7 +29,7 @@ export const Success = React.forwardRef<SVGSVGElement, Props>((props, forwardedR
 <path d="M5 8.00065L6.66667 9.66732L10 6.33398" stroke="#474747" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Success)

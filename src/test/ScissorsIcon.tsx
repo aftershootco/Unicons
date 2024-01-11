@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Scissors = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Scissors = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -32,7 +32,7 @@ export const Scissors = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 </g>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Scissors)

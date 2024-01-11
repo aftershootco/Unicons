@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Happyface = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Happyface = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -37,7 +37,7 @@ export const Happyface = React.forwardRef<SVGSVGElement, Props>((props, forwarde
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Happyface)

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ColorPaletteIcon } from '../test'
+import { ColorPaletteIcon } from '../Icons'
 
 const meta: Meta<typeof ColorPaletteIcon> = {
 	component: ColorPaletteIcon,
-	title: 'Test/ColorPaletteIcon',
+	title: 'icons/ColorPaletteIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -32,7 +32,7 @@ export const Large: Story = {
 	},
 }
 
-export const inActive: Story = {
+export const onClick: Story = {
 	args: {
 		onClick: () => console.log('yo'),
 	},

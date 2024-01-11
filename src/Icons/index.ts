@@ -17,9 +17,11 @@ import ChevronRightIcon from './ChevronRightIcon'
 import ChevronUpIcon from './ChevronUpIcon'
 import ClearIcon from './ClearIcon'
 import ClockIcon from './ClockIcon'
+import ColorPaletteIcon from './ColorPaletteIcon'
 import ContactSupportIcon from './ContactSupportIcon'
 import ContentCopyIcon from './ContentCopyIcon'
 import CopyIcon from './CopyIcon'
+import CouponIcon from './CouponIcon'
 import DeleteIcon from './DeleteIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
@@ -65,6 +67,8 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	CancelIcon,
+	CouponIcon,
+	ColorPaletteIcon,
 	CelebrateIcon,
 	AppleIcon,
 	CircleTickIcon,

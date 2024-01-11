@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Crowon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Crowon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -34,7 +34,7 @@ export const Crowon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Crowon)

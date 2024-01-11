@@ -1,5 +1,3 @@
-import ColorPaletteIcon from './ColorPaletteIcon'
-import CouponIcon from './CouponIcon'
 import CreateprofileIcon from './CreateprofileIcon'
 import CrownbigIcon from './CrownbigIcon'
 import CrownIcon from './CrownIcon'
@@ -48,8 +46,6 @@ import WhitecrownIcon from './WhitecrownIcon'
 import WorldIcon from './WorldIcon'
 
 export {
-	ColorPaletteIcon,
-	CouponIcon,
 	CreateprofileIcon,
 	CrownIcon,
 	CrownbigIcon,

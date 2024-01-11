@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Recull = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Recull = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -33,7 +33,7 @@ export const Recull = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 </g>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Recull)

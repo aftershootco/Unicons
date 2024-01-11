@@ -3,7 +3,7 @@ import { IconProps } from '../../types/Icons/types'
 import BaseIcon from '../components/BaseIcon'
 import DEFAULT_ICON from '../constant'
 
-export const ColorPalette = React.forwardRef<HTMLDivElement, IconProps>((props, forwardedRef) => {
+export const ColorPalette = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 

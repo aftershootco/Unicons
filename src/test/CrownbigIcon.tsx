@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Crownbig = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Crownbig = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -28,7 +28,7 @@ export const Crownbig = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 <path d="M8.73619 35.4221C8.73619 34.5384 9.45252 33.8221 10.3362 33.8221H39.1357C40.0193 33.8221 40.7356 34.5384 40.7356 35.4221V37.9363H8.73619V35.4221Z" fill="#ABABAB"/>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Crownbig)

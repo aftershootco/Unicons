@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Createprofile = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Createprofile = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -38,7 +38,7 @@ export const Createprofile = React.forwardRef<SVGSVGElement, Props>((props, forw
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Createprofile)

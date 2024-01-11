@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Crown = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Crown = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -36,7 +36,7 @@ export const Crown = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Crown)

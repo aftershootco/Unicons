@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Moveicon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Moveicon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -36,7 +36,7 @@ export const Moveicon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Moveicon)

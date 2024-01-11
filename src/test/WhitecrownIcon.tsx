@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Whitecrown = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Whitecrown = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -36,7 +36,7 @@ export const Whitecrown = React.forwardRef<SVGSVGElement, Props>((props, forward
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Whitecrown)

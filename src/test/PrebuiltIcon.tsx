@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Prebuilt = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Prebuilt = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -38,7 +38,7 @@ export const Prebuilt = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Prebuilt)

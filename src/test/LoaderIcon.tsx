@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Loader = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Loader = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -34,7 +34,7 @@ export const Loader = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 <path d="M5.81221 6.53242L4.19971 4.91992" stroke="#ABABAB" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Loader)

@@ -36,7 +36,7 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     echo "  inActive?: boolean" >> "$FILE_PATH"
     echo "}" >> "$FILE_PATH"
     echo "" >> "$FILE_PATH"
-    echo "export const $CAP_FILE_NAME = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {" >> "$FILE_PATH"
+    echo "export const $CAP_FILE_NAME = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {" >> "$FILE_PATH"
     echo "  //props" >> "$FILE_PATH"
     echo "  const {" >> "$FILE_PATH"
     echo "    variant = 'primary'," >> "$FILE_PATH"
@@ -56,7 +56,7 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     cat $svg_file >> $FILE_PATH
 
     echo ")" >> "$FILE_PATH"
-    echo "  return <BaseIcon variants={{ primary }} variant={variant} />" >> "$FILE_PATH"
+    echo "  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />" >> "$FILE_PATH"
     echo "})" >> "$FILE_PATH"
     echo "" >> "$FILE_PATH"
     echo "export default React.memo($CAP_FILE_NAME)" >> "$FILE_PATH"

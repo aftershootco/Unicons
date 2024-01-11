@@ -8,7 +8,7 @@ type Props = IconProps & {
   inActive?: boolean
 }
 
-export const Thunder = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const Thunder = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
   //props
   const {
     variant = 'primary',
@@ -34,7 +34,7 @@ export const Thunder = React.forwardRef<SVGSVGElement, Props>((props, forwardedR
 </defs>
 </svg>
 )
-  return <BaseIcon variants={{ primary }} variant={variant} />
+  return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef}  />
 })
 
 export default React.memo(Thunder)
