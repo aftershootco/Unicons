@@ -1,4 +1,3 @@
-import DragFolderIcon from './DragFolderIcon'
 import DragLrcIcon from './DragLrcIcon'
 import DragLrIcon from './DragLrIcon'
 import EditAlbumNameIcon from './EditAlbumNameIcon'
@@ -68,7 +67,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	DragFolderIcon,
 	DragLrIcon,
 	DragLrcIcon,
 	EditAlbumNameIcon,
