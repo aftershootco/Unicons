@@ -1,9 +1,8 @@
 import React from 'react'
-import { IconVariant } from '../../types/Icons/types'
 
 type BaseIconProps = {
 	variants: { [key: string]: JSX.Element }
-	variant: IconVariant
+	variant: any
 	iconLabel?: string
 }
 

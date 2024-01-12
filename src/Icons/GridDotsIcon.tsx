@@ -7,7 +7,7 @@ type Props = IconProps & {
 	// inActive?: boolean
 }
 
-export const GridDotsIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const GridDotsIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

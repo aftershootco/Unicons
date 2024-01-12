@@ -33,7 +33,7 @@ import EditPhotoIcon from './EditPhotoIcon'
 import ExportIcon from './ExportIcon'
 import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
-import { GridDotsIcon } from './GridDotsIcon'
+import GridDotsIcon from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import CloseIcon from './inactive/CloseIcon'
@@ -43,8 +43,10 @@ import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
+import { default as MaximizeIcon, default as MinimizeIcon } from './inactive/MaximizeIcon'
 import MoneyIcon from './inactive/MoneyIcon'
 import PersonIcon from './inactive/PersonIcon'
+import QuestionMarkIcon from './inactive/QuestionMarkIcon'
 import SadfaceIcon from './inactive/SadfaceIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
@@ -56,7 +58,6 @@ import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoaderIcon from './LoaderIcon'
 import LoopIcon from './LoopIcon'
-import MaximizeIcon from './MaximizeIcon'
 import MenuIcon from './MenuIcon'
 import MouseLeftSelected from './MouseLeftSelected'
 import MouseRightSelected from './MouseRightSelected'
@@ -72,10 +73,13 @@ import ScissorsIcon from './ScissorsIcon'
 import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
-import { GoogleIcon } from './social/GoogleIcon'
+import GoogleIcon from './social/GoogleIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
+import HighPowerIcon from './special/HighPowerIcon'
+import LowPowerIcon from './special/LowPowerIcon'
+import MidPowerIcon from './special/MidPowerIcon'
 import ThunderIcon from './special/ThunderIcon'
 import Stack2Icon from './Stack2Icon'
 import StorageIcon from './StorageIcon'
@@ -95,6 +99,11 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	StarOffIcon,
+	MidPowerIcon,
+	QuestionMarkIcon,
+	MinimizeIcon,
+	LowPowerIcon,
+	HighPowerIcon,
 	CloseIcon,
 	TwitterIcon,
 	ThunderIcon,

@@ -7,7 +7,7 @@ type Props = Omit<IconProps, 'color'> & {
 	bgColor?: string
 }
 
-export const GoogleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const GoogleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
