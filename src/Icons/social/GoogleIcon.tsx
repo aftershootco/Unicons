@@ -3,23 +3,13 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type Props = IconProps & {
+type Props = Omit<IconProps, 'color'> & {
 	bgColor?: string
-	inActive?: boolean
 }
 
 export const GoogleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		...restProps
-	} = props
-
-	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
+	const { variant = 'primary', bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (

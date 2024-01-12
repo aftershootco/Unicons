@@ -35,10 +35,16 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     echo "import BaseIcon from '../components/BaseIcon'" >> "$FILE_PATH"
     echo "import DEFAULT_ICON from '../constant'" >> "$FILE_PATH"
     echo "" >> "$FILE_PATH"
-    echo "type Props = IconProps & {" >> "$FILE_PATH"
-    echo "  bgColor?: string" >> "$FILE_PATH"
-    echo "  inActive?: boolean" >> "$FILE_PATH"
-    echo "}" >> "$FILE_PATH"
+
+    echo "type IconVariant = 'primary' | 'secondary' | 'tertiary';" >> "$FILE_PATH"
+
+    echo "type Props = Omit<IconProps, 'variant'> & {" >> "$FILE_PATH"
+    echo "  variant?: IconVariant;" >> "$FILE_PATH"
+    echo "  bgColor?: string;" >> "$FILE_PATH"
+    echo "  inActive?: boolean;" >> "$FILE_PATH"
+    echo "};" >> "$FILE_PATH"
+
+
     echo "" >> "$FILE_PATH"
     echo "export const $CAP_FILE_NAME = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {" >> "$FILE_PATH"
     echo "  //props" >> "$FILE_PATH"

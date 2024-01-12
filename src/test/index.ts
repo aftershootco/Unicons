@@ -1,27 +1,11 @@
-import StackIcon from './StackIcon'
-import StarIcon from './StarIcon'
-import StarOffIcon from './StarOffIcon'
-import Step1Icon from './Step1Icon'
-import Step2Icon from './Step2Icon'
-import Step3Icon from './Step3Icon'
-import SuccessIcon from './SuccessIcon'
-import ThunderIcon from './ThunderIcon'
-import TickiconIcon from './TickiconIcon'
-import TwitterColorIcon from './TwitterColorIcon'
-import WhitecrownIcon from './WhitecrownIcon'
-import WorldIcon from './WorldIcon'
+import HighEnabledIcon from './HighEnabledIcon'
+import HighIcon from './HighIcon'
+import LowEnabledIcon from './LowEnabledIcon'
+import LowIcon from './LowIcon'
+import MaximizeIcon from './MaximizeIcon'
+import MidEnabledIcon from './MidEnabledIcon'
+import MidIcon from './MidIcon'
+import MinimizeIcon from './MinimizeIcon'
+import UnmaximizeIcon from './UnmaximizeIcon'
 
-export {
-	StackIcon,
-	StarIcon,
-	StarOffIcon,
-	Step1Icon,
-	Step2Icon,
-	Step3Icon,
-	SuccessIcon,
-	ThunderIcon,
-	TickiconIcon,
-	TwitterColorIcon,
-	WhitecrownIcon,
-	WorldIcon,
-}
+export { HighEnabledIcon, HighIcon, LowEnabledIcon, LowIcon, MaximizeIcon, MidEnabledIcon, MidIcon, MinimizeIcon, UnmaximizeIcon }

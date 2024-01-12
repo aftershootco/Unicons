@@ -36,17 +36,22 @@ import FriendsIcon from './FriendsIcon'
 import { GridDotsIcon } from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
+import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
+import MoneyIcon from './inactive/MoneyIcon'
+import PersonIcon from './inactive/PersonIcon'
 import SadfaceIcon from './inactive/SadfaceIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
+import StackIcon from './inactive/StackIcon'
 import StarIcon from './inactive/StarIcon'
+import StarOffIcon from './inactive/StarOffIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoaderIcon from './LoaderIcon'
@@ -68,8 +73,10 @@ import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
 import { GoogleIcon } from './social/GoogleIcon'
+import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import EyeIcon from './special/EyeIcon'
+import ThunderIcon from './special/ThunderIcon'
 import Stack2Icon from './Stack2Icon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
@@ -87,7 +94,14 @@ import WarningIcon from './with-bg/WarningIcon'
 import ZoomIcon from './ZoomIcon'
 
 export {
+	StarOffIcon,
+	CloseIcon,
+	TwitterIcon,
+	ThunderIcon,
+	MoneyIcon,
+	PersonIcon,
 	Stack2Icon,
+	StackIcon,
 	GlobeIcon,
 	ScissorsIcon,
 	Rotate90Icon,

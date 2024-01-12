@@ -3,7 +3,11 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-export const Apple = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+type Props = IconProps & {
+	bgColor?: string
+}
+
+export const Apple = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
