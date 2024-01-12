@@ -4,7 +4,7 @@ import GridIcon from '../../Icons/GridIcon'
 
 const meta: Meta<typeof GridIcon> = {
 	component: GridIcon,
-	title: 'With Background/GridIcon',
+	title: 'Background/GridIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

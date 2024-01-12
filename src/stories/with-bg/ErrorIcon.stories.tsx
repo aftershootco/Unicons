@@ -5,7 +5,7 @@ import { ErrorIcon } from '../../Icons'
 
 const meta: Meta<typeof ErrorIcon> = {
 	component: ErrorIcon,
-	title: 'With Background/ErrorIcon',
+	title: 'Background/ErrorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

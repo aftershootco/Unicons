@@ -5,7 +5,7 @@ import { SourceNotFoundIcon } from '../../Icons'
 
 const meta: Meta<typeof SourceNotFoundIcon> = {
 	component: SourceNotFoundIcon,
-	title: 'Icons/SourceNotFoundIcon',
+	title: 'Background/SourceNotFoundIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

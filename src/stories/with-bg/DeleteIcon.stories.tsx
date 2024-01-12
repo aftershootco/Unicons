@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CircleTickIcon } from '../../Icons'
+import { DeleteIcon } from '../../Icons'
 
-const meta: Meta<typeof CircleTickIcon> = {
-	component: CircleTickIcon,
-	title: 'with background/CircleTickIcon',
+const meta: Meta<typeof DeleteIcon> = {
+	component: DeleteIcon,
+	title: 'Icons/DeleteIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CircleTickIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CircleTickIcon>
+type Story = StoryObj<typeof DeleteIcon>
 
 export const Default: Story = {}
 
@@ -28,7 +28,7 @@ export const Red: Story = {
 
 export const yellowBg: Story = {
 	args: {
-		color: 'black',
+		color: 'white',
 		bgColor: 'yellow',
 	},
 }

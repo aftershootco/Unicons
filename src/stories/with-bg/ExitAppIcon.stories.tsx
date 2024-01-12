@@ -5,7 +5,7 @@ import { ExitAppIcon } from '../../Icons'
 
 const meta: Meta<typeof ExitAppIcon> = {
 	component: ExitAppIcon,
-	title: 'With Background/ExitAppIcon',
+	title: 'Background/ExitAppIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

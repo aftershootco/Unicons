@@ -14,15 +14,7 @@ export const ThunderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 
 	// variants
 	const primary = (
-		<svg
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			xmlnsXlink='http://www.w3.org/1999/xlink'
-			{...props}
-		>
+		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>
 			<rect width={24} height={24} rx={12} fill={bgColor} fillOpacity={0.2} />
 			<rect x={4} y={4} width={16} height={16} fill='url(#pattern0)' />
 			<defs>

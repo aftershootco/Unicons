@@ -1,18 +1,3 @@
-import ArrowRightIcon from './ArrowRightIcon'
-import CaptureOneIcon from './CaptureOneIcon'
-import CheckiconIcon from './CheckiconIcon'
-import CircleCheck2Icon from './CircleCheck2Icon'
-import CirclecheckfilledIcon from './CirclecheckfilledIcon'
-import CircleCheckIcon from './CircleCheckIcon'
-import CrossIcon from './CrossIcon'
-import CullFromCardIcon from './CullFromCardIcon'
-import CullFromComputerIcon from './CullFromComputerIcon'
-import DeleteGreyIcon from './DeleteGreyIcon'
-import DeleteIcon from './DeleteIcon'
-import DeleteWhiteIcon from './DeleteWhiteIcon'
-import DetailedZoomSelectedIcon from './DetailedZoomSelectedIcon'
-import DetailedZoomUnselectedIcon from './DetailedZoomUnselectedIcon'
-import DragCaptureOneIcon from './DragCaptureOneIcon'
 import DragFolderIcon from './DragFolderIcon'
 import DragLrcIcon from './DragLrcIcon'
 import DragLrIcon from './DragLrIcon'
@@ -83,21 +68,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	ArrowRightIcon,
-	CaptureOneIcon,
-	CheckiconIcon,
-	CircleCheck2Icon,
-	CircleCheckIcon,
-	CirclecheckfilledIcon,
-	CrossIcon,
-	CullFromCardIcon,
-	CullFromComputerIcon,
-	DeleteGreyIcon,
-	DeleteIcon,
-	DeleteWhiteIcon,
-	DetailedZoomSelectedIcon,
-	DetailedZoomUnselectedIcon,
-	DragCaptureOneIcon,
 	DragFolderIcon,
 	DragLrIcon,
 	DragLrcIcon,

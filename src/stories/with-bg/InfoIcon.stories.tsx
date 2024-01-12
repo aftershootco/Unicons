@@ -5,7 +5,7 @@ import { InfoIcon } from '../../Icons'
 
 const meta: Meta<typeof InfoIcon> = {
 	component: InfoIcon,
-	title: 'With Background/InfoIcon',
+	title: 'Background/InfoIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

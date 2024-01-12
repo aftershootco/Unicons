@@ -3,13 +3,26 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type Props = IconProps & {
+type IconVariant = 'primary'
+
+type Props = Omit<IconProps, 'variant'> & {
+	variant?: IconVariant
 	bgColor?: string
+	inActive?: boolean
 }
 
-export const CircleTickIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CheckICircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+	const {
+		variant = 'primary',
+		color = DEFAULT_ICON.COLOR,
+		bgColor = DEFAULT_ICON.BG_COLOR,
+		size = DEFAULT_ICON.SIZE,
+		inActive = false,
+		...restProps
+	} = props
+
+	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	// variants
 	const primary = (
@@ -18,11 +31,11 @@ export const CircleTickIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 			<g clip-path='url(#clip0_13980_30785)'>
 				<path
 					d='M14.3525 22.2012C18.4947 22.2012 21.8525 18.8433 21.8525 14.7012C21.8525 10.559 18.4947 7.20117 14.3525 7.20117C10.2104 7.20117 6.85254 10.559 6.85254 14.7012C6.85254 18.8433 10.2104 22.2012 14.3525 22.2012Z'
-					stroke={color}
+					stroke={modifiedColor}
 					stroke-linecap='round'
 					stroke-linejoin='round'
 				/>
-				<path d='M11.8525 14.7018L13.5192 16.3685L16.8525 13.0352' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
+				<path d='M11.8525 14.7018L13.5192 16.3685L16.8525 13.0352' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			</g>
 			<defs>
 				<clipPath id='clip0_13980_30785'>
@@ -34,4 +47,4 @@ export const CircleTickIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(CircleTickIcon)
+export default React.memo(CheckICircleIcon)

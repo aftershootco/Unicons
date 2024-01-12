@@ -26,7 +26,6 @@ import CouponIcon from './CouponIcon'
 import CreateprofileIcon from './CreateprofileIcon'
 import CrownIcon from './CrownIcon'
 import CurveArrowIcon from './CurveArrowIcon'
-import DeleteIcon from './DeleteIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
@@ -37,8 +36,10 @@ import GridDotsIcon from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import AddFolderIcon from './inactive/AddFolderIcon'
+import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
+import CrossIcon from './inactive/CrossIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
@@ -56,6 +57,7 @@ import SprayCanIcon from './inactive/SprayCanIcon'
 import StackIcon from './inactive/StackIcon'
 import StarIcon from './inactive/StarIcon'
 import StarOffIcon from './inactive/StarOffIcon'
+import ZoomIcon from './inactive/ZoomIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoaderIcon from './LoaderIcon'
@@ -78,6 +80,8 @@ import FacebookIcon from './social/FacebookIcon'
 import GoogleIcon from './social/GoogleIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
+import CaptureOneIcon from './special/CaptureOneIcon'
+import DragCaptureOneIcon from './special/DragCaptureOneIcon'
 import EyeIcon from './special/EyeIcon'
 import HighPowerIcon from './special/HighPowerIcon'
 import LowPowerIcon from './special/LowPowerIcon'
@@ -86,7 +90,10 @@ import ThunderIcon from './special/ThunderIcon'
 import Stack2Icon from './Stack2Icon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
-import CircleTickIcon from './with-bg/CircleTickIcon'
+import CheckICircleIcon from './with-bg/CheckICircleIcon'
+import CullFromCardIcon from './with-bg/CullFromCardIcon'
+import CullFromComputerIcon from './with-bg/CullFromComputerIcon'
+import DeleteIcon from './with-bg/DeleteIcon'
 import DescAlphaIcon from './with-bg/DescAlphaIcon'
 import DescNumIcon from './with-bg/DescNumIcon'
 import ErrorIcon from './with-bg/ErrorIcon'
@@ -97,10 +104,16 @@ import NetworkErrorIcon from './with-bg/NetworkErrorIcon'
 import PlayIcon from './with-bg/PlayIcon'
 import SourceNotFoundIcon from './with-bg/SourceNotFound'
 import WarningIcon from './with-bg/WarningIcon'
-import ZoomIcon from './ZoomIcon'
 
 export {
+	CullFromComputerIcon,
+	DragCaptureOneIcon,
 	StarOffIcon,
+	CullFromCardIcon,
+	CrossIcon,
+	CheckCircleFillIcon,
+	CheckICircleIcon,
+	CaptureOneIcon,
 	AddFolderIcon,
 	MidPowerIcon,
 	MaximizeIcon,
@@ -140,7 +153,6 @@ export {
 	ColorPaletteIcon,
 	CelebrateIcon,
 	AppleIcon,
-	CircleTickIcon,
 	AlertIcon,
 	ErrorIcon,
 	CheckCircleIcon,

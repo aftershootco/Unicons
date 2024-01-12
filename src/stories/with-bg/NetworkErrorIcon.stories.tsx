@@ -5,7 +5,7 @@ import { NetworkErrorIcon } from '../../Icons'
 
 const meta: Meta<typeof NetworkErrorIcon> = {
 	component: NetworkErrorIcon,
-	title: 'With Background/NetworkErrorIcon',
+	title: 'Background/NetworkErrorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

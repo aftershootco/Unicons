@@ -4,7 +4,7 @@ import ImageNotFound from '../../Icons/with-bg/ImageNotFound'
 
 const meta: Meta<typeof ImageNotFound> = {
 	component: ImageNotFound,
-	title: 'With Background/ImageNotFound',
+	title: 'Background/ImageNotFound',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

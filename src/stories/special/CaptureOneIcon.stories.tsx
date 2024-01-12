@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DeleteIcon } from '../Icons'
+import { CaptureOneIcon } from '../../Icons'
 
-const meta: Meta<typeof DeleteIcon> = {
-	component: DeleteIcon,
-	title: 'Icons/DeleteIcon',
+const meta: Meta<typeof CaptureOneIcon> = {
+	component: CaptureOneIcon,
+	title: 'special/CaptureOneIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,15 +16,9 @@ const meta: Meta<typeof DeleteIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DeleteIcon>
+type Story = StoryObj<typeof CaptureOneIcon>
 
 export const Default: Story = {}
-
-export const Red: Story = {
-	args: {
-		color: 'red',
-	},
-}
 
 export const Large: Story = {
 	args: {

@@ -5,7 +5,7 @@ import { WarningIcon } from '../../Icons'
 
 const meta: Meta<typeof WarningIcon> = {
 	component: WarningIcon,
-	title: 'Icons/WarningIcon',
+	title: 'Background/WarningIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
