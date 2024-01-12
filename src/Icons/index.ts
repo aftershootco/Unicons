@@ -36,6 +36,7 @@ import FriendsIcon from './FriendsIcon'
 import GridDotsIcon from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
+import AddFolderIcon from './inactive/AddFolderIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
 import InActiveFilter from './inactive/FilterIcon'
@@ -43,7 +44,8 @@ import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
-import { default as MaximizeIcon, default as MinimizeIcon } from './inactive/MaximizeIcon'
+import MaximizeIcon from './inactive/MaximizeIcon'
+import MinimizeIcon from './inactive/MinimizeIcon'
 import MoneyIcon from './inactive/MoneyIcon'
 import PersonIcon from './inactive/PersonIcon'
 import QuestionMarkIcon from './inactive/QuestionMarkIcon'
@@ -99,7 +101,9 @@ import ZoomIcon from './ZoomIcon'
 
 export {
 	StarOffIcon,
+	AddFolderIcon,
 	MidPowerIcon,
+	MaximizeIcon,
 	QuestionMarkIcon,
 	MinimizeIcon,
 	LowPowerIcon,
@@ -181,7 +185,6 @@ export {
 	ListSelectedIcon,
 	LockIcon,
 	LoopIcon,
-	MaximizeIcon,
 	MenuIcon,
 	MouseLeftSelected,
 	MouseRightSelected,
