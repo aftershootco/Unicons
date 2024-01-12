@@ -1,5 +1,4 @@
-import GridThreeLitIcon from '../test/GridThreeLitIcon'
-import GridTwoLitIcon from '../test/GridTwoLitIcon'
+import ImageBorderIcon from '../test/ImageBorderIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import AfterShootLogo from './AfterShootLogo'
 import AftershootLogoWhite from './AftershootLogoWhite'
@@ -63,7 +62,10 @@ import ExportIcon from './inactive/ExportIcon'
 import FilterCircleIcon from './inactive/FilterCircleIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
+import GridThreeLitIcon from './inactive/GridThreeLitIcon'
+import GridTwoLitIcon from './inactive/GridTwoLitIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
+import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
@@ -117,6 +119,8 @@ import UploadFolder from './UploadFolder'
 
 export {
 	FacebookPeopleIcon,
+	ImageBorderIcon,
+	ImageBorderCircleIcon,
 	GridTwoLitIcon,
 	GridThreeLitIcon,
 	FiveStarIcon,

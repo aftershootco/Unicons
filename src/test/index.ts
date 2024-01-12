@@ -1,7 +1,3 @@
-import GridNotSelectedIcon from './GridNotSelectedIcon'
-import GridOfFourActiveIcon from './GridOfFourActiveIcon'
-import ImageBorderIcon from './ImageBorderIcon'
-import ImageBorderSoftIcon from './ImageBorderSoftIcon'
 import ImageNotFoundIcon from './ImageNotFoundIcon'
 import InfoIcon from './InfoIcon'
 import InfoRoundedIcon from './InfoRoundedIcon'
@@ -56,10 +52,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	GridNotSelectedIcon,
-	GridOfFourActiveIcon,
-	ImageBorderIcon,
-	ImageBorderSoftIcon,
 	ImageNotFoundIcon,
 	InfoIcon,
 	InfoRoundedIcon,
