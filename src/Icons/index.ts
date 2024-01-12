@@ -44,7 +44,6 @@ import CurveArrowIcon from './CurveArrowIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
-import ExportIcon from './ExportIcon'
 import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
 import GridDotsIcon from './GridDotsIcon'
@@ -55,6 +54,9 @@ import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
 import CrossIcon from './inactive/CrossIcon'
+import EditAlbumNameIcon from './inactive/EditAlbumNameIcon'
+import ExpandIcon from './inactive/ExpandIcon'
+import ExportIcon from './inactive/ExportIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
@@ -97,6 +99,8 @@ import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import CaptureOneIcon from './special/CaptureOneIcon'
 import DragCaptureOneIcon from './special/DragCaptureOneIcon'
+import DragLrcIcon from './special/DragLrcIcon'
+import DragLrIcon from './special/DragLrIcon'
 import EyeIcon from './special/EyeIcon'
 import HighPowerIcon from './special/HighPowerIcon'
 import LowPowerIcon from './special/LowPowerIcon'
@@ -107,6 +111,10 @@ import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
+	DragLrIcon,
+	ExpandIcon,
+	EditAlbumNameIcon,
+	DragLrcIcon,
 	CullFromComputerIcon,
 	DragFolderIcon,
 	DragCaptureOneIcon,

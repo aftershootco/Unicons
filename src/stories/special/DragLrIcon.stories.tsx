@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DragCaptureOneIcon } from '../../Icons'
+import { DragLrIcon } from '../../Icons'
 
-const meta: Meta<typeof DragCaptureOneIcon> = {
-	component: DragCaptureOneIcon,
-	title: 'background/DragCaptureOneIcon',
+const meta: Meta<typeof DragLrIcon> = {
+	component: DragLrIcon,
+	title: 'special/DragLrIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DragCaptureOneIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DragCaptureOneIcon>
+type Story = StoryObj<typeof DragLrIcon>
 
 export const Default: Story = {}
 

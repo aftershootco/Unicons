@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import ExportIcon from '../Icons/ExportIcon'
+import { DragLrcIcon } from '../../Icons'
 
-const meta: Meta<typeof ExportIcon> = {
-	component: ExportIcon,
-	title: 'Icons/ExportIcon',
+const meta: Meta<typeof DragLrcIcon> = {
+	component: DragLrcIcon,
+	title: 'special/DragLrcIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,15 +16,9 @@ const meta: Meta<typeof ExportIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ExportIcon>
+type Story = StoryObj<typeof DragLrcIcon>
 
 export const Default: Story = {}
-
-export const Red: Story = {
-	args: {
-		color: 'red',
-	},
-}
 
 export const Large: Story = {
 	args: {

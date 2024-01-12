@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { EditAlbumNameIcon } from '../test'
+import { EditAlbumNameIcon } from '../../Icons'
 
 const meta: Meta<typeof EditAlbumNameIcon> = {
-  component: EditAlbumNameIcon,
-  title: 'Test/EditAlbumNameIcon',
-  decorators: [
-    (Story) => (
-      <div style={{ margin: '1rem' }}>
-        <Story />
-      </div>
-    ),
-  ],
+	component: EditAlbumNameIcon,
+	title: 'inactive/EditAlbumNameIcon',
+	decorators: [
+		(Story) => (
+			<div style={{ margin: '1rem' }}>
+				<Story />
+			</div>
+		),
+	],
 }
 
 export default meta
@@ -21,18 +21,19 @@ type Story = StoryObj<typeof EditAlbumNameIcon>
 export const Default: Story = {}
 
 export const Red: Story = {
-  args: {
-    color: 'red',
-  },
+	args: {
+		color: 'red',
+	},
 }
 
 export const inActive: Story = {
-  args: {
-    inActive: true,
-  },
-};
+	args: {
+		inActive: true,
+	},
+}
+
 export const Large: Story = {
-  args: {
-    size: 30,
-  },
+	args: {
+		size: 30,
+	},
 }

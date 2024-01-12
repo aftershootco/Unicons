@@ -1,9 +1,3 @@
-import DragLrcIcon from './DragLrcIcon'
-import DragLrIcon from './DragLrIcon'
-import EditAlbumNameIcon from './EditAlbumNameIcon'
-import ExpandIcon from './ExpandIcon'
-import ExportedProjectIcon from './ExportedProjectIcon'
-import FacebookIcon from './FacebookIcon'
 import FacebookPeopleIcon from './FacebookPeopleIcon'
 import FilterIcon from './FilterIcon'
 import FiveStarIcon from './FiveStarIcon'
@@ -67,12 +61,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	DragLrIcon,
-	DragLrcIcon,
-	EditAlbumNameIcon,
-	ExpandIcon,
-	ExportedProjectIcon,
-	FacebookIcon,
 	FacebookPeopleIcon,
 	FilterIcon,
 	FiveStarIcon,

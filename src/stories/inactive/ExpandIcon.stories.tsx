@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ExpandIcon } from '../test'
+import { ExpandIcon } from '../../Icons'
 
 const meta: Meta<typeof ExpandIcon> = {
-  component: ExpandIcon,
-  title: 'Test/ExpandIcon',
-  decorators: [
-    (Story) => (
-      <div style={{ margin: '1rem' }}>
-        <Story />
-      </div>
-    ),
-  ],
+	component: ExpandIcon,
+	title: 'inactive/ExpandIcon',
+	decorators: [
+		(Story) => (
+			<div style={{ margin: '1rem' }}>
+				<Story />
+			</div>
+		),
+	],
 }
 
 export default meta
@@ -21,18 +21,18 @@ type Story = StoryObj<typeof ExpandIcon>
 export const Default: Story = {}
 
 export const Red: Story = {
-  args: {
-    color: 'red',
-  },
+	args: {
+		color: 'red',
+	},
 }
 
 export const inActive: Story = {
-  args: {
-    inActive: true,
-  },
-};
+	args: {
+		inActive: true,
+	},
+}
 export const Large: Story = {
-  args: {
-    size: 30,
-  },
+	args: {
+		size: 30,
+	},
 }
