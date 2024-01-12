@@ -5,7 +5,7 @@ import { FiveStarIcon } from '../../Icons'
 
 const meta: Meta<typeof FiveStarIcon> = {
 	component: FiveStarIcon,
-	title: 'Test/FiveStarIcon',
+	title: 'background/FiveStarIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

@@ -1,3 +1,5 @@
+import GridThreeLitIcon from '../test/GridThreeLitIcon'
+import GridTwoLitIcon from '../test/GridTwoLitIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import AfterShootLogo from './AfterShootLogo'
 import AftershootLogoWhite from './AftershootLogoWhite'
@@ -115,6 +117,8 @@ import UploadFolder from './UploadFolder'
 
 export {
 	FacebookPeopleIcon,
+	GridTwoLitIcon,
+	GridThreeLitIcon,
 	FiveStarIcon,
 	FilterCircleIcon,
 	DragLrIcon,

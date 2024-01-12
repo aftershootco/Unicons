@@ -1,7 +1,5 @@
 import GridNotSelectedIcon from './GridNotSelectedIcon'
 import GridOfFourActiveIcon from './GridOfFourActiveIcon'
-import GridOfFourIcon from './GridOfFourIcon'
-import GridViewIcon from './GridViewIcon'
 import ImageBorderIcon from './ImageBorderIcon'
 import ImageBorderSoftIcon from './ImageBorderSoftIcon'
 import ImageNotFoundIcon from './ImageNotFoundIcon'
@@ -60,8 +58,6 @@ import ZoomIconIcon from './ZoomIconIcon'
 export {
 	GridNotSelectedIcon,
 	GridOfFourActiveIcon,
-	GridOfFourIcon,
-	GridViewIcon,
 	ImageBorderIcon,
 	ImageBorderSoftIcon,
 	ImageNotFoundIcon,
