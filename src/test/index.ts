@@ -1,6 +1,3 @@
-import FacebookPeopleIcon from './FacebookPeopleIcon'
-import FilterIcon from './FilterIcon'
-import FiveStarIcon from './FiveStarIcon'
 import GridNotSelectedIcon from './GridNotSelectedIcon'
 import GridOfFourActiveIcon from './GridOfFourActiveIcon'
 import GridOfFourIcon from './GridOfFourIcon'
@@ -61,9 +58,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	FacebookPeopleIcon,
-	FilterIcon,
-	FiveStarIcon,
 	GridNotSelectedIcon,
 	GridOfFourActiveIcon,
 	GridOfFourIcon,

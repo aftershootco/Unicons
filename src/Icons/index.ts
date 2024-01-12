@@ -15,6 +15,7 @@ import DescNumIcon from './bg/DescNumIcon'
 import DragFolderIcon from './bg/DragFolderIcon'
 import ErrorIcon from './bg/ErrorIcon'
 import ExitAppIcon from './bg/ExitAppIcon'
+import FiveStarIcon from './bg/FiveStarIcon'
 import ImageNotFound from './bg/ImageNotFound'
 import InfoIcon from './bg/InfoIcon'
 import NetworkErrorIcon from './bg/NetworkErrorIcon'
@@ -57,6 +58,7 @@ import CrossIcon from './inactive/CrossIcon'
 import EditAlbumNameIcon from './inactive/EditAlbumNameIcon'
 import ExpandIcon from './inactive/ExpandIcon'
 import ExportIcon from './inactive/ExportIcon'
+import FilterCircleIcon from './inactive/FilterCircleIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
@@ -102,6 +104,7 @@ import DragCaptureOneIcon from './special/DragCaptureOneIcon'
 import DragLrcIcon from './special/DragLrcIcon'
 import DragLrIcon from './special/DragLrIcon'
 import EyeIcon from './special/EyeIcon'
+import FacebookPeopleIcon from './special/FacebookPeopleIcon'
 import HighPowerIcon from './special/HighPowerIcon'
 import LowPowerIcon from './special/LowPowerIcon'
 import MidPowerIcon from './special/MidPowerIcon'
@@ -111,6 +114,9 @@ import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
+	FacebookPeopleIcon,
+	FiveStarIcon,
+	FilterCircleIcon,
 	DragLrIcon,
 	ExpandIcon,
 	EditAlbumNameIcon,
