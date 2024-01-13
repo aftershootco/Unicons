@@ -1,4 +1,3 @@
-import ImageBorderIcon from '../test/ImageBorderIcon'
 import AlertIcon from '../xx/AlertIconDD'
 import AfterShootLogo from './AfterShootLogo'
 import AftershootLogoWhite from './AftershootLogoWhite'
@@ -18,6 +17,7 @@ import ErrorIcon from './bg/ErrorIcon'
 import ExitAppIcon from './bg/ExitAppIcon'
 import FiveStarIcon from './bg/FiveStarIcon'
 import ImageNotFound from './bg/ImageNotFound'
+import ImageNotFoundIcon from './bg/ImageNotFoundIcon'
 import InfoIcon from './bg/InfoIcon'
 import NetworkErrorIcon from './bg/NetworkErrorIcon'
 import PlayIcon from './bg/PlayIcon'
@@ -56,9 +56,12 @@ import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
 import CrossIcon from './inactive/CrossIcon'
+import DuplicateFillIcon from './inactive/DuplicateFillIcon'
+import DuplicateIcon from './inactive/DuplicateIcon'
 import EditAlbumNameIcon from './inactive/EditAlbumNameIcon'
 import ExpandIcon from './inactive/ExpandIcon'
 import ExportIcon from './inactive/ExportIcon'
+import FaceHappyIcon from './inactive/FaceHappyIcon'
 import FilterCircleIcon from './inactive/FilterCircleIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
@@ -66,6 +69,8 @@ import GridThreeLitIcon from './inactive/GridThreeLitIcon'
 import GridTwoLitIcon from './inactive/GridTwoLitIcon'
 import HappyfaceIcon from './inactive/HappyfaceIcon'
 import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
+import ImageBorderIcon from './inactive/ImageBorderIcon'
+import InfoCircleIcon from './inactive/InfoCircleIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
@@ -118,7 +123,12 @@ import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
+	DuplicateIcon,
+	FaceHappyIcon,
+	DuplicateFillIcon,
 	FacebookPeopleIcon,
+	InfoCircleIcon,
+	ImageNotFoundIcon,
 	ImageBorderIcon,
 	ImageBorderCircleIcon,
 	GridTwoLitIcon,

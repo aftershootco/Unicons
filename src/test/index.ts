@@ -1,10 +1,3 @@
-import ImageNotFoundIcon from './ImageNotFoundIcon'
-import InfoIcon from './InfoIcon'
-import InfoRoundedIcon from './InfoRoundedIcon'
-import KeyDupInvisIcon from './KeyDupInvisIcon'
-import KeyDupVisibleIcon from './KeyDupVisibleIcon'
-import KeyFacesSelectedIcon from './KeyFacesSelectedIcon'
-import KeyFacesUnselectedIcon from './KeyFacesUnselectedIcon'
 import KeyIconIcon from './KeyIconIcon'
 import Lessgrouping1Icon from './Lessgrouping1Icon'
 import Lessgrouping2Icon from './Lessgrouping2Icon'
@@ -52,13 +45,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	ImageNotFoundIcon,
-	InfoIcon,
-	InfoRoundedIcon,
-	KeyDupInvisIcon,
-	KeyDupVisibleIcon,
-	KeyFacesSelectedIcon,
-	KeyFacesUnselectedIcon,
 	KeyIconIcon,
 	Lessgrouping1Icon,
 	Lessgrouping2Icon,
