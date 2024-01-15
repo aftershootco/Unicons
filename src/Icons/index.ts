@@ -90,6 +90,8 @@ import ZoomIcon from './inactive/ZoomIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoaderIcon from './LoaderIcon'
+import LightroomClassicIcon from './logo/LightroomClassicIcon'
+import LightroomIcon from './logo/LightroomIcon'
 import LoopIcon from './LoopIcon'
 import MenuIcon from './MenuIcon'
 import MouseLeftSelected from './MouseLeftSelected'
@@ -107,7 +109,6 @@ import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
 import GoogleIcon from './social/GoogleIcon'
-import LessGroupingIcon from './social/LessGroupingIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import CaptureOneIcon from './special/CaptureOneIcon'
@@ -117,6 +118,7 @@ import DragLrIcon from './special/DragLrIcon'
 import EyeIcon from './special/EyeIcon'
 import FacebookPeopleIcon from './special/FacebookPeopleIcon'
 import HighPowerIcon from './special/HighPowerIcon'
+import LessGroupingIcon from './special/LessGroupingIcon'
 import LowPowerIcon from './special/LowPowerIcon'
 import MidPowerIcon from './special/MidPowerIcon'
 import ThunderIcon from './special/ThunderIcon'
@@ -125,6 +127,8 @@ import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
+	LightroomIcon,
+	LightroomClassicIcon,
 	DuplicateIcon,
 	LessGroupingIcon,
 	KeyCircleIcon,

@@ -1,6 +1,3 @@
-import Lessgrouping2Icon from './Lessgrouping2Icon'
-import LightroomClassicIcon from './LightroomClassicIcon'
-import LightroomIcon from './LightroomIcon'
 import ListNotSelectedIcon from './ListNotSelectedIcon'
 import ListSelectedIcon from './ListSelectedIcon'
 import LoopIcon from './LoopIcon'
@@ -43,9 +40,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	Lessgrouping2Icon,
-	LightroomClassicIcon,
-	LightroomIcon,
 	ListNotSelectedIcon,
 	ListSelectedIcon,
 	LoopIcon,
