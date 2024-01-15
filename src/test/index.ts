@@ -1,6 +1,3 @@
-import ListNotSelectedIcon from './ListNotSelectedIcon'
-import ListSelectedIcon from './ListSelectedIcon'
-import LoopIcon from './LoopIcon'
 import LoupeActiveIcon from './LoupeActiveIcon'
 import LoupeIcon from './LoupeIcon'
 import MoodGrayIcon from './MoodGrayIcon'
@@ -40,9 +37,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	ListNotSelectedIcon,
-	ListSelectedIcon,
-	LoopIcon,
 	LoupeActiveIcon,
 	LoupeIcon,
 	MoodGrayIcon,

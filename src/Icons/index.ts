@@ -72,7 +72,10 @@ import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import ImageBorderIcon from './inactive/ImageBorderIcon'
 import InfoCircleIcon from './inactive/InfoCircleIcon'
 import KeyCircleIcon from './inactive/KeyCircleIcon'
+import ListNotSelectedIcon from './inactive/ListNotSelectedIcon'
+import ListSelectedIcon from './inactive/ListSelectedIcon'
 import LockIcon from './inactive/LockIcon'
+import LoopCircleIcon from './inactive/LoopCircleIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
 import MinimizeIcon from './inactive/MinimizeIcon'
@@ -87,8 +90,6 @@ import StackIcon from './inactive/StackIcon'
 import StarIcon from './inactive/StarIcon'
 import StarOffIcon from './inactive/StarOffIcon'
 import ZoomIcon from './inactive/ZoomIcon'
-import ListNotSelectedIcon from './ListNotSelectedIcon'
-import ListSelectedIcon from './ListSelectedIcon'
 import LoaderIcon from './LoaderIcon'
 import LightroomClassicIcon from './logo/LightroomClassicIcon'
 import LightroomIcon from './logo/LightroomIcon'
@@ -127,6 +128,7 @@ import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
+	LoopCircleIcon,
 	LightroomIcon,
 	LightroomClassicIcon,
 	DuplicateIcon,

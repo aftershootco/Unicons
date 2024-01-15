@@ -31,6 +31,7 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,

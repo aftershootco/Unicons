@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LightroomIcon } from '../Icons'
+import { LightroomIcon } from '../../Icons'
 
 const meta: Meta<typeof LightroomIcon> = {
 	component: LightroomIcon,
-	title: 'Test/LightroomIcon',
+	title: 'logo/LightroomIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

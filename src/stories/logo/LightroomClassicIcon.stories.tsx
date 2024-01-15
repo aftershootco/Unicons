@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LightroomClassicIcon } from '../Icons'
+import { LightroomClassicIcon } from '../../Icons'
 
 const meta: Meta<typeof LightroomClassicIcon> = {
 	component: LightroomClassicIcon,
