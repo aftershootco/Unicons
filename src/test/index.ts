@@ -1,5 +1,3 @@
-import KeyIconIcon from './KeyIconIcon'
-import Lessgrouping1Icon from './Lessgrouping1Icon'
 import Lessgrouping2Icon from './Lessgrouping2Icon'
 import LightroomClassicIcon from './LightroomClassicIcon'
 import LightroomIcon from './LightroomIcon'
@@ -45,8 +43,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	KeyIconIcon,
-	Lessgrouping1Icon,
 	Lessgrouping2Icon,
 	LightroomClassicIcon,
 	LightroomIcon,

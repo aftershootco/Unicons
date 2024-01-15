@@ -71,6 +71,7 @@ import HappyfaceIcon from './inactive/HappyfaceIcon'
 import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import ImageBorderIcon from './inactive/ImageBorderIcon'
 import InfoCircleIcon from './inactive/InfoCircleIcon'
+import KeyCircleIcon from './inactive/KeyCircleIcon'
 import LockIcon from './inactive/LockIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
@@ -106,6 +107,7 @@ import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
 import GoogleIcon from './social/GoogleIcon'
+import LessGroupingIcon from './social/LessGroupingIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import CaptureOneIcon from './special/CaptureOneIcon'
@@ -124,6 +126,8 @@ import UploadFolder from './UploadFolder'
 
 export {
 	DuplicateIcon,
+	LessGroupingIcon,
+	KeyCircleIcon,
 	FaceHappyIcon,
 	DuplicateFillIcon,
 	FacebookPeopleIcon,
