@@ -1,10 +1,5 @@
-import Moregrouping2Icon from './Moregrouping2Icon'
-import MySelectedIcon from './MySelectedIcon'
 import NewFolderGradientIcon from './NewFolderGradientIcon'
-import NoDuplicatesIcon from './NoDuplicatesIcon'
 import NotMySelectedIcon from './NotMySelectedIcon'
-import QuestionIcon from './QuestionIcon'
-import QuestionMarkIcon from './QuestionMarkIcon'
 import RelinkIcon from './RelinkIcon'
 import ReloadIcon from './ReloadIcon'
 import ReportButtonIcon from './ReportButtonIcon'
@@ -32,13 +27,8 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	Moregrouping2Icon,
-	MySelectedIcon,
 	NewFolderGradientIcon,
-	NoDuplicatesIcon,
 	NotMySelectedIcon,
-	QuestionIcon,
-	QuestionMarkIcon,
 	RelinkIcon,
 	ReloadIcon,
 	ReportButtonIcon,

@@ -21,6 +21,7 @@ import ImageNotFoundIcon from './bg/ImageNotFoundIcon'
 import InfoIcon from './bg/InfoIcon'
 import NetworkErrorIcon from './bg/NetworkErrorIcon'
 import PlayIcon from './bg/PlayIcon'
+import SelectedCircleIcon from './bg/SelectedCircleIcon'
 import SourceNotFoundIcon from './bg/SourceNotFound'
 import WarningIcon from './bg/WarningIcon'
 import BorderColorIcon from './BorderColorIcon'
@@ -80,7 +81,9 @@ import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
 import MinimizeIcon from './inactive/MinimizeIcon'
 import MoneyIcon from './inactive/MoneyIcon'
+import NoDuplicateIcon from './inactive/NoDuplicateIcon'
 import PersonIcon from './inactive/PersonIcon'
+import QuestionMarkCircleIcon from './inactive/QuestionMarkCircleIcon'
 import QuestionMarkIcon from './inactive/QuestionMarkIcon'
 import SadfaceIcon from './inactive/SadfaceIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
@@ -130,6 +133,9 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	QuestionMarkCircleIcon,
+	NoDuplicateIcon,
+	SelectedCircleIcon,
 	MoodIcon,
 	LightroomIcon,
 	LightroomClassicIcon,
