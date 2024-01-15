@@ -1,8 +1,3 @@
-import LoupeActiveIcon from './LoupeActiveIcon'
-import LoupeIcon from './LoupeIcon'
-import MoodGrayIcon from './MoodGrayIcon'
-import MoodIcon from './MoodIcon'
-import Moregrouping1Icon from './Moregrouping1Icon'
 import Moregrouping2Icon from './Moregrouping2Icon'
 import MySelectedIcon from './MySelectedIcon'
 import NewFolderGradientIcon from './NewFolderGradientIcon'
@@ -37,11 +32,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	LoupeActiveIcon,
-	LoupeIcon,
-	MoodGrayIcon,
-	MoodIcon,
-	Moregrouping1Icon,
 	Moregrouping2Icon,
 	MySelectedIcon,
 	NewFolderGradientIcon,

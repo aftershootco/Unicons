@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import LoupeIcon from '../../Icons/inactive/LoupeIcon'
+
+import { LoupeIcon } from '../../Icons'
 
 const meta: Meta<typeof LoupeIcon> = {
 	component: LoupeIcon,
@@ -30,7 +31,6 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
-
 export const Large: Story = {
 	args: {
 		size: 30,

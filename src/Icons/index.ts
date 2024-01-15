@@ -75,7 +75,7 @@ import KeyCircleIcon from './inactive/KeyCircleIcon'
 import ListNotSelectedIcon from './inactive/ListNotSelectedIcon'
 import ListSelectedIcon from './inactive/ListSelectedIcon'
 import LockIcon from './inactive/LockIcon'
-import LoopCircleIcon from './inactive/LoopCircleIcon'
+import LoopIcon from './inactive/LoopIcon'
 import LoupeIcon from './inactive/LoupeIcon'
 import MaximizeIcon from './inactive/MaximizeIcon'
 import MinimizeIcon from './inactive/MinimizeIcon'
@@ -93,7 +93,6 @@ import ZoomIcon from './inactive/ZoomIcon'
 import LoaderIcon from './LoaderIcon'
 import LightroomClassicIcon from './logo/LightroomClassicIcon'
 import LightroomIcon from './logo/LightroomIcon'
-import LoopIcon from './LoopIcon'
 import MenuIcon from './MenuIcon'
 import MouseLeftSelected from './MouseLeftSelected'
 import MouseRightSelected from './MouseRightSelected'
@@ -122,13 +121,16 @@ import HighPowerIcon from './special/HighPowerIcon'
 import LessGroupingIcon from './special/LessGroupingIcon'
 import LowPowerIcon from './special/LowPowerIcon'
 import MidPowerIcon from './special/MidPowerIcon'
+import MoodIcon from './special/MoodIcon'
+import MoreGroupingIcon from './special/MoreGroupingIcon'
 import ThunderIcon from './special/ThunderIcon'
 import Stack2Icon from './Stack2Icon'
 import StorageIcon from './StorageIcon'
 import UploadFolder from './UploadFolder'
 
 export {
-	LoopCircleIcon,
+	MoreGroupingIcon,
+	MoodIcon,
 	LightroomIcon,
 	LightroomClassicIcon,
 	DuplicateIcon,
