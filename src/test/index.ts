@@ -1,8 +1,6 @@
-import NewFolderGradientIcon from './NewFolderGradientIcon'
-import NotMySelectedIcon from './NotMySelectedIcon'
-import RelinkIcon from './RelinkIcon'
-import ReloadIcon from './ReloadIcon'
-import ReportButtonIcon from './ReportButtonIcon'
+import RelinkIcon from '../Icons/inactive/LinkIcon'
+import ReloadIcon from '../Icons/inactive/ReloadWarningIcon'
+import NewFolderGradientIcon from '../xx/NewFolderGradientIcon'
 import RightArrowIcon from './RightArrowIcon'
 import SadFaceIcon from './SadFaceIcon'
 import SelectedErrorIcon from './SelectedErrorIcon'
@@ -28,10 +26,8 @@ import ZoomIconIcon from './ZoomIconIcon'
 
 export {
 	NewFolderGradientIcon,
-	NotMySelectedIcon,
 	RelinkIcon,
 	ReloadIcon,
-	ReportButtonIcon,
 	RightArrowIcon,
 	SadFaceIcon,
 	SelectedErrorIcon,

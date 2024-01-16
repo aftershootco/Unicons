@@ -79,6 +79,7 @@
 		]
 	},
 	"dependencies": {
-		"tinycolor2": "^1.6.0"
+		"tinycolor2": "^1.6.0",
+		"tsup": "^8.0.1"
 	}
 }

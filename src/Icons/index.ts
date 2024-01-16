@@ -6,6 +6,7 @@ import ArrowFillIcon from './ArrowFillIcon'
 import ArrowLeftIcon from './ArrowLeftIcon'
 import ArrowRightcon from './ArrowRightcon'
 import ArrowUpIcon from './ArrowUpIcon'
+import AlertTriangleFillIcon from './bg/AlertTriangleFillIcon'
 import CheckICircleIcon from './bg/CheckICircleIcon'
 import CullFromCardIcon from './bg/CullFromCardIcon'
 import CullFromComputerIcon from './bg/CullFromComputerIcon'
@@ -53,7 +54,9 @@ import GridDotsIcon from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import AddFolderIcon from './inactive/AddFolderIcon'
+import AlertTriangleIcon from './inactive/AlertTriangleIcon'
 import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
+import CircleIcon from './inactive/CircleIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
 import CrossIcon from './inactive/CrossIcon'
@@ -73,6 +76,7 @@ import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import ImageBorderIcon from './inactive/ImageBorderIcon'
 import InfoCircleIcon from './inactive/InfoCircleIcon'
 import KeyCircleIcon from './inactive/KeyCircleIcon'
+import LinkIcon from './inactive/LinkIcon'
 import ListNotSelectedIcon from './inactive/ListNotSelectedIcon'
 import ListSelectedIcon from './inactive/ListSelectedIcon'
 import LockIcon from './inactive/LockIcon'
@@ -133,6 +137,10 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	AlertTriangleIcon,
+	AlertTriangleFillIcon,
+	LinkIcon,
+	CircleIcon,
 	QuestionMarkCircleIcon,
 	NoDuplicateIcon,
 	SelectedCircleIcon,
