@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CheckICircleIcon } from '../../Icons'
+import { AlertHexagonIcon } from '../../Icons'
 
-const meta: Meta<typeof CheckICircleIcon> = {
-	component: CheckICircleIcon,
-	title: 'Background/CheckICircleIcon',
+const meta: Meta<typeof AlertHexagonIcon> = {
+	component: AlertHexagonIcon,
+	title: 'inactive/AlertHexagonIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CheckICircleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CheckICircleIcon>
+type Story = StoryObj<typeof AlertHexagonIcon>
 
 export const Default: Story = {}
 
@@ -26,19 +26,11 @@ export const Red: Story = {
 	},
 }
 
-export const yellowBg: Story = {
-	args: {
-		color: 'black',
-		bgColor: 'yellow',
-	},
-}
-
 export const inActive: Story = {
 	args: {
 		inActive: true,
 	},
 }
-
 export const Large: Story = {
 	args: {
 		size: 30,

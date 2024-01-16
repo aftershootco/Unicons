@@ -7,7 +7,7 @@ import ArrowLeftIcon from './ArrowLeftIcon'
 import ArrowRightcon from './ArrowRightcon'
 import ArrowUpIcon from './ArrowUpIcon'
 import AlertTriangleFillIcon from './bg/AlertTriangleFillIcon'
-import CheckICircleIcon from './bg/CheckICircleIcon'
+import CheckCircleBgIcon from './bg/CheckCircleBgIcon'
 import CullFromCardIcon from './bg/CullFromCardIcon'
 import CullFromComputerIcon from './bg/CullFromComputerIcon'
 import DeleteIcon from './bg/DeleteIcon'
@@ -30,7 +30,6 @@ import BorderColorIcon from './BorderColorIcon'
 import CancelIcon from './CancelIcon'
 import CartIcon from './CartIcon'
 import CelebrateIcon from './CelebrateIcon'
-import CheckCircleIcon from './CheckCircleIcon'
 import CheckIcon from './CheckIcon'
 import ChevronDownIcon from './ChevronDownIcon'
 import ChevronLeftIcon from './ChevronLeftIcon'
@@ -49,6 +48,8 @@ import CurveArrowIcon from './CurveArrowIcon'
 import DiamondIcon from './DiamonIcon'
 import EditIcon from './EditIcon'
 import EditPhotoIcon from './EditPhotoIcon'
+import AlertCircleFill from './fill/AlertCircleFill'
+import CheckCircleFillIcon from './fill/CheckCircleFillIcon'
 import FolderIcon from './FolderIcon'
 import FriendsIcon from './FriendsIcon'
 import GridDotsIcon from './GridDotsIcon'
@@ -56,8 +57,9 @@ import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import AddFolderIcon from './inactive/AddFolderIcon'
 import AlertCircleIcon from './inactive/AlertCircleIcon'
+import AlertHexagonIcon from './inactive/AlertHexagonIcon'
 import AlertTriangleIcon from './inactive/AlertTriangleIcon'
-import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
+import CheckCircleIcon from './inactive/CheckCircleIcon'
 import CircleIcon from './inactive/CircleIcon'
 import CloseIcon from './inactive/CloseIcon'
 import ColorIcon from './inactive/ColorIcon'
@@ -89,6 +91,7 @@ import MaximizeIcon from './inactive/MaximizeIcon'
 import MinimizeIcon from './inactive/MinimizeIcon'
 import MoneyIcon from './inactive/MoneyIcon'
 import NoDuplicateIcon from './inactive/NoDuplicateIcon'
+import NotAllowIcon from './inactive/NotAllowIcon'
 import PersonIcon from './inactive/PersonIcon'
 import QuestionMarkCircleIcon from './inactive/QuestionMarkCircleIcon'
 import QuestionMarkIcon from './inactive/QuestionMarkIcon'
@@ -104,6 +107,8 @@ import SprayClickCircleIcon from './inactive/SprayClickCircleIcon'
 import StackIcon from './inactive/StackIcon'
 import StarIcon from './inactive/StarIcon'
 import StarOffIcon from './inactive/StarOffIcon'
+import ViewAllIcon from './inactive/ViewAllIcon'
+import ZoomCircleIcon from './inactive/ZoomCircleIcon'
 import ZoomIcon from './inactive/ZoomIcon'
 import LoaderIcon from './LoaderIcon'
 import LightroomClassicIcon from './logo/LightroomClassicIcon'
@@ -147,6 +152,12 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	AlertCircleFill,
+	ZoomCircleIcon,
+	CheckCircleIcon,
+	NotAllowIcon,
+	AlertHexagonIcon,
+	ViewAllIcon,
 	TwitterIcon,
 	SprayCursorIcon,
 	SprayCircleIcon,
@@ -192,7 +203,7 @@ export {
 	CullFromCardIcon,
 	CrossIcon,
 	CheckCircleFillIcon,
-	CheckICircleIcon,
+	CheckCircleBgIcon,
 	CaptureOneIcon,
 	AddFolderIcon,
 	MidPowerIcon,
@@ -235,7 +246,6 @@ export {
 	AppleIcon,
 	AlertIcon,
 	ErrorIcon,
-	CheckCircleIcon,
 	ChevronUpIcon,
 	ArrowDownIcon,
 	ArrowFillIcon,

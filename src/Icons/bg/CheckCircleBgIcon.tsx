@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const CheckICircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CheckCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -47,4 +47,4 @@ export const CheckICircleIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(CheckICircleIcon)
+export default React.memo(CheckCircleBgIcon)
