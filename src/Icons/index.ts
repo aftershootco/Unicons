@@ -91,6 +91,9 @@ import PersonIcon from './inactive/PersonIcon'
 import QuestionMarkCircleIcon from './inactive/QuestionMarkCircleIcon'
 import QuestionMarkIcon from './inactive/QuestionMarkIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
+import ShowDuplicateIcon from './inactive/ShowDuplicateIcon'
+import SortCircleIcon from './inactive/SortCircleIcon'
+import SortDuplicateCircleIcon from './inactive/SortDuplicateCircleIcon'
 import SortIcon from './inactive/SortIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
 import StackIcon from './inactive/StackIcon'
@@ -137,6 +140,9 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	SortCircleIcon,
+	SortDuplicateCircleIcon,
+	ShowDuplicateIcon,
 	AlertCircleIcon,
 	AlertTriangleIcon,
 	AlertTriangleFillIcon,

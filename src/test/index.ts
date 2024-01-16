@@ -1,6 +1,3 @@
-import ShowDuplicateIcon from './ShowDuplicateIcon'
-import SortDuplicatesIcon from './SortDuplicatesIcon'
-import SortIcon from './SortIcon'
 import SourcemoveIcon from './SourcemoveIcon'
 import SparkleGrayIcon from './SparkleGrayIcon'
 import SparkleIcon from './SparkleIcon'
@@ -19,9 +16,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	ShowDuplicateIcon,
-	SortDuplicatesIcon,
-	SortIcon,
 	SourcemoveIcon,
 	SparkleGrayIcon,
 	SparkleIcon,
