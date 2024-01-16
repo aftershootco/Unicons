@@ -75,6 +75,7 @@ import GridThreeLitIcon from './inactive/GridThreeLitIcon'
 import GridTwoLitIcon from './inactive/GridTwoLitIcon'
 import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import ImageBorderIcon from './inactive/ImageBorderIcon'
+import ImageCrossedIcon from './inactive/ImageCrossedIcon'
 import InfoCircleIcon from './inactive/InfoCircleIcon'
 import KeyCircleIcon from './inactive/KeyCircleIcon'
 import LinkIcon from './inactive/LinkIcon'
@@ -95,7 +96,10 @@ import ShowDuplicateIcon from './inactive/ShowDuplicateIcon'
 import SortCircleIcon from './inactive/SortCircleIcon'
 import SortDuplicateCircleIcon from './inactive/SortDuplicateCircleIcon'
 import SortIcon from './inactive/SortIcon'
+import SparkleIcon from './inactive/SparkleIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
+import SprayCircleIcon from './inactive/SprayCircleIcon'
+import SprayClickCircleIcon from './inactive/SprayClickCircleIcon'
 import StackIcon from './inactive/StackIcon'
 import StarIcon from './inactive/StarIcon'
 import StarOffIcon from './inactive/StarOffIcon'
@@ -140,6 +144,10 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	SprayCircleIcon,
+	SprayClickCircleIcon,
+	SparkleIcon,
+	ImageCrossedIcon,
 	SortCircleIcon,
 	SortDuplicateCircleIcon,
 	ShowDuplicateIcon,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SourceNotFoundIcon } from '../../Icons'
+import { SprayCursorIcon } from '../../test'
 
-const meta: Meta<typeof SourceNotFoundIcon> = {
-	component: SourceNotFoundIcon,
-	title: 'Background/SourceNotFoundIcon',
+const meta: Meta<typeof SprayCursorIcon> = {
+	component: SprayCursorIcon,
+	title: 'background/SprayCursorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof SourceNotFoundIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SourceNotFoundIcon>
+type Story = StoryObj<typeof SprayCursorIcon>
 
 export const Default: Story = {}
 
@@ -30,6 +30,12 @@ export const yellowBg: Story = {
 	args: {
 		color: 'black',
 		bgColor: 'yellow',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

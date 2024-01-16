@@ -1,9 +1,5 @@
-import SourcemoveIcon from './SourcemoveIcon'
-import SparkleGrayIcon from './SparkleGrayIcon'
-import SparkleIcon from './SparkleIcon'
-import SprayClickIcon from './SprayClickIcon'
-import SprayCursorIcon from './SprayCursorIcon'
-import SprayIcon from './SprayIcon'
+import SprayCursorIcon from '../Icons/bg/SprayCursorIcon'
+import SprayIcon from '../Icons/inactive/SprayCircleIcon'
 import StarIcon from './StarIcon'
 import StarSelectedBlueIcon from './StarSelectedBlueIcon'
 import TickIcon from './TickIcon'
@@ -16,10 +12,6 @@ import WithselecticonIcon from './WithselecticonIcon'
 import ZoomIconIcon from './ZoomIconIcon'
 
 export {
-	SourcemoveIcon,
-	SparkleGrayIcon,
-	SparkleIcon,
-	SprayClickIcon,
 	SprayCursorIcon,
 	SprayIcon,
 	StarIcon,
