@@ -54,6 +54,7 @@ import GridDotsIcon from './GridDotsIcon'
 import GridIcon from './GridIcon'
 import HomeIcon from './HomeIcon'
 import AddFolderIcon from './inactive/AddFolderIcon'
+import AlertCircleIcon from './inactive/AlertCircleIcon'
 import AlertTriangleIcon from './inactive/AlertTriangleIcon'
 import CheckCircleFillIcon from './inactive/CheckCircleFillIcon'
 import CircleIcon from './inactive/CircleIcon'
@@ -66,12 +67,12 @@ import EditAlbumNameIcon from './inactive/EditAlbumNameIcon'
 import ExpandIcon from './inactive/ExpandIcon'
 import ExportIcon from './inactive/ExportIcon'
 import FaceHappyIcon from './inactive/FaceHappyIcon'
+import FaceSadIcon from './inactive/FaceSadIcon'
 import FilterCircleIcon from './inactive/FilterCircleIcon'
 import InActiveFilter from './inactive/FilterIcon'
 import GlobeIcon from './inactive/GlobeIcon'
 import GridThreeLitIcon from './inactive/GridThreeLitIcon'
 import GridTwoLitIcon from './inactive/GridTwoLitIcon'
-import HappyfaceIcon from './inactive/HappyfaceIcon'
 import ImageBorderCircleIcon from './inactive/ImageBorderCircleIcon'
 import ImageBorderIcon from './inactive/ImageBorderIcon'
 import InfoCircleIcon from './inactive/InfoCircleIcon'
@@ -89,7 +90,6 @@ import NoDuplicateIcon from './inactive/NoDuplicateIcon'
 import PersonIcon from './inactive/PersonIcon'
 import QuestionMarkCircleIcon from './inactive/QuestionMarkCircleIcon'
 import QuestionMarkIcon from './inactive/QuestionMarkIcon'
-import SadfaceIcon from './inactive/SadfaceIcon'
 import ShortCutIcon from './inactive/ShortCutIcon'
 import SortIcon from './inactive/SortIcon'
 import SprayCanIcon from './inactive/SprayCanIcon'
@@ -137,6 +137,7 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	AlertCircleIcon,
 	AlertTriangleIcon,
 	AlertTriangleFillIcon,
 	LinkIcon,
@@ -191,7 +192,7 @@ export {
 	GlobeIcon,
 	ScissorsIcon,
 	Rotate90Icon,
-	SadfaceIcon,
+	FaceSadIcon,
 	RecullIcon,
 	FacebookIcon,
 	PlayIcon,
@@ -202,7 +203,6 @@ export {
 	AftershootLogoWhite,
 	LoaderIcon,
 	HomeIcon,
-	HappyfaceIcon,
 	GridDotsIcon,
 	GoogleIcon,
 	CancelIcon,
