@@ -122,9 +122,10 @@ import Rotate90Icon from './Rotate90Icon'
 import ScissorsIcon from './ScissorsIcon'
 import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
+import FacebookBgIcon from './social/FacebookBgIcon'
 import FacebookIcon from './social/FacebookIcon'
 import GoogleIcon from './social/GoogleIcon'
-import TwitterColorIcon from './social/TwitterColorIcon'
+import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import CaptureOneIcon from './special/CaptureOneIcon'
@@ -201,7 +202,7 @@ export {
 	LowPowerIcon,
 	HighPowerIcon,
 	CloseIcon,
-	TwitterColorIcon,
+	TwitterBgIcon,
 	ThunderIcon,
 	MoneyIcon,
 	PersonIcon,
@@ -213,6 +214,7 @@ export {
 	FaceSadIcon,
 	RecullIcon,
 	FacebookIcon,
+	FacebookBgIcon,
 	PlayIcon,
 	OpenlinkIcon,
 	NoneSelectedIcon,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { TwitterColorIcon } from '../../Icons'
+import { TwitterBgIcon } from '../../Icons'
 
-const meta: Meta<typeof TwitterColorIcon> = {
-	component: TwitterColorIcon,
-	title: 'social/TwitterColorIcon',
+const meta: Meta<typeof TwitterBgIcon> = {
+	component: TwitterBgIcon,
+	title: 'social/TwitterBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof TwitterColorIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof TwitterColorIcon>
+type Story = StoryObj<typeof TwitterBgIcon>
 
 export const Default: Story = {}
 

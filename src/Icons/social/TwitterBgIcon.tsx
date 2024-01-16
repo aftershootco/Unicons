@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const TwitterColorIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const TwitterBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, bgColor = '#1DA1F2', size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -29,4 +29,4 @@ export const TwitterColorIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(TwitterColorIcon)
+export default React.memo(TwitterBgIcon)

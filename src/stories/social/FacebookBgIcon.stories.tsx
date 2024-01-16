@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { TwitterIcon } from '../../Icons'
+import { FacebookBgIcon } from '../../Icons'
 
-const meta: Meta<typeof TwitterIcon> = {
-	component: TwitterIcon,
-	title: 'social/TwitterIcon',
+const meta: Meta<typeof FacebookBgIcon> = {
+	component: FacebookBgIcon,
+	title: 'social/FacebookBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof TwitterIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof TwitterIcon>
+type Story = StoryObj<typeof FacebookBgIcon>
 
 export const Default: Story = {}
 
@@ -26,11 +26,13 @@ export const Red: Story = {
 	},
 }
 
-export const inActive: Story = {
+export const yellowBg: Story = {
 	args: {
-		inActive: true,
+		color: '#1DA1F2',
+		bgColor: 'yellow',
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,
