@@ -24,6 +24,7 @@ import NetworkErrorIcon from './bg/NetworkErrorIcon'
 import PlayIcon from './bg/PlayIcon'
 import SelectedCircleIcon from './bg/SelectedCircleIcon'
 import SourceNotFoundIcon from './bg/SourceNotFound'
+import SprayCursorIcon from './bg/SprayCursorIcon'
 import WarningIcon from './bg/WarningIcon'
 import BorderColorIcon from './BorderColorIcon'
 import CancelIcon from './CancelIcon'
@@ -123,6 +124,7 @@ import ShareIcon from './ShareIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookIcon from './social/FacebookIcon'
 import GoogleIcon from './social/GoogleIcon'
+import TwitterColorIcon from './social/TwitterColorIcon'
 import TwitterIcon from './social/TwitterIcon'
 import SortDuplicatesIcon from './SortDuplicatesIcon'
 import CaptureOneIcon from './special/CaptureOneIcon'
@@ -144,6 +146,8 @@ import UploadFolder from './UploadFolder'
 
 export {
 	MoreGroupingIcon,
+	TwitterIcon,
+	SprayCursorIcon,
 	SprayCircleIcon,
 	SprayClickCircleIcon,
 	SparkleIcon,
@@ -197,7 +201,7 @@ export {
 	LowPowerIcon,
 	HighPowerIcon,
 	CloseIcon,
-	TwitterIcon,
+	TwitterColorIcon,
 	ThunderIcon,
 	MoneyIcon,
 	PersonIcon,
