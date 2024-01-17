@@ -1,0 +1,48 @@
+import React from 'react'
+import { IconProps } from '../../types/Icons/types'
+import BaseIcon from '../components/BaseIcon'
+import DEFAULT_ICON from '../constant'
+
+type IconVariant = 'primary' | 'secondary' | 'tertiary'
+type Props = Omit<IconProps, 'variant'> & {
+	variant?: IconVariant
+	bgColor?: string
+	inActive?: boolean
+}
+
+export const ClockredIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+	//props
+	const {
+		variant = 'primary',
+		color = DEFAULT_ICON.COLOR,
+		bgColor = DEFAULT_ICON.BG_COLOR,
+		size = DEFAULT_ICON.SIZE,
+		inActive = false,
+		...restProps
+	} = props
+
+	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
+
+	// variants
+	const primary = (
+		<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<g clip-path='url(#clip0_1142_11309)'>
+				<path
+					d='M6 10.5C8.48528 10.5 10.5 8.48528 10.5 6C10.5 3.51472 8.48528 1.5 6 1.5C3.51472 1.5 1.5 3.51472 1.5 6C1.5 8.48528 3.51472 10.5 6 10.5Z'
+					stroke='#F16507'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+				/>
+				<path d='M6 3.5V6L7.5 7.5' stroke='#F16507' stroke-linecap='round' stroke-linejoin='round' />
+			</g>
+			<defs>
+				<clipPath id='clip0_1142_11309'>
+					<rect width='12' height='12' fill='white' />
+				</clipPath>
+			</defs>
+		</svg>
+	)
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+})
+
+export default React.memo(ClockredIcon)
