@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ScissorsIcon } from '../../../Icons'
+import { ScissorsIcon } from '../../../icons'
 
 const meta: Meta<typeof ScissorsIcon> = {
 	component: ScissorsIcon,

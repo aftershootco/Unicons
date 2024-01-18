@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { AfterShootLogo } from '../../../Icons'
+import { AfterShootLogo } from '../../../icons'
 
 const meta: Meta<typeof AfterShootLogo> = {
 	component: AfterShootLogo,

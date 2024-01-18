@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ImageCrossedIcon } from '../../../Icons'
+import { ImageCrossedIcon } from '../../../icons'
 
 const meta: Meta<typeof ImageCrossedIcon> = {
 	component: ImageCrossedIcon,

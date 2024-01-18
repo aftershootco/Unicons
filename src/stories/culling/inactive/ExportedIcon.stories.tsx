@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import ExportIcon from '../../../Icons/culling/inactive/ExportIcon'
+import { ExportIcon } from '../../../icons'
 
 const meta: Meta<typeof ExportIcon> = {
 	component: ExportIcon,

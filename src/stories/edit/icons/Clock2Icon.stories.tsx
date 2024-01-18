@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CloseIcon } from '../test'
+import { Clock2Icon } from '../../../icons'
 
-const meta: Meta<typeof CloseIcon> = {
-	component: CloseIcon,
-	title: 'Test/CloseIcon',
+const meta: Meta<typeof Clock2Icon> = {
+	component: Clock2Icon,
+	title: 'edit/icons/Clock2Icon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CloseIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CloseIcon>
+type Story = StoryObj<typeof Clock2Icon>
 
 export const Default: Story = {}
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MoneyIcon } from '../../../Icons'
+import { MoneyIcon } from '../../../icons'
 
 const meta: Meta<typeof MoneyIcon> = {
 	component: MoneyIcon,

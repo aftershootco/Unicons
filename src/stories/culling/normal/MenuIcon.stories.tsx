@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MenuIcon } from '../../../Icons'
+import { MenuIcon } from '../../../icons'
 
 const meta: Meta<typeof MenuIcon> = {
 	component: MenuIcon,

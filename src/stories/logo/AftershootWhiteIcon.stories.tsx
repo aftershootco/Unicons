@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { AftershootWhiteIcon } from '../../Icons'
+import { AftershootWhiteIcon } from '../../icons'
 
 const meta: Meta<typeof AftershootWhiteIcon> = {
 	component: AftershootWhiteIcon,

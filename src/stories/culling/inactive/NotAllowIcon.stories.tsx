@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { NotAllowIcon } from '../../../Icons'
+import { NotAllowIcon } from '../../../icons'
 
 const meta: Meta<typeof NotAllowIcon> = {
 	component: NotAllowIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { EyeCheckedIcon } from '../../../Icons'
+import { EyeCheckedIcon } from '../../../icons'
 
 const meta: Meta<typeof EyeCheckedIcon> = {
 	component: EyeCheckedIcon,

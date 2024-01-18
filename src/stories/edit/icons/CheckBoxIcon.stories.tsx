@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ClockIcon } from '../test'
+import { CheckBoxIcon } from '../../../icons'
 
-const meta: Meta<typeof ClockIcon> = {
-	component: ClockIcon,
-	title: 'Test/ClockIcon',
+const meta: Meta<typeof CheckBoxIcon> = {
+	component: CheckBoxIcon,
+	title: 'edit/icons/CheckBoxIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ClockIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ClockIcon>
+type Story = StoryObj<typeof CheckBoxIcon>
 
 export const Default: Story = {}
 

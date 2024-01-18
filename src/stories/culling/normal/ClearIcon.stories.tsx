@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ClearIcon } from '../../../Icons'
+import { ClearIcon } from '../../../icons'
 
 const meta: Meta<typeof ClearIcon> = {
 	component: ClearIcon,

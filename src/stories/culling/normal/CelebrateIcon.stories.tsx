@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CelebrateIcon } from '../../../Icons'
+import { CelebrateIcon } from '../../../icons'
 
 const meta: Meta<typeof CelebrateIcon> = {
 	component: CelebrateIcon,

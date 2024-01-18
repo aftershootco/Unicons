@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import ImageNotFound from '../../../Icons/culling/bg/ImageNotFound'
+
+import { ImageNotFound } from '../../../icons'
 
 const meta: Meta<typeof ImageNotFound> = {
 	component: ImageNotFound,

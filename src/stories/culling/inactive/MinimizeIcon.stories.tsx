@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MinimizeIcon } from '../../../Icons'
+import { MinimizeIcon } from '../../../icons'
 
 const meta: Meta<typeof MinimizeIcon> = {
 	component: MinimizeIcon,

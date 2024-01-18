@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CartIcon } from '../../../Icons'
+import { CartIcon } from '../../../icons'
 
 const meta: Meta<typeof CartIcon> = {
 	component: CartIcon,

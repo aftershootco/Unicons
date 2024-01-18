@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ExpandIcon } from '../../../Icons'
+import { ExpandIcon } from '../../../icons'
 
 const meta: Meta<typeof ExpandIcon> = {
 	component: ExpandIcon,

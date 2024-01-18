@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LockIcon } from '../../../Icons'
+import { LockIcon } from '../../../icons'
 
 const meta: Meta<typeof LockIcon> = {
 	component: LockIcon,

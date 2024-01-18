@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ZoomIcon } from '../../../Icons'
+import { ZoomIcon } from '../../../icons'
 
 const meta: Meta<typeof ZoomIcon> = {
 	component: ZoomIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { NoneIcon } from '../../../Icons'
+import { NoneIcon } from '../../../icons'
 
 const meta: Meta<typeof NoneIcon> = {
 	component: NoneIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ReloadIcon } from '../../../Icons'
+import { ReloadIcon } from '../../../icons'
 
 const meta: Meta<typeof ReloadIcon> = {
 	component: ReloadIcon,

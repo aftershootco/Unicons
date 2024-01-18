@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ViewAllIcon } from '../../../Icons'
+import { ViewAllIcon } from '../../../icons'
 
 const meta: Meta<typeof ViewAllIcon> = {
 	component: ViewAllIcon,

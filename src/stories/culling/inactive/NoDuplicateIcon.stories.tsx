@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { NoDuplicateIcon } from '../../../Icons'
+import { NoDuplicateIcon } from '../../../icons'
 
 const meta: Meta<typeof NoDuplicateIcon> = {
 	component: NoDuplicateIcon,

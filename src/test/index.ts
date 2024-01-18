@@ -1,12 +1,3 @@
-import AlertIcon from './AlertIcon'
-import CheckblueIcon from './CheckblueIcon'
-import CheckBoxEmptyIcon from './CheckBoxEmptyIcon'
-import CheckBoxIcon from './CheckBoxIcon'
-import CheckIcon from './CheckIcon'
-import ClockIcon from './ClockIcon'
-import ClockredIcon from './ClockredIcon'
-import CloseIcon from './CloseIcon'
-import CollectionsIconIcon from './CollectionsIconIcon'
 import ComputerEditIcon from './ComputerEditIcon'
 import ConfettiIcon from './ConfettiIcon'
 import ConfettiLeftIcon from './ConfettiLeftIcon'
@@ -68,15 +59,6 @@ import UploadIconIcon from './UploadIconIcon'
 import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 export {
-	AlertIcon,
-	CheckBoxEmptyIcon,
-	CheckBoxIcon,
-	CheckIcon,
-	CheckblueIcon,
-	ClockIcon,
-	ClockredIcon,
-	CloseIcon,
-	CollectionsIconIcon,
 	ComputerEditIcon,
 	ConfettiIcon,
 	ConfettiLeftIcon,

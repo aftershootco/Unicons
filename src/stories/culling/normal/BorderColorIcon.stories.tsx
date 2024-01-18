@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { BorderColorIcon } from '../../../Icons'
+import { BorderColorIcon } from '../../../icons'
 
 const meta: Meta<typeof BorderColorIcon> = {
 	component: BorderColorIcon,

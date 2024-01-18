@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ImageBorderCircleIcon } from '../../../Icons'
+import { ImageBorderCircleIcon } from '../../../icons'
 
 const meta: Meta<typeof ImageBorderCircleIcon> = {
 	component: ImageBorderCircleIcon,

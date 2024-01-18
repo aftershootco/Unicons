@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SprayCursorIcon } from '../../../Icons'
+import { SprayCursorIcon } from '../../../icons'
 
 const meta: Meta<typeof SprayCursorIcon> = {
 	component: SprayCursorIcon,

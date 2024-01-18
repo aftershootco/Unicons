@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ArrowDownIcon } from '../../../Icons'
+import { ArrowDownIcon } from '../../../icons'
 
 const meta: Meta<typeof ArrowDownIcon> = {
 	component: ArrowDownIcon,

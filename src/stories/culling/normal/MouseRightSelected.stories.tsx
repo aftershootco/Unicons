@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MouseRightSelected } from '../../../Icons'
+import { MouseRightSelected } from '../../../icons'
 
 const meta: Meta<typeof MouseRightSelected> = {
 	component: MouseRightSelected,

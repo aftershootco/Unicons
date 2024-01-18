@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CouponIcon } from '../../../Icons'
+import { CouponIcon } from '../../../icons'
 
 const meta: Meta<typeof CouponIcon> = {
 	component: CouponIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ShareIcon } from '../../../Icons'
+import { ShareIcon } from '../../../icons'
 
 const meta: Meta<typeof ShareIcon> = {
 	component: ShareIcon,

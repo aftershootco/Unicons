@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { Rotate90Icon } from '../../../Icons'
+import { Rotate90Icon } from '../../../icons'
 
 const meta: Meta<typeof Rotate90Icon> = {
 	component: Rotate90Icon,

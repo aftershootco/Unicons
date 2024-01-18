@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ImageNotFoundIcon } from '../../../Icons'
+import { ImageNotFoundIcon } from '../../../icons'
 
 const meta: Meta<typeof ImageNotFoundIcon> = {
 	component: ImageNotFoundIcon,

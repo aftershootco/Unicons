@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ZoomCircleIcon } from '../../../Icons'
+import { CheckBoxEmptyIcon } from '../../../icons'
 
-const meta: Meta<typeof ZoomCircleIcon> = {
-	component: ZoomCircleIcon,
-	title: 'inactive/ZoomCircleIcon',
+const meta: Meta<typeof CheckBoxEmptyIcon> = {
+	component: CheckBoxEmptyIcon,
+	title: 'edit/icons/CheckBoxEmptyIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ZoomCircleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ZoomCircleIcon>
+type Story = StoryObj<typeof CheckBoxEmptyIcon>
 
 export const Default: Story = {}
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LessGroupingIcon } from '../../../Icons'
+import { LessGroupingIcon } from '../../../icons'
 
 const meta: Meta<typeof LessGroupingIcon> = {
 	component: LessGroupingIcon,

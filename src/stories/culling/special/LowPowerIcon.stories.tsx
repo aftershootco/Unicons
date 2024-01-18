@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LowPowerIcon } from '../../../Icons'
+import { LowPowerIcon } from '../../../icons'
 
 const meta: Meta<typeof LowPowerIcon> = {
 	component: LowPowerIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ListNotSelectedIcon } from '../../../Icons'
+import { ListNotSelectedIcon } from '../../../icons'
 
 const meta: Meta<typeof ListNotSelectedIcon> = {
 	component: ListNotSelectedIcon,

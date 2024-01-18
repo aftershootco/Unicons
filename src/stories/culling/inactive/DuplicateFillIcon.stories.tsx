@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DuplicateFillIcon } from '../../../Icons'
+import { DuplicateFillIcon } from '../../../icons'
 
 const meta: Meta<typeof DuplicateFillIcon> = {
 	component: DuplicateFillIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { NetworkErrorIcon } from '../../../Icons'
+import { NetworkErrorIcon } from '../../../icons'
 
 const meta: Meta<typeof NetworkErrorIcon> = {
 	component: NetworkErrorIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { GridThreeLitIcon } from '../../../Icons'
+import { GridThreeLitIcon } from '../../../icons'
 
 const meta: Meta<typeof GridThreeLitIcon> = {
 	component: GridThreeLitIcon,

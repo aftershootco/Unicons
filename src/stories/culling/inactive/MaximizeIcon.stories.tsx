@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MaximizeIcon } from '../../../Icons'
+import { MaximizeIcon } from '../../../icons'
 
 const meta: Meta<typeof MaximizeIcon> = {
 	component: MaximizeIcon,

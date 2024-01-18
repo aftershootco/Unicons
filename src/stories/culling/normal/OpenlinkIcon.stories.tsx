@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { OpenlinkIcon } from '../../../Icons'
+import { OpenlinkIcon } from '../../../icons'
 
 const meta: Meta<typeof OpenlinkIcon> = {
 	component: OpenlinkIcon,

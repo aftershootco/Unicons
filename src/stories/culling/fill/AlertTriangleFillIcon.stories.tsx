@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { AlertTriangleFillIcon } from '../../../Icons'
+import { AlertTriangleFillIcon } from '../../../icons'
 
 const meta: Meta<typeof AlertTriangleFillIcon> = {
 	component: AlertTriangleFillIcon,

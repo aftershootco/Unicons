@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FolderIcon } from '../../../Icons'
+import { FolderIcon } from '../../../icons'
 
 const meta: Meta<typeof FolderIcon> = {
 	component: FolderIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CaptureOneIcon } from '../../Icons'
+import { CaptureOneIcon } from '../../icons'
 
 const meta: Meta<typeof CaptureOneIcon> = {
 	component: CaptureOneIcon,

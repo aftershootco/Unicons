@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FilterCircleIcon } from '../../../Icons'
+import { FilterCircleIcon } from '../../../icons'
 
 const meta: Meta<typeof FilterCircleIcon> = {
 	component: FilterCircleIcon,

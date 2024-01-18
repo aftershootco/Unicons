@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { StorageIcon } from '../../../Icons'
+import { StorageIcon } from '../../../icons'
 
 const meta: Meta<typeof StorageIcon> = {
 	component: StorageIcon,

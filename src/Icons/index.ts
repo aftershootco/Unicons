@@ -1,4 +1,3 @@
-import AlertIcon from '../xx/AlertIconDD'
 import AlertTriangleFillIcon from './culling/bg/AlertTriangleFillIcon'
 import CheckCircleBgIcon from './culling/bg/CheckCircleBgIcon'
 import CullFromCardIcon from './culling/bg/CullFromCardIcon'
@@ -27,7 +26,6 @@ import AlertHexagonIcon from './culling/inactive/AlertHexagonIcon'
 import AlertTriangleIcon from './culling/inactive/AlertTriangleIcon'
 import CheckCircleIcon from './culling/inactive/CheckCircleIcon'
 import CircleIcon from './culling/inactive/CircleIcon'
-import CloseIcon from './culling/inactive/CloseIcon'
 import ColorIcon from './culling/inactive/ColorIcon'
 import CrossIcon from './culling/inactive/CrossIcon'
 import DuplicateFillIcon from './culling/inactive/DuplicateFillIcon'
@@ -141,6 +139,12 @@ import LowPowerIcon from './culling/special/LowPowerIcon'
 import MidPowerIcon from './culling/special/MidPowerIcon'
 import MoodIcon from './culling/special/MoodIcon'
 import AftershootEditIcon from './edit/icons/AftershootEditIcon'
+import CheckBoxEmptyIcon from './edit/icons/CheckBoxEmptyIcon'
+import CheckBoxIcon from './edit/icons/CheckBoxIcon'
+import Clock2Icon from './edit/icons/Clock2Icon'
+import CollectionsIcon from './edit/icons/CollectionsIcon'
+import CloseCircleIcon from './generic/CloseCircleIcon'
+import CloseIcon from './generic/CloseIcon'
 import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
 import AftershootWhiteIcon from './logo/AftershootWhiteIcon'
 import CaptureOneIcon from './logo/CaptureOneIcon'
@@ -154,6 +158,11 @@ import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 
 export {
+	CheckBoxEmptyIcon,
+	CollectionsIcon,
+	Clock2Icon,
+	CloseCircleIcon,
+	CheckBoxIcon,
 	MoreGroupingIcon,
 	AftershootWhiteIcon,
 	AftershootEditIcon,
@@ -250,7 +259,6 @@ export {
 	ColorPaletteIcon,
 	CelebrateIcon,
 	AppleIcon,
-	AlertIcon,
 	ErrorIcon,
 	ChevronUpIcon,
 	ArrowDownIcon,

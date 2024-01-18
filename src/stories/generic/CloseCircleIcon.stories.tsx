@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CloseIcon } from '../../../Icons'
+import { CloseCircleIcon } from '../../icons'
 
-const meta: Meta<typeof CloseIcon> = {
-	component: CloseIcon,
-	title: 'inactive/CloseIcon',
+const meta: Meta<typeof CloseCircleIcon> = {
+	component: CloseCircleIcon,
+	title: 'generic/CloseCircleIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CloseIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CloseIcon>
+type Story = StoryObj<typeof CloseCircleIcon>
 
 export const Default: Story = {}
 

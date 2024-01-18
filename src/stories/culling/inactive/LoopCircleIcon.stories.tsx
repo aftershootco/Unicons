@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LoopCircleIcon } from '../../../Icons'
+import { LoopCircleIcon } from '../../../icons'
 
 const meta: Meta<typeof LoopCircleIcon> = {
 	component: LoopCircleIcon,

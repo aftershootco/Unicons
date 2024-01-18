@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MoveIcon } from '../../../Icons'
+import { MoveIcon } from '../../../icons'
 
 const meta: Meta<typeof MoveIcon> = {
 	component: MoveIcon,

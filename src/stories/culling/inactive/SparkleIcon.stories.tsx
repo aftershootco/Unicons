@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SparkleIcon } from '../../../Icons'
+import { SparkleIcon } from '../../../icons'
 
 const meta: Meta<typeof SparkleIcon> = {
 	component: SparkleIcon,

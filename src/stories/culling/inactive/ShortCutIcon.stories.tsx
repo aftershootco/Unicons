@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ShortCutIcon } from '../../../Icons'
+import { ShortCutIcon } from '../../../icons'
 
 const meta: Meta<typeof ShortCutIcon> = {
 	component: ShortCutIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MidPowerIcon } from '../../../Icons'
+import { MidPowerIcon } from '../../../icons'
 
 const meta: Meta<typeof MidPowerIcon> = {
 	component: MidPowerIcon,

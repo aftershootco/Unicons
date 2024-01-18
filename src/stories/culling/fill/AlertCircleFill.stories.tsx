@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { AlertCircleFill } from '../../../Icons'
+import { AlertCircleFill } from '../../../icons'
 
 const meta: Meta<typeof AlertCircleFill> = {
 	component: AlertCircleFill,

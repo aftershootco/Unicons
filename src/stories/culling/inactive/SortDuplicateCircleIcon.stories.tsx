@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SortDuplicateCircleIcon } from '../../../Icons'
+import { SortDuplicateCircleIcon } from '../../../icons'
 
 const meta: Meta<typeof SortDuplicateCircleIcon> = {
 	component: SortDuplicateCircleIcon,

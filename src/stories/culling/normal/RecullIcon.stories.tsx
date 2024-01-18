@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { RecullIcon } from '../../../Icons'
+import { RecullIcon } from '../../../icons'
 
 const meta: Meta<typeof RecullIcon> = {
 	component: RecullIcon,

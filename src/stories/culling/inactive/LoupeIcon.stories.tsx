@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LoupeIcon } from '../../../Icons'
+import { LoupeIcon } from '../../../icons'
 
 const meta: Meta<typeof LoupeIcon> = {
 	component: LoupeIcon,

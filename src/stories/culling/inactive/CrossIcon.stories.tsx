@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CrossIcon } from '../../../Icons'
+import { CrossIcon } from '../../../icons'
 
 const meta: Meta<typeof CrossIcon> = {
 	component: CrossIcon,

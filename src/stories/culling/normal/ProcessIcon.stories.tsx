@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ProcessIcon } from '../../../Icons'
+import { ProcessIcon } from '../../../icons'
 
 const meta: Meta<typeof ProcessIcon> = {
 	component: ProcessIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ClockIcon } from '../../../Icons'
+import { ClockIcon } from '../../../icons'
 
 const meta: Meta<typeof ClockIcon> = {
 	component: ClockIcon,

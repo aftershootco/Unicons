@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { EditAlbumNameIcon } from '../../../Icons'
+import { EditAlbumNameIcon } from '../../../icons'
 
 const meta: Meta<typeof EditAlbumNameIcon> = {
 	component: EditAlbumNameIcon,

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { UploadFolder } from '../../../Icons'
+import { UploadFolder } from '../../../icons'
 
 const meta: Meta<typeof UploadFolder> = {
 	component: UploadFolder,

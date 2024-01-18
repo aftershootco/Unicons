@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { TwitterBgIcon } from '../../Icons'
+import { TwitterBgIcon } from '../../icons'
 
 const meta: Meta<typeof TwitterBgIcon> = {
 	component: TwitterBgIcon,

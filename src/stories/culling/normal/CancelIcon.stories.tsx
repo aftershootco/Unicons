@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CancelIcon } from '../../../Icons'
+import { CancelIcon } from '../../../icons'
 
 const meta: Meta<typeof CancelIcon> = {
 	component: CancelIcon,
