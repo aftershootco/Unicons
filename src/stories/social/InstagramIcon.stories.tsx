@@ -5,7 +5,7 @@ import { InstagramIcon } from '../../icons'
 
 const meta: Meta<typeof InstagramIcon> = {
 	component: InstagramIcon,
-	title: 'Test/InstagramIcon',
+	title: 'social/InstagramIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

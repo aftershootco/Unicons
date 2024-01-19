@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DecrementIcon } from '../../../icons'
+import { AftershootEditIcon } from '../../icons'
 
-const meta: Meta<typeof DecrementIcon> = {
-	component: DecrementIcon,
-	title: 'edit/icons/DecrementIcon',
+const meta: Meta<typeof AftershootEditIcon> = {
+	component: AftershootEditIcon,
+	title: 'edit/icons/AftershootEditIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DecrementIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DecrementIcon>
+type Story = StoryObj<typeof AftershootEditIcon>
 
 export const Default: Story = {}
 
@@ -31,15 +31,8 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
-
-export const bgYellow: Story = {
-	args: {
-		color: 'black',
-		bgColor: 'yellow',
-	},
-}
 export const Large: Story = {
 	args: {
-		size: 30,
+		size: 200,
 	},
 }

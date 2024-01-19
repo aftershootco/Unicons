@@ -1,6 +1,3 @@
-import OptionFailedIcon from './OptionFailedIcon'
-import OptionpendingIcon from './OptionpendingIcon'
-import PartiallyCheckedIcon from './PartiallyCheckedIcon'
 import PlayerIcon from './PlayerIcon'
 import PlayIcon from './PlayIcon'
 import PreviewIcon from './PreviewIcon'
@@ -25,9 +22,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	OptionFailedIcon,
-	OptionpendingIcon,
-	PartiallyCheckedIcon,
 	PlayIcon,
 	PlayerIcon,
 	PreviewIcon,

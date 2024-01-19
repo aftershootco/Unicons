@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ComputerEditIcon } from '../../../icons'
+import { CheckBoxIcon } from '../../icons'
 
-const meta: Meta<typeof ComputerEditIcon> = {
-	component: ComputerEditIcon,
-	title: 'edit/icons/ComputerEditIcon',
+const meta: Meta<typeof CheckBoxIcon> = {
+	component: CheckBoxIcon,
+	title: 'edit/icons/CheckBoxIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ComputerEditIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ComputerEditIcon>
+type Story = StoryObj<typeof CheckBoxIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,21 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const yellowBg: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
+	},
+}
+
+export const yellowAccent: Story = {
+	args: {
+		color: 'black',
+		accentColor: 'yellow',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

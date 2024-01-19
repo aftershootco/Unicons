@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ConfettiRightIcon } from '../../../test'
+import { ConfettiRightIcon } from '../../icons'
 
 const meta: Meta<typeof ConfettiRightIcon> = {
 	component: ConfettiRightIcon,

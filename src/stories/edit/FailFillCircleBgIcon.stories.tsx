@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { PlusBgIcon } from '../../../icons'
+import { FailFillCircleBgIcon } from '../../icons'
 
-const meta: Meta<typeof PlusBgIcon> = {
-	component: PlusBgIcon,
-	title: 'edit/icons/PlusBgIcon',
+const meta: Meta<typeof FailFillCircleBgIcon> = {
+	component: FailFillCircleBgIcon,
+	title: 'edit/icons/FailFillCircleBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof PlusBgIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof PlusBgIcon>
+type Story = StoryObj<typeof FailFillCircleBgIcon>
 
 export const Default: Story = {}
 
@@ -38,6 +38,15 @@ export const yellowBg: Story = {
 		bgColor: 'yellow',
 	},
 }
+
+export const fillColor: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
+		fillColor: 'red',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

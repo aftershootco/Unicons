@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FailFillCircleBgIcon } from '../../../icons'
+import { EditProgressIcon } from '../../icons'
 
-const meta: Meta<typeof FailFillCircleBgIcon> = {
-	component: FailFillCircleBgIcon,
-	title: 'edit/icons/FailFillCircleBgIcon',
+const meta: Meta<typeof EditProgressIcon> = {
+	component: EditProgressIcon,
+	title: 'edit/icons/EditProgressIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof FailFillCircleBgIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof FailFillCircleBgIcon>
+type Story = StoryObj<typeof EditProgressIcon>
 
 export const Default: Story = {}
 
@@ -32,18 +32,9 @@ export const inActive: Story = {
 	},
 }
 
-export const yellowBg: Story = {
+export const GreenAccent: Story = {
 	args: {
-		color: 'black',
-		bgColor: 'yellow',
-	},
-}
-
-export const fillColor: Story = {
-	args: {
-		color: 'black',
-		bgColor: 'yellow',
-		fillColor: 'red',
+		accentColor: 'green',
 	},
 }
 

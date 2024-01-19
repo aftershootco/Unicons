@@ -118,6 +118,7 @@ import MoodIcon from './culling/special/MoodIcon'
 import AftershootEditIcon from './edit/AftershootEditIcon'
 import CheckBoxEmptyIcon from './edit/CheckBoxEmptyIcon'
 import CheckBoxIcon from './edit/CheckBoxIcon'
+import CheckBoxPartialIcon from './edit/CheckBoxPartialIcon'
 import Clock2Icon from './edit/Clock2Icon'
 import CollectionsIcon from './edit/CollectionsIcon'
 import ComputerEditIcon from './edit/ComputerEditIcon'
@@ -128,6 +129,7 @@ import DecrementIcon from './edit/DecrementIcon'
 import DotsVerticalIcon from './edit/DotsVerticalIcon'
 import EditProgressIcon from './edit/EditProgressIcon'
 import FailFillCircleBgIcon from './edit/FailFillCircleBgIcon'
+import FailFillIcon from './edit/FailFillIcon'
 import FileSearchIcon from './edit/FileSearchIcon'
 import FlagIcon from './edit/FlagIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
@@ -180,6 +182,8 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	WifiCrossedCircleBgIcon,
+	CheckBoxPartialIcon,
+	FailFillIcon,
 	InstagramIcon,
 	WifiCrossedIcon,
 	FacebookOutlineIcon,

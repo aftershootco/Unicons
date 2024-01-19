@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { AftershootEditIcon } from '../../../icons'
+import { CheckBoxEmptyIcon } from '../../icons'
 
-const meta: Meta<typeof AftershootEditIcon> = {
-	component: AftershootEditIcon,
-	title: 'edit/icons/AftershootEditIcon',
+const meta: Meta<typeof CheckBoxEmptyIcon> = {
+	component: CheckBoxEmptyIcon,
+	title: 'edit/icons/CheckBoxEmptyIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof AftershootEditIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof AftershootEditIcon>
+type Story = StoryObj<typeof CheckBoxEmptyIcon>
 
 export const Default: Story = {}
 
@@ -33,6 +33,6 @@ export const inActive: Story = {
 }
 export const Large: Story = {
 	args: {
-		size: 200,
+		size: 30,
 	},
 }

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { OptionFailedIcon } from '../test'
+import { CheckBoxPartialIcon } from '../../icons'
 
-const meta: Meta<typeof OptionFailedIcon> = {
-	component: OptionFailedIcon,
-	title: 'Test/OptionFailedIcon',
+const meta: Meta<typeof CheckBoxPartialIcon> = {
+	component: CheckBoxPartialIcon,
+	title: 'edit/icons/CheckBoxPartialIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof OptionFailedIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof OptionFailedIcon>
+type Story = StoryObj<typeof CheckBoxPartialIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,21 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const yellowBg: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
+	},
+}
+
+export const yellowAccent: Story = {
+	args: {
+		color: 'black',
+		accentColor: 'yellow',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,
