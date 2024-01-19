@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DownloadIcon } from '../test'
+import { DirectoryIcon } from '../../../icons'
 
-const meta: Meta<typeof DownloadIcon> = {
-	component: DownloadIcon,
-	title: 'Test/DownloadIcon',
+const meta: Meta<typeof DirectoryIcon> = {
+	component: DirectoryIcon,
+	title: 'edit/icons/DirectoryIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DownloadIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DownloadIcon>
+type Story = StoryObj<typeof DirectoryIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,13 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const GreenAccent: Story = {
+	args: {
+		accentColor: 'green',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

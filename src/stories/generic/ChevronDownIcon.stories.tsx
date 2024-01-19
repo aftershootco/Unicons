@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DirectoryIcon } from '../test'
+import { ChevronDownIcon } from '../../icons'
 
-const meta: Meta<typeof DirectoryIcon> = {
-	component: DirectoryIcon,
-	title: 'Test/DirectoryIcon',
+const meta: Meta<typeof ChevronDownIcon> = {
+	component: ChevronDownIcon,
+	title: 'generic/ChevronDownIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DirectoryIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DirectoryIcon>
+type Story = StoryObj<typeof ChevronDownIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,7 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ChevronLeftIcon } from '../../../icons'
+import { ChevronRightIcon } from '../../icons'
 
-const meta: Meta<typeof ChevronLeftIcon> = {
-	component: ChevronLeftIcon,
-	title: 'Icons/ChevronLeftIcon',
+const meta: Meta<typeof ChevronRightIcon> = {
+	component: ChevronRightIcon,
+	title: 'generic/ChevronRightIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof ChevronLeftIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ChevronLeftIcon>
+type Story = StoryObj<typeof ChevronRightIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

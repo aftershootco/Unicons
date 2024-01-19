@@ -1,8 +1,3 @@
-import DirectoryIcon from './DirectoryIcon'
-import DotsVerticalIcon from './DotsVerticalIcon'
-import DownarrowiconIcon from './DownarrowiconIcon'
-import DownloadIcon from './DownloadIcon'
-import DownloadoptionIcon from './DownloadoptionIcon'
 import EditAlbumNameIcon from './EditAlbumNameIcon'
 import EditingInProgressIconIcon from './EditingInProgressIconIcon'
 import EditsLogoTextIcon from './EditsLogoTextIcon'
@@ -53,11 +48,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	DirectoryIcon,
-	DotsVerticalIcon,
-	DownarrowiconIcon,
-	DownloadIcon,
-	DownloadoptionIcon,
 	EditAlbumNameIcon,
 	EditingInProgressIconIcon,
 	EditsLogoTextIcon,

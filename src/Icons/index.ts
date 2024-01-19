@@ -86,10 +86,6 @@ import CancelIcon from './culling/normal/CancelIcon'
 import CartIcon from './culling/normal/CartIcon'
 import CelebrateIcon from './culling/normal/CelebrateIcon'
 import CheckIcon from './culling/normal/CheckIcon'
-import ChevronDownIcon from './culling/normal/ChevronDownIcon'
-import ChevronLeftIcon from './culling/normal/ChevronLeftIcon'
-import ChevronRightIcon from './culling/normal/ChevronRightIcon'
-import ChevronUpIcon from './culling/normal/ChevronUpIcon'
 import ClearIcon from './culling/normal/ClearIcon'
 import ClockIcon from './culling/normal/ClockIcon'
 import ColorPaletteIcon from './culling/normal/ColorPaletteIcon'
@@ -146,6 +142,12 @@ import ConfettiIcon from './edit/icons/ConfettiIcon'
 import ConfettiLeftIcon from './edit/icons/ConfettiLeftIcon'
 import ConfettiRightIcon from './edit/icons/ConfettiRightIcon'
 import DecrementIcon from './edit/icons/DecrementIcon'
+import DirectoryIcon from './edit/icons/DirectoryIcon'
+import DotsVerticalIcon from './edit/icons/DotsVerticalIcon'
+import ChevronDownIcon from './generic/ChevronDownIcon'
+import ChevronLeftIcon from './generic/ChevronLeftIcon'
+import ChevronRightIcon from './generic/ChevronRightIcon'
+import ChevronUpIcon from './generic/ChevronUpIcon'
 import CloseCircleIcon from './generic/CloseCircleIcon'
 import CloseIcon from './generic/CloseIcon'
 import CrownIcon from './generic/CrownIcon'
@@ -165,6 +167,8 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	ConfettiLeftIcon,
+	DotsVerticalIcon,
+	DirectoryIcon,
 	DeleteBgIcon,
 	DecrementIcon,
 	ConfettiRightIcon,

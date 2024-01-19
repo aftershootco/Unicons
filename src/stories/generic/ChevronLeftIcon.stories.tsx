@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DownloadoptionIcon } from '../test'
+import { ChevronLeftIcon } from '../../icons'
 
-const meta: Meta<typeof DownloadoptionIcon> = {
-	component: DownloadoptionIcon,
-	title: 'Test/DownloadoptionIcon',
+const meta: Meta<typeof ChevronLeftIcon> = {
+	component: ChevronLeftIcon,
+	title: 'generic/ChevronLeftIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DownloadoptionIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DownloadoptionIcon>
+type Story = StoryObj<typeof ChevronLeftIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,7 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,
