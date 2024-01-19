@@ -1,5 +1,3 @@
-import PlayerIcon from './PlayerIcon'
-import PlayIcon from './PlayIcon'
 import PreviewIcon from './PreviewIcon'
 import QuestionMarkIcon from './QuestionMarkIcon'
 import RefreshIcon from './RefreshIcon'
@@ -22,8 +20,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	PlayIcon,
-	PlayerIcon,
 	PreviewIcon,
 	QuestionMarkIcon,
 	RefreshIcon,

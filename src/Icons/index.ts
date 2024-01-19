@@ -9,7 +9,6 @@ import FiveStarIcon from './culling/bg/FiveStarIcon'
 import ImageNotFound from './culling/bg/ImageNotFound'
 import ImageNotFoundIcon from './culling/bg/ImageNotFoundIcon'
 import NetworkErrorIcon from './culling/bg/NetworkErrorIcon'
-import PlayIcon from './culling/bg/PlayIcon'
 import SelectedCircleIcon from './culling/bg/SelectedCircleIcon'
 import SourceNotFoundIcon from './culling/bg/SourceNotFound'
 import SprayCursorIcon from './culling/bg/SprayCursorIcon'
@@ -160,6 +159,8 @@ import FolderIcon from './general/FolderIcon'
 import GlobalIcon from './general/GlobalIcon'
 import InfoCircleBgIcon from './general/InfoCircleBgIcon'
 import InfoCircleIcon from './general/InfoCircleIcon'
+import PlayBgIcon from './general/PlayBgIcon'
+import PlayCircleIcon from './general/PlayCircleIcon'
 import SearchIcon from './general/SearchIcon'
 import StarCrossedIcon from './general/StarCrossedIcon'
 import StarIcon from './general/StarIcon'
@@ -182,6 +183,7 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	WifiCrossedCircleBgIcon,
+	PlayCircleIcon,
 	CheckBoxPartialIcon,
 	FailFillIcon,
 	InstagramIcon,
@@ -288,7 +290,7 @@ export {
 	RecullIcon,
 	FacebookIcon,
 	FacebookBgIcon,
-	PlayIcon,
+	PlayBgIcon,
 	OpenlinkIcon,
 	NoneSelectedIcon,
 	NoneIcon,
