@@ -1,31 +1,19 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../../types/Icons/types'
+import BaseIcon from '../../../components/BaseIcon'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
-type Props = Omit<IconProps, 'variant'> & {
+type IconVariant = 'primary'
+type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
-	bgColor?: string
-	inActive?: boolean
 }
 
 export const ConfettiRightIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		...restProps
-	} = props
-
-	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
+	const { variant = 'primary', size = 300, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width='245' height='329' viewBox='0 0 245 329' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg width={(226 / 329) * size} height={size} viewBox='0 0 245 329' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g opacity='.6'>
 				<g opacity='.3'>
 					<path

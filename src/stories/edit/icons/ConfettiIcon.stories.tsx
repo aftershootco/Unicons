@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ConfettiIcon } from '../test'
+import { ConfettiIcon } from '../../../icons'
 
 const meta: Meta<typeof ConfettiIcon> = {
 	component: ConfettiIcon,
-	title: 'Test/ConfettiIcon',
+	title: 'edit/icons/ConfettiIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -20,19 +20,8 @@ type Story = StoryObj<typeof ConfettiIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
-	args: {
-		color: 'red',
-	},
-}
-
-export const inActive: Story = {
-	args: {
-		inActive: true,
-	},
-}
 export const Large: Story = {
 	args: {
-		size: 30,
+		size: 500,
 	},
 }

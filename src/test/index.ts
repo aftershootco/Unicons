@@ -1,7 +1,5 @@
-import ComputerEditIcon from './ComputerEditIcon'
-import ConfettiIcon from './ConfettiIcon'
-import ConfettiLeftIcon from './ConfettiLeftIcon'
-import ConfettiRightIcon from './ConfettiRightIcon'
+import ConfettiLeftIcon from '../icons/edit/icons/ConfettiLeftIcon'
+import ConfettiRightIcon from '../icons/edit/icons/ConfettiRightIcon'
 import CrownIcon from './CrownIcon'
 import DecrementIcon from './DecrementIcon'
 import DeleteWhiteIcon from './DeleteWhiteIcon'
@@ -59,8 +57,6 @@ import UploadIconIcon from './UploadIconIcon'
 import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 export {
-	ComputerEditIcon,
-	ConfettiIcon,
 	ConfettiLeftIcon,
 	ConfettiRightIcon,
 	CrownIcon,

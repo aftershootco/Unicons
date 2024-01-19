@@ -143,6 +143,8 @@ import CheckBoxEmptyIcon from './edit/icons/CheckBoxEmptyIcon'
 import CheckBoxIcon from './edit/icons/CheckBoxIcon'
 import Clock2Icon from './edit/icons/Clock2Icon'
 import CollectionsIcon from './edit/icons/CollectionsIcon'
+import ComputerEditIcon from './edit/icons/ComputerEditIcon'
+import ConfettiIcon from './edit/icons/ConfettiIcon'
 import CloseCircleIcon from './generic/CloseCircleIcon'
 import CloseIcon from './generic/CloseIcon'
 import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
@@ -158,7 +160,9 @@ import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 
 export {
+	ConfettiIcon,
 	CheckBoxEmptyIcon,
+	ComputerEditIcon,
 	CollectionsIcon,
 	Clock2Icon,
 	CloseCircleIcon,
