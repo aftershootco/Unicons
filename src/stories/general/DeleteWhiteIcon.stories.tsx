@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CrownIcon } from '../../icons'
+import { DeleteBgIcon } from '../../icons'
 
-const meta: Meta<typeof CrownIcon> = {
-	component: CrownIcon,
-	title: 'generic/CrownIcon',
+const meta: Meta<typeof DeleteBgIcon> = {
+	component: DeleteBgIcon,
+	title: 'general/DeleteBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof CrownIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof CrownIcon>
+type Story = StoryObj<typeof DeleteBgIcon>
 
 export const Default: Story = {}
 
@@ -26,10 +26,16 @@ export const Red: Story = {
 	},
 }
 
-export const redBg: Story = {
+export const inActive: Story = {
 	args: {
-		color: 'yellow',
-		bgColor: 'red',
+		inActive: true,
+	},
+}
+
+export const yellowBg: Story = {
+	args: {
+		color: 'white',
+		bgColor: 'yellow',
 	},
 }
 

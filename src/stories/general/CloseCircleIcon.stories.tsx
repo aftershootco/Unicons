@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ChevronUpIcon } from '../../icons'
+import { CloseCircleIcon } from '../../icons'
 
-const meta: Meta<typeof ChevronUpIcon> = {
-	component: ChevronUpIcon,
-	title: 'generic/ChevronUpIcon',
+const meta: Meta<typeof CloseCircleIcon> = {
+	component: CloseCircleIcon,
+	title: 'general/CloseCircleIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ChevronUpIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ChevronUpIcon>
+type Story = StoryObj<typeof CloseCircleIcon>
 
 export const Default: Story = {}
 
@@ -31,7 +31,6 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
-
 export const Large: Story = {
 	args: {
 		size: 30,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { StarCrossedIcon } from '../../icons'
+import { CloseIcon } from '../../icons'
 
-const meta: Meta<typeof StarCrossedIcon> = {
-	component: StarCrossedIcon,
-	title: 'generic/StarCrossedIcon',
+const meta: Meta<typeof CloseIcon> = {
+	component: CloseIcon,
+	title: 'general/CloseIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof StarCrossedIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof StarCrossedIcon>
+type Story = StoryObj<typeof CloseIcon>
 
 export const Default: Story = {}
 
@@ -31,7 +31,6 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
-
 export const Large: Story = {
 	args: {
 		size: 30,

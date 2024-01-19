@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ChevronDownIcon } from '../../icons'
+import { CheckCircleFillIcon } from '../../icons'
 
-const meta: Meta<typeof ChevronDownIcon> = {
-	component: ChevronDownIcon,
-	title: 'generic/ChevronDownIcon',
+const meta: Meta<typeof CheckCircleFillIcon> = {
+	component: CheckCircleFillIcon,
+	title: 'general/CheckCircleFillIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ChevronDownIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ChevronDownIcon>
+type Story = StoryObj<typeof CheckCircleFillIcon>
 
 export const Default: Story = {}
 
@@ -31,7 +31,6 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
-
 export const Large: Story = {
 	args: {
 		size: 30,

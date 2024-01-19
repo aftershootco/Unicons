@@ -1,16 +1,16 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
+type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	bgColor?: string
 	inActive?: boolean
 }
 
-export const ExportIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const ExportCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,11 +25,11 @@ export const ExportIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 
 	// variants
 	const primary = (
-		<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<circle cx='20' cy='20' r='20' fill='#484848' />
+		<svg width={size} height={size} viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<circle cx='20' cy='20' r='20' fill={bgColor} />
 			<path
 				d='M12 20.5v7.6a1.9 1.9 0 0 0 1.9 1.9h11.4a1.9 1.9 0 0 0 1.9-1.9v-7.6m-3.799-5.7-3.8-3.8-3.8 3.8m3.801-3.8v12.35'
-				stroke='#fff'
+				stroke={modifiedColor}
 				stroke-linecap='round'
 				stroke-linejoin='round'
 			/>
@@ -38,4 +38,4 @@ export const ExportIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(ExportIcon)
+export default React.memo(ExportCircleBgIcon)

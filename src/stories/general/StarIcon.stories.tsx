@@ -5,7 +5,7 @@ import { StarIcon } from '../../icons'
 
 const meta: Meta<typeof StarIcon> = {
 	component: StarIcon,
-	title: 'generic/StarIcon',
+	title: 'general/StarIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

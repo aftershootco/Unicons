@@ -1,5 +1,3 @@
-import ErrorWarningIcon from './ErrorWarningIcon'
-import ExportIcon from './ExportIcon'
 import FailedIcon from './FailedIcon'
 import FileSearchIcon from './FileSearchIcon'
 import FilledstarIcon from './FilledstarIcon'
@@ -44,8 +42,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	ErrorWarningIcon,
-	ExportIcon,
 	FailedIcon,
 	FileSearchIcon,
 	FilledstarIcon,
