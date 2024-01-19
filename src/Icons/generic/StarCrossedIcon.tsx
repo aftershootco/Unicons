@@ -1,13 +1,15 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-type Props = IconProps & {
+type IconVariant = 'primary'
+type Props = Omit<IconProps, 'variant'> & {
+	variant?: IconVariant
 	inActive?: boolean
 }
 
-export const StarOffIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const StarCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -34,4 +36,4 @@ export const StarOffIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(StarOffIcon)
+export default React.memo(StarCrossedIcon)

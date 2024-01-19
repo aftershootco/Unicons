@@ -1,7 +1,3 @@
-import EditAlbumNameIcon from './EditAlbumNameIcon'
-import EditingInProgressIconIcon from './EditingInProgressIconIcon'
-import EditsLogoTextIcon from './EditsLogoTextIcon'
-import EmptyStarIcon from './EmptyStarIcon'
 import ErrorWarningIcon from './ErrorWarningIcon'
 import ExportIcon from './ExportIcon'
 import FailedIcon from './FailedIcon'
@@ -48,10 +44,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	EditAlbumNameIcon,
-	EditingInProgressIconIcon,
-	EditsLogoTextIcon,
-	EmptyStarIcon,
 	ErrorWarningIcon,
 	ExportIcon,
 	FailedIcon,

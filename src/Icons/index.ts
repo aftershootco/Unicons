@@ -71,8 +71,6 @@ import SprayCanIcon from './culling/inactive/SprayCanIcon'
 import SprayCircleIcon from './culling/inactive/SprayCircleIcon'
 import SprayClickCircleIcon from './culling/inactive/SprayClickCircleIcon'
 import StackIcon from './culling/inactive/StackIcon'
-import StarIcon from './culling/inactive/StarIcon'
-import StarOffIcon from './culling/inactive/StarOffIcon'
 import ViewAllIcon from './culling/inactive/ViewAllIcon'
 import ZoomCircleIcon from './culling/inactive/ZoomCircleIcon'
 import ZoomIcon from './culling/inactive/ZoomIcon'
@@ -99,7 +97,6 @@ import DiamondIcon from './culling/normal/DiamonIcon'
 import DragCaptureOneIcon from './culling/normal/DragCaptureOneIcon'
 import DragLrcIcon from './culling/normal/DragLrcIcon'
 import DragLrIcon from './culling/normal/DragLrIcon'
-import EditIcon from './culling/normal/EditIcon'
 import EditPhotoIcon from './culling/normal/EditPhotoIcon'
 import FacebookPeopleIcon from './culling/normal/FacebookPeopleIcon'
 import FolderIcon from './culling/normal/FolderIcon'
@@ -142,8 +139,8 @@ import ConfettiIcon from './edit/icons/ConfettiIcon'
 import ConfettiLeftIcon from './edit/icons/ConfettiLeftIcon'
 import ConfettiRightIcon from './edit/icons/ConfettiRightIcon'
 import DecrementIcon from './edit/icons/DecrementIcon'
-import DirectoryIcon from './edit/icons/DirectoryIcon'
 import DotsVerticalIcon from './edit/icons/DotsVerticalIcon'
+import EditProgressIcon from './edit/icons/EditProgressIcon'
 import ChevronDownIcon from './generic/ChevronDownIcon'
 import ChevronLeftIcon from './generic/ChevronLeftIcon'
 import ChevronRightIcon from './generic/ChevronRightIcon'
@@ -153,9 +150,13 @@ import CloseIcon from './generic/CloseIcon'
 import CrownIcon from './generic/CrownIcon'
 import DeleteBgIcon from './generic/DeleteBgIcon'
 import DeleteIcon from './generic/DeleteIcon'
+import EditIcon from './generic/EditIcon'
+import StarCrossedIcon from './generic/StarCrossedIcon'
+import StarIcon from './generic/StarIcon'
 import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
 import AftershootWhiteIcon from './logo/AftershootWhiteIcon'
 import CaptureOneIcon from './logo/CaptureOneIcon'
+import EditsLogoTextIcon from './logo/EditsLogoTextIcon'
 import LightroomClassicIcon from './logo/LightroomClassicIcon'
 import LightroomIcon from './logo/LightroomIcon'
 import AppleIcon from './social/AppleIcon'
@@ -167,8 +168,9 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	ConfettiLeftIcon,
+	EditsLogoTextIcon,
 	DotsVerticalIcon,
-	DirectoryIcon,
+	EditProgressIcon,
 	DeleteBgIcon,
 	DecrementIcon,
 	ConfettiRightIcon,
@@ -231,7 +233,7 @@ export {
 	CullFromComputerIcon,
 	DragFolderIcon,
 	DragCaptureOneIcon,
-	StarOffIcon,
+	StarCrossedIcon,
 	CullFromCardIcon,
 	CrossIcon,
 	CheckCircleFillIcon,

@@ -1,31 +1,19 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
-type Props = Omit<IconProps, 'variant'> & {
+type IconVariant = 'primary'
+type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
-	bgColor?: string
-	inActive?: boolean
 }
 
 export const EditsLogoTextIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		...restProps
-	} = props
-
-	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
+	const { variant = 'primary', size = 100, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width='46' height='12' viewBox='0 0 46 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg width={(12 / 46) * size} height={size} viewBox='0 0 46 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<path
 				d='M0 11.7972V0.202816H8.86581V2.26479H2.42677V4.8507H8.1216V6.89577H2.42677V9.71831H8.96288V11.7972H0Z'
 				fill='url(#paint0_linear_15585_131451)'

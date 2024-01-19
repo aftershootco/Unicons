@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { EditIcon } from '../../../icons'
+import { EditIcon } from '../../icons'
 
 const meta: Meta<typeof EditIcon> = {
 	component: EditIcon,
-	title: 'Icons/EditIcon',
+	title: 'generic/EditIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -23,6 +23,12 @@ export const Default: Story = {}
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

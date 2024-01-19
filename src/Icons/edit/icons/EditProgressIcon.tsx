@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const DirectoryIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const EditProgressIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -55,4 +55,4 @@ export const DirectoryIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(DirectoryIcon)
+export default React.memo(EditProgressIcon)
