@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { RefreshIcon } from '../test'
+import { RefreshIcon } from '../../icons'
 
 const meta: Meta<typeof RefreshIcon> = {
 	component: RefreshIcon,
-	title: 'Test/RefreshIcon',
+	title: 'general/RefreshIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

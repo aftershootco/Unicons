@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
+import { ArrowFillIcon } from '../../icons'
 
-import { ReverticonIcon } from '../test'
-
-const meta: Meta<typeof ReverticonIcon> = {
-	component: ReverticonIcon,
-	title: 'Test/ReverticonIcon',
+const meta: Meta<typeof ArrowFillIcon> = {
+	component: ArrowFillIcon,
+	title: 'general/ArrowFillIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +15,7 @@ const meta: Meta<typeof ReverticonIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ReverticonIcon>
+type Story = StoryObj<typeof ArrowFillIcon>
 
 export const Default: Story = {}
 
@@ -26,11 +25,6 @@ export const Red: Story = {
 	},
 }
 
-export const inActive: Story = {
-	args: {
-		inActive: true,
-	},
-}
 export const Large: Story = {
 	args: {
 		size: 30,

@@ -1,9 +1,11 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-type Props = IconProps & {
+type IconVariant = 'primary'
+type Props = Omit<IconProps, 'variant'> & {
+	variant?: IconVariant
 	inActive?: boolean
 }
 

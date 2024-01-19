@@ -1,10 +1,3 @@
-import PreviewIcon from './PreviewIcon'
-import QuestionMarkIcon from './QuestionMarkIcon'
-import RefreshIcon from './RefreshIcon'
-import ReverticonIcon from './ReverticonIcon'
-import RightArrowIcon from './RightArrowIcon'
-import RightSignIcon from './RightSignIcon'
-import RotateiconIcon from './RotateiconIcon'
 import SearchIconIcon from './SearchIconIcon'
 import SettingsIcon from './SettingsIcon'
 import SuccessIcon from './SuccessIcon'
@@ -20,13 +13,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	PreviewIcon,
-	QuestionMarkIcon,
-	RefreshIcon,
-	ReverticonIcon,
-	RightArrowIcon,
-	RightSignIcon,
-	RotateiconIcon,
 	SearchIconIcon,
 	SettingsIcon,
 	SuccessIcon,

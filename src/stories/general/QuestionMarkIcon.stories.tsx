@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ArrowLeftIcon } from '../../../icons'
+import { QuestionMarkIcon } from '../../icons'
 
-const meta: Meta<typeof ArrowLeftIcon> = {
-	component: ArrowLeftIcon,
-	title: 'Icons/ArrowLeftIcon',
+const meta: Meta<typeof QuestionMarkIcon> = {
+	component: QuestionMarkIcon,
+	title: 'general/QuestionMarkIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof ArrowLeftIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ArrowLeftIcon>
+type Story = StoryObj<typeof QuestionMarkIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

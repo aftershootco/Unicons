@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { OpenlinkIcon } from '../../../icons'
+import { OpenlinkIcon } from '../../icons'
 
 const meta: Meta<typeof OpenlinkIcon> = {
 	component: OpenlinkIcon,
-	title: 'icons/OpenlinkIcon',
+	title: 'general/OpenlinkIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -23,6 +23,12 @@ export const Default: Story = {}
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

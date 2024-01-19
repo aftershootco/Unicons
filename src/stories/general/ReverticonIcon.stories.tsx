@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ArrowRightcon } from '../../../icons'
+import { RevertIcon } from '../../icons'
 
-const meta: Meta<typeof ArrowRightcon> = {
-	component: ArrowRightcon,
-	title: 'Icons/ArrowRightcon',
+const meta: Meta<typeof RevertIcon> = {
+	component: RevertIcon,
+	title: 'general/RevertIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ArrowRightcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ArrowRightcon>
+type Story = StoryObj<typeof RevertIcon>
 
 export const Default: Story = {}
 
@@ -26,6 +26,11 @@ export const Red: Story = {
 	},
 }
 
+export const inActive: Story = {
+	args: {
+		inActive: true,
+	},
+}
 export const Large: Story = {
 	args: {
 		size: 30,
