@@ -1,12 +1,3 @@
-import ImagecounntIcon from './ImagecounntIcon'
-import IncrementIcon from './IncrementIcon'
-import InfoEditIcon from './InfoEditIcon'
-import InforedIcon from './InforedIcon'
-import InstaIcon from './InstaIcon'
-import LoadingOptionIcon from './LoadingOptionIcon'
-import MarketplaceFbIcon from './MarketplaceFbIcon'
-import NetworkerrroIcon from './NetworkerrroIcon'
-import NetworkIcon from './NetworkIcon'
 import OptionCompletedIcon from './OptionCompletedIcon'
 import OptionFailedIcon from './OptionFailedIcon'
 import OptionpendingIcon from './OptionpendingIcon'
@@ -35,15 +26,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	ImagecounntIcon,
-	IncrementIcon,
-	InfoEditIcon,
-	InforedIcon,
-	InstaIcon,
-	LoadingOptionIcon,
-	MarketplaceFbIcon,
-	NetworkIcon,
-	NetworkerrroIcon,
 	OptionCompletedIcon,
 	OptionFailedIcon,
 	OptionpendingIcon,
