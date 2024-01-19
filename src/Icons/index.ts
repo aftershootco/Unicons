@@ -35,7 +35,6 @@ import FaceHappyIcon from './culling/inactive/FaceHappyIcon'
 import FaceSadIcon from './culling/inactive/FaceSadIcon'
 import FilterCircleIcon from './culling/inactive/FilterCircleIcon'
 import InActiveFilter from './culling/inactive/FilterIcon'
-import GlobeIcon from './culling/inactive/GlobeIcon'
 import GridThreeLitIcon from './culling/inactive/GridThreeLitIcon'
 import GridTwoLitIcon from './culling/inactive/GridTwoLitIcon'
 import ImageBorderCircleIcon from './culling/inactive/ImageBorderCircleIcon'
@@ -95,7 +94,6 @@ import DragLrcIcon from './culling/normal/DragLrcIcon'
 import DragLrIcon from './culling/normal/DragLrIcon'
 import EditPhotoIcon from './culling/normal/EditPhotoIcon'
 import FacebookPeopleIcon from './culling/normal/FacebookPeopleIcon'
-import FolderIcon from './culling/normal/FolderIcon'
 import FriendsIcon from './culling/normal/FriendsIcon'
 import GridDotsIcon from './culling/normal/GridDotsIcon'
 import GridIcon from './culling/normal/GridIcon'
@@ -125,41 +123,48 @@ import HighPowerIcon from './culling/special/HighPowerIcon'
 import LowPowerIcon from './culling/special/LowPowerIcon'
 import MidPowerIcon from './culling/special/MidPowerIcon'
 import MoodIcon from './culling/special/MoodIcon'
-import AftershootEditIcon from './edit/icons/AftershootEditIcon'
-import CheckBoxEmptyIcon from './edit/icons/CheckBoxEmptyIcon'
-import CheckBoxIcon from './edit/icons/CheckBoxIcon'
-import Clock2Icon from './edit/icons/Clock2Icon'
-import CollectionsIcon from './edit/icons/CollectionsIcon'
-import ComputerEditIcon from './edit/icons/ComputerEditIcon'
-import ConfettiIcon from './edit/icons/ConfettiIcon'
-import ConfettiLeftIcon from './edit/icons/ConfettiLeftIcon'
-import ConfettiRightIcon from './edit/icons/ConfettiRightIcon'
-import DecrementIcon from './edit/icons/DecrementIcon'
-import DotsVerticalIcon from './edit/icons/DotsVerticalIcon'
-import EditProgressIcon from './edit/icons/EditProgressIcon'
-import AlertCircleFill from './general/AlertCircleFill'
-import AlertTriangleFillIcon from './general/AlertTriangleFillIcon'
-import CheckCircleFillIcon from './general/CheckCircleFillIcon'
-import ChevronDownIcon from './general/ChevronDownIcon'
-import ChevronLeftIcon from './general/ChevronLeftIcon'
-import ChevronRightIcon from './general/ChevronRightIcon'
-import ChevronUpIcon from './general/ChevronUpIcon'
-import CloseCircleIcon from './general/CloseCircleIcon'
-import CloseIcon from './general/CloseIcon'
-import CrownIcon from './general/CrownIcon'
-import DeleteBgIcon from './general/DeleteBgIcon'
-import DeleteIcon from './general/DeleteIcon'
-import EditIcon from './general/EditIcon'
-import ExportCircleBgIcon from './general/ExportCircleBgIcon'
-import ExportIcon from './general/ExportIcon'
-import StarCrossedIcon from './general/StarCrossedIcon'
-import StarIcon from './general/StarIcon'
-import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
-import AftershootWhiteIcon from './logo/AftershootWhiteIcon'
-import CaptureOneIcon from './logo/CaptureOneIcon'
-import EditsLogoTextIcon from './logo/EditsLogoTextIcon'
-import LightroomClassicIcon from './logo/LightroomClassicIcon'
-import LightroomIcon from './logo/LightroomIcon'
+import AftershootEditIcon from './edit/svg/AftershootEditIcon'
+import CheckBoxEmptyIcon from './edit/svg/CheckBoxEmptyIcon'
+import CheckBoxIcon from './edit/svg/CheckBoxIcon'
+import Clock2Icon from './edit/svg/Clock2Icon'
+import CollectionsIcon from './edit/svg/CollectionsIcon'
+import ComputerEditIcon from './edit/svg/ComputerEditIcon'
+import ConfettiIcon from './edit/svg/ConfettiIcon'
+import ConfettiLeftIcon from './edit/svg/ConfettiLeftIcon'
+import ConfettiRightIcon from './edit/svg/ConfettiRightIcon'
+import DecrementIcon from './edit/svg/DecrementIcon'
+import DotsVerticalIcon from './edit/svg/DotsVerticalIcon'
+import EditProgressIcon from './edit/svg/EditProgressIcon'
+import FailFillCircleBgIcon from './edit/svg/FailFillCircleBgIcon'
+import FileSearchIcon from './edit/svg/FileSearchIcon'
+import FlagIcon from './edit/svg/FlagIcon'
+import AlertCircleFill from './general/svg/AlertCircleFill'
+import AlertTriangleFillIcon from './general/svg/AlertTriangleFillIcon'
+import CheckCircleFillIcon from './general/svg/CheckCircleFillIcon'
+import ChevronDownIcon from './general/svg/ChevronDownIcon'
+import ChevronLeftIcon from './general/svg/ChevronLeftIcon'
+import ChevronRightIcon from './general/svg/ChevronRightIcon'
+import ChevronUpIcon from './general/svg/ChevronUpIcon'
+import CloseCircleIcon from './general/svg/CloseCircleIcon'
+import CloseIcon from './general/svg/CloseIcon'
+import CrownIcon from './general/svg/CrownIcon'
+import DeleteBgIcon from './general/svg/DeleteBgIcon'
+import DeleteIcon from './general/svg/DeleteIcon'
+import EditIcon from './general/svg/EditIcon'
+import ExportCircleBgIcon from './general/svg/ExportCircleBgIcon'
+import ExportIcon from './general/svg/ExportIcon'
+import FolderCrossedIcon from './general/svg/FolderCrossedIcon'
+import FolderIcon from './general/svg/FolderIcon'
+import GlobalIcon from './general/svg/GlobalIcon'
+import SearchIcon from './general/svg/SearchIcon'
+import StarCrossedIcon from './general/svg/StarCrossedIcon'
+import StarIcon from './general/svg/StarIcon'
+import AfterShootLogoIcon from './logo/svg/AfterShootLogoIcon'
+import AftershootWhiteIcon from './logo/svg/AftershootWhiteIcon'
+import CaptureOneIcon from './logo/svg/CaptureOneIcon'
+import EditsLogoTextIcon from './logo/svg/EditsLogoTextIcon'
+import LightroomClassicIcon from './logo/svg/LightroomClassicIcon'
+import LightroomIcon from './logo/svg/LightroomIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookBgIcon from './social/FacebookBgIcon'
 import FacebookIcon from './social/FacebookIcon'
@@ -168,7 +173,14 @@ import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 
 export {
+	FlagIcon,
+	GlobalIcon,
+	SearchIcon,
+	FolderIcon,
 	ConfettiLeftIcon,
+	AddFolderIcon,
+	FileSearchIcon,
+	FailFillCircleBgIcon,
 	ExportCircleBgIcon,
 	EditsLogoTextIcon,
 	DotsVerticalIcon,
@@ -180,6 +192,7 @@ export {
 	CheckBoxEmptyIcon,
 	ComputerEditIcon,
 	CollectionsIcon,
+	DragFolderIcon,
 	Clock2Icon,
 	CloseCircleIcon,
 	CheckBoxIcon,
@@ -233,7 +246,6 @@ export {
 	EditAlbumNameIcon,
 	DragLrcIcon,
 	CullFromComputerIcon,
-	DragFolderIcon,
 	DragCaptureOneIcon,
 	StarCrossedIcon,
 	CullFromCardIcon,
@@ -241,7 +253,6 @@ export {
 	CheckCircleFillIcon,
 	CheckCircleBgIcon,
 	CaptureOneIcon,
-	AddFolderIcon,
 	MidPowerIcon,
 	MaximizeIcon,
 	QuestionMarkIcon,
@@ -255,7 +266,6 @@ export {
 	PersonIcon,
 	Stack2Icon,
 	StackIcon,
-	GlobeIcon,
 	ScissorsIcon,
 	Rotate90Icon,
 	FaceSadIcon,
@@ -305,7 +315,7 @@ export {
 	ExitAppIcon,
 	ExportIcon,
 	EyeIcon,
-	FolderIcon,
+	FolderCrossedIcon,
 	FriendsIcon,
 	GridIcon,
 	ImageNotFound,

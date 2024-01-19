@@ -1,10 +1,3 @@
-import FailedIcon from './FailedIcon'
-import FileSearchIcon from './FileSearchIcon'
-import FilledstarIcon from './FilledstarIcon'
-import FlaggedIcon from './FlaggedIcon'
-import FolderIconIcon from './FolderIconIcon'
-import GlassIcon from './GlassIcon'
-import GlobalIcon from './GlobalIcon'
 import ImagecounntIcon from './ImagecounntIcon'
 import IncrementIcon from './IncrementIcon'
 import InfoEditIcon from './InfoEditIcon'
@@ -42,13 +35,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	FailedIcon,
-	FileSearchIcon,
-	FilledstarIcon,
-	FlaggedIcon,
-	FolderIconIcon,
-	GlassIcon,
-	GlobalIcon,
 	ImagecounntIcon,
 	IncrementIcon,
 	InfoEditIcon,
