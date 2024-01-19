@@ -2,7 +2,6 @@ import AlertTriangleFillIcon from './culling/bg/AlertTriangleFillIcon'
 import CheckCircleBgIcon from './culling/bg/CheckCircleBgIcon'
 import CullFromCardIcon from './culling/bg/CullFromCardIcon'
 import CullFromComputerIcon from './culling/bg/CullFromComputerIcon'
-import DeleteIcon from './culling/bg/DeleteIcon'
 import DescAlphaIcon from './culling/bg/DescAlphaIcon'
 import DescNumIcon from './culling/bg/DescNumIcon'
 import DragFolderIcon from './culling/bg/DragFolderIcon'
@@ -99,7 +98,6 @@ import ContentCopyIcon from './culling/normal/ContentCopyIcon'
 import CopyIcon from './culling/normal/CopyIcon'
 import CouponIcon from './culling/normal/CouponIcon'
 import CreateprofileIcon from './culling/normal/CreateprofileIcon'
-import CrownIcon from './culling/normal/CrownIcon'
 import CurveArrowIcon from './culling/normal/CurveArrowIcon'
 import DiamondIcon from './culling/normal/DiamonIcon'
 import DragCaptureOneIcon from './culling/normal/DragCaptureOneIcon'
@@ -145,8 +143,14 @@ import Clock2Icon from './edit/icons/Clock2Icon'
 import CollectionsIcon from './edit/icons/CollectionsIcon'
 import ComputerEditIcon from './edit/icons/ComputerEditIcon'
 import ConfettiIcon from './edit/icons/ConfettiIcon'
+import ConfettiLeftIcon from './edit/icons/ConfettiLeftIcon'
+import ConfettiRightIcon from './edit/icons/ConfettiRightIcon'
+import DecrementIcon from './edit/icons/DecrementIcon'
 import CloseCircleIcon from './generic/CloseCircleIcon'
 import CloseIcon from './generic/CloseIcon'
+import CrownIcon from './generic/CrownIcon'
+import DeleteBgIcon from './generic/DeleteBgIcon'
+import DeleteIcon from './generic/DeleteIcon'
 import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
 import AftershootWhiteIcon from './logo/AftershootWhiteIcon'
 import CaptureOneIcon from './logo/CaptureOneIcon'
@@ -160,6 +164,10 @@ import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 
 export {
+	ConfettiLeftIcon,
+	DeleteBgIcon,
+	DecrementIcon,
+	ConfettiRightIcon,
 	ConfettiIcon,
 	CheckBoxEmptyIcon,
 	ComputerEditIcon,

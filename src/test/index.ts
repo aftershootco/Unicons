@@ -1,8 +1,3 @@
-import ConfettiLeftIcon from '../icons/edit/icons/ConfettiLeftIcon'
-import ConfettiRightIcon from '../icons/edit/icons/ConfettiRightIcon'
-import CrownIcon from './CrownIcon'
-import DecrementIcon from './DecrementIcon'
-import DeleteWhiteIcon from './DeleteWhiteIcon'
 import DirectoryIcon from './DirectoryIcon'
 import DotsVerticalIcon from './DotsVerticalIcon'
 import DownarrowiconIcon from './DownarrowiconIcon'
@@ -56,12 +51,8 @@ import UploadIcon from './UploadIcon'
 import UploadIconIcon from './UploadIconIcon'
 import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
+
 export {
-	ConfettiLeftIcon,
-	ConfettiRightIcon,
-	CrownIcon,
-	DecrementIcon,
-	DeleteWhiteIcon,
 	DirectoryIcon,
 	DotsVerticalIcon,
 	DownarrowiconIcon,

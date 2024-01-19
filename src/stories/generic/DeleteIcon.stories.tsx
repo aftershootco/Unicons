@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DeleteIcon } from '../../../icons'
+import { DeleteIcon } from '../../icons'
 
 const meta: Meta<typeof DeleteIcon> = {
 	component: DeleteIcon,
-	title: 'Icons/DeleteIcon',
+	title: 'generic/DeleteIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -26,10 +26,9 @@ export const Red: Story = {
 	},
 }
 
-export const yellowBg: Story = {
+export const inActive: Story = {
 	args: {
-		color: 'white',
-		bgColor: 'yellow',
+		inActive: true,
 	},
 }
 

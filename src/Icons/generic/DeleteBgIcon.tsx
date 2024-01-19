@@ -1,22 +1,21 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary'
-
+type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	bgColor?: string
 	inActive?: boolean
 }
 
-export const DeleteIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
-	// props
+export const DeleteBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+	//props
 	const {
 		variant = 'primary',
-		bgColor = DEFAULT_ICON.BG_COLOR,
 		color = DEFAULT_ICON.COLOR,
+		bgColor = DEFAULT_ICON.BG_COLOR,
 		size = DEFAULT_ICON.SIZE,
 		inActive = false,
 		...restProps
@@ -24,7 +23,7 @@ export const DeleteIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
-	// VARIANTS
+	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity='0.3' />
@@ -55,19 +54,7 @@ export const DeleteIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 		</svg>
 	)
 
-	const secondary = (
-		<svg width={(60 / 66) * size} height={size} viewBox='0 0 60 66' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<path
-				d='M1 13.8h57.6m-41.6 0V7.4A6.4 6.4 0 0 1 23.4 1h12.8a6.4 6.4 0 0 1 6.4 6.4v6.4m9.6 0v44.8a6.4 6.4 0 0 1-6.4 6.4h-32a6.4 6.4 0 0 1-6.4-6.4V13.8h44.8Zm-28.8 16V49m12.8-19.2V49'
-				stroke={modifiedColor}
-				stroke-width='2'
-				stroke-linecap='round'
-				stroke-linejoin='round'
-			/>
-		</svg>
-	)
-
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(DeleteIcon)
+export default React.memo(DeleteBgIcon)

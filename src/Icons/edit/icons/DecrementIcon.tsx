@@ -1,9 +1,9 @@
 import React from 'react'
-import { IconProps } from '../../types/Icons/types'
-import BaseIcon from '../components/BaseIcon'
-import DEFAULT_ICON from '../constant'
+import { IconProps } from '../../../../types/Icons/types'
+import BaseIcon from '../../../components/BaseIcon'
+import DEFAULT_ICON from '../../../constant'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
+type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	bgColor?: string
@@ -25,9 +25,9 @@ export const DecrementIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 
 	// variants
 	const primary = (
-		<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect x='0.368164' y='0.5' width='11' height='11' rx='3' fill='#454545' />
-			<path d='M3.36816 6.5V5.5H8.36816V6.5H3.36816Z' fill='white' />
+		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<rect x='0.368164' y='0.5' width='11' height='11' rx='3' fill={bgColor} />
+			<path d='M3.36816 6.5V5.5H8.36816V6.5H3.36816Z' fill={modifiedColor} />
 		</svg>
 	)
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
