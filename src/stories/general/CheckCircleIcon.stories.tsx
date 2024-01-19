@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { OptionCompletedIcon } from '../../test'
+import { CheckCircleIcon } from '../../icons'
 
-const meta: Meta<typeof OptionCompletedIcon> = {
-	component: OptionCompletedIcon,
-	title: 'Test/OptionCompletedIcon',
+const meta: Meta<typeof CheckCircleIcon> = {
+	component: CheckCircleIcon,
+	title: 'general/CheckCircleIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof OptionCompletedIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof OptionCompletedIcon>
+type Story = StoryObj<typeof CheckCircleIcon>
 
 export const Default: Story = {}
 

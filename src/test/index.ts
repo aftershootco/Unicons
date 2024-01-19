@@ -1,4 +1,3 @@
-import OptionCompletedIcon from './OptionCompletedIcon'
 import OptionFailedIcon from './OptionFailedIcon'
 import OptionpendingIcon from './OptionpendingIcon'
 import PartiallyCheckedIcon from './PartiallyCheckedIcon'
@@ -26,7 +25,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	OptionCompletedIcon,
 	OptionFailedIcon,
 	OptionpendingIcon,
 	PartiallyCheckedIcon,

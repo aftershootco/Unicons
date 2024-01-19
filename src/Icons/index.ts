@@ -1,4 +1,3 @@
-import CheckCircleBgIcon from './culling/bg/CheckCircleBgIcon'
 import CullFromCardIcon from './culling/bg/CullFromCardIcon'
 import CullFromComputerIcon from './culling/bg/CullFromComputerIcon'
 import DescAlphaIcon from './culling/bg/DescAlphaIcon'
@@ -16,7 +15,6 @@ import SourceNotFoundIcon from './culling/bg/SourceNotFound'
 import SprayCursorIcon from './culling/bg/SprayCursorIcon'
 import WarningIcon from './culling/bg/WarningIcon'
 import AddFolderIcon from './culling/inactive/AddFolderIcon'
-import CheckCircleIcon from './culling/inactive/CheckCircleIcon'
 import CircleIcon from './culling/inactive/CircleIcon'
 import ColorIcon from './culling/inactive/ColorIcon'
 import CrossIcon from './culling/inactive/CrossIcon'
@@ -73,7 +71,6 @@ import BorderColorIcon from './culling/normal/BorderColorIcon'
 import CancelIcon from './culling/normal/CancelIcon'
 import CartIcon from './culling/normal/CartIcon'
 import CelebrateIcon from './culling/normal/CelebrateIcon'
-import CheckIcon from './culling/normal/CheckIcon'
 import ClearIcon from './culling/normal/ClearIcon'
 import ClockIcon from './culling/normal/ClockIcon'
 import ColorPaletteIcon from './culling/normal/ColorPaletteIcon'
@@ -139,7 +136,10 @@ import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
 import AlertTriangleFillIcon from './general/AlertTriangleFillIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
-import CheckCircleFillIcon from './general/CheckCircleFillIcon'
+import CheckCircleBgCircleIcon from './general/CheckCircleBgCircleIcon'
+import CheckCircleIcon from './general/CheckCircleIcon'
+import CheckFillCircleIcon from './general/CheckFillCircleIcon'
+import CheckIcon from './general/CheckIcon'
 import ChevronDownIcon from './general/ChevronDownIcon'
 import ChevronLeftIcon from './general/ChevronLeftIcon'
 import ChevronRightIcon from './general/ChevronRightIcon'
@@ -262,8 +262,8 @@ export {
 	StarCrossedIcon,
 	CullFromCardIcon,
 	CrossIcon,
-	CheckCircleFillIcon,
-	CheckCircleBgIcon,
+	CheckFillCircleIcon,
+	CheckCircleBgCircleIcon,
 	CaptureOneIcon,
 	MidPowerIcon,
 	MaximizeIcon,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { CheckIcon } from '../../../icons'
+import { CheckIcon } from '../../icons'
 
 const meta: Meta<typeof CheckIcon> = {
 	component: CheckIcon,
-	title: 'inactive/CheckIcon',
+	title: 'general/CheckIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

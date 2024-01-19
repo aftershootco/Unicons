@@ -22,6 +22,7 @@ export const CircleFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 			/>
 		</svg>
 	)
+
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type IconVariant = 'primary'
 
@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const CheckCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CheckCircleBgCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -47,4 +47,4 @@ export const CheckCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(CheckCircleBgIcon)
+export default React.memo(CheckCircleBgCircleIcon)
