@@ -130,6 +130,7 @@ import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
 import TrainIcon from './edit/TrainIcon'
 import AlertCircleFill from './general/AlertCircleFill'
 import AlertCircleIcon from './general/AlertCircleIcon'
+import AlertFillTriangleBgIcon from './general/AlertFillTriangleBgIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
 import AlertTriangleFillIcon from './general/AlertTriangleFillIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
@@ -171,6 +172,7 @@ import RotateIcon from './general/RotateIcon'
 import SearchIcon from './general/SearchIcon'
 import StarCrossedIcon from './general/StarCrossedIcon'
 import StarIcon from './general/StarIcon'
+import UploadBgIcon from './general/UploadBgIcon'
 import UploadCloudBgIcon from './general/UploadCloudBgIcon'
 import UploadCloudIcon from './general/UploadCloudIcon'
 import WifiCrossedCircleBgIcon from './general/WifiCrossedCircleBgIcon'
@@ -192,6 +194,8 @@ import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
+	UploadBgIcon,
+	AlertFillTriangleBgIcon,
 	UploadCloudBgIcon,
 	WifiCrossedCircleBgIcon,
 	UploadCloudIcon,

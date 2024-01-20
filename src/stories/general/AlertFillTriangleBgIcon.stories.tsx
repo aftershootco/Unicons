@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { WarnIcon } from '../test'
+import { AlertFillTriangleBgIcon } from '../../icons'
 
-const meta: Meta<typeof WarnIcon> = {
-	component: WarnIcon,
-	title: 'Test/WarnIcon',
+const meta: Meta<typeof AlertFillTriangleBgIcon> = {
+	component: AlertFillTriangleBgIcon,
+	title: 'general/AlertFillTriangleBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof WarnIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof WarnIcon>
+type Story = StoryObj<typeof AlertFillTriangleBgIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,13 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const greenFill: Story = {
+	args: {
+		fillColor: 'green',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

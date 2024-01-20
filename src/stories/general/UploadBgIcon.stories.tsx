@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { WifiCrossedCircleBgIcon } from '../icons'
+import { UploadBgIcon } from '../../icons'
 
-const meta: Meta<typeof WifiCrossedCircleBgIcon> = {
-	component: WifiCrossedCircleBgIcon,
-	title: 'general/WifiCrossedCircleBgIcon',
+const meta: Meta<typeof UploadBgIcon> = {
+	component: UploadBgIcon,
+	title: 'general/UploadBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof WifiCrossedCircleBgIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof WifiCrossedCircleBgIcon>
+type Story = StoryObj<typeof UploadBgIcon>
 
 export const Default: Story = {}
 
@@ -26,16 +26,21 @@ export const Red: Story = {
 	},
 }
 
+export const yellowBg: Story = {
+	args: {
+		bgColor: 'yellow',
+	},
+}
+
 export const inActive: Story = {
 	args: {
 		inActive: true,
 	},
 }
 
-export const yellowBg: Story = {
+export const greenAccent: Story = {
 	args: {
-		color: 'black',
-		bgColor: 'yellow',
+		accentColor: 'green',
 	},
 }
 
