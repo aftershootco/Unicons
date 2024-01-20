@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ListNotSelectedIcon } from '../../icons'
+import { EditPhotoIcon } from '../../icons'
 
-const meta: Meta<typeof ListNotSelectedIcon> = {
-	component: ListNotSelectedIcon,
-	title: 'culling/ListNotSelectedIcon',
+const meta: Meta<typeof EditPhotoIcon> = {
+	component: EditPhotoIcon,
+	title: 'Icons/EditPhotoIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ListNotSelectedIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ListNotSelectedIcon>
+type Story = StoryObj<typeof EditPhotoIcon>
 
 export const Default: Story = {}
 

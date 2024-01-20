@@ -5,7 +5,7 @@ import { ListSelectedIcon } from '../../icons'
 
 const meta: Meta<typeof ListSelectedIcon> = {
 	component: ListSelectedIcon,
-	title: 'Icons/ListSelectedIcon',
+	title: 'culling/ListSelectedIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

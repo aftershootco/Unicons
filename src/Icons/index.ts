@@ -1,14 +1,24 @@
 import AddFolderIcon from './culling/AddFolderIcon'
+import BorderSquareIcon from './culling/BorderSquareIcon'
+import CartIcon from './culling/CartIcon'
+import CelebrateIcon from './culling/CelebrateIcon'
 import CircleIcon from './culling/CircleIcon'
 import ColorIcon from './culling/ColorIcon'
+import ColorPaletteIcon from './culling/ColorPaletteIcon'
+import ContactSupportIcon from './culling/ContactSupportIcon'
+import CouponIcon from './culling/CouponIcon'
+import CreateProfileIcon from './culling/CreateProfileIcon'
 import CrossIcon from './culling/CrossIcon'
 import CullFromCardBgIcon from './culling/CullFromCardBgIcon'
 import CullFromComputerBgIcon from './culling/CullFromComputerBgIcon'
+import CurveArrowIcon from './culling/CurveArrowIcon'
 import DescAlphaIcon from './culling/DescAlphaIcon'
 import DescNumIcon from './culling/DescNumIcon'
+import DiamondIcon from './culling/DiamonIcon'
 import DuplicateFillIcon from './culling/DuplicateFillIcon'
 import DuplicateIcon from './culling/DuplicateIcon'
 import EditAlbumNameIcon from './culling/EditAlbumNameIcon'
+import EditPhotoIcon from './culling/EditPhotoIcon'
 import ExitAppBgIcon from './culling/ExitAppBgIcon'
 import ExpandIcon from './culling/ExpandIcon'
 import EyeCheckedIcon from './culling/EyeCheckedIcon'
@@ -38,24 +48,6 @@ import MaximizeIcon from './culling/MaximizeIcon'
 import MinimizeIcon from './culling/MinimizeIcon'
 import MoneyIcon from './culling/MoneyIcon'
 import NoDuplicateIcon from './culling/NoDuplicateIcon'
-import BorderColorIcon from './culling/normal/BorderColorIcon'
-import CancelIcon from './culling/normal/CancelIcon'
-import CartIcon from './culling/normal/CartIcon'
-import CelebrateIcon from './culling/normal/CelebrateIcon'
-import ClearIcon from './culling/normal/ClearIcon'
-import ClockIcon from './culling/normal/ClockIcon'
-import ColorPaletteIcon from './culling/normal/ColorPaletteIcon'
-import ContactSupportIcon from './culling/normal/ContactSupportIcon'
-import ContentCopyIcon from './culling/normal/ContentCopyIcon'
-import CopyIcon from './culling/normal/CopyIcon'
-import CouponIcon from './culling/normal/CouponIcon'
-import CreateprofileIcon from './culling/normal/CreateprofileIcon'
-import CurveArrowIcon from './culling/normal/CurveArrowIcon'
-import DiamondIcon from './culling/normal/DiamonIcon'
-import DragCaptureOneIcon from './culling/normal/DragCaptureOneIcon'
-import DragLrcIcon from './culling/normal/DragLrcIcon'
-import DragLrIcon from './culling/normal/DragLrIcon'
-import EditPhotoIcon from './culling/normal/EditPhotoIcon'
 import FacebookPeopleIcon from './culling/normal/FacebookPeopleIcon'
 import FriendsIcon from './culling/normal/FriendsIcon'
 import GridDotsIcon from './culling/normal/GridDotsIcon'
@@ -101,7 +93,6 @@ import AftershootEditIcon from './edit/AftershootEditIcon'
 import CheckBoxEmptyIcon from './edit/CheckBoxEmptyIcon'
 import CheckBoxIcon from './edit/CheckBoxIcon'
 import CheckBoxPartialIcon from './edit/CheckBoxPartialIcon'
-import Clock2Icon from './edit/Clock2Icon'
 import CollectionsIcon from './edit/CollectionsIcon'
 import ComputerEditIcon from './edit/ComputerEditIcon'
 import ConfettiIcon from './edit/ConfettiIcon'
@@ -140,8 +131,10 @@ import ChevronLeftIcon from './general/ChevronLeftIcon'
 import ChevronRightIcon from './general/ChevronRightIcon'
 import ChevronUpIcon from './general/ChevronUpIcon'
 import CircleFillIcon from './general/CircleFillIcon'
+import ClockIcon from './general/ClockIcon'
 import CloseCircleIcon from './general/CloseCircleIcon'
 import CloseIcon from './general/CloseIcon'
+import CopyIcon from './general/CopyIcon'
 import CrownIcon from './general/CrownIcon'
 import DeleteBgIcon from './general/DeleteBgIcon'
 import DeleteIcon from './general/DeleteIcon'
@@ -169,12 +162,15 @@ import UploadCloudBgIcon from './general/UploadCloudBgIcon'
 import UploadCloudIcon from './general/UploadCloudIcon'
 import WifiCrossedBgIcon from './general/WifiCrossedBgIcon'
 import WifiCrossedIcon from './general/WifiCrossedIcon'
-import AfterShootLogoIcon from './logo/svg/AfterShootLogoIcon'
-import AftershootWhiteIcon from './logo/svg/AftershootWhiteIcon'
-import CaptureOneIcon from './logo/svg/CaptureOneIcon'
-import EditsLogoTextIcon from './logo/svg/EditsLogoTextIcon'
-import LightroomClassicIcon from './logo/svg/LightroomClassicIcon'
-import LightroomIcon from './logo/svg/LightroomIcon'
+import AfterShootLogoIcon from './logo/AfterShootLogoIcon'
+import AftershootLogoWhite from './logo/AftershootLogoWhite'
+import CaptureOneIcon from './logo/CaptureOneIcon'
+import DragCaptureOneIcon from './logo/DragCaptureOneIcon'
+import DragLrcIcon from './logo/DragLrcIcon'
+import DragLrIcon from './logo/DragLrIcon'
+import EditsLogoTextIcon from './logo/EditsLogoTextIcon'
+import LightroomClassicIcon from './logo/LightroomClassicIcon'
+import LightroomIcon from './logo/LightroomIcon'
 import AppleIcon from './social/AppleIcon'
 import FacebookBgIcon from './social/FacebookBgIcon'
 import FacebookIcon from './social/FacebookIcon'
@@ -191,6 +187,8 @@ import MoodIcon from './special/MoodIcon'
 
 export {
 	UploadBgIcon,
+	CreateProfileIcon,
+	AftershootLogoWhite,
 	AlertFill,
 	UploadCloudBgIcon,
 	WifiCrossedBgIcon,
@@ -231,11 +229,9 @@ export {
 	ComputerEditIcon,
 	CollectionsIcon,
 	FolderOutlineBgIcon,
-	Clock2Icon,
 	CloseCircleIcon,
 	CheckBoxIcon,
 	MoreGroupingIcon,
-	AftershootWhiteIcon,
 	AftershootEditIcon,
 	EyeCheckedIcon,
 	EyeCrossedIcon,
@@ -318,10 +314,8 @@ export {
 	HomeIcon,
 	GridDotsIcon,
 	GoogleIcon,
-	CancelIcon,
 	CurveArrowIcon,
 	CrownIcon,
-	CreateprofileIcon,
 	CouponIcon,
 	ColorPaletteIcon,
 	CelebrateIcon,
@@ -331,14 +325,12 @@ export {
 	ArrowDownIcon,
 	ArrowFillIcon,
 	ArrowUpIcon,
-	BorderColorIcon,
+	BorderSquareIcon,
 	AfterShootLogoIcon,
 	CartIcon,
 	CheckIcon,
-	ClearIcon,
 	ClockIcon,
 	ContactSupportIcon,
-	ContentCopyIcon,
 	CopyIcon,
 	ChevronDownIcon,
 	ChevronRightIcon,

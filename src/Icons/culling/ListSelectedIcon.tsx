@@ -16,15 +16,8 @@ export const ListSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
-	const primary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect y='8.889' width='16' height='7.111' rx='1' fill={modifiedColor} opacity='.3' />
-			<rect width='16' height='7.111' rx='1' fill={modifiedColor} />
-		</svg>
-	)
-
 	// variants
-	const secondary = (
+	const primary = (
 		<svg width={size} height={size} viewBox='0 0 22 22' fill='#E2E2E2' xmlns='http://www.w3.org/2000/svg'>
 			<g clip-path='url(#clip0_12220_36387)'>
 				<path
@@ -46,6 +39,13 @@ export const ListSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 					<rect width='18' height='18' fill='white' transform='translate(2 2)' />
 				</clipPath>
 			</defs>
+		</svg>
+	)
+
+	const secondary = (
+		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<rect y='8.889' width='16' height='7.111' rx='1' fill={modifiedColor} opacity='.3' />
+			<rect width='16' height='7.111' rx='1' fill={modifiedColor} />
 		</svg>
 	)
 
