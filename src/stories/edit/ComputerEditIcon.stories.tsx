@@ -5,7 +5,7 @@ import { ComputerEditIcon } from '../../icons'
 
 const meta: Meta<typeof ComputerEditIcon> = {
 	component: ComputerEditIcon,
-	title: 'edit/icons/ComputerEditIcon',
+	title: 'edit/ComputerEditIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

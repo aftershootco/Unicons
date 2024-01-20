@@ -5,7 +5,7 @@ import { SuccessFillBgIcon } from '../../icons'
 
 const meta: Meta<typeof SuccessFillBgIcon> = {
 	component: SuccessFillBgIcon,
-	title: 'edit/icons/SuccessFillBgIcon',
+	title: 'edit/SuccessFillBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

@@ -5,7 +5,7 @@ import { AftershootEditIcon } from '../../icons'
 
 const meta: Meta<typeof AftershootEditIcon> = {
 	component: AftershootEditIcon,
-	title: 'edit/icons/AftershootEditIcon',
+	title: 'edit/AftershootEditIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

@@ -5,7 +5,7 @@ import { EditProgressIcon } from '../../icons'
 
 const meta: Meta<typeof EditProgressIcon> = {
 	component: EditProgressIcon,
-	title: 'edit/icons/EditProgressIcon',
+	title: 'edit/EditProgressIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

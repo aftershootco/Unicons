@@ -5,7 +5,7 @@ import { FailFillIcon } from '../../icons'
 
 const meta: Meta<typeof FailFillIcon> = {
 	component: FailFillIcon,
-	title: 'edit/icons/FailFillIcon',
+	title: 'edit/FailFillIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

@@ -5,7 +5,7 @@ import { CollectionsIcon } from '../../icons'
 
 const meta: Meta<typeof CollectionsIcon> = {
 	component: CollectionsIcon,
-	title: 'edit/icons/CollectionsIcon',
+	title: 'edit/CollectionsIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

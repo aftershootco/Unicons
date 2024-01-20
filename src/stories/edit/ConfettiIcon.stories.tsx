@@ -5,7 +5,7 @@ import { ConfettiIcon } from '../../icons'
 
 const meta: Meta<typeof ConfettiIcon> = {
 	component: ConfettiIcon,
-	title: 'edit/icons/ConfettiIcon',
+	title: 'edit/ConfettiIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

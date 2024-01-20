@@ -5,7 +5,7 @@ import { Clock2Icon } from '../../icons'
 
 const meta: Meta<typeof Clock2Icon> = {
 	component: Clock2Icon,
-	title: 'edit/icons/Clock2Icon',
+	title: 'edit/Clock2Icon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

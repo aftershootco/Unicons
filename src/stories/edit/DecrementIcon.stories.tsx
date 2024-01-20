@@ -5,7 +5,7 @@ import { DecrementIcon } from '../../icons'
 
 const meta: Meta<typeof DecrementIcon> = {
 	component: DecrementIcon,
-	title: 'edit/icons/DecrementIcon',
+	title: 'edit/DecrementIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

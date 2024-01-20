@@ -5,7 +5,7 @@ import { CheckBoxPartialIcon } from '../../icons'
 
 const meta: Meta<typeof CheckBoxPartialIcon> = {
 	component: CheckBoxPartialIcon,
-	title: 'edit/icons/CheckBoxPartialIcon',
+	title: 'edit/CheckBoxPartialIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

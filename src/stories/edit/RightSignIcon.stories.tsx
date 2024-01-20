@@ -5,7 +5,7 @@ import { RightArrowBgIcon } from '../../icons'
 
 const meta: Meta<typeof RightArrowBgIcon> = {
 	component: RightArrowBgIcon,
-	title: 'edit/icons/RightArrowBgIcon',
+	title: 'edit/RightArrowBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

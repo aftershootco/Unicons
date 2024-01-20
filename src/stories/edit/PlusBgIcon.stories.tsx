@@ -5,7 +5,7 @@ import { PlusBgIcon } from '../../icons'
 
 const meta: Meta<typeof PlusBgIcon> = {
 	component: PlusBgIcon,
-	title: 'edit/icons/PlusBgIcon',
+	title: 'edit/PlusBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

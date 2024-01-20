@@ -5,7 +5,7 @@ import { FailFillBgIcon } from '../../icons'
 
 const meta: Meta<typeof FailFillBgIcon> = {
 	component: FailFillBgIcon,
-	title: 'edit/icons/FailFillBgIcon',
+	title: 'edit/FailFillBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

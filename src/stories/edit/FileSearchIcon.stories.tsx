@@ -5,7 +5,7 @@ import { FileSearchIcon } from '../../icons'
 
 const meta: Meta<typeof FileSearchIcon> = {
 	component: FileSearchIcon,
-	title: 'edit/icons/FileSearchIcon',
+	title: 'edit/FileSearchIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

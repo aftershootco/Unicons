@@ -5,7 +5,7 @@ import { FlagIcon } from '../../icons'
 
 const meta: Meta<typeof FlagIcon> = {
 	component: FlagIcon,
-	title: 'edit/icons/FlagIcon',
+	title: 'edit/FlagIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

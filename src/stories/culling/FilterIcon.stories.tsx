@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import FilterIcon from '../../icons/culling/inactive/FilterIcon'
+import FilterIcon from '../../icons/culling/FilterIcon'
 
 const meta: Meta<typeof FilterIcon> = {
 	component: FilterIcon,

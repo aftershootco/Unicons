@@ -5,7 +5,7 @@ import { CheckBoxIcon } from '../../icons'
 
 const meta: Meta<typeof CheckBoxIcon> = {
 	component: CheckBoxIcon,
-	title: 'edit/icons/CheckBoxIcon',
+	title: 'edit/CheckBoxIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

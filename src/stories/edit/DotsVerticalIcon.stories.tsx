@@ -5,7 +5,7 @@ import { DotsVerticalIcon } from '../../icons'
 
 const meta: Meta<typeof DotsVerticalIcon> = {
 	component: DotsVerticalIcon,
-	title: 'edit/icons/DotsVerticalIcon',
+	title: 'edit/DotsVerticalIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
