@@ -119,12 +119,13 @@ import ConfettiRightIcon from './edit/ConfettiRightIcon'
 import DecrementIcon from './edit/DecrementIcon'
 import DotsVerticalIcon from './edit/DotsVerticalIcon'
 import EditProgressIcon from './edit/EditProgressIcon'
-import FailFillCircleBgIcon from './edit/FailFillCircleBgIcon'
+import FailFillBgIcon from './edit/FailFillBgIcon'
 import FailFillIcon from './edit/FailFillIcon'
 import FileSearchIcon from './edit/FileSearchIcon'
 import FlagIcon from './edit/FlagIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
+import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
 import AlertCircleFill from './general/AlertCircleFill'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
@@ -187,6 +188,7 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	WifiCrossedCircleBgIcon,
+	SuccessFillBgIcon,
 	RotateIcon,
 	RightArrowBgIcon,
 	RevertIcon,
@@ -206,7 +208,7 @@ export {
 	ConfettiLeftIcon,
 	AddFolderIcon,
 	FileSearchIcon,
-	FailFillCircleBgIcon,
+	FailFillBgIcon,
 	ExportCircleBgIcon,
 	EditsLogoTextIcon,
 	DotsVerticalIcon,

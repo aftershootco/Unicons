@@ -1,6 +1,3 @@
-import SearchIconIcon from './SearchIconIcon'
-import SettingsIcon from './SettingsIcon'
-import SuccessIcon from './SuccessIcon'
 import TrainCompleteIcon from './TrainCompleteIcon'
 import TrainFailIcon from './TrainFailIcon'
 import TrainIconIcon from './TrainIconIcon'
@@ -13,9 +10,6 @@ import UploadsIcon from './UploadsIcon'
 import WarnIcon from './WarnIcon'
 
 export {
-	SearchIconIcon,
-	SettingsIcon,
-	SuccessIcon,
 	TrainCompleteIcon,
 	TrainFailIcon,
 	TrainIconIcon,

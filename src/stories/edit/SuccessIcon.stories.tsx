@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SearchIconIcon } from '../test'
+import { SuccessFillBgIcon } from '../../icons'
 
-const meta: Meta<typeof SearchIconIcon> = {
-	component: SearchIconIcon,
-	title: 'Test/SearchIconIcon',
+const meta: Meta<typeof SuccessFillBgIcon> = {
+	component: SuccessFillBgIcon,
+	title: 'edit/icons/SuccessFillBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof SearchIconIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SearchIconIcon>
+type Story = StoryObj<typeof SuccessFillBgIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,20 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const yellowBg: Story = {
+	args: {
+		color: 'black',
+		bgColor: 'yellow',
+	},
+}
+
+export const redFill: Story = {
+	args: {
+		fillColor: 'red',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,
