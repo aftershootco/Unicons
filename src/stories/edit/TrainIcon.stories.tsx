@@ -5,7 +5,7 @@ import { TrainIcon } from '../../icons'
 
 const meta: Meta<typeof TrainIcon> = {
 	component: TrainIcon,
-	title: 'Test/TrainIcon',
+	title: 'edit/icons/TrainIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

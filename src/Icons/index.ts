@@ -186,9 +186,11 @@ import GoogleIcon from './social/GoogleIcon'
 import InstagramIcon from './social/InstagramIcon'
 import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
+import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
 	WifiCrossedCircleBgIcon,
+	TwitterOutlineIcon,
 	TrainIcon,
 	SuccessFillBgIcon,
 	RotateIcon,
