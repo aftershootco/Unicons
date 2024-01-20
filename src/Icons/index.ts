@@ -122,6 +122,7 @@ import EditProgressIcon from './edit/EditProgressIcon'
 import FailFillBgIcon from './edit/FailFillBgIcon'
 import FailFillIcon from './edit/FailFillIcon'
 import FileSearchIcon from './edit/FileSearchIcon'
+import FlagCrossedIcon from './edit/FlagCrossedIcon'
 import FlagIcon from './edit/FlagIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
@@ -170,6 +171,8 @@ import RotateIcon from './general/RotateIcon'
 import SearchIcon from './general/SearchIcon'
 import StarCrossedIcon from './general/StarCrossedIcon'
 import StarIcon from './general/StarIcon'
+import UploadCloudBgIcon from './general/UploadCloudBgIcon'
+import UploadCloudIcon from './general/UploadCloudIcon'
 import WifiCrossedCircleBgIcon from './general/WifiCrossedCircleBgIcon'
 import WifiCrossedIcon from './general/WifiCrossedIcon'
 import AfterShootLogoIcon from './logo/svg/AfterShootLogoIcon'
@@ -189,7 +192,10 @@ import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
+	UploadCloudBgIcon,
 	WifiCrossedCircleBgIcon,
+	UploadCloudIcon,
+	FlagCrossedIcon,
 	TwitterOutlineIcon,
 	TrainIcon,
 	SuccessFillBgIcon,
