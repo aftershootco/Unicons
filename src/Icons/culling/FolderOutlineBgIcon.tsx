@@ -1,7 +1,7 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type IconVariant = 'primary'
 
@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const DragFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FolderOutlineBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -27,7 +27,7 @@ export const DragFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='60' height='60' rx='10' fill={bgColor} />
+			<rect width='60' height='60' rx='10' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M42.63 39.15a2.61 2.61 0 0 1-2.61 2.61H19.14a2.61 2.61 0 0 1-2.61-2.61V20.88a2.61 2.61 0 0 1 2.61-2.61h6.525l2.61 3.915H40.02a2.61 2.61 0 0 1 2.61 2.61V39.15Z'
 				stroke={modifiedColor}
@@ -40,4 +40,4 @@ export const DragFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(DragFolderIcon)
+export default React.memo(FolderOutlineBgIcon)

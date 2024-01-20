@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ExitAppIcon } from '../../../icons'
+import { FolderOutlineBgIcon } from '../../icons'
 
-const meta: Meta<typeof ExitAppIcon> = {
-	component: ExitAppIcon,
-	title: 'Background/ExitAppIcon',
+const meta: Meta<typeof FolderOutlineBgIcon> = {
+	component: FolderOutlineBgIcon,
+	title: 'culling/FolderOutlineBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,11 +16,11 @@ const meta: Meta<typeof ExitAppIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ExitAppIcon>
+type Story = StoryObj<typeof FolderOutlineBgIcon>
 
 export const Default: Story = {}
 
-export const red: Story = {
+export const Red: Story = {
 	args: {
 		color: 'red',
 	},
@@ -33,6 +33,11 @@ export const yellowBg: Story = {
 	},
 }
 
+export const inActive: Story = {
+	args: {
+		inActive: true,
+	},
+}
 export const Large: Story = {
 	args: {
 		size: 30,

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DragFolderIcon } from '../../../icons'
+import { AlertTriangleBgIcon } from '../../icons'
 
-const meta: Meta<typeof DragFolderIcon> = {
-	component: DragFolderIcon,
-	title: 'background/DragFolderIcon',
+const meta: Meta<typeof AlertTriangleBgIcon> = {
+	component: AlertTriangleBgIcon,
+	title: 'general/AlertTriangleBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DragFolderIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DragFolderIcon>
+type Story = StoryObj<typeof AlertTriangleBgIcon>
 
 export const Default: Story = {}
 
@@ -33,11 +33,12 @@ export const yellowBg: Story = {
 	},
 }
 
-export const inActive: Story = {
+export const InActive: Story = {
 	args: {
 		inActive: true,
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,

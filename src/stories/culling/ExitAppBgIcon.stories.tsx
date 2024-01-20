@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ErrorIcon } from '../../../icons'
+import { ExitAppBgIcon } from '../../icons'
 
-const meta: Meta<typeof ErrorIcon> = {
-	component: ErrorIcon,
-	title: 'Background/ErrorIcon',
+const meta: Meta<typeof ExitAppBgIcon> = {
+	component: ExitAppBgIcon,
+	title: 'culling/ExitAppBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,11 +16,11 @@ const meta: Meta<typeof ErrorIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ErrorIcon>
+type Story = StoryObj<typeof ExitAppBgIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
+export const red: Story = {
 	args: {
 		color: 'red',
 	},
@@ -30,6 +30,12 @@ export const yellowBg: Story = {
 	args: {
 		color: 'black',
 		bgColor: 'yellow',
+	},
+}
+
+export const InActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

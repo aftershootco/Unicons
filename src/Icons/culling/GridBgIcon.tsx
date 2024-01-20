@@ -1,14 +1,14 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type Props = IconProps & {
 	bgColor?: string
 	inActive?: boolean
 }
 
-export const GridIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const GridBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -24,7 +24,7 @@ export const GridIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='22' height='22' rx='2' fill={bgColor} fill-opacity='0.1' />
+			<rect width='22' height='22' rx='2' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_12220_36385)'>
 				<path
 					d='M8.75 5H5.75C5.33579 5 5 5.33579 5 5.75V8.75C5 9.16421 5.33579 9.5 5.75 9.5H8.75C9.16421 9.5 9.5 9.16421 9.5 8.75V5.75C9.5 5.33579 9.16421 5 8.75 5Z'
@@ -63,4 +63,4 @@ export const GridIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(GridIcon)
+export default React.memo(GridBgIcon)

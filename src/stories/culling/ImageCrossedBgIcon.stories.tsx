@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { GridIcon } from '../../../icons' 
+import { ImageCrossedBgIcon } from '../../icons'
 
-const meta: Meta<typeof GridIcon> = {
-	component: GridIcon,
-	title: 'Background/GridIcon',
+const meta: Meta<typeof ImageCrossedBgIcon> = {
+	component: ImageCrossedBgIcon,
+	title: 'culling/ImageCrossedBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof GridIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof GridIcon>
+type Story = StoryObj<typeof ImageCrossedBgIcon>
 
 export const Default: Story = {}
 
@@ -32,7 +32,7 @@ export const redBg: Story = {
 	},
 }
 
-export const inActive: Story = {
+export const InActive: Story = {
 	args: {
 		inActive: true,
 	},

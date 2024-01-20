@@ -1,7 +1,7 @@
 import React from 'react'
-import { IconProps } from '../../../../types/Icons/types'
-import BaseIcon from '../../../components/BaseIcon'
-import DEFAULT_ICON from '../../../constant'
+import { IconProps } from '../../../types/Icons/types'
+import BaseIcon from '../../components/BaseIcon'
+import DEFAULT_ICON from '../../constant'
 
 type IconVariant = 'primary' | 'secondary' | 'tertiary'
 type Props = Omit<IconProps, 'variant'> & {
@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FiveStarIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -47,4 +47,4 @@ export const FiveStarIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(FiveStarIcon)
+export default React.memo(FiveStarBgIcon)

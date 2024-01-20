@@ -1,18 +1,18 @@
-import CullFromCardIcon from './culling/bg/CullFromCardIcon'
-import CullFromComputerIcon from './culling/bg/CullFromComputerIcon'
 import DescAlphaIcon from './culling/bg/DescAlphaIcon'
 import DescNumIcon from './culling/bg/DescNumIcon'
-import DragFolderIcon from './culling/bg/DragFolderIcon'
-import ErrorIcon from './culling/bg/ErrorIcon'
-import ExitAppIcon from './culling/bg/ExitAppIcon'
-import FiveStarIcon from './culling/bg/FiveStarIcon'
-import ImageNotFound from './culling/bg/ImageNotFound'
 import ImageNotFoundIcon from './culling/bg/ImageNotFoundIcon'
 import NetworkErrorIcon from './culling/bg/NetworkErrorIcon'
 import SelectedCircleIcon from './culling/bg/SelectedCircleIcon'
 import SourceNotFoundIcon from './culling/bg/SourceNotFound'
 import SprayCursorIcon from './culling/bg/SprayCursorIcon'
 import WarningIcon from './culling/bg/WarningIcon'
+import CullFromCardBgIcon from './culling/CullFromCardBgIcon'
+import CullFromComputerBgIcon from './culling/CullFromComputerBgIcon'
+import ExitAppBgIcon from './culling/ExitAppBgIcon'
+import FiveStarBgIcon from './culling/FiveStarBgIcon'
+import FolderOutlineBgIcon from './culling/FolderOutlineBgIcon'
+import GridBgIcon from './culling/GridBgIcon'
+import ImageCrossedBgIcon from './culling/ImageCrossedBgIcon'
 import AddFolderIcon from './culling/inactive/AddFolderIcon'
 import CircleIcon from './culling/inactive/CircleIcon'
 import ColorIcon from './culling/inactive/ColorIcon'
@@ -80,7 +80,6 @@ import EditPhotoIcon from './culling/normal/EditPhotoIcon'
 import FacebookPeopleIcon from './culling/normal/FacebookPeopleIcon'
 import FriendsIcon from './culling/normal/FriendsIcon'
 import GridDotsIcon from './culling/normal/GridDotsIcon'
-import GridIcon from './culling/normal/GridIcon'
 import HomeIcon from './culling/normal/HomeIcon'
 import LessGroupingIcon from './culling/normal/LessGroupingIcon'
 import LoaderIcon from './culling/normal/LoaderIcon'
@@ -132,6 +131,7 @@ import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
 import AlertFillTriangleIcon from './general/AlertFillTriangleIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
+import AlertTriangleBgIcon from './general/AlertTriangleBgIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
 import ArrowDownIcon from './general/ArrowDownIcon'
 import ArrowFillIcon from './general/ArrowFillIcon'
@@ -233,7 +233,7 @@ export {
 	CheckBoxEmptyIcon,
 	ComputerEditIcon,
 	CollectionsIcon,
-	DragFolderIcon,
+	FolderOutlineBgIcon,
 	Clock2Icon,
 	CloseCircleIcon,
 	CheckBoxIcon,
@@ -275,20 +275,21 @@ export {
 	FacebookPeopleIcon,
 	InfoCircleIcon,
 	ImageNotFoundIcon,
+	ImageCrossedBgIcon,
 	ImageBorderIcon,
 	ImageBorderCircleIcon,
 	GridTwoLitIcon,
 	GridThreeLitIcon,
-	FiveStarIcon,
+	FiveStarBgIcon,
 	FilterCircleIcon,
 	DragLrIcon,
 	ExpandIcon,
 	EditAlbumNameIcon,
 	DragLrcIcon,
-	CullFromComputerIcon,
+	CullFromComputerBgIcon,
 	DragCaptureOneIcon,
 	StarCrossedIcon,
-	CullFromCardIcon,
+	CullFromCardBgIcon,
 	CrossIcon,
 	CheckFillCircleIcon,
 	CheckCircleBgIcon,
@@ -329,7 +330,7 @@ export {
 	ColorPaletteIcon,
 	CelebrateIcon,
 	AppleIcon,
-	ErrorIcon,
+	AlertTriangleBgIcon,
 	ChevronUpIcon,
 	ArrowDownIcon,
 	ArrowFillIcon,
@@ -352,13 +353,12 @@ export {
 	DiamondIcon,
 	EditIcon,
 	EditPhotoIcon,
-	ExitAppIcon,
+	ExitAppBgIcon,
 	ExportIcon,
 	EyeIcon,
 	FolderCrossedIcon,
 	FriendsIcon,
-	GridIcon,
-	ImageNotFound,
+	GridBgIcon,
 	ColorIcon,
 	InActiveFilter,
 	ShortCutIcon,

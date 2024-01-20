@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ImageNotFound } from '../../../icons'
+import { CullFromCardBgIcon } from '../../icons'
 
-const meta: Meta<typeof ImageNotFound> = {
-	component: ImageNotFound,
-	title: 'Background/ImageNotFound',
+const meta: Meta<typeof CullFromCardBgIcon> = {
+	component: CullFromCardBgIcon,
+	title: 'culling/CullFromCardBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ImageNotFound> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ImageNotFound>
+type Story = StoryObj<typeof CullFromCardBgIcon>
 
 export const Default: Story = {}
 
@@ -26,9 +26,16 @@ export const Red: Story = {
 	},
 }
 
-export const redBg: Story = {
+export const yellowBg: Story = {
 	args: {
-		bgColor: 'red',
+		color: 'black',
+		bgColor: 'yellow',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 
