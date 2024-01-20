@@ -126,6 +126,7 @@ import FlagIcon from './edit/FlagIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
+import TrainIcon from './edit/TrainIcon'
 import AlertCircleFill from './general/AlertCircleFill'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
@@ -188,6 +189,7 @@ import TwitterIcon from './social/TwitterIcon'
 
 export {
 	WifiCrossedCircleBgIcon,
+	TrainIcon,
 	SuccessFillBgIcon,
 	RotateIcon,
 	RightArrowBgIcon,

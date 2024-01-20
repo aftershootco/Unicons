@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FailFillCircleBgIcon } from '../../icons'
+import { FailFillBgIcon } from '../../icons'
 
-const meta: Meta<typeof FailFillCircleBgIcon> = {
-	component: FailFillCircleBgIcon,
-	title: 'edit/icons/FailFillCircleBgIcon',
+const meta: Meta<typeof FailFillBgIcon> = {
+	component: FailFillBgIcon,
+	title: 'edit/icons/FailFillBgIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof FailFillCircleBgIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof FailFillCircleBgIcon>
+type Story = StoryObj<typeof FailFillBgIcon>
 
 export const Default: Story = {}
 
