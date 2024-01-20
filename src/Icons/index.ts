@@ -1,11 +1,5 @@
 import DescAlphaIcon from './culling/bg/DescAlphaIcon'
 import DescNumIcon from './culling/bg/DescNumIcon'
-import ImageNotFoundIcon from './culling/bg/ImageNotFoundIcon'
-import NetworkErrorIcon from './culling/bg/NetworkErrorIcon'
-import SelectedCircleIcon from './culling/bg/SelectedCircleIcon'
-import SourceNotFoundIcon from './culling/bg/SourceNotFound'
-import SprayCursorIcon from './culling/bg/SprayCursorIcon'
-import WarningIcon from './culling/bg/WarningIcon'
 import CullFromCardBgIcon from './culling/CullFromCardBgIcon'
 import CullFromComputerBgIcon from './culling/CullFromComputerBgIcon'
 import ExitAppBgIcon from './culling/ExitAppBgIcon'
@@ -99,12 +93,14 @@ import ShareIcon from './culling/normal/ShareIcon'
 import SortDuplicatesIcon from './culling/normal/SortDuplicatesIcon'
 import Stack2Icon from './culling/normal/Stack2Icon'
 import StorageIcon from './culling/normal/StorageIcon'
-import ThunderIcon from './culling/normal/ThunderIcon'
 import UploadFolder from './culling/normal/UploadFolder'
+import SelectedCircleBgIcon from './culling/SelectedCircleBgIcon'
 import HighPowerIcon from './culling/special/HighPowerIcon'
 import LowPowerIcon from './culling/special/LowPowerIcon'
 import MidPowerIcon from './culling/special/MidPowerIcon'
 import MoodIcon from './culling/special/MoodIcon'
+import SprayBgIcon from './culling/SprayBgIcon'
+import ThunderBgIcon from './culling/ThunderBgIcon'
 import AftershootEditIcon from './edit/AftershootEditIcon'
 import CheckBoxEmptyIcon from './edit/CheckBoxEmptyIcon'
 import CheckBoxIcon from './edit/CheckBoxIcon'
@@ -130,6 +126,7 @@ import TrainIcon from './edit/TrainIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
 import AlertFillTriangleIcon from './general/AlertFillTriangleIcon'
+import AlertHexagonBgIcon from './general/AlertHexagonBgIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
 import AlertTriangleBgIcon from './general/AlertTriangleBgIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
@@ -174,7 +171,7 @@ import StarIcon from './general/StarIcon'
 import UploadBgIcon from './general/UploadBgIcon'
 import UploadCloudBgIcon from './general/UploadCloudBgIcon'
 import UploadCloudIcon from './general/UploadCloudIcon'
-import WifiCrossedCircleBgIcon from './general/WifiCrossedCircleBgIcon'
+import WifiCrossedBgIcon from './general/WifiCrossedBgIcon'
 import WifiCrossedIcon from './general/WifiCrossedIcon'
 import AfterShootLogoIcon from './logo/svg/AfterShootLogoIcon'
 import AftershootWhiteIcon from './logo/svg/AftershootWhiteIcon'
@@ -196,7 +193,7 @@ export {
 	UploadBgIcon,
 	AlertFill,
 	UploadCloudBgIcon,
-	WifiCrossedCircleBgIcon,
+	WifiCrossedBgIcon,
 	UploadCloudIcon,
 	FlagCrossedIcon,
 	TwitterOutlineIcon,
@@ -248,7 +245,7 @@ export {
 	AlertHexagonIcon,
 	ViewAllIcon,
 	TwitterIcon,
-	SprayCursorIcon,
+	SprayBgIcon,
 	SprayCircleIcon,
 	SprayClickCircleIcon,
 	SparkleIcon,
@@ -263,7 +260,7 @@ export {
 	CircleIcon,
 	QuestionMarkCircleIcon,
 	NoDuplicateIcon,
-	SelectedCircleIcon,
+	SelectedCircleBgIcon,
 	MoodIcon,
 	LightroomIcon,
 	LightroomClassicIcon,
@@ -274,7 +271,6 @@ export {
 	DuplicateFillIcon,
 	FacebookPeopleIcon,
 	InfoCircleIcon,
-	ImageNotFoundIcon,
 	ImageCrossedBgIcon,
 	ImageBorderIcon,
 	ImageBorderCircleIcon,
@@ -302,7 +298,7 @@ export {
 	HighPowerIcon,
 	CloseIcon,
 	TwitterBgIcon,
-	ThunderIcon,
+	ThunderBgIcon,
 	MoneyIcon,
 	PersonIcon,
 	Stack2Icon,
@@ -374,16 +370,14 @@ export {
 	MenuIcon,
 	MouseLeftSelected,
 	MouseRightSelected,
-	NetworkErrorIcon,
 	ProcessIcon,
 	ReloadIcon,
 	ArrowRightcon,
 	ShareIcon,
 	SortDuplicatesIcon,
-	SourceNotFoundIcon,
+	AlertHexagonBgIcon,
 	StarIcon,
 	StorageIcon,
 	UploadFolder,
-	WarningIcon,
 	ZoomIcon,
 }
