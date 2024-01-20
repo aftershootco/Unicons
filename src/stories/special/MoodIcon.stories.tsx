@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SprayCircleIcon } from '../../icons'
+import { MoodIcon } from '../../icons'
 
-const meta: Meta<typeof SprayCircleIcon> = {
-	component: SprayCircleIcon,
-	title: 'culling/SprayCircleIcon',
+const meta: Meta<typeof MoodIcon> = {
+	component: MoodIcon,
+	title: 'special/MoodIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof SprayCircleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SprayCircleIcon>
+type Story = StoryObj<typeof MoodIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,13 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const GreenSecondColor: Story = {
+	args: {
+		colorSecondary: 'green',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

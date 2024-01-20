@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MoodIcon } from '../../../icons'
+import { DescNumIcon } from '../../icons'
 
-const meta: Meta<typeof MoodIcon> = {
-	component: MoodIcon,
-	title: 'special/MoodIcon',
+const meta: Meta<typeof DescNumIcon> = {
+	component: DescNumIcon,
+	title: 'culling/DescNumIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,25 +16,25 @@ const meta: Meta<typeof MoodIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof MoodIcon>
+type Story = StoryObj<typeof DescNumIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
+export const Yellow: Story = {
 	args: {
-		color: 'red',
+		color: 'yellow',
 	},
 }
 
-export const inActive: Story = {
+export const GreenBg: Story = {
+	args: {
+		bgColor: 'green',
+	},
+}
+
+export const InActive: Story = {
 	args: {
 		inActive: true,
-	},
-}
-
-export const GreenSecondColor: Story = {
-	args: {
-		colorSecondary: 'green',
 	},
 }
 

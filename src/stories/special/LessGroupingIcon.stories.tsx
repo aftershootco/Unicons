@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MidPowerIcon } from '../../../icons'
+import { LessGroupingIcon } from '../../icons'
 
-const meta: Meta<typeof MidPowerIcon> = {
-	component: MidPowerIcon,
-	title: 'special/MidPowerIcon',
+const meta: Meta<typeof LessGroupingIcon> = {
+	component: LessGroupingIcon,
+	title: 'special/LessGroupingIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,18 +16,12 @@ const meta: Meta<typeof MidPowerIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof MidPowerIcon>
+type Story = StoryObj<typeof LessGroupingIcon>
 
 export const Default: Story = {}
 
-export const Enable: Story = {
-	args: {
-		variant: 'enable',
-	},
-}
-
 export const Large: Story = {
 	args: {
-		size: 30,
+		size: 300,
 	},
 }

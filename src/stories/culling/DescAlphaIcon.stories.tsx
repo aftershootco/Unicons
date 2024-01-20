@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { DescNumIcon } from '../../../icons'
+import { DescAlphaIcon } from '../../icons'
 
-const meta: Meta<typeof DescNumIcon> = {
-	component: DescNumIcon,
-	title: 'Icons/DescNumIcon',
+const meta: Meta<typeof DescAlphaIcon> = {
+	component: DescAlphaIcon,
+	title: 'culling/DescAlphaIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof DescNumIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DescNumIcon>
+type Story = StoryObj<typeof DescAlphaIcon>
 
 export const Default: Story = {}
 
@@ -29,6 +29,12 @@ export const Yellow: Story = {
 export const GreenBg: Story = {
 	args: {
 		bgColor: 'green',
+	},
+}
+
+export const InActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 
