@@ -128,18 +128,17 @@ import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
 import TrainIcon from './edit/TrainIcon'
-import AlertCircleFill from './general/AlertCircleFill'
 import AlertCircleIcon from './general/AlertCircleIcon'
-import AlertFillTriangleBgIcon from './general/AlertFillTriangleBgIcon'
+import AlertFill from './general/AlertFill'
+import AlertFillTriangleIcon from './general/AlertFillTriangleIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
-import AlertTriangleFillIcon from './general/AlertTriangleFillIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
 import ArrowDownIcon from './general/ArrowDownIcon'
 import ArrowFillIcon from './general/ArrowFillIcon'
 import ArrowLeftIcon from './general/ArrowLeftIcon'
 import ArrowRightcon from './general/ArrowRightcon'
 import ArrowUpIcon from './general/ArrowUpIcon'
-import CheckCircleBgCircleIcon from './general/CheckCircleBgCircleIcon'
+import CheckCircleBgIcon from './general/CheckCircleBgIcon'
 import CheckCircleIcon from './general/CheckCircleIcon'
 import CheckFillCircleIcon from './general/CheckFillCircleIcon'
 import CheckIcon from './general/CheckIcon'
@@ -195,7 +194,7 @@ import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
 	UploadBgIcon,
-	AlertFillTriangleBgIcon,
+	AlertFill,
 	UploadCloudBgIcon,
 	WifiCrossedCircleBgIcon,
 	UploadCloudIcon,
@@ -243,7 +242,6 @@ export {
 	AftershootEditIcon,
 	EyeCheckedIcon,
 	EyeCrossedIcon,
-	AlertCircleFill,
 	ZoomCircleIcon,
 	CheckCircleIcon,
 	NotAllowIcon,
@@ -260,7 +258,7 @@ export {
 	ShowDuplicateIcon,
 	AlertCircleIcon,
 	AlertTriangleIcon,
-	AlertTriangleFillIcon,
+	AlertFillTriangleIcon,
 	LinkIcon,
 	CircleIcon,
 	QuestionMarkCircleIcon,
@@ -293,7 +291,7 @@ export {
 	CullFromCardIcon,
 	CrossIcon,
 	CheckFillCircleIcon,
-	CheckCircleBgCircleIcon,
+	CheckCircleBgIcon,
 	CaptureOneIcon,
 	MidPowerIcon,
 	MaximizeIcon,

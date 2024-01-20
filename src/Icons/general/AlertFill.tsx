@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	fillColor: string
 }
 
-export const AlertCircleFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, fillColor = '#1DA0BC', inActive = false, ...restProps } = props
 
@@ -38,4 +38,4 @@ export const AlertCircleFill = React.forwardRef<HTMLSpanElement, Props>((props, 
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(AlertCircleFill)
+export default React.memo(AlertFill)
