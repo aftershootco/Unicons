@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const AddFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AddFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

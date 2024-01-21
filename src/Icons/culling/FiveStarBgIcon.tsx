@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

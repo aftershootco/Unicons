@@ -8,7 +8,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-export const GridBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const GridBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

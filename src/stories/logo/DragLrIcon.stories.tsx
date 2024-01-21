@@ -5,7 +5,7 @@ import { DragLrIcon } from '../../icons'
 
 const meta: Meta<typeof DragLrIcon> = {
 	component: DragLrIcon,
-	title: 'icons/DragLrIcon',
+	title: 'culling/DragLrIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

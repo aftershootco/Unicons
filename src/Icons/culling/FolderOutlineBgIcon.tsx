@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FolderOutlineBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FolderOutlineBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

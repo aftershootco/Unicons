@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 }
 
-export const FacebookPeopleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FacebookPeopleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 

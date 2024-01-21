@@ -5,7 +5,7 @@ import { EditPhotoIcon } from '../../icons'
 
 const meta: Meta<typeof EditPhotoIcon> = {
 	component: EditPhotoIcon,
-	title: 'Icons/EditPhotoIcon',
+	title: 'culling/EditPhotoIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

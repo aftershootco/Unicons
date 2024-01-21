@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'color'> & {
 	inActive?: boolean
 }
 
-export const ThunderBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ThunderBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
