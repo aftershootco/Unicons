@@ -32,6 +32,12 @@ export const inActive: Story = {
 	},
 }
 
+export const greenAccent: Story = {
+	args: {
+		accentColor: 'green',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

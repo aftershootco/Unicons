@@ -24,6 +24,7 @@ import ExpandIcon from './culling/ExpandIcon'
 import EyeCheckedIcon from './culling/EyeCheckedIcon'
 import EyeCrossedIcon from './culling/EyeCrossedIcon'
 import EyeIcon from './culling/EyeIcon'
+import FacebookPeopleIcon from './culling/FacebookPeopleIcon'
 import FaceHappyIcon from './culling/FaceHappyIcon'
 import FaceSadIcon from './culling/FaceSadIcon'
 import FilterCircleIcon from './culling/FilterCircleIcon'
@@ -31,8 +32,12 @@ import InActiveFilter from './culling/FilterIcon'
 import FiveStarBgIcon from './culling/FiveStarBgIcon'
 import FolderOutlineBgIcon from './culling/FolderOutlineBgIcon'
 import GridBgIcon from './culling/GridBgIcon'
+import GridDotsIcon from './culling/GridDotsIcon'
 import GridThreeLitIcon from './culling/GridThreeLitIcon'
 import GridTwoLitIcon from './culling/GridTwoLitIcon'
+import GroupingLessIcon from './culling/GroupingLessIcon'
+import GroupingMoreIcon from './culling/GroupingMoreIcon'
+import HomeIcon from './culling/HomeIcon'
 import ImageBorderCircleIcon from './culling/ImageBorderCircleIcon'
 import ImageBorderIcon from './culling/ImageBorderIcon'
 import ImageCrossedBgIcon from './culling/ImageCrossedBgIcon'
@@ -48,14 +53,8 @@ import MaximizeIcon from './culling/MaximizeIcon'
 import MinimizeIcon from './culling/MinimizeIcon'
 import MoneyIcon from './culling/MoneyIcon'
 import NoDuplicateIcon from './culling/NoDuplicateIcon'
-import FacebookPeopleIcon from './culling/normal/FacebookPeopleIcon'
-import FriendsIcon from './culling/normal/FriendsIcon'
-import GridDotsIcon from './culling/normal/GridDotsIcon'
-import HomeIcon from './culling/normal/HomeIcon'
-import LessGroupingIcon from './culling/normal/LessGroupingIcon'
 import LoaderIcon from './culling/normal/LoaderIcon'
 import MenuIcon from './culling/normal/MenuIcon'
-import MoreGroupingIcon from './culling/normal/MoreGroupingIcon'
 import MouseLeftSelected from './culling/normal/MouseLeftSelected'
 import MouseRightSelected from './culling/normal/MouseRightSelected'
 import MoveIcon from './culling/normal/MoveIcon'
@@ -72,7 +71,6 @@ import Stack2Icon from './culling/normal/Stack2Icon'
 import StorageIcon from './culling/normal/StorageIcon'
 import UploadFolder from './culling/normal/UploadFolder'
 import NotAllowIcon from './culling/NotAllowIcon'
-import PersonIcon from './culling/PersonIcon'
 import SelectedCircleBgIcon from './culling/SelectedCircleBgIcon'
 import ShortCutIcon from './culling/ShortCutIcon'
 import ShowDuplicateIcon from './culling/ShowDuplicateIcon'
@@ -147,6 +145,7 @@ import GlobalIcon from './general/GlobalIcon'
 import InfoCircleBgIcon from './general/InfoCircleBgIcon'
 import InfoCircleIcon from './general/InfoCircleIcon'
 import OpenlinkIcon from './general/OpenlinkIcon'
+import PersonIcon from './general/PersonIcon'
 import PlayBgIcon from './general/PlayBgIcon'
 import PlayCircleIcon from './general/PlayCircleIcon'
 import QuestionMarkCircleIcon from './general/QuestionMarkCircleIcon'
@@ -231,7 +230,7 @@ export {
 	FolderOutlineBgIcon,
 	CloseCircleIcon,
 	CheckBoxIcon,
-	MoreGroupingIcon,
+	GroupingMoreIcon,
 	AftershootEditIcon,
 	EyeCheckedIcon,
 	EyeCrossedIcon,
@@ -261,7 +260,7 @@ export {
 	LightroomIcon,
 	LightroomClassicIcon,
 	DuplicateIcon,
-	LessGroupingIcon,
+	GroupingLessIcon,
 	KeyCircleIcon,
 	FaceHappyIcon,
 	DuplicateFillIcon,
@@ -345,7 +344,6 @@ export {
 	ExportIcon,
 	EyeIcon,
 	FolderCrossedIcon,
-	FriendsIcon,
 	GridBgIcon,
 	ColorIcon,
 	InActiveFilter,
