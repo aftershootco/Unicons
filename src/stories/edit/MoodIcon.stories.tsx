@@ -5,7 +5,7 @@ import { MoodIcon } from '../../icons'
 
 const meta: Meta<typeof MoodIcon> = {
 	component: MoodIcon,
-	title: 'special/MoodIcon',
+	title: 'edit/MoodIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -32,9 +32,9 @@ export const inActive: Story = {
 	},
 }
 
-export const GreenSecondColor: Story = {
+export const greenAccent: Story = {
 	args: {
-		colorSecondary: 'green',
+		accentColor: 'green',
 	},
 }
 

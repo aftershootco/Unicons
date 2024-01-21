@@ -103,6 +103,7 @@ import FailFillIcon from './edit/FailFillIcon'
 import FileSearchIcon from './edit/FileSearchIcon'
 import FlagCrossedIcon from './edit/FlagCrossedIcon'
 import FlagIcon from './edit/FlagIcon'
+import MoodIcon from './edit/MoodIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
@@ -181,7 +182,6 @@ import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 import HighPowerIcon from './special/HighPowerIcon'
 import LowPowerIcon from './special/LowPowerIcon'
 import MidPowerIcon from './special/MidPowerIcon'
-import MoodIcon from './special/MoodIcon'
 
 export {
 	UploadBgIcon,
