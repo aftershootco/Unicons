@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const SprayClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const MouseLeftClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -46,4 +46,4 @@ const SprayClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(SprayClickCircleIcon)
+export default React.memo(MouseLeftClickCircleIcon)

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { ShortCutIcon } from '../../icons'
+import { StorageCrossedIcon } from '../../icons'
 
-const meta: Meta<typeof ShortCutIcon> = {
-	component: ShortCutIcon,
-	title: 'culling/ShortCutIcon',
+const meta: Meta<typeof StorageCrossedIcon> = {
+	component: StorageCrossedIcon,
+	title: 'culling/StorageCrossedIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof ShortCutIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof ShortCutIcon>
+type Story = StoryObj<typeof StorageCrossedIcon>
 
 export const Default: Story = {}
 

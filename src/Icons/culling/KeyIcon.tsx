@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const ShortCutIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const KeyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -39,4 +39,4 @@ const ShortCutIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(ShortCutIcon)
+export default React.memo(KeyIcon)

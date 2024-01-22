@@ -43,6 +43,7 @@ import ImageBorderIcon from './culling/ImageBorderIcon'
 import ImageCrossedBgIcon from './culling/ImageCrossedBgIcon'
 import ImageCrossedIcon from './culling/ImageCrossedIcon'
 import KeyCircleIcon from './culling/KeyCircleIcon'
+import KeyIcon from './culling/KeyIcon'
 import LinkIcon from './culling/LinkIcon'
 import ListNotSelectedIcon from './culling/ListNotSelectedIcon'
 import ListSelectedIcon from './culling/ListSelectedIcon'
@@ -53,7 +54,8 @@ import LoupeIcon from './culling/LoupeIcon'
 import MaximizeIcon from './culling/MaximizeIcon'
 import MenuIcon from './culling/MenuIcon'
 import MinimizeIcon from './culling/MinimizeIcon'
-import MoneyIcon from './culling/MoneyIcon'
+import MoneyBagIcon from './culling/MoneyBagIcon'
+import MouseLeftClickCircleIcon from './culling/MouseLeftClickCircleIcon'
 import MouseLeftSelected from './culling/MouseLeftSelected'
 import MouseRightSelected from './culling/MouseRightSelected'
 import MoveBgIcon from './culling/MoveBgIcon'
@@ -67,7 +69,6 @@ import Rotate90Icon from './culling/Rotate90Icon'
 import ScissorsIcon from './culling/ScissorsIcon'
 import SelectedCircleBgIcon from './culling/SelectedCircleBgIcon'
 import ShareIcon from './culling/ShareIcon'
-import ShortCutIcon from './culling/ShortCutIcon'
 import ShowDuplicateIcon from './culling/ShowDuplicateIcon'
 import SortCircleIcon from './culling/SortCircleIcon'
 import SortDuplicateCircleIcon from './culling/SortDuplicateCircleIcon'
@@ -77,10 +78,9 @@ import SparkleIcon from './culling/SparkleIcon'
 import SprayBgIcon from './culling/SprayBgIcon'
 import SprayCanIcon from './culling/SprayCanIcon'
 import SprayCircleIcon from './culling/SprayCircleIcon'
-import SprayClickCircleIcon from './culling/SprayClickCircleIcon'
 import Stack2Icon from './culling/Stack2Icon'
 import StackIcon from './culling/StackIcon'
-import StorageIcon from './culling/StorageIcon'
+import StorageCrossedIcon from './culling/StorageCrossedIcon'
 import ThunderBgIcon from './culling/ThunderBgIcon'
 import UploadFolder from './culling/UploadFolder'
 import ViewAllIcon from './culling/ViewAllIcon'
@@ -253,7 +253,7 @@ export {
 	TwitterIcon,
 	SprayBgIcon,
 	SprayCircleIcon,
-	SprayClickCircleIcon,
+	MouseLeftClickCircleIcon,
 	SparkleIcon,
 	ImageCrossedIcon,
 	SortCircleIcon,
@@ -305,7 +305,7 @@ export {
 	CloseIcon,
 	TwitterBgIcon,
 	ThunderBgIcon,
-	MoneyIcon,
+	MoneyBagIcon,
 	PersonIcon,
 	Stack2Icon,
 	StackIcon,
@@ -358,7 +358,7 @@ export {
 	GridBgIcon,
 	ColorIcon,
 	InActiveFilter,
-	ShortCutIcon,
+	KeyIcon,
 	SortIcon,
 	SprayCanIcon,
 	LoupeIcon,
@@ -378,7 +378,7 @@ export {
 	SortDuplicatesIcon,
 	AlertHexagonBgIcon,
 	StarIcon,
-	StorageIcon,
+	StorageCrossedIcon,
 	UploadFolder,
 	ZoomIcon,
 }

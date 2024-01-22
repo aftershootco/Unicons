@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const MoneyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const MoneyBagIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -35,4 +35,4 @@ const MoneyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(MoneyIcon)
+export default React.memo(MoneyBagIcon)

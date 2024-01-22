@@ -26,14 +26,14 @@ export const Red: Story = {
 	},
 }
 
-export const Large: Story = {
+export const inActive: Story = {
 	args: {
-		size: 30,
+		inActive: true,
 	},
 }
 
-export const onClick: Story = {
+export const Large: Story = {
 	args: {
-		onClick: () => console.log('yo'),
+		size: 30,
 	},
 }

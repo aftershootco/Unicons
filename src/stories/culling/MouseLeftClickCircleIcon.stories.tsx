@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SprayClickCircleIcon } from '../../icons'
+import { MouseLeftClickCircleIcon } from '../../icons'
 
-const meta: Meta<typeof SprayClickCircleIcon> = {
-	component: SprayClickCircleIcon,
-	title: 'culling/SprayClickCircleIcon',
+const meta: Meta<typeof MouseLeftClickCircleIcon> = {
+	component: MouseLeftClickCircleIcon,
+	title: 'culling/MouseLeftClickCircleIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof SprayClickCircleIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SprayClickCircleIcon>
+type Story = StoryObj<typeof MouseLeftClickCircleIcon>
 
 export const Default: Story = {}
 
