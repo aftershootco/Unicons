@@ -6,7 +6,7 @@ import DEFAULT_ICON from '../../constant'
 type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
-	bgColor?: string
+	accentColor?: string
 	inActive?: boolean
 }
 
@@ -15,7 +15,7 @@ export const DecrementIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 	const {
 		variant = 'primary',
 		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
+		accentColor = DEFAULT_ICON.BG_COLOR,
 		size = DEFAULT_ICON.SIZE,
 		inActive = false,
 		...restProps
@@ -26,7 +26,7 @@ export const DecrementIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect x='0.368164' y='0.5' width='11' height='11' rx='3' fill={bgColor} />
+			<rect x='0.368164' y='0.5' width='11' height='11' rx='3' fill={accentColor} />
 			<path d='M3.36816 6.5V5.5H8.36816V6.5H3.36816Z' fill={modifiedColor} />
 		</svg>
 	)

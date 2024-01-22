@@ -26,9 +26,9 @@ export const Yellow: Story = {
 	},
 }
 
-export const GreenBg: Story = {
+export const GreenAccent: Story = {
 	args: {
-		bgColor: 'green',
+		accentColor: 'green',
 	},
 }
 

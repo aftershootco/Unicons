@@ -31,6 +31,13 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
+export const greenFill: Story = {
+	args: {
+		fillColor: 'green',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

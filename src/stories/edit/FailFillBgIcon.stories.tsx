@@ -39,11 +39,9 @@ export const yellowBg: Story = {
 	},
 }
 
-export const fillColor: Story = {
+export const greenFill: Story = {
 	args: {
-		color: 'black',
-		bgColor: 'yellow',
-		fillColor: 'red',
+		fillColor: 'green',
 	},
 }
 

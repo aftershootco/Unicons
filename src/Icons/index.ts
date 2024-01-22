@@ -87,6 +87,7 @@ import ViewAllIcon from './culling/ViewAllIcon'
 import ZoomCircleIcon from './culling/ZoomCircleIcon'
 import ZoomIcon from './culling/ZoomIcon'
 import AftershootEditIcon from './edit/AftershootEditIcon'
+import AtomBgIcon from './edit/AtomBgIcon'
 import CheckBoxEmptyIcon from './edit/CheckBoxEmptyIcon'
 import CheckBoxIcon from './edit/CheckBoxIcon'
 import CheckBoxPartialIcon from './edit/CheckBoxPartialIcon'
@@ -108,7 +109,6 @@ import MoodIcon from './edit/MoodIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
-import TrainIcon from './edit/TrainIcon'
 import AdjustmentIcon from './general/AdjustmentIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
@@ -205,7 +205,7 @@ export {
 	UploadCloudIcon,
 	FlagOutlineCrossedIcon,
 	TwitterOutlineIcon,
-	TrainIcon,
+	AtomBgIcon,
 	SuccessFillBgIcon,
 	RotateIcon,
 	RightArrowBgIcon,

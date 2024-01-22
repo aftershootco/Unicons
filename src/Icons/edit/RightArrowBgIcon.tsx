@@ -26,7 +26,7 @@ export const RightArrowBgIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<circle cx='20.5' cy='20.5' r='20.5' fill={bgColor} />
+			<circle cx='20.5' cy='20.5' r='20.5' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M12.8438 20.7466H27.91M27.91 20.7466L20.5166 13.3369M27.91 20.7466L20.5166 28.1562'
 				stroke={modifiedColor}

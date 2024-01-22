@@ -6,7 +6,7 @@ import DEFAULT_ICON from '../../constant'
 type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
-	bgColor?: string
+	accentColor?: string
 	inActive?: boolean
 }
 
@@ -15,7 +15,7 @@ const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 	const {
 		variant = 'primary',
 		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
+		accentColor = DEFAULT_ICON.BG_COLOR,
 		size = DEFAULT_ICON.SIZE,
 		inActive = false,
 		...restProps
@@ -25,7 +25,7 @@ const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='24' height='24' rx='4' fill={bgColor} />
+			<rect width='24' height='24' rx='4' fill={accentColor} />
 			<g clip-path='url(#clip0_11845_14540)'>
 				<path
 					d='M14.5 19.4998V15.3332C14.5 14.1832 15.0167 13.6665 16.1667 13.6665C17.3167 13.6665 17.8333 14.1832 17.8333 15.3332V19.4998M17.8333 16.9998H14.5'

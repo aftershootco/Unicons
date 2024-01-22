@@ -32,10 +32,9 @@ export const inActive: Story = {
 	},
 }
 
-export const bgYellow: Story = {
+export const GreenAccent: Story = {
 	args: {
-		color: 'black',
-		bgColor: 'yellow',
+		accentColor: 'green',
 	},
 }
 export const Large: Story = {

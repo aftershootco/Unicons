@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const TrainIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const AtomBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -28,7 +28,7 @@ export const TrainIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='72' height='72' rx='36' fill={bgColor} fillOpacity='.25' />
+			<rect width='72' height='72' rx='36' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path d='M36 36V36.02' stroke={accentColor} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
 			<path
 				d='M50.1412 21.858C48.6409 20.3577 45.7121 20.4089 41.9991 22.0002C38.2861 23.5915 34.093 26.5926 30.3422 30.3433C26.5915 34.094 23.5904 38.2871 21.9991 42.0001C20.4078 45.7132 20.3567 48.642 21.857 50.1423C23.3573 51.6426 26.2861 51.5914 29.9991 50.0001C33.7121 48.4088 37.9052 45.4077 41.6559 41.657C43.5131 39.7998 45.2058 37.8145 46.6373 35.8144C48.0688 33.8144 49.2112 31.8387 49.9991 30.0002C50.787 28.1616 51.2051 26.4963 51.2295 25.0993C51.2539 23.7023 50.8841 22.6009 50.1412 21.858'
@@ -49,4 +49,4 @@ export const TrainIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(TrainIcon)
+export default React.memo(AtomBgIcon)
