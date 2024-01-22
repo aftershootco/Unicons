@@ -3,71 +3,43 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary'
+type IconVariant = 'primary'
 
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
-	bgColor?: string
 	inActive?: boolean
 }
 
-export const CrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		bgColor = DEFAULT_ICON.BG_COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		...restProps
-	} = props
+const CrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+	//props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='18' height='18' rx='9' fill={bgColor} fill-opacity='0.2' />
-			<g clip-path='url(#clip0_3425_12220)'>
+			<g clip-path='url(#clip0_1057_16681)'>
 				<path
 					fill-rule='evenodd'
 					clip-rule='evenodd'
-					d='M13.3694 6.18416C13.8812 6.18416 14.2975 6.60044 14.2975 7.11219C14.2975 7.48287 14.0784 7.80251 13.7636 7.95099L13.7596 7.97817C13.3697 10.5924 13.2242 11.066 12.4717 11.64H5.51697C4.76461 11.0659 4.61913 10.5924 4.22927 7.9783L4.22529 7.95113C3.91042 7.80251 3.69141 7.48287 3.69141 7.11219C3.69141 6.60044 4.10769 6.18416 4.61944 6.18416C5.13118 6.18416 5.54747 6.60044 5.54747 7.11219C5.54747 7.1969 5.53514 7.27844 5.51366 7.35639C5.67819 7.49029 5.84563 7.64329 6.0083 7.79296C6.28008 8.043 6.68722 8.41753 6.8597 8.43715C7.09966 8.34249 7.84978 7.37044 8.35449 6.45686C8.17737 6.28783 8.0664 6.04999 8.0664 5.78643C8.0664 5.27469 8.48269 4.8584 8.99443 4.8584C9.50618 4.8584 9.92246 5.27469 9.92246 5.78643C9.92246 6.04999 9.8115 6.28783 9.63424 6.457C10.139 7.37058 10.8891 8.34262 11.129 8.43728C11.3015 8.41766 11.7087 8.04313 11.9804 7.7931C12.1431 7.64329 12.3106 7.49029 12.4751 7.35652C12.4537 7.27844 12.4414 7.1969 12.4414 7.11219C12.4414 6.60044 12.8577 6.18416 13.3694 6.18416ZM13.6868 6.87269L13.6089 6.79485C13.6383 6.81709 13.6645 6.84331 13.6868 6.87269Z'
+					d='M13.3702 6.18397C13.8819 6.18397 14.2982 6.60026 14.2982 7.112C14.2982 7.48269 14.0792 7.80233 13.7643 7.95081L13.7603 7.97799C13.3704 10.5922 13.225 11.0658 12.4725 11.6398H5.5177C4.76534 11.0657 4.61986 10.5922 4.23 7.97812L4.22602 7.95094C3.91115 7.80233 3.69214 7.48269 3.69214 7.112C3.69214 6.60026 4.10843 6.18397 4.62017 6.18397C5.13191 6.18397 5.5482 6.60026 5.5482 7.112C5.5482 7.19672 5.53587 7.27825 5.51439 7.35621C5.67892 7.49011 5.84636 7.6431 6.00903 7.79278C6.28081 8.04282 6.68795 8.41734 6.86043 8.43697C7.10039 8.34231 7.85051 7.37026 8.35522 6.45668C8.1781 6.28765 8.06714 6.04981 8.06714 5.78625C8.06714 5.2745 8.48343 4.85822 8.99517 4.85822C9.50691 4.85822 9.9232 5.2745 9.9232 5.78625C9.9232 6.04981 9.81223 6.28765 9.63498 6.45681C10.1397 7.37039 10.8898 8.34244 11.1298 8.4371C11.3022 8.41748 11.7094 8.04295 11.9812 7.79291C12.1438 7.6431 12.3113 7.49011 12.4758 7.35634C12.4545 7.27825 12.4421 7.19672 12.4421 7.112C12.4421 6.60026 12.8584 6.18397 13.3702 6.18397ZM13.6875 6.87251L13.6097 6.79467C13.639 6.81691 13.6653 6.84312 13.6875 6.87251Z'
 					fill={modifiedColor}
 				/>
 				<path
-					d='M5.44141 12.5917C5.44141 12.3984 5.59811 12.2417 5.79141 12.2417H12.0914C12.2847 12.2417 12.4414 12.3984 12.4414 12.5917V13.1417H5.44141V12.5917Z'
+					d='M5.44214 12.5915C5.44214 12.3982 5.59884 12.2415 5.79214 12.2415H12.0921C12.2854 12.2415 12.4421 12.3982 12.4421 12.5915V13.1415H5.44214V12.5915Z'
 					fill={modifiedColor}
 				/>
 			</g>
 			<defs>
-				<clipPath id='clip0_3425_12220'>
-					<rect width='14' height='14' fill='white' transform='translate(2 2)' />
+				<clipPath id='clip0_1057_16681'>
+					<rect width='18' height='18' fill='white' />
 				</clipPath>
 			</defs>
 		</svg>
 	)
 
-	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='18.0001' height='18.0001' rx='9.00004' fill={bgColor} fill-opacity='0.2' />
-			<g clip-path='url(#clip0_1949_62927)'>
-				<path
-					d='M9.00003 6L11 9.00002L13.5001 7.00001L12.5001 12H5.50001L4.5 7.00001L7.00002 9.00002L9.00003 6Z'
-					stroke={modifiedColor}
-					stroke-width='1.00001'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-				/>
-			</g>
-			<defs>
-				<clipPath id='clip0_1949_62927'>
-					<rect width='12.0001' height='12.0001' fill='white' transform='translate(3 3)' />
-				</clipPath>
-			</defs>
-		</svg>
-	)
-
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(CrownIcon)

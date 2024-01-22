@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FlagCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FlagOutlineCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -37,4 +37,4 @@ export const FlagCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, 
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(FlagCrossedIcon)
+export default React.memo(FlagOutlineCrossedIcon)

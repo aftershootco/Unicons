@@ -101,13 +101,15 @@ import EditProgressIcon from './edit/EditProgressIcon'
 import FailFillBgIcon from './edit/FailFillBgIcon'
 import FailFillIcon from './edit/FailFillIcon'
 import FileSearchIcon from './edit/FileSearchIcon'
-import FlagCrossedIcon from './edit/FlagCrossedIcon'
-import FlagIcon from './edit/FlagIcon'
+import FlagFillIcon from './edit/FlagFillIcon'
+import FlagOutlineCrossedIcon from './edit/FlagOutlineCrossedIcon'
+import FlagOutlineIcon from './edit/FlagOutlineIcon'
 import MoodIcon from './edit/MoodIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
 import TrainIcon from './edit/TrainIcon'
+import AdjustmentIcon from './general/AdjustmentIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
 import AlertFillTriangleIcon from './general/AlertFillTriangleIcon'
@@ -133,6 +135,7 @@ import ClockIcon from './general/ClockIcon'
 import CloseCircleIcon from './general/CloseCircleIcon'
 import CloseIcon from './general/CloseIcon'
 import CopyIcon from './general/CopyIcon'
+import CrownBgIcon from './general/CrownBgIcon'
 import CrownIcon from './general/CrownIcon'
 import DeleteBgIcon from './general/DeleteBgIcon'
 import DeleteIcon from './general/DeleteIcon'
@@ -146,6 +149,7 @@ import InfoCircleBgIcon from './general/InfoCircleBgIcon'
 import InfoCircleIcon from './general/InfoCircleIcon'
 import OpenlinkIcon from './general/OpenlinkIcon'
 import PersonIcon from './general/PersonIcon'
+import PipeIcon from './general/PipeIcon'
 import PlayBgIcon from './general/PlayBgIcon'
 import PlayCircleIcon from './general/PlayCircleIcon'
 import QuestionMarkCircleIcon from './general/QuestionMarkCircleIcon'
@@ -156,6 +160,8 @@ import RotateIcon from './general/RotateIcon'
 import SearchIcon from './general/SearchIcon'
 import StarCrossedIcon from './general/StarCrossedIcon'
 import StarIcon from './general/StarIcon'
+import ThumbDownBgIcon from './general/ThumbDownBgIcon'
+import ThumbUpBgIcon from './general/ThumbUpBgIcon'
 import UploadBgIcon from './general/UploadBgIcon'
 import UploadCloudBgIcon from './general/UploadCloudBgIcon'
 import UploadCloudIcon from './general/UploadCloudIcon'
@@ -184,6 +190,12 @@ import LowPowerIcon from './special/LowPowerIcon'
 import MidPowerIcon from './special/MidPowerIcon'
 
 export {
+	ThumbDownBgIcon,
+	CrownIcon,
+	PipeIcon,
+	AdjustmentIcon,
+	ThumbUpBgIcon,
+	FlagOutlineIcon,
 	UploadBgIcon,
 	CreateProfileIcon,
 	AftershootLogoWhite,
@@ -191,7 +203,7 @@ export {
 	UploadCloudBgIcon,
 	WifiCrossedBgIcon,
 	UploadCloudIcon,
-	FlagCrossedIcon,
+	FlagOutlineCrossedIcon,
 	TwitterOutlineIcon,
 	TrainIcon,
 	SuccessFillBgIcon,
@@ -206,7 +218,7 @@ export {
 	WifiCrossedIcon,
 	FacebookOutlineIcon,
 	CircleFillIcon,
-	FlagIcon,
+	FlagFillIcon,
 	PlusBgIcon,
 	GlobalIcon,
 	SearchIcon,
@@ -313,7 +325,7 @@ export {
 	GridDotsIcon,
 	GoogleIcon,
 	CurveArrowIcon,
-	CrownIcon,
+	CrownBgIcon,
 	CouponIcon,
 	ColorPaletteIcon,
 	CelebrateIcon,

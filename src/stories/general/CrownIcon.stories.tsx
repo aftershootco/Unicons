@@ -26,10 +26,9 @@ export const Red: Story = {
 	},
 }
 
-export const redBg: Story = {
+export const inActive: Story = {
 	args: {
-		color: 'yellow',
-		bgColor: 'red',
+		inActive: true,
 	},
 }
 
