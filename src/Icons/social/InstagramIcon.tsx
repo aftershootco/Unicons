@@ -3,10 +3,9 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
+type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
-	inActive?: boolean
 }
 
 export const InstagramIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {

@@ -5,7 +5,7 @@ import DEFAULT_ICON from '../../constant'
 
 type IconVariant = 'default' | 'enable'
 
-type Props = Omit<IconProps, 'variant' | 'color'> & {
+type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 	bgColor?: string
 }

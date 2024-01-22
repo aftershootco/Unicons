@@ -6,7 +6,6 @@ import DEFAULT_ICON from '../../constant'
 type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
-	inActive?: boolean
 }
 
 export const AftershootWhiteIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {

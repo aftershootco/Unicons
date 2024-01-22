@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { LowPowerIcon } from '../../icons'
+import { GoogleColorIcon } from '../../icons'
 
-const meta: Meta<typeof LowPowerIcon> = {
-	component: LowPowerIcon,
-	title: 'special/LowPowerIcon',
+const meta: Meta<typeof GoogleColorIcon> = {
+	component: GoogleColorIcon,
+	title: 'social/GoogleColorIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,15 +16,9 @@ const meta: Meta<typeof LowPowerIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof LowPowerIcon>
+type Story = StoryObj<typeof GoogleColorIcon>
 
 export const Default: Story = {}
-
-export const Enable: Story = {
-	args: {
-		variant: 'enable',
-	},
-}
 
 export const Large: Story = {
 	args: {

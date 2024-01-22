@@ -109,6 +109,9 @@ import MoodIcon from './edit/MoodIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
+import HighPowerIcon from './enable/HighPowerIcon'
+import LowPowerIcon from './enable/LowPowerIcon'
+import MidPowerIcon from './enable/MidPowerIcon'
 import AdjustmentIcon from './general/AdjustmentIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
@@ -180,14 +183,11 @@ import AppleIcon from './social/AppleIcon'
 import FacebookBgIcon from './social/FacebookBgIcon'
 import FacebookIcon from './social/FacebookIcon'
 import FacebookOutlineIcon from './social/FacebookOutlineIcon'
-import GoogleIcon from './social/GoogleIcon'
+import GoogleColorIcon from './social/GoogleColorIcon'
 import InstagramIcon from './social/InstagramIcon'
 import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
-import HighPowerIcon from './special/HighPowerIcon'
-import LowPowerIcon from './special/LowPowerIcon'
-import MidPowerIcon from './special/MidPowerIcon'
 
 export {
 	ThumbDownBgIcon,
@@ -323,7 +323,7 @@ export {
 	LoaderIcon,
 	HomeIcon,
 	GridDotsIcon,
-	GoogleIcon,
+	GoogleColorIcon,
 	CurveArrowIcon,
 	CrownBgIcon,
 	CouponIcon,
