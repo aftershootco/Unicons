@@ -25,6 +25,12 @@ export const Red: Story = {
 	},
 }
 
+export const inActive: Story = {
+	args: {
+		inActive: true,
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

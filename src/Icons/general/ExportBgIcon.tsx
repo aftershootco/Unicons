@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const ExportCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ExportBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -26,7 +26,7 @@ export const ExportCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((prop
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<circle cx='20' cy='20' r='20' fill={bgColor} />
+			<circle cx='20' cy='20' r='20' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M12 20.5v7.6a1.9 1.9 0 0 0 1.9 1.9h11.4a1.9 1.9 0 0 0 1.9-1.9v-7.6m-3.799-5.7-3.8-3.8-3.8 3.8m3.801-3.8v12.35'
 				stroke={modifiedColor}
@@ -38,4 +38,4 @@ export const ExportCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((prop
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(ExportCircleBgIcon)
+export default React.memo(ExportBgIcon)

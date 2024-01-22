@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const UploadBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const UploadBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -28,7 +28,7 @@ export const UploadBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 	// variants
 	const primary = (
 		<svg width={size} height={size} viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<rect width='72' height='72' rx='36' fill={bgColor} fill-opacity='0.25' />
+			<rect width='72' height='72' rx='36' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M20 46V50C20 51.0609 20.4214 52.0783 21.1716 52.8284C21.9217 53.5786 22.9391 54 24 54H48C49.0608 54 50.0783 53.5786 50.8284 52.8284C51.5786 52.0783 52 51.0609 52 50V46'
 				stroke={accentColor}

@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FolderFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -40,4 +40,4 @@ export const FolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(FolderIcon)
+export default React.memo(FolderFillIcon)

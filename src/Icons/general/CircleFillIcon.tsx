@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	fillColor?: string
 }
 
-export const CircleFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CircleFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', fillColor = DEFAULT_ICON.FILL_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
 

@@ -3,13 +3,13 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary' | 'tertiary'
+type IconVariant = 'primary' | 'secondary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	inActive?: boolean
 }
 
-export const AlertCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -50,15 +50,7 @@ export const AlertCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, 
 		</svg>
 	)
 
-	const tertiary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<circle cx='8' cy='8' r='5.5' stroke={modifiedColor} />
-			<line x1='8' y1='7' x2='8' y2='11' stroke={modifiedColor} />
-			<circle cx='8.00488' cy='5.625' r='0.625' fill={modifiedColor} />
-		</svg>
-	)
-
-	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
 export default React.memo(AlertCircleIcon)

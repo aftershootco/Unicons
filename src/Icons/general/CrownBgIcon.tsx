@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	const {
 		variant = 'primary',
 		color = DEFAULT_ICON.COLOR,

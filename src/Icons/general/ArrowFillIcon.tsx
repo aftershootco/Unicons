@@ -3,14 +3,22 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-export const ArrowFillIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+type IconVariant = 'primary'
+type Props = Omit<IconProps, 'variant'> & {
+	variant?: IconVariant
+	inActive?: boolean
+}
+
+const ArrowFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
+
+	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	// variants
 	const primary = (
 		<svg width={(6 / 12) * size} height={size} viewBox='0 0 6 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<path d='M0.25 11.5L5.75 6L0.25 0.5L0.25 11.5Z' fill={color} />
+			<path d='M0.25 11.5L5.75 6L0.25 0.5L0.25 11.5Z' fill={modifiedColor} />
 		</svg>
 	)
 

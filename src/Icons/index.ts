@@ -124,7 +124,7 @@ import ArrowRightcon from './general/ArrowRightcon'
 import ArrowUpIcon from './general/ArrowUpIcon'
 import CheckCircleBgIcon from './general/CheckCircleBgIcon'
 import CheckCircleIcon from './general/CheckCircleIcon'
-import CheckFillCircleIcon from './general/CheckFillCircleIcon'
+import CheckFillIcon from './general/CheckFillIcon'
 import CheckIcon from './general/CheckIcon'
 import ChevronDownIcon from './general/ChevronDownIcon'
 import ChevronLeftIcon from './general/ChevronLeftIcon'
@@ -140,12 +140,12 @@ import CrownIcon from './general/CrownIcon'
 import DeleteBgIcon from './general/DeleteBgIcon'
 import DeleteIcon from './general/DeleteIcon'
 import EditIcon from './general/EditIcon'
-import ExportCircleBgIcon from './general/ExportCircleBgIcon'
+import ExportBgIcon from './general/ExportBgIcon'
 import ExportIcon from './general/ExportIcon'
-import FolderCrossedIcon from './general/FolderCrossedIcon'
-import FolderIcon from './general/FolderIcon'
+import FolderFillIcon from './general/FolderFillIcon'
+import FolderOutlineCrossedIcon from './general/FolderOutlineCrossedIcon'
 import GlobalIcon from './general/GlobalIcon'
-import InfoCircleBgIcon from './general/InfoCircleBgIcon'
+import InfoBgIcon from './general/InfoBgIcon'
 import InfoCircleIcon from './general/InfoCircleIcon'
 import OpenlinkIcon from './general/OpenlinkIcon'
 import PersonIcon from './general/PersonIcon'
@@ -222,12 +222,12 @@ export {
 	PlusBgIcon,
 	GlobalIcon,
 	SearchIcon,
-	FolderIcon,
+	FolderFillIcon,
 	ConfettiLeftIcon,
 	AddFolderIcon,
 	FileSearchIcon,
 	FailFillBgIcon,
-	ExportCircleBgIcon,
+	ExportBgIcon,
 	EditsLogoTextIcon,
 	DotsVerticalIcon,
 	EditProgressIcon,
@@ -293,7 +293,7 @@ export {
 	StarCrossedIcon,
 	CullFromCardBgIcon,
 	CrossIcon,
-	CheckFillCircleIcon,
+	CheckFillIcon,
 	CheckCircleBgIcon,
 	CaptureOneIcon,
 	MidPowerIcon,
@@ -354,7 +354,7 @@ export {
 	ExitAppBgIcon,
 	ExportIcon,
 	EyeIcon,
-	FolderCrossedIcon,
+	FolderOutlineCrossedIcon,
 	GridBgIcon,
 	ColorIcon,
 	InActiveFilter,
@@ -362,7 +362,7 @@ export {
 	SortIcon,
 	SprayCanIcon,
 	LoupeIcon,
-	InfoCircleBgIcon,
+	InfoBgIcon,
 	ArrowLeftIcon,
 	ListNotSelectedIcon,
 	ListSelectedIcon,

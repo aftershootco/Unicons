@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const AlertFillTriangleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertFillTriangleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

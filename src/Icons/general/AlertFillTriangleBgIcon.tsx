@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	fillColor?: string
 }
 
-export const AlertFillTriangleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertFillTriangleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',

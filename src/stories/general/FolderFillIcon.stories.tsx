@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FolderIcon } from '../../icons'
+import { FolderFillIcon } from '../../icons'
 
-const meta: Meta<typeof FolderIcon> = {
-	component: FolderIcon,
-	title: 'general/FolderIcon',
+const meta: Meta<typeof FolderFillIcon> = {
+	component: FolderFillIcon,
+	title: 'general/FolderFillIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,19 @@ const meta: Meta<typeof FolderIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof FolderIcon>
+type Story = StoryObj<typeof FolderFillIcon>
 
 export const Default: Story = {}
 
 export const Red: Story = {
 	args: {
 		color: 'red',
+	},
+}
+
+export const inActive: Story = {
+	args: {
+		inActive: true,
 	},
 }
 

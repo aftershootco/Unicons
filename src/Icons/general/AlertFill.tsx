@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	fillColor: string
 }
 
-export const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, fillColor = '#1DA0BC', inActive = false, ...restProps } = props
 

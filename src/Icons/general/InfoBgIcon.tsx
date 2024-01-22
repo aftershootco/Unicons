@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const InfoCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const InfoBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -31,6 +31,7 @@ export const InfoCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 				<path
 					d='M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z'
 					fill={bgColor}
+					fillOpacity={DEFAULT_ICON.BG_OPACITY}
 				/>
 				<path d='M10 6.66602H10.0083' stroke={modifiedColor} stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' />
 				<path
@@ -52,4 +53,4 @@ export const InfoCircleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
 })
 
-export default React.memo(InfoCircleBgIcon)
+export default React.memo(InfoBgIcon)

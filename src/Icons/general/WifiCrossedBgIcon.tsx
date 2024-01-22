@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	bgColor?: string
 }
 
-export const WifiCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const WifiCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
