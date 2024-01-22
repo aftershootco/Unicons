@@ -20,12 +20,6 @@ type Story = StoryObj<typeof AfterShootLogoIcon>
 
 export const Default: Story = {}
 
-export const Red: Story = {
-	args: {
-		color: 'red',
-	},
-}
-
 export const Large: Story = {
 	args: {
 		size: 30,

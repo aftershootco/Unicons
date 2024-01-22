@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 
 export const EditsLogoTextIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
 	//props
-	const { variant = 'primary', size = 150, ...restProps } = props
+	const { variant = 'primary', size = 50, ...restProps } = props
 
 	// variants
 	const primary = (
