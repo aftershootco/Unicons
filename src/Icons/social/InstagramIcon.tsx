@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 }
 
-export const InstagramIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const InstagramIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -16,7 +16,16 @@ export const InstagramIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 
 	// variants
 	const primary = (
-		<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_1703_83997)'>
 				<path
 					d='M13.333 3.33301H6.66634C4.82539 3.33301 3.33301 4.82539 3.33301 6.66634V13.333C3.33301 15.174 4.82539 16.6663 6.66634 16.6663H13.333C15.174 16.6663 16.6663 15.174 16.6663 13.333V6.66634C16.6663 4.82539 15.174 3.33301 13.333 3.33301Z'
@@ -39,7 +48,7 @@ export const InstagramIcon = React.forwardRef<HTMLSpanElement, Props>((props, fo
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(InstagramIcon)

@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FacebookBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FacebookBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', bgColor = '#4267B2', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -19,7 +19,16 @@ export const FacebookBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 	// variants
 
 	const primary = (
-		<svg width={size} height={(40 / 60) * size} viewBox='0 0 60 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(40 / 60) * size}
+			viewBox='0 0 60 40'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (40 / 60) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect width='60' height='40' rx='20' fill={bgColor} />
 			<path
 				fill-rule='evenodd'
@@ -29,7 +38,7 @@ export const FacebookBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FacebookBgIcon)
