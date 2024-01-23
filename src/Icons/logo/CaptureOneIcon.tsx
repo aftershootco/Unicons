@@ -9,13 +9,23 @@ type Props = Omit<IconProps, 'variant' | 'color'> & {
 	variant?: IconVariant
 }
 
-export const CaptureOneIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CaptureOneIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 32 32'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			xmlnsXlink='http://www.w3.org/1999/xlink'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect width={32} height={32} rx={5} fill='url(#pattern0)' />
 			<defs>
 				<pattern id='pattern0' patternContentUnits='objectBoundingBox' width={1} height={1}>
@@ -30,7 +40,7 @@ export const CaptureOneIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(CaptureOneIcon)

@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant' | 'color'> & {
 	variant?: IconVariant
 }
 
-export const LightroomClassicIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const LightroomClassicIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 
@@ -21,7 +21,9 @@ export const LightroomClassicIcon = React.forwardRef<HTMLSpanElement, Props>((pr
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			xmlnsXlink='http://www.w3.org/1999/xlink'
-			{...props}
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
 		>
 			<rect width={32} height={32} fill='url(#pattern0)' />
 			<defs>
@@ -37,7 +39,7 @@ export const LightroomClassicIcon = React.forwardRef<HTMLSpanElement, Props>((pr
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(LightroomClassicIcon)

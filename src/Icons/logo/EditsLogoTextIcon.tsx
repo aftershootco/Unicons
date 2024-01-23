@@ -7,13 +7,22 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 }
 
-export const EditsLogoTextIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const EditsLogoTextIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = 50, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={(4 / 12) * size} viewBox='0 0 12 4' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(4 / 12) * size}
+			viewBox='0 0 12 4'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (4 / 12) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_1833_800)'>
 				<path
 					d='M0 3.51241V0.487793H2.31282V1.0257H0.63307V1.70028H2.11868V2.23378H0.63307V2.9701H2.33814V3.51241H0Z'
@@ -57,7 +66,7 @@ export const EditsLogoTextIcon = React.forwardRef<HTMLSpanElement, Props>((props
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(EditsLogoTextIcon)

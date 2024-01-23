@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant' | 'color'> & {
 	variant?: IconVariant
 }
 
-export const DragLrcIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const DragLrcIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 
@@ -21,7 +21,9 @@ export const DragLrcIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			xmlnsXlink='http://www.w3.org/1999/xlink'
-			{...props}
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
 		>
 			<rect width={size} height={size} rx={10} fill='url(#paint0_linear_9601_5146)' />
 			<rect x={13.5} y={14.25} width={33} height={32.2266} fill='url(#pattern0)' />
@@ -42,7 +44,7 @@ export const DragLrcIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DragLrcIcon)
