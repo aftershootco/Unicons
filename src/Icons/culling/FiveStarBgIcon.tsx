@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FiveStarBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 32 32'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='32' height='32' rx='6' fill={bgColor} />
 			<g clip-path='url(#clip0_184_15943)'>
 				<path
@@ -44,7 +53,7 @@ const FiveStarBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FiveStarBgIcon)

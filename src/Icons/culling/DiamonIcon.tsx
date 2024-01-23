@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const DiamondIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const DiamondIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const DiamondIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 
 	// VARIANTS
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 36 36'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_11945_21261)'>
 				<path
 					d='M9 7.5H27L31.5 15L18.75 29.25C18.6522 29.3498 18.5355 29.429 18.4068 29.4832C18.278 29.5373 18.1397 29.5652 18 29.5652C17.8603 29.5652 17.722 29.5373 17.5932 29.4832C17.4645 29.429 17.3478 29.3498 17.25 29.25L4.5 15L9 7.5Z'
@@ -42,7 +51,7 @@ const DiamondIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DiamondIcon)

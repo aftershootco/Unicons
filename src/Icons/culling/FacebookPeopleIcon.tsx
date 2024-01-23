@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 }
 
-const FacebookPeopleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FacebookPeopleIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 
@@ -21,7 +21,9 @@ const FacebookPeopleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			xmlnsXlink='http://www.w3.org/1999/xlink'
-			{...props}
+			style={{ width: size, height: (35 / 101) * size }}
+			{...restProps}
+			ref={forwardedRef}
 		>
 			<circle cx={17.5} cy={17.5} r={17} fill='url(#pattern0)' stroke='white' />
 			<circle cx={39.5} cy={17.5} r={17} fill='url(#pattern1)' stroke='white' />
@@ -69,7 +71,7 @@ const FacebookPeopleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FacebookPeopleIcon)

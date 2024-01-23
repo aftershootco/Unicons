@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const DescNumIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const DescNumIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -24,7 +24,16 @@ const DescNumIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='24' height='24' rx='4' fill={accentColor} />
 			<g clip-path='url(#clip0_11845_14530)'>
 				<path d='M5.33398 14.5L7.83398 17L10.334 14.5' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
@@ -56,7 +65,7 @@ const DescNumIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DescNumIcon)

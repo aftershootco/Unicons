@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ScissorsIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ScissorsIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const ScissorsIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<mask
 				id='mask0_2964_1117'
 				style={{
@@ -39,7 +48,7 @@ const ScissorsIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 			</g>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ScissorsIcon)

@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const UploadFolder = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+const UploadFolder = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const UploadFolder = React.forwardRef<HTMLSpanElement, IconProps>((props, forwar
 
 	// variants
 	const primary = (
-		<svg width={size} height={(21 / 24) * size} viewBox='0 0 24 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(21 / 24) * size}
+			viewBox='0 0 24 21'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (21 / 24) * size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M3.83333 1.66669H8.5L12 5.16669H20.1667C20.7855 5.16669 21.379 5.41252 21.8166 5.8501C22.2542 6.28769 22.5 6.88118 22.5 7.50002V16.8334C22.5 17.4522 22.2542 18.0457 21.8166 18.4833C21.379 18.9209 20.7855 19.1667 20.1667 19.1667H3.83333C3.21449 19.1667 2.621 18.9209 2.18342 18.4833C1.74583 18.0457 1.5 17.4522 1.5 16.8334V4.00002C1.5 3.38118 1.74583 2.78769 2.18342 2.3501C2.621 1.91252 3.21449 1.66669 3.83333 1.66669'
 				stroke={modifiedColor}
@@ -30,7 +39,7 @@ const UploadFolder = React.forwardRef<HTMLSpanElement, IconProps>((props, forwar
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(UploadFolder)

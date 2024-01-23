@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const KeyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const KeyIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,7 +15,16 @@ const KeyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) =
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_12903_26956)'>
 				<path
 					d='M6.66732 15.8333C8.50827 15.8333 10.0007 14.3409 10.0007 12.5C10.0007 10.659 8.50827 9.16666 6.66732 9.16666C4.82637 9.16666 3.33398 10.659 3.33398 12.5C3.33398 14.3409 4.82637 15.8333 6.66732 15.8333Z'
@@ -36,7 +45,7 @@ const KeyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) =
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(KeyIcon)

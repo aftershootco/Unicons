@@ -8,4 +8,5 @@ export interface IconProps extends React.SVGAttributes<SVGElement> {
 	size?: number
 	inActive?: boolean
 	children?: never
+	youtube?: boolean
 }

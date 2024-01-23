@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const NoneSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const NoneSelectedIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const NoneSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 18 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<circle cx='9' cy='9' r='4' fill={modifiedColor} />
 			<path
 				d='M8.895 16.79a7.895 7.895 0 1 0 0-15.79 7.895 7.895 0 0 0 0 15.79Z'
@@ -28,7 +37,7 @@ const NoneSelectedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(NoneSelectedIcon)

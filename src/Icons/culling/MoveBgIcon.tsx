@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const MoveBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const MoveBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -24,7 +24,16 @@ const MoveBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 29 29'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect x='0.352539' y='0.701172' width='28' height='28' rx='14' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_14037_31520)'>
 				<path
@@ -47,7 +56,7 @@ const MoveBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(MoveBgIcon)

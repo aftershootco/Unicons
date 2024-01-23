@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CouponIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CouponIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const CouponIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 
 	// variants
 	const primary = (
-		<svg width={size} height={(20 / 21) * size} viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(20 / 21) * size}
+			viewBox='0 0 21 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (20 / 21) * size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_4711_43118)'>
 				<path d='M8 12.5L13 7.5' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 				<path
@@ -48,7 +57,7 @@ const CouponIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(CouponIcon)

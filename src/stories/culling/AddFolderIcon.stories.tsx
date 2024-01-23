@@ -43,3 +43,9 @@ export const Large: Story = {
 		size: 30,
 	},
 }
+
+export const Class: Story = {
+	args: {
+		className: 'fixed top-0 left-0',
+	},
+}

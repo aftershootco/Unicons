@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const LoupeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const LoupeIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,14 +18,32 @@ const LoupeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='16' height='16' rx='2' fill={modifiedColor} fillOpacity='.5' />
 			<rect x='3' y='3' width='10' height='10' rx='2' fill={modifiedColor} />
 		</svg>
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_12903_26932)'>
 				<path d='M6.66602 6.66666H13.3327V13.3333H6.66602V6.66666Z' fill={modifiedColor} />
 				<path
@@ -44,7 +62,7 @@ const LoupeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(LoupeIcon)

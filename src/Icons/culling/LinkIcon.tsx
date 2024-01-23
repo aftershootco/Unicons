@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const LinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const LinkIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const LinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 17 17'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M6.998 9.255a3.776 3.776 0 0 0 5.693.408l2.265-2.265A3.775 3.775 0 0 0 9.618 2.06L8.319 3.35'
 				stroke={modifiedColor}
@@ -32,7 +41,7 @@ const LinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(LinkIcon)

@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const DescAlphaIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -24,7 +24,16 @@ const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='24' height='24' rx='4' fill={accentColor} />
 			<g clip-path='url(#clip0_11845_14540)'>
 				<path
@@ -45,7 +54,7 @@ const DescAlphaIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DescAlphaIcon)

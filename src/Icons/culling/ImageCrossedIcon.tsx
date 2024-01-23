@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ImageCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ImageCrossedIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const ImageCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_14013_43603)'>
 				<path d='M2 2L14 14' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 				<path d='M10 5.33301H10.0067' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
@@ -47,7 +56,7 @@ const ImageCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwar
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ImageCrossedIcon)

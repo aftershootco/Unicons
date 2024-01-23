@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const EditPhotoIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+const EditPhotoIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const EditPhotoIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwa
 
 	// VARIANTS
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 40 40'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_13015_35284)'>
 				<path
 					d='M20 26.6665C22.7614 26.6665 25 24.4279 25 21.6665C25 18.9051 22.7614 16.6665 20 16.6665C17.2386 16.6665 15 18.9051 15 21.6665C15 24.4279 17.2386 26.6665 20 26.6665Z'
@@ -44,7 +53,7 @@ const EditPhotoIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwa
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(EditPhotoIcon)

@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const MouseLeftClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const MouseLeftClickCircleIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const MouseLeftClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 35 35'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect x='.5' y='.5' width='34' height='34' rx='17' stroke={modifiedColor} stroke-opacity='.25' />
 			<g clip-path='url(#a)' stroke={modifiedColor}>
 				<path d='M17.4 6.411h-.8c-3.976 0-7.2 3.31-7.2 7.393v7.393c0 4.083 3.224 7.393 7.2 7.393h.8c3.977 0 7.2-3.31 7.2-7.393v-7.393c0-4.083-3.224-7.393-7.2-7.393Z' />
@@ -43,7 +52,7 @@ const MouseLeftClickCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(MouseLeftClickCircleIcon)

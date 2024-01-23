@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 }
 
-const EyeCheckedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const EyeCheckedIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const EyeCheckedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 	// VARIANTS
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 18 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_12221_38683)'>
 				<path
 					d='M9 10.5C9.82843 10.5 10.5 9.82843 10.5 9C10.5 8.17157 9.82843 7.5 9 7.5C8.17157 7.5 7.5 8.17157 7.5 9C7.5 9.82843 8.17157 10.5 9 10.5Z'
@@ -41,7 +50,7 @@ const EyeCheckedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default EyeCheckedIcon

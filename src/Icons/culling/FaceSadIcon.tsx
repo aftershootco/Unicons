@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const FaceSadIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const FaceSadIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const FaceSadIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 36 36'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M17.667 34.333c9.204 0 16.666-7.462 16.666-16.666C34.333 8.462 26.871 1 17.667 1 8.462 1 1 8.462 1 17.667c0 9.204 7.462 16.666 16.667 16.666Z'
 				stroke={modifiedColor}
@@ -43,7 +52,7 @@ const FaceSadIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 			<path d='M12.668 12.666h.017m9.983 0h.017' stroke={modifiedColor} stroke-width='4' stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FaceSadIcon)

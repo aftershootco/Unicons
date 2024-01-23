@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 }
 
-const EyeCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const EyeCrossedIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const EyeCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 	// VARIANTS
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_15106_88600)'>
 				<path d='M2.5 2.5L17.5 17.5' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 				<path
@@ -41,7 +50,7 @@ const EyeCrossedIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default EyeCrossedIcon

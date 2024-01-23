@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-const AddFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AddFolderIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const AddFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 28 28'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M26.616 18.377v5.6a2.8 2.8 0 0 1-2.8 2.8h-19.6a2.8 2.8 0 0 1-2.8-2.8v-5.6'
 				stroke={accentColor}
@@ -42,7 +51,7 @@ const AddFolderIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AddFolderIcon)

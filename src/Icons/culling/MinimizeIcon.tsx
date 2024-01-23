@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const MinimizeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const MinimizeIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,13 +25,31 @@ const MinimizeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 11 11' fill={modifiedColor} xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 11 11'
+			fill={modifiedColor}
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M11 4.399V5.5H0V4.399h11z' fill={modifiedColor} />
 		</svg>
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 11 11' fill={modifiedColor} xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 11 11'
+			fill={modifiedColor}
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M11 8.798H8.798V11H0V2.202h2.202V0H11v8.798zm-3.298-5.5h-6.6v6.6h6.6v-6.6zM9.9 1.1H3.298v1.101h5.5v5.5h1.1v-6.6z'
 				fill={modifiedColor}
@@ -39,7 +57,7 @@ const MinimizeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(MinimizeIcon)

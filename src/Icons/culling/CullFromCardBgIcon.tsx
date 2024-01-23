@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CullFromCardBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CullFromCardBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const CullFromCardBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 63 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 63 63'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<circle cx='31.5' cy='31.5' r='31.5' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path d='M44 31.3999H18' stroke={modifiedColor} stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
 			<path
@@ -39,7 +48,7 @@ const CullFromCardBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 			<path d='M28.4 36.6001H28.413' stroke={modifiedColor} stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(CullFromCardBgIcon)

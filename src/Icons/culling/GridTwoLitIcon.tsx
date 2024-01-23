@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const GridTwoLitIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const GridTwoLitIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,14 +17,23 @@ const GridTwoLitIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='7.111' height='7.111' rx='1' fill={modifiedColor} />
 			<rect y='8.889' width='7.111' height='7.111' rx='1' fill={modifiedColor} opacity={0.5} />
 			<rect x='8.889' width='7.111' height='7.111' rx='1' fill={modifiedColor} />
 			<rect x='8.889' y='8.889' width='7.111' height='7.111' rx='1' fill={modifiedColor} opacity={0.5} />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(GridTwoLitIcon)

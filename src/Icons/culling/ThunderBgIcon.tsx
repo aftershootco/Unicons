@@ -8,13 +8,23 @@ type Props = Omit<IconProps, 'color'> & {
 	inActive?: boolean
 }
 
-const ThunderBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ThunderBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			xmlnsXlink='http://www.w3.org/1999/xlink'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width={24} height={24} rx={12} fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<rect x={4} y={4} width={16} height={16} fill='url(#pattern0)' />
 			<defs>
@@ -30,7 +40,7 @@ const ThunderBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ThunderBgIcon)

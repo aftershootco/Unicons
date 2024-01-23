@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const LockIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,7 +15,16 @@ const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_14097_44372)'>
 				<path
 					d='M14.166 9.16602H5.83268C4.91221 9.16602 4.16602 9.91221 4.16602 10.8327V15.8327C4.16602 16.7532 4.91221 17.4993 5.83268 17.4993H14.166C15.0865 17.4993 15.8327 16.7532 15.8327 15.8327V10.8327C15.8327 9.91221 15.0865 9.16602 14.166 9.16602Z'
@@ -45,7 +54,16 @@ const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 12 12'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_1772_46858)'>
 				<path
 					d='M8.50004 5.5H3.50001C2.94772 5.5 2.5 5.94772 2.5 6.50001V9.50003C2.5 10.0523 2.94772 10.5 3.50001 10.5H8.50004C9.05233 10.5 9.50005 10.0523 9.50005 9.50003V6.50001C9.50005 5.94772 9.05233 5.5 8.50004 5.5Z'
@@ -78,7 +96,16 @@ const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 	)
 
 	const tertiary = (
-		<svg width={(23 / 27) * size} height={size} viewBox='0 0 23 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(23 / 27) * size}
+			height={size}
+			viewBox='0 0 23 27'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (23 / 27) * size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M19.345 11.998H2.957c-1.293 0-2.341 1.115-2.341 2.49v8.716c0 1.375 1.048 2.49 2.34 2.49h16.389c1.293 0 2.341-1.115 2.341-2.49v-8.716c0-1.375-1.048-2.49-2.341-2.49Z'
 				stroke={modifiedColor}
@@ -94,7 +121,7 @@ const LockIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} />
 })
 
 export default React.memo(LockIcon)

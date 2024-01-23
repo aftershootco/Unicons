@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const DuplicateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const DuplicateIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const DuplicateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 14 14'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M11.5 1H2.5C1.67157 1 1 1.67157 1 2.5V4C1 4.82843 1.67157 5.5 2.5 5.5H11.5C12.3284 5.5 13 4.82843 13 4V2.5C13 1.67157 12.3284 1 11.5 1Z'
 				stroke={modifiedColor}
@@ -32,7 +41,7 @@ const DuplicateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DuplicateIcon)

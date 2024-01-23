@@ -65,7 +65,6 @@ import NoneSelectedIcon from './culling/NoneSelectedIcon'
 import NotAllowIcon from './culling/NotAllowIcon'
 import RecullIcon from './culling/RecullIcon'
 import { default as ProcessIcon, default as ReloadIcon } from './culling/ReloadIcon'
-import Rotate90Icon from './culling/Rotate90Icon'
 import ScissorsIcon from './culling/ScissorsIcon'
 import SelectedCircleBgIcon from './culling/SelectedCircleBgIcon'
 import ShareIcon from './culling/ShareIcon'
@@ -310,7 +309,6 @@ export {
 	Stack2Icon,
 	StackIcon,
 	ScissorsIcon,
-	Rotate90Icon,
 	FaceSadIcon,
 	RecullIcon,
 	FacebookIcon,

@@ -8,7 +8,7 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 }
 
-const Celebrate = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const Celebrate = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = DEFAULT_ICON.SIZE, ...restProps } = props
 
@@ -21,6 +21,9 @@ const Celebrate = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			xmlnsXlink='http://www.w3.org/1999/xlink'
+			style={{ width: (64 / 65) * size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
 		>
 			<path d='M0 64.48H64V0.48H0V64.48Z' fill='url(#pattern0)' />
 			<defs>
@@ -36,7 +39,7 @@ const Celebrate = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(Celebrate)

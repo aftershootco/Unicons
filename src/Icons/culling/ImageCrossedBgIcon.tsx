@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ImageCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ImageCrossedBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const ImageCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 	// variants
 
 	const primary = (
-		<svg width={size} height={(96 / 97) * size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(96 / 97) * size}
+			viewBox='0 0 97 96'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (96 / 97) * size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_13360_25254)'>
 				<path d='M24.5 24L72.5 72' stroke={modifiedColor} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
@@ -61,7 +70,16 @@ const ImageCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 55 55' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 55 55'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M55 27.5C55 42.688 42.688 55 27.5 55S0 42.688 0 27.5 12.312 0 27.5 0 55 12.312 55 27.5Z'
 				fill={bgColor}
@@ -95,7 +113,7 @@ const ImageCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(ImageCrossedBgIcon)

@@ -8,7 +8,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const CartIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CartIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -16,7 +16,16 @@ const CartIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 
 	// VARIANTS
 	const primary = (
-		<svg {...props} width={size} height={size} viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 36 36'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_11945_21255)'>
 				<path
 					d='M9 31.5C10.6569 31.5 12 30.1569 12 28.5C12 26.8431 10.6569 25.5 9 25.5C7.34315 25.5 6 26.8431 6 28.5C6 30.1569 7.34315 31.5 9 31.5Z'
@@ -84,7 +93,7 @@ const CartIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CartIcon)

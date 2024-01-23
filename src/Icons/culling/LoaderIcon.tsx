@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const LoaderIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwardedRef) => {
+const LoaderIcon = React.forwardRef<SVGSVGElement, IconProps>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const LoaderIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width={(18 / 19) * size} height={size} viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(18 / 19) * size}
+			height={size}
+			viewBox='0 0 18 19'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (18 / 19) * size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M9 5.21973V2.96973' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			<path d='M12.1875 6.53242L13.8 4.91992' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			<path d='M13.5 9.71973H15.75' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
@@ -28,7 +37,7 @@ const LoaderIcon = React.forwardRef<HTMLSpanElement, IconProps>((props, forwarde
 			<path d='M5.81221 6.53242L4.19971 4.91992' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(LoaderIcon)

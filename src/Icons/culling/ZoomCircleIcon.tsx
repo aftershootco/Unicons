@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ZoomCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ZoomCircleIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const ZoomCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 35 35'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect x='.5' y='.5' width='34' height='34' rx='17' stroke={modifiedColor} strokeOpacity='.25' />
 			<path d='M19.733 17.023h-2.665v2.715h-.948v-2.715h-2.65v-.853h2.652v-2.696h.947v2.696h2.665v.853Z' fill={modifiedColor} />
 			<path
@@ -28,7 +37,7 @@ const ZoomCircleIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ZoomCircleIcon)

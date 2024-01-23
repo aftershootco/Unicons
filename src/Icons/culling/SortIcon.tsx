@@ -7,7 +7,7 @@ type Props = IconProps & {
 	inActive?: boolean
 }
 
-const SortIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const SortIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	// props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -15,7 +15,16 @@ const SortIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_12903_26949)'>
 				<path d='M5.83398 2.5V17.5' stroke={modifiedColor} stroke-width='2' stroke-linejoin='round' />
 				<path d='M8.33398 5L5.83398 2.5L3.33398 5' stroke={modifiedColor} stroke-width='2' stroke-linecap='square' stroke-linejoin='round' />
@@ -30,7 +39,7 @@ const SortIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(SortIcon)
