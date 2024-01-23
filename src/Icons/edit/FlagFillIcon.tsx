@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FlagFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FlagFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ export const FlagFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_421_146525)'>
 				<path d='M4.1665 11.6667H15.8332V4.16675H4.1665V17.5001' fill={modifiedColor} />
 				<path d='M4.1665 11.6667H15.8332V4.16675H4.1665V17.5001' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
@@ -29,7 +38,7 @@ export const FlagFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FlagFillIcon)

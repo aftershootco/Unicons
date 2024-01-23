@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const EditProgressIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const EditProgressIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -26,7 +26,16 @@ export const EditProgressIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 48 48'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M28 40H24M28 8H24M24 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12V36C8 37.0608 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H24M24 8V40'
 				stroke={modifiedColor}
@@ -52,7 +61,7 @@ export const EditProgressIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 			<path d='M24 4V44' stroke={accentColor} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(EditProgressIcon)

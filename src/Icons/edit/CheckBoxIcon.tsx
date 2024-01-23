@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	bgColor: string
 }
 
-export const CheckBoxIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const CheckBoxIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -27,7 +27,16 @@ export const CheckBoxIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='16' height='16' rx='3' fill={bgColor} fill-opacity='0.3' />
 			<rect x='2' y='2' width='12' height='12' rx='1' fill={accentColor} />
 			<path
@@ -39,7 +48,7 @@ export const CheckBoxIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 			<rect x='0.5' y='0.5' width='15' height='15' rx='2.5' stroke={bgColor} stroke-opacity='0.3' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(CheckBoxIcon)

@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	accentColor?: string
 }
 
-export const AtomBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const AtomBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -27,7 +27,16 @@ export const AtomBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 72 72'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect width='72' height='72' rx='36' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path d='M36 36V36.02' stroke={accentColor} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
 			<path
@@ -46,7 +55,7 @@ export const AtomBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AtomBgIcon)

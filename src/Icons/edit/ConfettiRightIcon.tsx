@@ -7,13 +7,22 @@ type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
 	variant?: IconVariant
 }
 
-export const ConfettiRightIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const ConfettiRightIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', size = 300, ...restProps } = props
 
 	// variants
 	const primary = (
-		<svg width={(226 / 329) * size} height={size} viewBox='0 0 245 329' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(226 / 329) * size}
+			height={size}
+			viewBox='0 0 245 329'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (226 / 329) * size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g opacity='.6'>
 				<g opacity='.3'>
 					<path
@@ -103,7 +112,7 @@ export const ConfettiRightIcon = React.forwardRef<HTMLSpanElement, Props>((props
 			</g>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ConfettiRightIcon)

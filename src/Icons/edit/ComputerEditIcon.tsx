@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const ComputerEditIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const ComputerEditIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ export const ComputerEditIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 32 32'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_437_144669)'>
 				<path d='M4 25.3333H28' stroke={modifiedColor} stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
 				<path
@@ -36,7 +45,7 @@ export const ComputerEditIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ComputerEditIcon)

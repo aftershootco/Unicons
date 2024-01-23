@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const RightArrowBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const RightArrowBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ export const RightArrowBgIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 41 41'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<circle cx='20.5' cy='20.5' r='20.5' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M12.8438 20.7466H27.91M27.91 20.7466L20.5166 13.3369M27.91 20.7466L20.5166 28.1562'
@@ -36,7 +45,7 @@ export const RightArrowBgIcon = React.forwardRef<HTMLSpanElement, Props>((props,
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(RightArrowBgIcon)

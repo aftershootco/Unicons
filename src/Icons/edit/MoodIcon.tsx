@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const MoodIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const MoodIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -26,7 +26,16 @@ export const MoodIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 
 	// variants
 	const primary = (
-		<svg width={(31 / 33) * size} height={size} viewBox='0 0 31 33' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(31 / 33) * size}
+			height={size}
+			viewBox='0 0 31 33'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (31 / 33) * size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_8303_7763)'>
 				<path
 					d='M14 29.5C19.799 29.5 24.5 24.799 24.5 19C24.5 13.201 19.799 8.5 14 8.5C8.20101 8.5 3.5 13.201 3.5 19C3.5 24.799 8.20101 29.5 14 29.5Z'
@@ -59,7 +68,7 @@ export const MoodIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(MoodIcon)

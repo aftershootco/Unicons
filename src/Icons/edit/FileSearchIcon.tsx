@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-export const FileSearchIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+export const FileSearchIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ export const FileSearchIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 72 72'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_4270_126387)'>
 				<path
 					d='M42 9V21C42 21.7956 42.3161 22.5587 42.8787 23.1213C43.4413 23.6839 44.2044 24 45 24H57'
@@ -49,7 +58,7 @@ export const FileSearchIcon = React.forwardRef<HTMLSpanElement, Props>((props, f
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(FileSearchIcon)
