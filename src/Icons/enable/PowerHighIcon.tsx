@@ -6,16 +6,15 @@ import DEFAULT_ICON from '../../constant'
 type IconVariant = 'default' | 'enable'
 
 type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
-	variant?: IconVariant
-	bgColor?: string
+	isFill?: boolean
 }
 
-export const HighPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const PowerHighIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
-	const { variant = 'default', bgColor = DEFAULT_ICON.BG_COLOR, size = DEFAULT_ICON.SIZE, ...restProps } = props
+	const { isFill = false, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
-	const defaultt = (
+	const outline = (
 		<svg
 			width={(8 / 9) * size}
 			height={size}
@@ -33,7 +32,7 @@ export const HighPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forw
 		</svg>
 	)
 
-	const enable = (
+	const fill = (
 		<svg
 			width={(8 / 9) * size}
 			height={size}
@@ -51,7 +50,9 @@ export const HighPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forw
 		</svg>
 	)
 
-	return <BaseIcon variants={{ default: defaultt, enable }} variant={variant} />
+	const variant = isFill ? 'fill' : 'outline'
+
+	return <BaseIcon variants={{ fill, outline }} variant={variant} />
 })
 
-export default React.memo(HighPowerIcon)
+export default React.memo(PowerHighIcon)

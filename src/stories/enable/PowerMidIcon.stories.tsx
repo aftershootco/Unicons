@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { HighPowerIcon } from '../../icons'
+import { PowerMidIcon } from '../../icons'
 
-const meta: Meta<typeof HighPowerIcon> = {
-	component: HighPowerIcon,
-	title: 'enable/HighPowerIcon',
+const meta: Meta<typeof PowerMidIcon> = {
+	component: PowerMidIcon,
+	title: 'enable/PowerMidIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,13 +16,13 @@ const meta: Meta<typeof HighPowerIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof HighPowerIcon>
+type Story = StoryObj<typeof PowerMidIcon>
 
 export const Default: Story = {}
 
 export const Enable: Story = {
 	args: {
-		variant: 'enable',
+		isFill: true,
 	},
 }
 

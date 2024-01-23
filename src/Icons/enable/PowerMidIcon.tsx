@@ -6,15 +6,15 @@ import DEFAULT_ICON from '../../constant'
 type IconVariant = 'default' | 'enable'
 
 type Props = Omit<IconProps, 'variant' | 'color' | 'inActive'> & {
-	variant?: IconVariant
+	isFill?: boolean
 }
 
-export const MidPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+export const PowerMidIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
-	const { variant = 'default', size = DEFAULT_ICON.SIZE, ...restProps } = props
+	const { isFill = false, size = DEFAULT_ICON.SIZE, ...restProps } = props
 
 	// variants
-	const _default = (
+	const outline = (
 		<svg
 			width={(8 / 11) * size}
 			height={size}
@@ -33,7 +33,7 @@ export const MidPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forwa
 		</svg>
 	)
 
-	const enable = (
+	const fill = (
 		<svg
 			width={(8 / 11) * size}
 			height={size}
@@ -53,7 +53,9 @@ export const MidPowerIcon = React.forwardRef<SVGSVGElement, Props>((props, forwa
 		</svg>
 	)
 
-	return <BaseIcon variants={{ default: _default, enable }} variant={variant} />
+	const variant = isFill ? 'fill' : 'outline'
+
+	return <BaseIcon variants={{ fill, outline }} variant={variant} />
 })
 
-export default React.memo(MidPowerIcon)
+export default React.memo(PowerMidIcon)

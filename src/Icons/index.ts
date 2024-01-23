@@ -108,9 +108,9 @@ import MoodIcon from './edit/MoodIcon'
 import PlusBgIcon from './edit/PlusBgIcon'
 import RightArrowBgIcon from './edit/RightArrowBgIcon'
 import SuccessFillBgIcon from './edit/SuccessFillBgIcon'
-import HighPowerIcon from './enable/HighPowerIcon'
-import LowPowerIcon from './enable/LowPowerIcon'
-import MidPowerIcon from './enable/MidPowerIcon'
+import PowerHighIcon from './enable/PowerHighIcon'
+import PowerLowIcon from './enable/PowerLowIcon'
+import PowerMidIcon from './enable/PowerMidIcon'
 import AdjustmentIcon from './general/AdjustmentIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
 import AlertFill from './general/AlertFill'
@@ -295,12 +295,12 @@ export {
 	CheckFillIcon,
 	CheckCircleBgIcon,
 	CaptureOneIcon,
-	MidPowerIcon,
+	PowerMidIcon,
 	MaximizeIcon,
 	QuestionMarkIcon,
 	MinimizeIcon,
-	LowPowerIcon,
-	HighPowerIcon,
+	PowerLowIcon,
+	PowerHighIcon,
 	CloseIcon,
 	TwitterBgIcon,
 	ThunderBgIcon,

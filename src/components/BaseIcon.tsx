@@ -9,6 +9,8 @@ type BaseIconProps = {
 const BaseIcon = React.forwardRef<HTMLSpanElement, BaseIconProps>((props, forwardedRef) => {
 	const { variants, variant, iconLabel = 'aftershoot icon', ...restProps } = props
 
+	console.log('----', variants, variant)
+
 	if (!variants[variant]) return null
 
 	return (
