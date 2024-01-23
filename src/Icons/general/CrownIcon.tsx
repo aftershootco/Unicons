@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CrownIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ const CrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 18 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_1057_16681)'>
 				<path
 					fill-rule='evenodd'
@@ -39,7 +48,7 @@ const CrownIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(CrownIcon)

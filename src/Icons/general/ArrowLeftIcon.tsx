@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ArrowLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ArrowLeftIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const ArrowLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_14836_8665)'>
 				<path d='M4.16602 10H15.8327' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 				<path d='M4.16602 10L7.49935 13.3333' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
@@ -32,7 +41,16 @@ const ArrowLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_1016_1930)'>
 				<path d='M19 12L5 12' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
 				<path d='M11 6L5 12' stroke={color} stroke-linecap='round' stroke-linejoin='round' />
@@ -46,7 +64,7 @@ const ArrowLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(ArrowLeftIcon)

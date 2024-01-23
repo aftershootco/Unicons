@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CheckIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CheckIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,14 +18,32 @@ const CheckIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 
 	// variants
 	const primary = (
-		<svg xmlns='http://www.w3.org/2000/svg' width={size} height={size} viewBox='0 0 24 24' fill={modifiedColor}>
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill={modifiedColor}
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M0 0h24v24H0V0z' fill='none' />
 			<path d='M9 16.2l-3.5-3.5c-.39-.39-1.01-.39-1.4 0-.39.39-.39 1.01 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0L20.3 7.7c.39-.39.39-1.01 0-1.4-.39-.39-1.01-.39-1.4 0L9 16.2z' />
 		</svg>
 	)
 
 	const secondary = (
-		<svg width={size} height={(6 / 7) * size} viewBox='0 0 7 6' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(6 / 7) * size}
+			viewBox='0 0 7 6'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				fill-rule='evenodd'
 				clip-rule='evenodd'
@@ -35,7 +53,7 @@ const CheckIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CheckIcon)

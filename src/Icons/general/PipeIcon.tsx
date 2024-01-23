@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const PipeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const PipeIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,12 +18,21 @@ const PipeIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 
 	// variants
 	const primary = (
-		<svg width={(1 / 20) * size} height={size} viewBox='0 0 1 20' fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+		<svg
+			width={(1 / 20) * size}
+			height={size}
+			viewBox='0 0 1 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (1 / 20) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<line x1='0.5' x2='0.5' y2='20' stroke={modifiedColor} />
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(PipeIcon)

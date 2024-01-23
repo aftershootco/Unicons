@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const DeleteBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const DeleteBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const DeleteBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 97 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 97 96'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect x='0.5' width='96' height='96' rx='48' fill={bgColor} fill-opacity='0.3' />
 			<g clip-path='url(#clip0_13360_17518)'>
 				<path d='M27.1667 34.6665H69.8334' stroke={modifiedColor} stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
@@ -54,7 +63,7 @@ const DeleteBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(DeleteBgIcon)

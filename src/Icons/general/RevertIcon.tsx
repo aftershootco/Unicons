@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const RevertIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const RevertIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const RevertIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 
 	// variants
 	const primary = (
-		<svg width={size} height={(20 / 21) * size} viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(20 / 21) * size}
+			viewBox='0 0 21 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (20 / 21) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g id='rotate' clip-path='url(#clip0_1965_89625)'>
 				<path
 					id='Vector'
@@ -35,7 +44,7 @@ const RevertIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(RevertIcon)

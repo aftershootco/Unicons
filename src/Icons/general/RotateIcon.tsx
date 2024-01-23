@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const RotateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const RotateIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const RotateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 64 64'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g id='rotate'>
 				<path
 					id='Vector'
@@ -32,13 +41,22 @@ const RotateIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 	)
 
 	const secondary = (
-		<svg width={(15 / 17) * size} height={size} viewBox='0 0 15 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(15 / 17) * size}
+			height={size}
+			viewBox='0 0 15 17'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (15 / 17) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path d='M1 1v4h4' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			<path d='M2.81 15.196h-.002A7.201 7.201 0 1 0 1.711 4.105' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(RotateIcon)

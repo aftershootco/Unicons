@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const GlobalIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const GlobalIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const GlobalIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_1703_84003)'>
 				<path
 					d='M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z'
@@ -49,7 +58,16 @@ const GlobalIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 	)
 
 	const secondary = (
-		<svg width={(24 / 25) * size} height={size} viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(24 / 25) * size}
+			height={size}
+			viewBox='0 0 24 25'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (24 / 25) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_1324_159986)'>
 				<path
 					d='M12 21.8125C16.9706 21.8125 21 17.7831 21 12.8125C21 7.84194 16.9706 3.8125 12 3.8125C7.02944 3.8125 3 7.84194 3 12.8125C3 17.7831 7.02944 21.8125 12 21.8125Z'
@@ -83,7 +101,7 @@ const GlobalIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(GlobalIcon)

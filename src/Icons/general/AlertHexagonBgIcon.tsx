@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const AlertHexagonBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertHexagonBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const AlertHexagonBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (46 / 54) * size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g filter='url(#filter0_b_14013_43614)'>
 				<rect width='20' height='20' rx='6' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 				<g clip-path='url(#clip0_14013_43614)'>
@@ -61,7 +70,7 @@ const AlertHexagonBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forw
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AlertHexagonBgIcon)

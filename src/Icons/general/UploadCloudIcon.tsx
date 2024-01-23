@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const UploadCloudIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const UploadCloudIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const UploadCloudIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 
 	// variants
 	const primary = (
-		<svg width={size} height={(20 / 24) * size} viewBox='0 0 24 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(20 / 24) * size}
+			viewBox='0 0 24 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (20 / 24) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path d='m16.005 13.997-4-4-4 4m4-4v9' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			<path
 				d='M20.395 16.387a5 5 0 0 0-2.39-9.39h-1.26a8 8 0 1 0-13.74 7.3'
@@ -28,7 +37,7 @@ const UploadCloudIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 			<path d='m16.005 13.997-4-4-4 4' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(UploadCloudIcon)

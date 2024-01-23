@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const AdjustmentIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AdjustmentIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ const AdjustmentIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 20 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g clip-path='url(#clip0_5641_27511)'>
 				<path
 					d='M11.6667 6.66671C12.5871 6.66671 13.3333 5.92052 13.3333 5.00004C13.3333 4.07957 12.5871 3.33337 11.6667 3.33337C10.7462 3.33337 10 4.07957 10 5.00004C10 5.92052 10.7462 6.66671 11.6667 6.66671Z'
@@ -53,7 +62,7 @@ const AdjustmentIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarde
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} />
 })
 
 export default React.memo(AdjustmentIcon)

@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CopyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CopyIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ const CopyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 	// VARIANTS
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path
 				d='M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Z'
 				stroke={modifiedColor}
@@ -30,7 +39,16 @@ const CopyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 	)
 
 	const secondary = (
-		<svg width={(15 / 6) * size} height={size} viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(15 / 6) * size}
+			height={size}
+			viewBox='0 0 15 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (15 / 6) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path
 				d='M12.5001 4.66602H5.83341C4.91294 4.66602 4.16675 5.41221 4.16675 6.33268V12.9993C4.16675 13.9198 4.91294 14.666 5.83341 14.666H12.5001C13.4206 14.666 14.1667 13.9198 14.1667 12.9993V6.33268C14.1667 5.41221 13.4206 4.66602 12.5001 4.66602Z'
 				stroke={modifiedColor}
@@ -47,13 +65,22 @@ const CopyIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) 
 	)
 
 	const tertiary = (
-		<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={size} height={size} fill={modifiedColor}>
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 24 24'
+			width={size}
+			height={size}
+			fill={modifiedColor}
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path d='M0 0h24v24H0V0z' fill='none' />
 			<path d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z' />
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} />
 })
 
 export default CopyIcon

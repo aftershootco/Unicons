@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	bgColor?: string
 }
 
-const WifiCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const WifiCrossedBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const WifiCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 96 96' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 96 96'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect width='96' height='96' rx='48' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_18341_4857)'>
 				<path d='M48 64H48.0267' stroke={modifiedColor} stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
@@ -59,7 +68,7 @@ const WifiCrossedBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(WifiCrossedBgIcon)

@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ExportBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ExportBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const ExportBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 40 40'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<circle cx='20' cy='20' r='20' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M12 20.5v7.6a1.9 1.9 0 0 0 1.9 1.9h11.4a1.9 1.9 0 0 0 1.9-1.9v-7.6m-3.799-5.7-3.8-3.8-3.8 3.8m3.801-3.8v12.35'
@@ -35,7 +44,7 @@ const ExportBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ExportBgIcon)

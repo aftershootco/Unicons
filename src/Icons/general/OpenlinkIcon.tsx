@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const OpenlinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const OpenlinkIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const OpenlinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 	// variants
 
 	const primary = (
-		<svg width={size} height={(16 / 17) * size} viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(16 / 17) * size}
+			viewBox='0 0 17 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (16 / 17) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path
 				d='M7.70312 2.32324H2.875C1.83947 2.32324 1 3.16271 1 4.19824V13.2424C1 14.2779 1.83947 15.1174 2.875 15.1174H7.70312H12.5312C13.5668 15.1174 14.4062 14.2779 14.4062 13.2424V11.8085V8.49971'
 				stroke={modifiedColor}
@@ -32,7 +41,16 @@ const OpenlinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 	)
 
 	const secondary = (
-		<svg width={(16 / 17) * size} height={size} viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(16 / 17) * size}
+			height={size}
+			viewBox='0 0 16 17'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: (16 / 17) * size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_21395_124739)'>
 				<path
 					d='M7.33341 4.8877H4.00008C3.64646 4.8877 3.30732 5.02817 3.05727 5.27822C2.80722 5.52827 2.66675 5.86741 2.66675 6.22103V12.221C2.66675 12.5747 2.80722 12.9138 3.05727 13.1638C3.30732 13.4139 3.64646 13.5544 4.00008 13.5544H10.0001C10.3537 13.5544 10.6928 13.4139 10.9429 13.1638C11.1929 12.9138 11.3334 12.5747 11.3334 12.221V8.8877'
@@ -51,7 +69,7 @@ const OpenlinkIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedR
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(OpenlinkIcon)

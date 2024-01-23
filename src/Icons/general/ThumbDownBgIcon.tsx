@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ThumbDownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ThumbDownBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -26,7 +26,16 @@ const ThumbDownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 83 83' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 83 83'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect x='0.576904' y='0.373047' width='81.7804' height='81.7804' rx='40.8902' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 
 			<g clip-path='url(#clip0_1172_16355)'>
@@ -46,7 +55,7 @@ const ThumbDownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(ThumbDownBgIcon)

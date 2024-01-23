@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const PersonIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const PersonIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ const PersonIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 	// variants
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 36 36'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g clip-path='url(#clip0_11945_21252)'>
 				<path
 					d='M13.5 16.5C16.8137 16.5 19.5 13.8137 19.5 10.5C19.5 7.18629 16.8137 4.5 13.5 4.5C10.1863 4.5 7.5 7.18629 7.5 10.5C7.5 13.8137 10.1863 16.5 13.5 16.5Z'
@@ -58,7 +67,16 @@ const PersonIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 	)
 
 	const secondary = (
-		<svg width={size} height={(51 / 52) * size} viewBox='0 0 52 51' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(51 / 52) * size}
+			viewBox='0 0 52 51'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (51 / 52) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path
 				d='M22.769 7.654c.734-2.692 2.61-6.037 7.343-6.037 0 0 13.055-4.162 13.055 9.138 0 11.178 2.53 12.402 5.222 15.094a46.179 46.179 0 0 1-10.444 1.224v1.306c0 1.305-.245 3.916 6.283 5.222C50.755 34.906 51 40.128 51 40.128H33.865'
 				stroke={modifiedColor}
@@ -76,7 +94,7 @@ const PersonIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(PersonIcon)

@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const RefreshIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const RefreshIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -17,7 +17,16 @@ const RefreshIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 
 	// variants
 	const primary = (
-		<svg width={size} height={(19 / 20) * size} viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={(19 / 20) * size}
+			viewBox='0 0 20 19'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: (19 / 20) * size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path d='M1.04 17.127v-6h5.373' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 			<path
 				d='m1.04 11.127 4.155 4.36c.963 1.075 2.154 1.86 3.462 2.283a7.25 7.25 0 0 0 4.018.132c1.328-.335 2.558-1.041 3.576-2.051a9.12 9.12 0 0 0 2.244-3.725m-.03-10.128.07 6-5.373.077'
@@ -33,7 +42,7 @@ const RefreshIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(RefreshIcon)

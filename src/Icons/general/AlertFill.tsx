@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	fillColor: string
 }
 
-const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertFill = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, fillColor = '#1DA0BC', inActive = false, ...restProps } = props
 
@@ -18,7 +18,16 @@ const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 
 	// variants
 	const primary = (
-		<svg width={size + 1} height={size} viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 21 20'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g id='alert-circle' clip-path='url(#clip0_104_75)'>
 				<path
 					id='Vector'
@@ -35,7 +44,7 @@ const AlertFill = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 			</defs>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AlertFill)

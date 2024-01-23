@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CheckFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CheckFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -26,7 +26,16 @@ const CheckFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 14 14'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<g id='circle-check' clip-path='url(#clip0_2884_104787)'>
 				<path
 					id='Vector'
@@ -44,7 +53,16 @@ const CheckFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path
 				d='M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z'
 				fill={fillColor}
@@ -53,7 +71,7 @@ const CheckFillIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CheckFillIcon)

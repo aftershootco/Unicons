@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	bgColor?: string
 }
 
-const AlertTriangleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const AlertTriangleBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -25,7 +25,16 @@ const AlertTriangleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 29 29'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<rect x='0.352539' y='0.702148' width='28' height='28' rx='14' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_13276_22829)'>
 				<path
@@ -49,7 +58,7 @@ const AlertTriangleBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, for
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AlertTriangleBgIcon)

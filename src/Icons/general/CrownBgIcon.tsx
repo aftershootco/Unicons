@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CrownBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	const {
 		variant = 'primary',
 		color = DEFAULT_ICON.COLOR,
@@ -25,7 +25,16 @@ const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 18 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect width='18' height='18' rx='9' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
 			<g clip-path='url(#clip0_3425_12220)'>
 				<path
@@ -48,7 +57,16 @@ const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 18 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<rect width='18.0001' height='18.0001' rx='9.00004' fill={bgColor} fill-opacity='0.2' />
 			<g clip-path='url(#clip0_1949_62927)'>
 				<path
@@ -67,7 +85,7 @@ const CrownBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRe
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CrownBgIcon)

@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ChevronLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const ChevronLeftIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -18,24 +18,51 @@ const ChevronLeftIcon = React.forwardRef<HTMLSpanElement, Props>((props, forward
 
 	// variants
 	const primary = (
-		<svg xmlns='http://www.w3.org/2000/svg' width={size} height={size} viewBox='0 0 24 24' fill={modifiedColor}>
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			width={size}
+			height={size}
+			viewBox='0 0 24 24'
+			fill={modifiedColor}
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M14.71 15.88L10.83 12l3.88-3.88c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z' />
 		</svg>
 	)
 
 	const secondary = (
-		<svg width={(11 / 8) * size} height={size} viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(11 / 8) * size}
+			height={size}
+			viewBox='0 0 10 18'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M8.706 16.94.765 9l7.94-7.941' stroke={modifiedColor} stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
 
 	const tertiary = (
-		<svg width={(8 / 14) * size} height={size} viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={(8 / 14) * size}
+			height={size}
+			viewBox='0 0 8 14'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
 			<path d='M6.75 1.5L1.25 7L6.75 12.5' stroke={color} stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary, tertiary }} variant={variant} />
 })
 
 export default React.memo(ChevronLeftIcon)

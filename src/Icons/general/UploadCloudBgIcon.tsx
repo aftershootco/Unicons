@@ -11,7 +11,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const UploadCloudBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const UploadCloudBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -27,7 +27,16 @@ const UploadCloudBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 
 	// variants
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 83 83' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 83 83'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<circle cx='41.5' cy='41.5' r='41.5' fill={bgColor} fillOpacity={DEFAULT_ICON.BG_OPACITY} />
 			<path
 				d='M57.142 53.674a9.317 9.317 0 0 0-4.453-17.498H50.34A14.908 14.908 0 1 0 24.737 49.78'
@@ -45,7 +54,7 @@ const UploadCloudBgIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwa
 			/>
 		</svg>
 	)
-	return <BaseIcon variants={{ primary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(UploadCloudBgIcon)

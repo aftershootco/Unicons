@@ -10,14 +10,23 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const CloseIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef) => {
+const CloseIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	const primary = (
-		<svg width={size} height={size} viewBox='0 0 11 11' fill='white' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 11 11'
+			fill='white'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<path
 				d='M6.279 5.5L11 10.221l-.779.779L5.5 6.279.779 11 0 10.221 4.721 5.5 0 .779.779 0 5.5 4.721 10.221 0 11 .779 6.279 5.5z'
 				fill={modifiedColor}
@@ -26,7 +35,16 @@ const CloseIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 	)
 
 	const secondary = (
-		<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			ref={forwardedRef}
+			{...restProps}
+		>
 			<g id='close' clip-path='url(#clip0_6529_137298)'>
 				<path
 					id='Vector'
@@ -45,7 +63,7 @@ const CloseIcon = React.forwardRef<HTMLSpanElement, Props>((props, forwardedRef)
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} {...restProps} ref={forwardedRef} />
+	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
 export default React.memo(CloseIcon)
