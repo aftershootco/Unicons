@@ -25,7 +25,27 @@ const CheckFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 	const modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 
 	// variants
+
 	const primary = (
+		<svg
+			width={size}
+			height={size}
+			viewBox='0 0 16 16'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			style={{ width: size, height: size }}
+			{...restProps}
+			ref={forwardedRef}
+		>
+			<path
+				d='M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z'
+				fill={fillColor}
+			/>
+			<path d='M5.5 7.99992L7.16667 9.66659L10.5 6.33325' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
+		</svg>
+	)
+
+	const secondary = (
 		<svg
 			width={size}
 			height={size}
@@ -49,25 +69,6 @@ const CheckFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 					<rect width='14' height='14' fill='white' />
 				</clipPath>
 			</defs>
-		</svg>
-	)
-
-	const secondary = (
-		<svg
-			width={size}
-			height={size}
-			viewBox='0 0 16 16'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			style={{ width: size, height: size }}
-			{...restProps}
-			ref={forwardedRef}
-		>
-			<path
-				d='M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z'
-				fill={fillColor}
-			/>
-			<path d='M5.5 7.99992L7.16667 9.66659L10.5 6.33325' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
 		</svg>
 	)
 
