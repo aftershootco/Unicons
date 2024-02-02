@@ -5,7 +5,7 @@ import { CrossIcon } from '../icons'
 
 const meta: Meta<typeof CrossIcon> = {
 	component: CrossIcon,
-	title: 'culling/CrossIcon',
+	title: 'general/CrossIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -34,5 +34,11 @@ export const inActive: Story = {
 export const Large: Story = {
 	args: {
 		size: 30,
+	},
+}
+
+export const Classes: Story = {
+	args: {
+		className: 'text-red-500 scale-150 rotate-45',
 	},
 }

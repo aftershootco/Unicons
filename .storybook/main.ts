@@ -1,5 +1,4 @@
 import type { StorybookConfig } from '@storybook/react-webpack5'
-
 import { dirname, join } from 'path'
 
 /**
@@ -17,6 +16,15 @@ const config: StorybookConfig = {
 		getAbsolutePath('@storybook/addon-essentials'),
 		getAbsolutePath('@storybook/addon-onboarding'),
 		getAbsolutePath('@storybook/addon-interactions'),
+		getAbsolutePath('@storybook/addon-styling-webpack'),
+		{
+			name: '@storybook/addon-postcss',
+			options: {
+				postcssLoaderOptions: {
+					implementation: require('postcss'),
+				},
+			},
+		},
 	],
 	framework: {
 		name: getAbsolutePath('@storybook/react-webpack5'),

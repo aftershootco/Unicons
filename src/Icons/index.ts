@@ -5,7 +5,6 @@ import CelebrateIcon from './culling/CelebrateIcon'
 import ContactSupportIcon from './culling/ContactSupportIcon'
 import CouponIcon from './culling/CouponIcon'
 import CreateProfileIcon from './culling/CreateProfileIcon'
-import CrossIcon from './culling/CrossIcon'
 import CullFromCardBgIcon from './culling/CullFromCardBgIcon'
 import CullFromComputerBgIcon from './culling/CullFromComputerBgIcon'
 import CurveArrowIcon from './culling/CurveArrowIcon'
@@ -109,7 +108,7 @@ import PowerLowIcon from './enable/PowerLowIcon'
 import PowerMidIcon from './enable/PowerMidIcon'
 import AdjustmentIcon from './general/AdjustmentIcon'
 import AlertCircleIcon from './general/AlertCircleIcon'
-import AlertFill from './general/AlertFill'
+import AlertFillIcon from './general/AlertFillIcon'
 import AlertFillTriangleIcon from './general/AlertFillTriangleIcon'
 import AlertHexagonBgIcon from './general/AlertHexagonBgIcon'
 import AlertHexagonIcon from './general/AlertHexagonIcon'
@@ -135,6 +134,8 @@ import CloseCircleIcon from './general/CloseCircleIcon'
 import CloseIcon from './general/CloseIcon'
 import ColorPaletteIcon from './general/ColorPaletteIcon'
 import CopyIcon from './general/CopyIcon'
+import CrossCircleIcon from './general/CrossCircleIcon'
+import CrossIcon from './general/CrossIcon'
 import CrownBgIcon from './general/CrownBgIcon'
 import CrownIcon from './general/CrownIcon'
 import DeleteBgIcon from './general/DeleteBgIcon'
@@ -189,6 +190,7 @@ import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
 	ThumbDownBgIcon,
+	CrossCircleIcon,
 	CrownIcon,
 	PipeIcon,
 	AdjustmentIcon,
@@ -197,7 +199,7 @@ export {
 	UploadBgIcon,
 	CreateProfileIcon,
 	AftershootLogoWhite,
-	AlertFill,
+	AlertFillIcon,
 	UploadCloudBgIcon,
 	WifiCrossedBgIcon,
 	UploadCloudIcon,

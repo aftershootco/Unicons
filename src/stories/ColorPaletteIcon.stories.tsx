@@ -5,7 +5,7 @@ import { ColorPaletteIcon } from '../icons'
 
 const meta: Meta<typeof ColorPaletteIcon> = {
 	component: ColorPaletteIcon,
-	title: 'culling/ColorPaletteIcon',
+	title: 'general/ColorPaletteIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>

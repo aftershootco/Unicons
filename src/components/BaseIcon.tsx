@@ -14,7 +14,14 @@ const BaseIcon = React.forwardRef<HTMLSpanElement, BaseIconProps>((props, forwar
 	if (!variants[variant]) return null
 
 	return (
-		<span ref={forwardedRef} {...restProps} role='img' aria-label={iconLabel} aria-hidden='false' style={{ display: 'inline-block' }}>
+		<span
+			ref={forwardedRef}
+			{...restProps}
+			role='img'
+			aria-label={iconLabel}
+			aria-hidden='false'
+			style={{ display: 'block', height: 'max-height', width: 'max-width' }}
+		>
 			{variants[variant]}
 		</span>
 	)

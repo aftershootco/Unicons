@@ -5,7 +5,6 @@ import DEFAULT_ICON from '../../constant'
 
 type Props = IconProps & {
 	bgColor?: string
-	inActive?: boolean
 }
 
 const CartIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {

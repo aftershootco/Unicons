@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { AlertFill } from '../icons'
+import { AlertFillIcon } from '../icons'
 
-const meta: Meta<typeof AlertFill> = {
-	component: AlertFill,
-	title: 'general/AlertFill',
+const meta: Meta<typeof AlertFillIcon> = {
+	component: AlertFillIcon,
+	title: 'general/AlertFillIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof AlertFill> = {
 }
 
 export default meta
-type Story = StoryObj<typeof AlertFill>
+type Story = StoryObj<typeof AlertFillIcon>
 
 export const Default: Story = {}
 
