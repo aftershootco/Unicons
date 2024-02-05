@@ -24,7 +24,6 @@ const CrossIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) =
 			viewBox='0 0 17 17'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
-			className='scale-[300%] font-bold'
 			style={{ width: size, height: size }}
 			{...restProps}
 			ref={forwardedRef}

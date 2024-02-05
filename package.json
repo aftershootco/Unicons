@@ -11,9 +11,9 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts --clean",
-		"tw": "pnpm tailwindcss -i ./src/tailwind.css -o ./src/styles/tailwind.css --watch",
-		"prepare": "husky install",
-		"storybook": "storybook dev -p 6006",
+		"storybook": "concurrently \"pnpm watch:tw\" \"pnpm watch:storybook\"",
+		"watch:tw": "pnpm tailwindcss -i ./src/tailwind.css -o ./src/styles/tailwind.css --watch",
+		"watch:storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"local-test": "rm -rf dist && yarn && yarn build && cp -r ./dist/* ../AfterShoot-Desktop-App/node_modules/@aftershootco/unicorn-icons/dist",
 		"chromatic": "npx chromatic --project-token=chpt_9204d4c030115e1"
@@ -31,8 +31,8 @@
 		"@storybook/addon-interactions": "^7.6.7",
 		"@storybook/addon-links": "^7.6.7",
 		"@storybook/addon-onboarding": "^1.0.10",
-		"@storybook/addon-styling-webpack": "^0.0.6",
 		"@storybook/addon-postcss": "^2.0.0",
+		"@storybook/addon-styling-webpack": "^0.0.6",
 		"@storybook/blocks": "^7.6.7",
 		"@storybook/cli": "^7.6.7",
 		"@storybook/react": "^7.6.7",
@@ -68,6 +68,7 @@
 	"dependencies": {
 		"@changesets/cli": "^2.27.1",
 		"clsx": "^2.1.0",
+		"concurrently": "^8.2.2",
 		"rollup": "^4.9.6",
 		"tailwind-merge": "^2.2.1",
 		"tinycolor2": "^1.6.0",

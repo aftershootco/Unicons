@@ -17,14 +17,6 @@ const config: StorybookConfig = {
 		getAbsolutePath('@storybook/addon-onboarding'),
 		getAbsolutePath('@storybook/addon-interactions'),
 		getAbsolutePath('@storybook/addon-styling-webpack'),
-		{
-			name: '@storybook/addon-postcss',
-			options: {
-				postcssLoaderOptions: {
-					implementation: require('postcss'),
-				},
-			},
-		},
 	],
 	framework: {
 		name: getAbsolutePath('@storybook/react-webpack5'),
@@ -36,6 +28,14 @@ const config: StorybookConfig = {
 	},
 	docs: {
 		autodocs: 'tag',
+	},
+	webpackFinal: async (config) => {
+		config?.module?.rules?.push({
+			test: /\.scss$/,
+			use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+		})
+
+		return config
 	},
 }
 export default config

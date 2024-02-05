@@ -33,12 +33,15 @@ export const inActive: Story = {
 }
 export const Large: Story = {
 	args: {
-		size: 30,
+		size: 40,
 	},
 }
 
-export const Classes: Story = {
+export const onhover: Story = {
 	args: {
-		className: 'text-red-500 scale-150 rotate-45',
+		onHoverAttr: {
+			size: 80,
+			color: '#fcba03',
+		},
 	},
 }
