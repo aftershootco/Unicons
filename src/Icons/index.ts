@@ -134,6 +134,7 @@ import ClockIcon from './general/ClockIcon'
 import CloseCircleIcon from './general/CloseCircleIcon'
 import CloseIcon from './general/CloseIcon'
 import ColorPaletteIcon from './general/ColorPaletteIcon'
+import CopyContentIcon from './general/CopyContentIcon'
 import CopyIcon from './general/CopyIcon'
 import CrossCircleIcon from './general/CrossCircleIcon'
 import CrossIcon from './general/CrossIcon'
@@ -191,6 +192,7 @@ import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 
 export {
 	ThumbDownBgIcon,
+	CopyContentIcon,
 	CrossCircleIcon,
 	ArrowFillUpIcon,
 	CrownIcon,

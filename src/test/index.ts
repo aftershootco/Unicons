@@ -1,4 +1,2 @@
-import TooltiparrowIcon from './TooltiparrowIcon'
-export {
-TooltiparrowIcon,
-}
+import CopycontenticonIcon from '../icons/general/CopyContentIcon'
+export { CopycontenticonIcon }
