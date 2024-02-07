@@ -61,9 +61,11 @@ for svg_file in "$SVG_FOLDER"/*.svg; do
     echo "" >> "$FILE_PATH"
     echo "  // variants" >> "$FILE_PATH"
     echo "  const primary = (" >> "$FILE_PATH"
-    # Add your existing content here
 
-    cat $svg_file >> $FILE_PATH
+    # Add your existing content here
+    # cat $svg_file >> $FILE_PATH
+
+    awk '/^<svg/ { found=1 } found && !added { sub(/>/, " style={{ width: size, height: size }}\n\t{...restProps}\n\tref={forwardedRef} >", $0); added=1 } 1' "$svg_file" >> "$FILE_PATH"
 
     echo ")" >> "$FILE_PATH"
     echo "  return <BaseIcon variants={{ primary }} variant={variant}  />" >> "$FILE_PATH"

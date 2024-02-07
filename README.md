@@ -41,9 +41,7 @@ yarn build
    This will generate a /test folder will icon components,
    as well as the stories.
 
-3. Add `style={{ width: size, height: size }} {...restProps} ref={forwardedRef}` inside svg first tag
-
-4. Once, teste and satisfied, move your component and stories
+3. Once, teste and satisfied, move your component and stories
    in the right folders (icons or stories)
 
     You are all set
