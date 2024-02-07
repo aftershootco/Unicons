@@ -33,7 +33,21 @@ yarn
 yarn build
 ```
 
+## How to generate automatically
+
+1. Put the SVG file in /src/svg
+
+2. Run `sh gc.sh`
+   this will generate react component in /test
+
+3. Create and index.ts / index.js to export the components. Additionlly you can use
+   the sh script, gi.sh to generate automatically
+
+4. Finnaly, run `sh gs.sh`.
+   This will generat the stories in /story-test
+
 ## Contributors
 
 -   Akash Singh — [Github](https://github.com/frannkenstein)
 -   Yash Johri — [Github](https://github.com/yash1200)
+-   Booi Mangang - [Github](https://github.com/booi-dev)

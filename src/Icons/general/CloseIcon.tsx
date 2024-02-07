@@ -13,14 +13,7 @@ type Props = Omit<IconProps, 'variant'> & {
 
 const CloseIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
-	const {
-		variant = 'primary',
-		color = DEFAULT_ICON.COLOR,
-		size = DEFAULT_ICON.SIZE,
-		inActive = false,
-		onHoverAttr = { color: DEFAULT_ICON.COLOR, size: DEFAULT_ICON.SIZE },
-		...restProps
-	} = props
+	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
 	let modifiedColor = inActive ? DEFAULT_ICON.INACTIVE_COLOR : color
 

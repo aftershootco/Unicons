@@ -2,7 +2,7 @@
 
 # Specify the folder containing SVG files
 SVG_FOLDER="./src/svg"
-FOLDER_PATH="./test"
+FOLDER_PATH="./src/test"
 mkdir $FOLDER_PATH
 # Loop through all files with the .svg extension in the folder
 for svg_file in "$SVG_FOLDER"/*.svg; do
