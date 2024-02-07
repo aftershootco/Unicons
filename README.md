@@ -35,16 +35,30 @@ yarn build
 
 ## How to generate automatically
 
-1. Put the SVG file in /src/svg
+1. Put all the SVGs in /src/svg
 
 2. Run `sh generate.sh`.
-   This will generate a /test folder will icon components,
+   This will generate a /test and /test-stories with icon components,
    as well as the stories.
 
-3. Once, teste and satisfied, move your component and stories
+3. Once, tested and satisfied, move the component and stories
    in the right folders (icons or stories)
 
     You are all set
+
+## Using icon components Tips
+
+1. Import from '@aftershootco/unicorn-icons'
+
+2. Props - size, color, fillColor (icons with fill), variant (if icon have more than one variant), bgColor (icon with bg), inActive (make icon color dull, this will have more priority than color props)
+
+3. on hover effect example
+
+    ```js
+    <button className='group' onClick={props.onClose}>
+    	<CloseIcon size={14} color='#777777' className='group-hover:[&_*]:fill-white group-hover:[&_*]:stroke-white' />
+    </button>
+    ```
 
 ## Contributors
 
