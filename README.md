@@ -37,14 +37,12 @@ yarn build
 
 1. Put the SVG file in /src/svg
 
-2. Run `sh gc.sh`
-   this will generate react component in /test
+2. Run `sh generate.sh`.
+   This will generate a /test folder will icon components,
+   as well as the stories.
 
-3. Create and index.ts / index.js to export the components. Additionlly you can use
-   the sh script, gi.sh to generate automatically
-
-4. Finnaly, run `sh gs.sh`.
-   This will generat the stories in /story-test
+3. Once, teste and satisfied, move your component and stories
+   in the right folders (icons or stories)
 
 ## Contributors
 

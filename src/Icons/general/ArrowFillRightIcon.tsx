@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const ArrowFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+const ArrowFillIRightIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -34,4 +34,4 @@ const ArrowFillIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRe
 	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
-export default React.memo(ArrowFillIcon)
+export default React.memo(ArrowFillIRightIcon)

@@ -115,7 +115,8 @@ import AlertHexagonIcon from './general/AlertHexagonIcon'
 import AlertTriangleBgIcon from './general/AlertTriangleBgIcon'
 import AlertTriangleIcon from './general/AlertTriangleIcon'
 import ArrowDownIcon from './general/ArrowDownIcon'
-import ArrowFillIcon from './general/ArrowFillIcon'
+import ArrowFillRightIcon from './general/ArrowFillRightIcon'
+import ArrowFillUpIcon from './general/ArrowFillUpIcon'
 import ArrowLeftIcon from './general/ArrowLeftIcon'
 import ArrowRightcon from './general/ArrowRightcon'
 import ArrowUpIcon from './general/ArrowUpIcon'
@@ -191,6 +192,7 @@ import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 export {
 	ThumbDownBgIcon,
 	CrossCircleIcon,
+	ArrowFillUpIcon,
 	CrownIcon,
 	PipeIcon,
 	AdjustmentIcon,
@@ -332,7 +334,7 @@ export {
 	AlertTriangleBgIcon,
 	ChevronUpIcon,
 	ArrowDownIcon,
-	ArrowFillIcon,
+	ArrowFillRightIcon,
 	ArrowUpIcon,
 	BorderSquareIcon,
 	AfterShootLogoIcon,

@@ -1,2 +1,4 @@
 import TooltiparrowIcon from './TooltiparrowIcon'
-export { TooltiparrowIcon }
+export {
+TooltiparrowIcon,
+}

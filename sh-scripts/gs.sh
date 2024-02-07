@@ -1,6 +1,6 @@
 # Specify the folder containing SVG files
 SVG_FOLDER="./src/test"
-FOLDER_PATH="./src/story_test"
+FOLDER_PATH="./src/test-stories"
 mkdir $FOLDER_PATH
 # Loop through all files with the .svg extension in the folder
 for svg_file in "$SVG_FOLDER"/*.tsx; do
