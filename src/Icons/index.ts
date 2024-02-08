@@ -189,7 +189,11 @@ import InstagramIcon from './social/InstagramIcon'
 import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
-
+export * from './culling/FinderIcon'
+export * from './culling/FullScreenIcon'
+export * from './culling/RotateLeftSquareIcon'
+export * from './culling/RotateRightSquareIcon'
+export * from './culling/SurveryMoveIcon'
 export {
 	ThumbDownBgIcon,
 	CopyContentIcon,
