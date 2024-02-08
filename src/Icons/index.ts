@@ -193,7 +193,7 @@ export * from './culling/FinderIcon'
 export * from './culling/FullScreenIcon'
 export * from './culling/RotateLeftSquareIcon'
 export * from './culling/RotateRightSquareIcon'
-export * from './culling/SurveryMoveIcon'
+export * from './culling/SurveyModeIcon'
 export {
 	ThumbDownBgIcon,
 	CopyContentIcon,

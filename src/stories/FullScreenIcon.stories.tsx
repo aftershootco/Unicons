@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FullScreenIcon } from '../test'
+import { FullScreenIcon } from '../icons'
 
 const meta: Meta<typeof FullScreenIcon> = {
 	component: FullScreenIcon,

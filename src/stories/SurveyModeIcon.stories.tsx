@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { SurveryMoveIcon } from '../test'
+import { SurveyModeIcon } from '../icons'
 
-const meta: Meta<typeof SurveryMoveIcon> = {
-	component: SurveryMoveIcon,
-	title: 'culling/SurveryMoveIcon',
+const meta: Meta<typeof SurveyModeIcon> = {
+	component: SurveyModeIcon,
+	title: 'culling/SurveyModeIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof SurveryMoveIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SurveryMoveIcon>
+type Story = StoryObj<typeof SurveyModeIcon>
 
 export const Default: Story = {}
 

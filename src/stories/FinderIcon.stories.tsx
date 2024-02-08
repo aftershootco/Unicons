@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FinderIcon } from '../test'
+import { FinderIcon } from '../icons'
 
 const meta: Meta<typeof FinderIcon> = {
 	component: FinderIcon,

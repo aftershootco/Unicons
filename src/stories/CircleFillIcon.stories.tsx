@@ -26,6 +26,13 @@ export const yellowFill: Story = {
 	},
 }
 
+export const inActive: Story = {
+	args: {
+		inActive: true,
+		fillColor: 'red',
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,
