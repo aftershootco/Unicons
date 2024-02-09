@@ -118,7 +118,7 @@ import ArrowDownIcon from './general/ArrowDownIcon'
 import ArrowFillRightIcon from './general/ArrowFillRightIcon'
 import ArrowFillUpIcon from './general/ArrowFillUpIcon'
 import ArrowLeftIcon from './general/ArrowLeftIcon'
-import ArrowRightcon from './general/ArrowRightcon'
+import ArrowRightIcon from './general/ArrowRightIcon'
 import ArrowUpIcon from './general/ArrowUpIcon'
 import CheckCircleBgIcon from './general/CheckCircleBgIcon'
 import CheckCircleIcon from './general/CheckCircleIcon'
@@ -191,6 +191,7 @@ import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
 export * from './culling/FinderIcon'
 export * from './culling/FullScreenIcon'
+export * from './culling/GridIcon'
 export * from './culling/RotateLeftSquareIcon'
 export * from './culling/RotateRightSquareIcon'
 export * from './culling/SurveyModeIcon'
@@ -379,7 +380,7 @@ export {
 	MouseRightSelected,
 	ProcessIcon,
 	ReloadIcon,
-	ArrowRightcon,
+	ArrowRightIcon,
 	ShareIcon,
 	SortDuplicatesIcon,
 	AlertHexagonBgIcon,

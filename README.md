@@ -44,6 +44,8 @@ yarn build
 3. Once, tested and satisfied, move the component and stories
    in the right folders (icons or stories)
 
+4. Replace hex-code with {color} or {modifiedColor}, if you to control the color with prop.
+
     You are all set
 
 ## Using icon components Tips
