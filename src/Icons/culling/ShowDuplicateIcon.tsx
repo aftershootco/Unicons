@@ -18,31 +18,38 @@ const ShowDuplicateIcon = React.forwardRef<SVGSVGElement, Props>((props, forward
 	// variants
 	const primary = (
 		<svg
-			width={size}
-			height={size}
-			viewBox='0 0 16 16'
+			width='22'
+			height='22'
+			viewBox='0 0 22 22'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			style={{ width: size, height: size }}
 			{...restProps}
 			ref={forwardedRef}
 		>
-			<path
-				d='M13.0013 4.66699H6.33464C5.41416 4.66699 4.66797 5.41318 4.66797 6.33366V13.0003C4.66797 13.9208 5.41416 14.667 6.33464 14.667H13.0013C13.9218 14.667 14.668 13.9208 14.668 13.0003V6.33366C14.668 5.41318 13.9218 4.66699 13.0013 4.66699Z'
-				stroke={modifiedColor}
-				stroke-width='2'
-				stroke-linecap='round'
-				stroke-linejoin='round'
-			/>
-			<path
-				d='M11.332 4.66634V2.99967C11.332 2.55765 11.1564 2.13372 10.8439 1.82116C10.5313 1.5086 10.1074 1.33301 9.66536 1.33301H2.9987C2.55667 1.33301 2.13275 1.5086 1.82019 1.82116C1.50763 2.13372 1.33203 2.55765 1.33203 2.99967V9.66634C1.33203 10.1084 1.50763 10.5323 1.82019 10.8449C2.13275 11.1574 2.55667 11.333 2.9987 11.333H4.66536'
-				stroke={modifiedColor}
-				stroke-width='2'
-				stroke-linecap='round'
-				stroke-linejoin='round'
-			/>
+			<g clip-path='url(#clip0_12220_36387)'>
+				<path
+					d='M15.5 5H6.5C5.67157 5 5 5.67157 5 6.5V8C5 8.82843 5.67157 9.5 6.5 9.5H15.5C16.3284 9.5 17 8.82843 17 8V6.5C17 5.67157 16.3284 5 15.5 5Z'
+					fill={modifiedColor}
+					stroke={modifiedColor}
+					stroke-linecap='round'
+					stroke-linejoin='round'
+				/>
+				<path
+					d='M15.5 12.5H6.5C5.67157 12.5 5 13.1716 5 14V15.5C5 16.3284 5.67157 17 6.5 17H15.5C16.3284 17 17 16.3284 17 15.5V14C17 13.1716 16.3284 12.5 15.5 12.5Z'
+					stroke={modifiedColor}
+					stroke-linecap='round'
+					stroke-linejoin='round'
+				/>
+			</g>
+			<defs>
+				<clipPath id='clip0_12220_36387'>
+					<rect width='18' height='18' fill='white' transform='translate(2 2)' />
+				</clipPath>
+			</defs>
 		</svg>
 	)
+
 	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
