@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { FaceHappyIcon } from '../icons'
+import { SmileySadIcon } from '../icons'
 
-const meta: Meta<typeof FaceHappyIcon> = {
-	component: FaceHappyIcon,
-	title: 'culling/FaceHappyIcon',
+const meta: Meta<typeof SmileySadIcon> = {
+	component: SmileySadIcon,
+	title: 'culling/SmileySadIcon',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof FaceHappyIcon> = {
 }
 
 export default meta
-type Story = StoryObj<typeof FaceHappyIcon>
+type Story = StoryObj<typeof SmileySadIcon>
 
 export const Default: Story = {}
 
@@ -31,6 +31,7 @@ export const inActive: Story = {
 		inActive: true,
 	},
 }
+
 export const Large: Story = {
 	args: {
 		size: 30,

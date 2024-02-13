@@ -10,7 +10,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const FaceSadIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+const SmileySadIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const {
 		variant = 'primary',
@@ -55,4 +55,4 @@ const FaceSadIcon = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef)
 	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
-export default React.memo(FaceSadIcon)
+export default React.memo(SmileySadIcon)

@@ -21,10 +21,8 @@ import EyeCheckedIcon from './culling/EyeCheckedIcon'
 import EyeCrossedIcon from './culling/EyeCrossedIcon'
 import EyeIcon from './culling/EyeIcon'
 import FacebookPeopleIcon from './culling/FacebookPeopleIcon'
-import FaceHappyIcon from './culling/FaceHappyIcon'
-import FaceSadIcon from './culling/FaceSadIcon'
 import FilterCircleIcon from './culling/FilterCircleIcon'
-import InActiveFilter from './culling/FilterIcon'
+import FilterIcon from './culling/FilterIcon'
 import FiveStarBgIcon from './culling/FiveStarBgIcon'
 import FolderOutlineBgIcon from './culling/FolderOutlineBgIcon'
 import GridBgIcon from './culling/GridBgIcon'
@@ -64,6 +62,8 @@ import { default as ProcessIcon, default as ReloadIcon } from './culling/ReloadI
 import SelectedCircleBgIcon from './culling/SelectedCircleBgIcon'
 import ShareIcon from './culling/ShareIcon'
 import ShowDuplicateIcon from './culling/ShowDuplicateIcon'
+import SmileyHappyIcon from './culling/SmileyHappyIcon'
+import SmileySadIcon from './culling/SmileySadIcon'
 import SortCircleIcon from './culling/SortCircleIcon'
 import SortDuplicateCircleIcon from './culling/SortDuplicateCircleIcon'
 import SortDuplicatesIcon from './culling/SortDuplicatesIcon'
@@ -189,6 +189,7 @@ import InstagramIcon from './social/InstagramIcon'
 import TwitterBgIcon from './social/TwitterBgIcon'
 import TwitterIcon from './social/TwitterIcon'
 import TwitterOutlineIcon from './social/TwitterOutlineIcon'
+export * from './culling/DublicateStackIcon'
 export * from './culling/FinderIcon'
 export * from './culling/FullScreenIcon'
 export * from './culling/GridIcon'
@@ -282,7 +283,7 @@ export {
 	DuplicateIcon,
 	GroupingLessIcon,
 	KeyCircleIcon,
-	FaceHappyIcon,
+	SmileyHappyIcon,
 	DuplicateFillIcon,
 	FacebookPeopleIcon,
 	InfoCircleIcon,
@@ -319,7 +320,7 @@ export {
 	Stack2Icon,
 	StackIcon,
 	ScissorsIcon,
-	FaceSadIcon,
+	SmileySadIcon,
 	RecullIcon,
 	FacebookIcon,
 	FacebookBgIcon,
@@ -364,7 +365,7 @@ export {
 	EyeIcon,
 	FolderOutlineCrossedIcon,
 	GridBgIcon,
-	InActiveFilter,
+	FilterIcon,
 	KeyIcon,
 	SortIcon,
 	SprayCanIcon,
