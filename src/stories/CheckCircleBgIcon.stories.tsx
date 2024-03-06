@@ -39,6 +39,12 @@ export const inActive: Story = {
 	},
 }
 
+export const bgOpacity: Story = {
+	args: {
+		bgOpacity: 1,
+	},
+}
+
 export const Large: Story = {
 	args: {
 		size: 30,

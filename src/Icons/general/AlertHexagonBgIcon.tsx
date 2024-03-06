@@ -7,6 +7,7 @@ type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	bgColor?: string
+	bgOpacity?: number
 	inActive?: boolean
 }
 
@@ -16,6 +17,7 @@ const AlertHexagonBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwar
 		variant = 'primary',
 		color = DEFAULT_ICON.COLOR,
 		bgColor = DEFAULT_ICON.BG_COLOR,
+		bgOpacity = DEFAULT_ICON.BG_OPACITY,
 		size = DEFAULT_ICON.SIZE,
 		inActive = false,
 		...restProps
@@ -36,7 +38,7 @@ const AlertHexagonBgIcon = React.forwardRef<SVGSVGElement, Props>((props, forwar
 			ref={forwardedRef}
 		>
 			<g filter='url(#filter0_b_14013_43614)'>
-				<rect width='20' height='20' rx='6' fill={bgColor} fill-opacity={DEFAULT_ICON.BG_OPACITY} />
+				<rect width='20' height='20' rx='6' fill={bgColor} fill-opacity={bgOpacity} />
 				<g clip-path='url(#clip0_14013_43614)'>
 					<path
 						d='M8.35 5.5H11.65C11.8 5.5 11.9 5.55 12 5.65L14.35 8C14.45 8.1 14.5 8.2 14.5 8.35V11.65C14.5 11.8 14.45 11.9 14.35 12L12 14.35C11.9 14.45 11.8 14.5 11.65 14.5H8.35C8.2 14.5 8.1 14.45 8 14.35L5.65 12C5.55 11.9 5.5 11.8 5.5 11.65V8.35C5.5 8.2 5.55 8.1 5.65 8L8 5.65C8.1 5.55 8.2 5.5 8.35 5.5V5.5Z'

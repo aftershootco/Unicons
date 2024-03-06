@@ -1,5 +1,4 @@
 # this script is use to generate index file. 
-# put the script inside the folder
 
 touch index.ts
 # Loop through all files with the .svg extension in the folder
@@ -10,6 +9,7 @@ for svg_file in ./src/test/*.tsx; do
     FILE_NAME="${FILE_NAME%.*}"
     echo "import $FILE_NAME from './$FILE_NAME'" >> "./src/test/index.ts"
 done
+
 echo "export {" >> ./src/test/index.ts
 
 for svg_file in ./src/test/*.tsx; do
@@ -17,4 +17,5 @@ for svg_file in ./src/test/*.tsx; do
     FILE_NAME="${FILE_NAME%.*}"
     echo "$FILE_NAME," >> "./src/test/index.ts"
 done
+
 echo "}" >> "./src/test/index.ts"

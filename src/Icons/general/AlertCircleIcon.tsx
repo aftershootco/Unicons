@@ -3,7 +3,7 @@ import { IconProps } from '../../../types/Icons/types'
 import BaseIcon from '../../components/BaseIcon'
 import DEFAULT_ICON from '../../constant'
 
-type IconVariant = 'primary' | 'secondary'
+type IconVariant = 'primary'
 type Props = Omit<IconProps, 'variant'> & {
 	variant?: IconVariant
 	inActive?: boolean
@@ -18,36 +18,6 @@ const AlertCircleIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 	// variants
 
 	const primary = (
-		<svg
-			width={size}
-			height={size}
-			viewBox='0 0 14 14'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			style={{ width: size, height: size }}
-			{...restProps}
-			ref={forwardedRef}
-		>
-			<g clip-path='url(#clip0_2590_9655)'>
-				<path
-					d='M7 12.25C9.8995 12.25 12.25 9.8995 12.25 7C12.25 4.1005 9.8995 1.75 7 1.75C4.1005 1.75 1.75 4.1005 1.75 7C1.75 9.8995 4.1005 12.25 7 12.25Z'
-					stroke={modifiedColor}
-					stroke-linecap='round'
-					stroke-linejoin='round'
-				/>
-				<path d='M7 4.66669H7.00583' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
-				<path d='M6.41699 7H7.00033V9.33333H7.58366' fill={modifiedColor} />
-				<path d='M6.41699 7H7.00033V9.33333H7.58366' stroke={modifiedColor} stroke-linecap='round' stroke-linejoin='round' />
-			</g>
-			<defs>
-				<clipPath id='clip0_2590_9655'>
-					<rect width='14' height='14' fill='white' />
-				</clipPath>
-			</defs>
-		</svg>
-	)
-
-	const secondary = (
 		<svg
 			width={size}
 			height={size}
@@ -68,7 +38,7 @@ const AlertCircleIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 		</svg>
 	)
 
-	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
+	return <BaseIcon variants={{ primary }} variant={variant} />
 })
 
 export default React.memo(AlertCircleIcon)

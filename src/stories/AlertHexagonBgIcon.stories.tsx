@@ -32,6 +32,12 @@ export const yellowBg: Story = {
 	},
 }
 
+export const bgOpacity: Story = {
+	args: {
+		bgOpacity: 1,
+	},
+}
+
 export const inActive: Story = {
 	args: {
 		inActive: true,
