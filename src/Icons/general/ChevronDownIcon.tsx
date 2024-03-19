@@ -19,10 +19,10 @@ const ChevronDownIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 	// variants
 	const primary = (
 		<svg
-			xmlns='http://www.w3.org/2000/svg'
 			width={size}
 			height={size}
 			viewBox='0 0 24 24'
+			xmlns='http://www.w3.org/2000/svg'
 			fill={modifiedColor}
 			style={{ width: size, height: size }}
 			{...restProps}
@@ -34,16 +34,25 @@ const ChevronDownIcon = React.forwardRef<SVGSVGElement, Props>((props, forwarded
 
 	const secondary = (
 		<svg
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
+			width='18'
+			height='24.75'
+			viewBox='0 0 18 11'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			style={{ width: size, height: size }}
 			{...restProps}
 			ref={forwardedRef}
 		>
-			<path d='M16.94 1.412 9 9.354 1.059 1.412' stroke={modifiedColor} stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' />
+			<g transform='rotate(180 9 5.5)'>
+				<path
+					d='M1.059 9.53 9 1.587l7.941 7.941'
+					stroke={modifiedColor}
+					stroke-opacity='.8'
+					stroke-width='1.5'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+				></path>
+			</g>
 		</svg>
 	)
 
