@@ -33,7 +33,43 @@ yarn
 yarn build
 ```
 
+## How to generate automatically
+
+1. Put all the SVGs in /src/svg
+
+2. Run `sh generate.sh`.
+   This will generate a /test and /test-stories with icon components,
+   as well as the stories.
+
+3. Once, tested and satisfied, move the component and stories
+   in the right folders (icons or stories)
+
+4. Replace hex-code with {color} or {modifiedColor}, if you to control the color with prop.
+
+    You are all set
+
+## To publish storbook run - yarn chromatic
+
+## Using icon components Tips
+
+1. Import from '@aftershootco/unicorn-icons'
+
+2. Props - size, color, fillColor (icons with fill), variant (if icon have more than one variant), bgColor (icon with bg), inActive (make icon color dull, this will have more priority than color props)
+
+3. on hover effect example
+
+    ```js
+    <button className='group' onClick={props.onClose}>
+    	<CloseIcon size={14} color='#777777' className='group-hover:[&_*]:fill-white group-hover:[&_*]:stroke-white' />
+    </button>
+    ```
+
 ## Contributors
 
 -   Akash Singh — [Github](https://github.com/frannkenstein)
 -   Yash Johri — [Github](https://github.com/yash1200)
+-   Booi Mangang - [Github](https://github.com/booi-dev)
+
+Chromatic Dashboard: https://www.chromatic.com/build?appId=65bb4c7b2d4e48c0410f5829&number=3
+
+Live storybook: "[https://65bb4c7b2d4e48c0410f5829-cenawazgya.chromatic.com/?path=/story/culling-addfoldericon--default&globals=backgrounds.value:!hex(333333)](<https://65bb4c7b2d4e48c0410f5829-cenawazgya.chromatic.com/?path=/story/culling-addfoldericon--default&globals=backgrounds.value:!hex(333333)>)"
