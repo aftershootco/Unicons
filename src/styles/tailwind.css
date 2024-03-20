@@ -556,16 +556,20 @@ video {
   top: 0px;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .block {
   display: block;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .w-\[1000px\] {
   width: 1000px;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .transform {
