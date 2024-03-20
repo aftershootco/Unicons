@@ -5572,101 +5572,101 @@
 		"culling-mouseleftselected--default": {
 			"id": "culling-mouseleftselected--default",
 			"name": "Default",
-			"title": "culling/MouseLeftSelected",
-			"importPath": "./src/stories/MouseLeftSelected.stories.tsx",
+			"title": "culling/MouseLeftClick",
+			"importPath": "./src/stories/MouseLeftClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseLeftSelected",
+			"kind": "culling/MouseLeftClick",
 			"story": "Default",
 			"parameters": {
 				"__id": "culling-mouseleftselected--default",
 				"docsOnly": false,
-				"fileName": "./src/stories/MouseLeftSelected.stories.tsx"
+				"fileName": "./src/stories/MouseLeftClick.stories.tsx"
 			}
 		},
 		"culling-mouseleftselected--red": {
 			"id": "culling-mouseleftselected--red",
 			"name": "Red",
-			"title": "culling/MouseLeftSelected",
-			"importPath": "./src/stories/MouseLeftSelected.stories.tsx",
+			"title": "culling/MouseLeftClick",
+			"importPath": "./src/stories/MouseLeftClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseLeftSelected",
+			"kind": "culling/MouseLeftClick",
 			"story": "Red",
-			"parameters": { "__id": "culling-mouseleftselected--red", "docsOnly": false, "fileName": "./src/stories/MouseLeftSelected.stories.tsx" }
+			"parameters": { "__id": "culling-mouseleftselected--red", "docsOnly": false, "fileName": "./src/stories/MouseLeftClick.stories.tsx" }
 		},
 		"culling-mouseleftselected--in-active": {
 			"id": "culling-mouseleftselected--in-active",
 			"name": "In Active",
-			"title": "culling/MouseLeftSelected",
-			"importPath": "./src/stories/MouseLeftSelected.stories.tsx",
+			"title": "culling/MouseLeftClick",
+			"importPath": "./src/stories/MouseLeftClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseLeftSelected",
+			"kind": "culling/MouseLeftClick",
 			"story": "In Active",
 			"parameters": {
 				"__id": "culling-mouseleftselected--in-active",
 				"docsOnly": false,
-				"fileName": "./src/stories/MouseLeftSelected.stories.tsx"
+				"fileName": "./src/stories/MouseLeftClick.stories.tsx"
 			}
 		},
 		"culling-mouseleftselected--large": {
 			"id": "culling-mouseleftselected--large",
 			"name": "Large",
-			"title": "culling/MouseLeftSelected",
-			"importPath": "./src/stories/MouseLeftSelected.stories.tsx",
+			"title": "culling/MouseLeftClick",
+			"importPath": "./src/stories/MouseLeftClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseLeftSelected",
+			"kind": "culling/MouseLeftClick",
 			"story": "Large",
-			"parameters": { "__id": "culling-mouseleftselected--large", "docsOnly": false, "fileName": "./src/stories/MouseLeftSelected.stories.tsx" }
+			"parameters": { "__id": "culling-mouseleftselected--large", "docsOnly": false, "fileName": "./src/stories/MouseLeftClick.stories.tsx" }
 		},
 		"culling-mouserightselected--default": {
 			"id": "culling-mouserightselected--default",
 			"name": "Default",
-			"title": "culling/MouseRightSelected",
-			"importPath": "./src/stories/MouseRightSelected.stories.tsx",
+			"title": "culling/MouseRightClick",
+			"importPath": "./src/stories/MouseRightClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseRightSelected",
+			"kind": "culling/MouseRightClick",
 			"story": "Default",
 			"parameters": {
 				"__id": "culling-mouserightselected--default",
 				"docsOnly": false,
-				"fileName": "./src/stories/MouseRightSelected.stories.tsx"
+				"fileName": "./src/stories/MouseRightClick.stories.tsx"
 			}
 		},
 		"culling-mouserightselected--red": {
 			"id": "culling-mouserightselected--red",
 			"name": "Red",
-			"title": "culling/MouseRightSelected",
-			"importPath": "./src/stories/MouseRightSelected.stories.tsx",
+			"title": "culling/MouseRightClick",
+			"importPath": "./src/stories/MouseRightClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseRightSelected",
+			"kind": "culling/MouseRightClick",
 			"story": "Red",
-			"parameters": { "__id": "culling-mouserightselected--red", "docsOnly": false, "fileName": "./src/stories/MouseRightSelected.stories.tsx" }
+			"parameters": { "__id": "culling-mouserightselected--red", "docsOnly": false, "fileName": "./src/stories/MouseRightClick.stories.tsx" }
 		},
 		"culling-mouserightselected--in-active": {
 			"id": "culling-mouserightselected--in-active",
 			"name": "In Active",
-			"title": "culling/MouseRightSelected",
-			"importPath": "./src/stories/MouseRightSelected.stories.tsx",
+			"title": "culling/MouseRightClick",
+			"importPath": "./src/stories/MouseRightClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseRightSelected",
+			"kind": "culling/MouseRightClick",
 			"story": "In Active",
 			"parameters": {
 				"__id": "culling-mouserightselected--in-active",
 				"docsOnly": false,
-				"fileName": "./src/stories/MouseRightSelected.stories.tsx"
+				"fileName": "./src/stories/MouseRightClick.stories.tsx"
 			}
 		},
 		"culling-mouserightselected--large": {
 			"id": "culling-mouserightselected--large",
 			"name": "Large",
-			"title": "culling/MouseRightSelected",
-			"importPath": "./src/stories/MouseRightSelected.stories.tsx",
+			"title": "culling/MouseRightClick",
+			"importPath": "./src/stories/MouseRightClick.stories.tsx",
 			"tags": ["story"],
-			"kind": "culling/MouseRightSelected",
+			"kind": "culling/MouseRightClick",
 			"story": "Large",
 			"parameters": {
 				"__id": "culling-mouserightselected--large",
 				"docsOnly": false,
-				"fileName": "./src/stories/MouseRightSelected.stories.tsx"
+				"fileName": "./src/stories/MouseRightClick.stories.tsx"
 			}
 		},
 		"culling-movebgicon--default": {

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 
-import { MouseLeftSelected } from '../icons'
+import { MouseLeftClick } from '../icons'
 
-const meta: Meta<typeof MouseLeftSelected> = {
-	component: MouseLeftSelected,
-	title: 'culling/MouseLeftSelected',
+const meta: Meta<typeof MouseLeftClick> = {
+	component: MouseLeftClick,
+	title: 'culling/MouseLeftClick',
 	decorators: [
 		(Story) => (
 			<div style={{ margin: '1rem' }}>
@@ -16,7 +16,7 @@ const meta: Meta<typeof MouseLeftSelected> = {
 }
 
 export default meta
-type Story = StoryObj<typeof MouseLeftSelected>
+type Story = StoryObj<typeof MouseLeftClick>
 
 export const Default: Story = {}
 

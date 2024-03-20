@@ -47,9 +47,9 @@ import MaximizeIcon from './culling/MaximizeIcon'
 import MenuIcon from './culling/MenuIcon'
 import MinimizeIcon from './culling/MinimizeIcon'
 import MoneyBagIcon from './culling/MoneyBagIcon'
+import MouseLeftClick from './culling/MouseLeftClick'
 import MouseLeftClickCircleIcon from './culling/MouseLeftClickCircleIcon'
-import MouseLeftSelected from './culling/MouseLeftSelected'
-import MouseRightSelected from './culling/MouseRightSelected'
+import MouseRightClick from './culling/MouseRightClick'
 import MoveBgIcon from './culling/MoveBgIcon'
 import NoDuplicateIcon from './culling/NoDuplicateIcon'
 import NoneIcon from './culling/NoneIcon'
@@ -325,9 +325,9 @@ export {
 	MinimizeIcon,
 	MoneyBagIcon,
 	MoodIcon,
+	MouseLeftClick,
 	MouseLeftClickCircleIcon,
-	MouseLeftSelected,
-	MouseRightSelected,
+	MouseRightClick,
 	MoveBgIcon,
 	NoDuplicateIcon,
 	NoneIcon,

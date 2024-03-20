@@ -9,7 +9,7 @@ type Props = Omit<IconProps, 'variant'> & {
 	inActive?: boolean
 }
 
-const MouseRightSelected = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
+const MouseRightClick = React.forwardRef<SVGSVGElement, Props>((props, forwardedRef) => {
 	//props
 	const { variant = 'primary', color = DEFAULT_ICON.COLOR, size = DEFAULT_ICON.SIZE, inActive = false, ...restProps } = props
 
@@ -69,4 +69,4 @@ const MouseRightSelected = React.forwardRef<SVGSVGElement, Props>((props, forwar
 	return <BaseIcon variants={{ primary, secondary }} variant={variant} />
 })
 
-export default React.memo(MouseRightSelected)
+export default React.memo(MouseRightClick)
