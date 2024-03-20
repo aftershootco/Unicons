@@ -48,6 +48,8 @@ yarn build
 
     You are all set
 
+## To publish storbook run - yarn chromatic
+
 ## Using icon components Tips
 
 1. Import from '@aftershootco/unicorn-icons'
@@ -67,3 +69,7 @@ yarn build
 -   Akash Singh — [Github](https://github.com/frannkenstein)
 -   Yash Johri — [Github](https://github.com/yash1200)
 -   Booi Mangang - [Github](https://github.com/booi-dev)
+
+Chromatic Dashboard: https://www.chromatic.com/build?appId=65bb4c7b2d4e48c0410f5829&number=3
+
+Live storybook: "[https://65bb4c7b2d4e48c0410f5829-cenawazgya.chromatic.com/?path=/story/culling-addfoldericon--default&globals=backgrounds.value:!hex(333333)](<https://65bb4c7b2d4e48c0410f5829-cenawazgya.chromatic.com/?path=/story/culling-addfoldericon--default&globals=backgrounds.value:!hex(333333)>)"
